@@ -1,0 +1,19 @@
+#Ignore
+*
+*.*
+**/*
+**/*.*
+**/**/*
+**/**/*.*
+#Don't ignore directories, so we can recurse into them
+!*/
+#!**/*
+!.gitignore
+Thumbs.db
+!*.opi
+!*.plt
+!*.pdf
+!*.zip
+!*.txt
+!*.def
+!*.py
