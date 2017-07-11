@@ -6,9 +6,9 @@
     <show_toolbar>true</show_toolbar>
     <grid>false</grid>
     <scroll>true</scroll>
-    <update_period>1.0</update_period>
-    <scroll_step>5</scroll_step>
-    <start>-5 minutes 0.0 seconds</start>
+    <update_period>0.1</update_period>
+    <scroll_step>1</scroll_step>
+    <start>-1 hour</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -33,7 +33,7 @@
                 <blue>0</blue>
             </color>
             <min>0.0</min>
-            <max>210.0</max>
+            <max>200.0</max>
             <grid>true</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
@@ -49,14 +49,44 @@
                 <green>0</green>
                 <blue>255</blue>
             </color>
-            <min>0.0</min>
-            <max>1.5</max>
+            <min>-0.2</min>
+            <max>0.5</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
         </axis>
     </axes>
     <annotations>
+        <annotation>
+            <pv>0</pv>
+            <time>2017-03-16 09:36:44.830 +0100</time>
+            <value>199.524</value>
+            <offset>
+                <x>20</x>
+                <y>-20</y>
+            </offset>
+            <text>Output off!</text>
+        </annotation>
+        <annotation>
+            <pv>0</pv>
+            <time>2017-03-16 09:45:35.829 +0100</time>
+            <value>198.872</value>
+            <offset>
+                <x>20</x>
+                <y>-20</y>
+            </offset>
+            <text>Output off!</text>
+        </annotation>
+        <annotation>
+            <pv>0</pv>
+            <time>2017-03-16 09:48:34.829 +0100</time>
+            <value>184.867</value>
+            <offset>
+                <x>20</x>
+                <y>-20</y>
+            </offset>
+            <text>Stable &#10;operation</text>
+        </annotation>
     </annotations>
     <pvlist>
         <pv>
