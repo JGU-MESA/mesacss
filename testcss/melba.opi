@@ -39,10 +39,10 @@
     <crop_left>0</crop_left>
     <enabled>true</enabled>
     <wuid>-7a3f9a2:15d0d38a407:-7d40</wuid>
-    <auto_size>false</auto_size>
-    <image_file>melba.png</image_file>
+    <auto_size>true</auto_size>
+    <image_file>melba_simple_css.bmp</image_file>
     <scripts />
-    <height>917</height>
+    <height>905</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -72,17 +72,17 @@
         <col>1.0</col>
       </row>
     </permutation_matrix>
-    <width>624</width>
-    <x>504</x>
+    <width>841</width>
+    <x>287</x>
     <name>Image</name>
-    <y>18</y>
+    <y>5</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <crop_top>0</crop_top>
     <crop_right>0</crop_right>
-    <stretch_to_fit>false</stretch_to_fit>
+    <stretch_to_fit>true</stretch_to_fit>
     <flip_vertical>false</flip_vertical>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
@@ -115,7 +115,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>steam:gauge:p_get</pv_name>
+    <pv_name>steam:ionivac:p_get</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -151,7 +151,7 @@ $(pv_value)</tooltip>
     <auto_size>false</auto_size>
     <text>Pressures</text>
     <scripts />
-    <height>50</height>
+    <height>25</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -168,7 +168,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="193" green="0" blue="42" />
     </background_color>
-    <width>193</width>
+    <width>439</width>
     <x>12</x>
     <name>Label</name>
     <y>18</y>
@@ -763,7 +763,7 @@ $(pv_value)</tooltip>
       <color red="193" green="0" blue="42" />
     </background_color>
     <width>229</width>
-    <x>504</x>
+    <x>660</x>
     <name>Label_6</name>
     <y>18</y>
     <foreground_color>
@@ -803,9 +803,9 @@ $(pv_value)</tooltip>
       <color red="193" green="0" blue="42" />
     </background_color>
     <width>439</width>
-    <x>36</x>
+    <x>198</x>
     <name>Label_7</name>
-    <y>804</y>
+    <y>504</y>
     <foreground_color>
       <color red="255" green="255" blue="255" />
     </foreground_color>
@@ -970,7 +970,7 @@ $(pv_value)</tooltip>
     </background_color>
     <square_led>false</square_led>
     <width>73</width>
-    <x>504</x>
+    <x>660</x>
     <data_type>0</data_type>
     <y>66</y>
     <foreground_color>
@@ -1233,7 +1233,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>melba_030:pump:i_get</pv_name>
+    <pv_name>melba_010:pump:i_get</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1299,7 +1299,7 @@ $(pv_value)</tooltip>
       <color name="JGULightGray" red="172" green="172" blue="172" />
     </background_color>
     <width>120</width>
-    <x>613</x>
+    <x>769</x>
     <name>Text Update_11</name>
     <y>67</y>
     <foreground_color>
@@ -1351,7 +1351,7 @@ $(pv_value)</tooltip>
       <color name="JGULightGray" red="172" green="172" blue="172" />
     </background_color>
     <width>120</width>
-    <x>613</x>
+    <x>769</x>
     <name>Text Update_12</name>
     <y>90</y>
     <foreground_color>
