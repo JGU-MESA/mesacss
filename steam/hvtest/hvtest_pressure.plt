@@ -3,12 +3,12 @@
     <title></title>
     <save_changes>true</save_changes>
     <show_legend>false</show_legend>
-    <show_toolbar>false</show_toolbar>
+    <show_toolbar>true</show_toolbar>
     <grid>false</grid>
     <scroll>true</scroll>
     <update_period>0.5</update_period>
-    <scroll_step>2</scroll_step>
-    <start>-1 hours 0.0 seconds</start>
+    <scroll_step>1</scroll_step>
+    <start>-15 minutes 0.0 seconds</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -69,7 +69,7 @@
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <trace_type>AREA</trace_type>
+            <trace_type>LINES</trace_type>
             <linewidth>2</linewidth>
             <point_type>NONE</point_type>
             <point_size>2</point_size>
