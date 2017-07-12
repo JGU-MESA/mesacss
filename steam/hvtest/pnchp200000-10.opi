@@ -128,7 +128,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
       <toggle_button>true</toggle_button>
-      <border_style>0</border_style>
+      <border_style>14</border_style>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <alarm_pulsing>false</alarm_pulsing>
       <tooltip>$(pv_name)
@@ -149,10 +149,10 @@ $(pv_value)</tooltip>
       <square_button>true</square_button>
       <show_led>true</show_led>
       <scripts />
-      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <height>50</height>
       <on_label>Set: ON</on_label>
-      <border_width>1</border_width>
+      <border_width>2</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
         <height_scalable>true</height_scalable>
@@ -161,7 +161,7 @@ $(pv_value)</tooltip>
       <visible>true</visible>
       <pv_name>$(P)$(R)on_set</pv_name>
       <border_color>
-        <color red="0" green="128" blue="255" />
+        <color name="Red" red="255" green="0" blue="0" />
       </border_color>
       <widget_type>Boolean Button</widget_type>
       <off_color>
@@ -441,7 +441,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <toggle_button>false</toggle_button>
-      <border_style>0</border_style>
+      <border_style>6</border_style>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <alarm_pulsing>false</alarm_pulsing>
       <tooltip>$(pv_name)
@@ -513,7 +513,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <toggle_button>false</toggle_button>
-      <border_style>0</border_style>
+      <border_style>6</border_style>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <alarm_pulsing>false</alarm_pulsing>
       <tooltip>$(pv_name)
@@ -1589,7 +1589,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <toggle_button>false</toggle_button>
-      <border_style>0</border_style>
+      <border_style>6</border_style>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <alarm_pulsing>false</alarm_pulsing>
       <tooltip>$(pv_name)
@@ -1730,7 +1730,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <toggle_button>false</toggle_button>
-      <border_style>0</border_style>
+      <border_style>6</border_style>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <alarm_pulsing>false</alarm_pulsing>
       <tooltip>$(pv_name)
@@ -1802,7 +1802,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <toggle_button>false</toggle_button>
-      <border_style>0</border_style>
+      <border_style>6</border_style>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <alarm_pulsing>false</alarm_pulsing>
       <tooltip>$(pv_name)
