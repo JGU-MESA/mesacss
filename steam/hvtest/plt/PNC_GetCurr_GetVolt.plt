@@ -3,7 +3,7 @@
     <title></title>
     <save_changes>true</save_changes>
     <show_legend>false</show_legend>
-    <show_toolbar>true</show_toolbar>
+    <show_toolbar>false</show_toolbar>
     <grid>false</grid>
     <scroll>true</scroll>
     <update_period>0.1</update_period>
@@ -23,7 +23,7 @@
     <axes>
         <axis>
             <visible>true</visible>
-            <name>Voltage</name>
+            <name>Voltage in kV</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>true</right>
@@ -40,20 +40,37 @@
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Current</name>
+            <name>Current in mA</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>false</right>
             <color>
                 <red>0</red>
                 <green>0</green>
-                <blue>255</blue>
+                <blue>0</blue>
             </color>
-            <min>-0.2</min>
-            <max>0.5</max>
+            <min>0.0</min>
+            <max>1.0</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
+        </axis>
+        <axis>
+            <visible>true</visible>
+            <name>Anodecurrent in mA</name>
+            <use_axis_name>true</use_axis_name>
+            <use_trace_names>true</use_trace_names>
+            <right>false</right>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+            </color>
+            <min>1.0E-10</min>
+            <max>1.0</max>
+            <grid>false</grid>
+            <autoscale>false</autoscale>
+            <log_scale>true</log_scale>
         </axis>
     </axes>
     <annotations>
@@ -90,7 +107,7 @@
     </annotations>
     <pvlist>
         <pv>
-            <display_name>Voltage</display_name>
+            <display_name>PS Voltage</display_name>
             <visible>true</visible>
             <name>$(P)$(R)u_get</name>
             <axis>0</axis>
@@ -119,7 +136,7 @@
             </archive>
         </pv>
         <pv>
-            <display_name>Current</display_name>
+            <display_name>PS Current</display_name>
             <visible>true</visible>
             <name>$(P)$(R)i_get</name>
             <axis>1</axis>
@@ -146,6 +163,25 @@
                 <url>jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=snsappa.sns.ornl.gov)(PORT=1610))(ADDRESS=(PROTOCOL=TCP)(HOST=snsappb.sns.ornl.gov)(PORT=1610))(CONNECT_DATA=(SERVICE_NAME=prod_controls)))</url>
                 <key>1</key>
             </archive>
+        </pv>
+        <pv>
+            <display_name>Anodecurrent</display_name>
+            <visible>true</visible>
+            <name>steam_prep:riesling_sl:i_get</name>
+            <axis>2</axis>
+            <color>
+                <red>128</red>
+                <green>0</green>
+                <blue>128</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <linewidth>2</linewidth>
+            <point_type>NONE</point_type>
+            <point_size>2</point_size>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>100000</ring_size>
+            <request>OPTIMIZED</request>
         </pv>
     </pvlist>
 </databrowser>
