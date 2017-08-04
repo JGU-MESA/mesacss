@@ -1,5 +1,7 @@
 MELBA Title  = Arial-bold-14
+MELBA Title BIG = Arial-bold-24
 MELBA Default  = Arial-regular-12
+MELBA Default BIG  = Arial-regular-18
 
 //Default Title Font. It will used in case the OS specified font macro was not defined.
 Example Title = Arial-bold-18
