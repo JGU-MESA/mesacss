@@ -1,0 +1,15 @@
+# color.def-Pfad eintragen: Edit -> Preferences -> CSS Applications -> Display -> BOY
+# Color File: 
+
+# Damit die Definitionen angewendet werden können, muss man einen Farbwert einstellen, daraufhin öffnet sich das 
+# 'Choose Color' Fenster. Ein Rechtsklick auf 'Choose from Predefined Colors:', lädt die vordefinierte Farbliste.
+# Reload List From Color File
+#
+off = 192,192,192
+on & okay = 0,255,0
+on & failure = 255,0,0
+no PV-name given = 255,255,0
+off & failure = 179,119,0
+blue = 0,0,255
+black = 0,0,0
+white = 255,255,255
