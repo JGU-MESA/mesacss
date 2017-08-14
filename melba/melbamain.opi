@@ -221,7 +221,7 @@ $(pv_value)</tooltip>
     <width>823</width>
     <x>7</x>
     <name>Image melba_simple</name>
-    <y>8</y>
+    <y>0</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -3689,7 +3689,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-3da12f84:15d549a29ff:-7e56</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>27</height>
     <border_width>1</border_width>
@@ -4721,7 +4721,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>67</width>
-    <x>761</x>
+    <x>774</x>
     <name>Label melba_030:gauge:p_get</name>
     <y>750</y>
     <foreground_color>
@@ -4773,7 +4773,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>32</width>
-    <x>779</x>
+    <x>774</x>
     <name>Text Update melba_030:gauge:p_get</name>
     <y>770</y>
     <foreground_color>
@@ -5848,7 +5848,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4da0</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -7888,7 +7888,7 @@ $(pv_value)</tooltip>
     <auto_size>true</auto_size>
     <text>gauge:p_get</text>
     <scripts />
-    <height>19</height>
+    <height>17</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10045,7 +10045,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10066,7 +10066,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>587</x>
     <name>Text Update melba_030:trip_q1:stat_get</name>
     <y>733</y>
@@ -10124,7 +10124,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10145,7 +10145,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>573</x>
     <name>Text Update melba_030:trip_sh1:stat_get</name>
     <y>733</y>
@@ -10203,7 +10203,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10224,7 +10224,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>558</x>
     <name>Text Update melba_030:trip_sv1:stat_get</name>
     <y>733</y>
@@ -10281,7 +10281,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10302,7 +10302,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>544</x>
     <name>Text Update melba_030:trip_q2:stat_get</name>
     <y>733</y>
@@ -10360,7 +10360,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10381,7 +10381,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>530</x>
     <name>Text Update melba_030:trip_sh2:stat_get</name>
     <y>733</y>
@@ -10439,7 +10439,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10460,7 +10460,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>518</x>
     <name>Text Update melba_030:trip_sv2:stat_get</name>
     <y>733</y>
@@ -10517,7 +10517,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10538,7 +10538,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>505</x>
     <name>Text Update melba_030:trip_q3:stat_get</name>
     <y>733</y>
@@ -10596,7 +10596,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10617,7 +10617,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>430</x>
     <name>Text Update melba_040:sh:stat_get</name>
     <y>733</y>
@@ -10675,7 +10675,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10696,7 +10696,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>418</x>
     <name>Text Update melba_040:sv:stat_get</name>
     <y>733</y>
@@ -10754,7 +10754,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10775,7 +10775,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>343</x>
     <name>Text Update melba_050:sh:stat_get</name>
     <y>733</y>
@@ -10833,7 +10833,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10854,7 +10854,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>330</x>
     <name>Text Update melba_050:sv:stat_get</name>
     <y>733</y>
@@ -10911,7 +10911,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10932,7 +10932,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>300</x>
     <name>Text Update melba_050:trip_q1:stat_get</name>
     <y>733</y>
@@ -10990,7 +10990,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11011,7 +11011,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>286</x>
     <name>Text Update melba_050:trip_sh1:stat_get</name>
     <y>733</y>
@@ -11068,7 +11068,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11089,7 +11089,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>273</x>
     <name>Text Update melba_050:trip_sv1:stat_get</name>
     <y>733</y>
@@ -11146,7 +11146,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11167,7 +11167,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>258</x>
     <name>Text Update melba_050:trip_q2:stat_get</name>
     <y>733</y>
@@ -11224,7 +11224,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11245,7 +11245,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>246</x>
     <name>Text Update melba_050:trip_sh2:stat_get</name>
     <y>733</y>
@@ -11302,7 +11302,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11323,7 +11323,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>232</x>
     <name>Text Update melba_050:trip_sv2:stat_get</name>
     <y>733</y>
@@ -11380,7 +11380,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11401,7 +11401,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>220</x>
     <name>Text Update melba_050:trip_q3:stat_get</name>
     <y>733</y>
@@ -11459,7 +11459,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11480,7 +11480,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>173</x>
     <name>Text Update melba_060:sh:stat_get</name>
     <y>733</y>
@@ -11538,7 +11538,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>15</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11559,7 +11559,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>15</width>
+    <width>30</width>
     <x>159</x>
     <name>Text Update melba_060:sv:stat_get</name>
     <y>733</y>
@@ -12780,7 +12780,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>53</width>
+    <width>96</width>
     <x>588</x>
     <name>Label Scanner</name>
     <y>939</y>
@@ -13202,7 +13202,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>78</width>
+    <width>96</width>
     <x>36</x>
     <name>Label High Voltage</name>
     <y>939</y>
@@ -14463,7 +14463,7 @@ $(pv_value)</tooltip>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
-        <exp bool_exp="pv0 &gt;= pv2">
+        <exp bool_exp="(pv0 &gt;= pv3) || (pv0&lt;=pv4)">
           <value>
             <color name="Minor" red="255" green="128" blue="0" />
           </value>
@@ -14471,6 +14471,8 @@ $(pv_value)</tooltip>
         <pv trig="true">steam:gauge:p_get</pv>
         <pv trig="true">steam:gauge:p_get.HIHI</pv>
         <pv trig="true">steam:gauge:p_get.LOLO</pv>
+        <pv trig="true">steam:gauge:p_get.HIGH</pv>
+        <pv trig="true">steam:gauge:p_get.LOW</pv>
       </rule>
     </rules>
     <crop_left>0</crop_left>
@@ -14511,7 +14513,7 @@ $(pv_value)</tooltip>
     </permutation_matrix>
     <width>37</width>
     <x>694</x>
-    <name>Image_1</name>
+    <name>Image steam:gauge</name>
     <y>72</y>
     <foreground_color>
       <color name="white" red="255" green="255" blue="255" />
@@ -14521,6 +14523,166 @@ $(pv_value)</tooltip>
     <crop_right>0</crop_right>
     <stretch_to_fit>true</stretch_to_fit>
     <flip_vertical>false</flip_vertical>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Image" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip></tooltip>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0 ==0">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pvInt0 !=0">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <pv trig="true">melba_030:gauge:Status</pv>
+      </rule>
+    </rules>
+    <crop_left>0</crop_left>
+    <enabled>true</enabled>
+    <wuid>8fc7b63:15dd00c860b:-7c01</wuid>
+    <auto_size>true</auto_size>
+    <image_file>../BOY Image Library/SVG/Fluid/Fittings/Running Gauge.svg</image_file>
+    <scripts />
+    <height>30</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>false</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <align_to_nearest_second>false</align_to_nearest_second>
+    <visible>true</visible>
+    <crop_bottom>0</crop_bottom>
+    <degree>0</degree>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <no_animation>false</no_animation>
+    <widget_type>Image</widget_type>
+    <flip_horizontal>false</flip_horizontal>
+    <background_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </background_color>
+    <permutation_matrix>
+      <row>
+        <col>1.0</col>
+        <col>0.0</col>
+      </row>
+      <row>
+        <col>0.0</col>
+        <col>1.0</col>
+      </row>
+    </permutation_matrix>
+    <width>37</width>
+    <x>774</x>
+    <name>Image melba030:gauge</name>
+    <y>794</y>
+    <foreground_color>
+      <color name="white" red="255" green="255" blue="255" />
+    </foreground_color>
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>vacom_gauge.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <GAUGE>melba_030:gauge</GAUGE>
+        </macros>
+        <replace>1</replace>
+        <description></description>
+      </action>
+    </actions>
+    <crop_top>0</crop_top>
+    <crop_right>0</crop_right>
+    <stretch_to_fit>true</stretch_to_fit>
+    <flip_vertical>false</flip_vertical>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.gauge" version="1.0.0">
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <scale_font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </scale_font>
+    <pv_value />
+    <show_scale>true</show_scale>
+    <scale_format></scale_format>
+    <height>138</height>
+    <border_width>1</border_width>
+    <value_label_format></value_label_format>
+    <visible>true</visible>
+    <pv_name></pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Gauge</widget_type>
+    <name>Gauge</name>
+    <show_hi>true</show_hi>
+    <actions hook="false" hook_all="false" />
+    <show_lo>true</show_lo>
+    <border_style>0</border_style>
+    <show_lolo>true</show_lolo>
+    <show_minor_ticks>true</show_minor_ticks>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <show_markers>true</show_markers>
+    <color_hihi>
+      <color red="255" green="0" blue="0" />
+    </color_hihi>
+    <show_hihi>true</show_hihi>
+    <log_scale>false</log_scale>
+    <enabled>true</enabled>
+    <wuid>8fc7b63:15dd00c860b:-6e8a</wuid>
+    <level_hihi>90.0</level_hihi>
+    <color_hi>
+      <color red="255" green="255" blue="0" />
+    </color_hi>
+    <ramp_gradient>true</ramp_gradient>
+    <color_lo>
+      <color red="255" green="255" blue="0" />
+    </color_lo>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <major_tick_step_hint>50</major_tick_step_hint>
+    <level_hi>80.0</level_hi>
+    <transparent_background>true</transparent_background>
+    <level_lo>20.0</level_lo>
+    <needle_color>
+      <color red="255" green="0" blue="0" />
+    </needle_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <limits_from_pv>true</limits_from_pv>
+    <background_color>
+      <color red="0" green="64" blue="128" />
+    </background_color>
+    <level_lolo>10.0</level_lolo>
+    <width>138</width>
+    <x>221</x>
+    <y>384</y>
+    <maximum>100.0</maximum>
+    <color_lolo>
+      <color red="255" green="0" blue="0" />
+    </color_lolo>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <minimum>0.0</minimum>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
