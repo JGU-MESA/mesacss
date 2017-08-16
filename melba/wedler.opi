@@ -273,19 +273,19 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>2</horizontal_alignment>
+    <horizontal_alignment>0</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-a5d1172:15a8f9359c0:-7c3d</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Value</text>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <show_units>true</show_units>
-    <height>25</height>
+    <height>22</height>
     <border_width>2</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -405,19 +405,19 @@ $(pv_value)</tooltip>
     <precision>2</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>2</horizontal_alignment>
+    <horizontal_alignment>0</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-a5d1172:15a8f9359c0:-7af0</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Value</text>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <show_units>true</show_units>
-    <height>25</height>
+    <height>22</height>
     <border_width>2</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -497,19 +497,19 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>2</horizontal_alignment>
+    <horizontal_alignment>0</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-a5d1172:15a8f9359c0:-78ea</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Value</text>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <show_units>true</show_units>
-    <height>25</height>
+    <height>22</height>
     <border_width>2</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -722,19 +722,19 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>2</horizontal_alignment>
+    <horizontal_alignment>0</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>62c3afca:158bae0ae22:-6ca3</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Value</text>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <show_units>true</show_units>
-    <height>25</height>
+    <height>22</height>
     <border_width>2</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
