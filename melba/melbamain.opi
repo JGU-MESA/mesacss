@@ -2406,7 +2406,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>c9784f6:15d4f7e28bf:-77ef</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>25</height>
     <border_width>1</border_width>
@@ -4226,7 +4226,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-3da12f84:15d549a29ff:-7c64</wuid>
     <transparent>false</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>37</height>
     <border_width>1</border_width>
@@ -4758,12 +4758,12 @@ $(pv_value)</tooltip>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
         <exp bool_exp="pv0==0">
           <value>
-            <color name="on &amp; okay" red="0" green="255" blue="0" />
+            <color name="off" red="192" green="192" blue="192" />
           </value>
         </exp>
         <exp bool_exp="pv0==1">
           <value>
-            <color name="off" red="192" green="192" blue="192" />
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
         <exp bool_exp="pv0==2">
@@ -5815,7 +5815,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4da0</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -5843,7 +5843,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="true" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_020:trip_q1</WED>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>true</show_scrollbar>
     <font>
@@ -5922,16 +5932,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="true" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>wedler.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="true" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -6091,7 +6092,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_020:trip_q3</WED>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>true</show_scrollbar>
     <font>
@@ -6170,16 +6181,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="true" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>wedler.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="true" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -6339,7 +6341,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_020:trip_q2</WED>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>true</show_scrollbar>
     <font>
@@ -6418,16 +6430,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="true" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>wedler.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="true" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -6587,7 +6590,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_030:trip_q1</WED>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>true</show_scrollbar>
     <font>
@@ -6666,16 +6679,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="true" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>wedler.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="true" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -6835,7 +6839,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_030:trip_q2</WED>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>true</show_scrollbar>
     <font>
@@ -6914,16 +6928,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="true" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>wedler.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="true" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -7083,7 +7088,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_030:trip_q3</WED>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>true</show_scrollbar>
     <font>
@@ -7162,16 +7177,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="true" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>wedler.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="true" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -7331,7 +7337,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_050:trip_q1</WED>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>true</show_scrollbar>
     <font>
@@ -7410,16 +7426,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="true" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>wedler.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="true" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -7579,7 +7586,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_050:trip_q2</WED>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>true</show_scrollbar>
     <font>
@@ -7658,16 +7675,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="true" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>wedler.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="true" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -7851,7 +7859,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>423aa673:15d5fd64cd6:-59c0</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -7879,7 +7887,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_050:trip_q2</WED>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>true</show_scrollbar>
     <font>
@@ -7958,16 +7976,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="true" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>wedler.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="true" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -13466,7 +13475,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>1911d35e:15dc22005fb:-524</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>27</height>
     <border_width>1</border_width>
@@ -13906,12 +13915,12 @@ $(pv_value)</tooltip>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
         <exp bool_exp="pv0==0">
           <value>
-            <color name="on &amp; okay" red="0" green="255" blue="0" />
+            <color name="off" red="192" green="192" blue="192" />
           </value>
         </exp>
         <exp bool_exp="pv0==1">
           <value>
-            <color name="off" red="192" green="192" blue="192" />
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
         <exp bool_exp="pv0==2">
@@ -13958,7 +13967,7 @@ $(pv_value)</tooltip>
         <path>valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <pv_name>melba_030:pv</pv_name>
+          <pv_name>melba_010:pv</pv_name>
         </macros>
         <replace>2</replace>
         <description></description>
@@ -14458,12 +14467,12 @@ $(pv_value)</tooltip>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
         <exp bool_exp="pv0==0">
           <value>
-            <color name="on &amp; okay" red="0" green="255" blue="0" />
+            <color name="off" red="192" green="192" blue="192" />
           </value>
         </exp>
         <exp bool_exp="pv0==1">
           <value>
-            <color name="off" red="192" green="192" blue="192" />
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
         <exp bool_exp="pv0==2">

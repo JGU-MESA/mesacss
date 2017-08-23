@@ -175,7 +175,7 @@ $(pv_value)</tooltip>
     <width>100</width>
     <x>156</x>
     <name>Text Update_3</name>
-    <y>156</y>
+    <y>192</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -215,7 +215,7 @@ $(pv_value)</tooltip>
     <width>80</width>
     <x>60</x>
     <name>Label i_get</name>
-    <y>156</y>
+    <y>192</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -267,7 +267,7 @@ $(pv_value)</tooltip>
     <width>100</width>
     <x>156</x>
     <name>Text Update $(TOELL):u_get	</name>
-    <y>192</y>
+    <y>228</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -307,7 +307,7 @@ $(pv_value)</tooltip>
     <width>80</width>
     <x>60</x>
     <name>Label u_get	</name>
-    <y>192</y>
+    <y>228</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -410,7 +410,7 @@ $(pv_value)</tooltip>
     <width>80</width>
     <x>60</x>
     <name>Label_10</name>
-    <y>264</y>
+    <y>300</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -438,7 +438,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>25</height>
+    <height>22</height>
     <border_width>2</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -459,10 +459,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>30</width>
+    <width>43</width>
     <x>156</x>
     <name>Text Update $(TOELL):stat_get</name>
-    <y>264</y>
+    <y>300</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -564,7 +564,7 @@ $(pv_value)</tooltip>
     </background_color>
     <page_increment>0.01</page_increment>
     <width>100</width>
-    <x>150</x>
+    <x>156</x>
     <name>Spinner</name>
     <y>120</y>
     <maximum>1.7976931348623157E308</maximum>
@@ -658,7 +658,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>35</width>
-    <x>248</x>
+    <x>258</x>
     <name>Text Update_9</name>
     <y>120</y>
     <foreground_color>
@@ -766,7 +766,7 @@ $(pv_value)</tooltip>
     <width>100</width>
     <x>156</x>
     <name>Text Update $(TOELL):umax_get	_1</name>
-    <y>228</y>
+    <y>264</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -806,7 +806,7 @@ $(pv_value)</tooltip>
     <width>80</width>
     <x>60</x>
     <name>Label umax_get</name>
-    <y>228</y>
+    <y>264</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -846,7 +846,7 @@ $(pv_value)</tooltip>
     <width>80</width>
     <x>60</x>
     <name>Label sys_err</name>
-    <y>300</y>
+    <y>336</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -898,7 +898,7 @@ $(pv_value)</tooltip>
     <width>100</width>
     <x>156</x>
     <name>Text Update_10</name>
-    <y>300</y>
+    <y>336</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -972,7 +972,99 @@ $(pv_value)</tooltip>
     <width>58</width>
     <x>210</x>
     <name>Text Update</name>
-    <y>264</y>
+    <y>300</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>1</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>0</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>4cc33365:15e04198038:-498a</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>false</auto_size>
+    <text>Value</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <show_units>true</show_units>
+    <height>25</height>
+    <border_width>2</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>$(TOELL):ilim_get</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>true</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>1</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>100</width>
+    <x>156</x>
+    <name>Text Update $(TOELL):ilim_get</name>
+    <y>156</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>1</border_style>
+    <tooltip></tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>4cc33365:15e04198038:-4989</wuid>
+    <transparent>false</transparent>
+    <auto_size>false</auto_size>
+    <text>ilim_get</text>
+    <scripts />
+    <height>25</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color name="black" red="0" green="0" blue="0" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>80</width>
+    <x>60</x>
+    <name>Label ilim_get</name>
+    <y>156</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
