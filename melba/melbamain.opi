@@ -14241,7 +14241,7 @@ $(pv_value)</tooltip>
             <color name="off" red="192" green="192" blue="192" />
           </value>
         </exp>
-        <pv trig="true">melba_030:gauge:ReadSensorOn</pv>
+        <pv trig="true">melba_030:gauge:on_get</pv>
       </rule>
     </rules>
     <crop_left>0</crop_left>
@@ -14282,7 +14282,7 @@ $(pv_value)</tooltip>
     </permutation_matrix>
     <width>37</width>
     <x>727</x>
-    <name>Image melba030:gauge</name>
+    <name>Image melba030:gauge:p_get</name>
     <y>721</y>
     <foreground_color>
       <color name="white" red="255" green="255" blue="255" />
@@ -14604,17 +14604,23 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0 ==0">
-          <value>
-            <color name="on &amp; okay" red="0" green="255" blue="0" />
-          </value>
-        </exp>
         <exp bool_exp="pv0 ==1">
           <value>
             <color name="off" red="192" green="192" blue="192" />
           </value>
         </exp>
-        <pv trig="true">melba_060:gauge:ReadSensorOn</pv>
+        <exp bool_exp="pv0 ==0">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv1!=0">
+          <value>
+            <color name="on &amp; failure" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">melba_060:gauge:on_get</pv>
+        <pv trig="true">melba_060:gauge:stat_get</pv>
       </rule>
     </rules>
     <crop_left>0</crop_left>
