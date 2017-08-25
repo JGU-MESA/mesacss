@@ -4300,9 +4300,15 @@ $(pv_value)</tooltip>
               <color name="on &amp; failure" red="255" green="0" blue="0" />
             </value>
           </exp>
+          <exp bool_exp="pv3!=0">
+            <value>
+              <color name="on &amp; failure" red="255" green="0" blue="0" />
+            </value>
+          </exp>
           <pv trig="true">$(TOELL):on_get</pv>
           <pv trig="true">$(TOELL):on_set</pv>
           <pv trig="true">$(TOELL):stat_get</pv>
+          <pv trig="true">$(TOELL):sys_err_num</pv>
         </rule>
       </rules>
       <enabled>true</enabled>
