@@ -17,7 +17,7 @@ ConsoleUtil.writeInfo(PVUtil.getString(thresholdPV))
 ConsoleUtil.writeInfo(PVUtil.getString(onsetPV))
 ConsoleUtil.writeInfo(PVUtil.getString(setpointPV))
 
-class Timer(Runnable):
+class OpenValve(Runnable):
     def run(self): 
         thresholdPV.setValue(77)
         onsetPV.setValue(1)
@@ -35,5 +35,5 @@ class Timer(Runnable):
         ConsoleUtil.writeInfo(PVUtil.getString(onsetPV))
         ConsoleUtil.writeInfo(PVUtil.getString(setpointPV)) 
 
-thread = Thread(Timer());
+thread = Thread(OpenValve());
 thread.start();
