@@ -13297,7 +13297,7 @@ $(pv_value)</tooltip>
       <widget_type>Polyline</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="off" red="192" green="192" blue="192" />
+        <color name="white" red="255" green="255" blue="255" />
       </background_color>
       <width>1</width>
       <x>1</x>
@@ -13305,7 +13305,7 @@ $(pv_value)</tooltip>
       <y>8</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
-        <color name="white" red="255" green="255" blue="255" />
+        <color name="off" red="192" green="192" blue="192" />
       </foreground_color>
       <actions hook="false" hook_all="false" />
       <font>
@@ -13356,7 +13356,7 @@ $(pv_value)</tooltip>
       <widget_type>Polyline</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="off" red="192" green="192" blue="192" />
+        <color name="white" red="255" green="255" blue="255" />
       </background_color>
       <width>1</width>
       <x>24</x>
@@ -13364,7 +13364,7 @@ $(pv_value)</tooltip>
       <y>8</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
-        <color name="white" red="255" green="255" blue="255" />
+        <color name="off" red="192" green="192" blue="192" />
       </foreground_color>
       <actions hook="false" hook_all="false" />
       <font>
@@ -15229,7 +15229,7 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>108</height>
       <border_width>1</border_width>
       <scale_options>
@@ -15304,7 +15304,7 @@ $(pv_value)</tooltip>
       <pv_value />
       <alpha>255</alpha>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>28</height>
       <border_width>1</border_width>
       <scale_options>
@@ -15328,7 +15328,7 @@ $(pv_value)</tooltip>
       <width>85</width>
       <x>0</x>
       <name>Arc_2</name>
-      <y>114</y>
+      <y>113</y>
       <foreground_color>
         <color name="white" red="255" green="255" blue="255" />
       </foreground_color>
@@ -15372,7 +15372,7 @@ $(pv_value)</tooltip>
       <pv_value />
       <alpha>255</alpha>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>28</height>
       <border_width>1</border_width>
       <scale_options>
@@ -15396,7 +15396,7 @@ $(pv_value)</tooltip>
       <width>85</width>
       <x>0</x>
       <name>Arc_1</name>
-      <y>114</y>
+      <y>113</y>
       <foreground_color>
         <color name="white" red="255" green="255" blue="255" />
       </foreground_color>
@@ -15419,11 +15419,11 @@ $(pv_value)</tooltip>
       <wuid>4cc33365:15e04198038:-6e40</wuid>
       <transparent>false</transparent>
       <points>
-        <point x="2" y="131" />
-        <point x="2" y="20" />
-        <point x="2" y="20" />
-        <point x="2" y="20" />
-        <point x="2" y="20" />
+        <point x="3" y="129" />
+        <point x="3" y="20" />
+        <point x="3" y="20" />
+        <point x="3" y="20" />
+        <point x="3" y="20" />
       </points>
       <fill_arrow>true</fill_arrow>
       <pv_value />
@@ -15431,7 +15431,7 @@ $(pv_value)</tooltip>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>112</height>
+      <height>110</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -15452,7 +15452,7 @@ $(pv_value)</tooltip>
         <color name="white" red="255" green="255" blue="255" />
       </background_color>
       <width>1</width>
-      <x>2</x>
+      <x>3</x>
       <name>Polyline_7</name>
       <y>20</y>
       <fill_level>0.0</fill_level>
@@ -15478,11 +15478,11 @@ $(pv_value)</tooltip>
       <wuid>4cc33365:15e04198038:-6e3f</wuid>
       <transparent>false</transparent>
       <points>
-        <point x="84" y="131" />
-        <point x="84" y="20" />
-        <point x="84" y="20" />
-        <point x="84" y="20" />
-        <point x="84" y="20" />
+        <point x="83" y="129" />
+        <point x="83" y="20" />
+        <point x="83" y="20" />
+        <point x="83" y="20" />
+        <point x="83" y="20" />
       </points>
       <fill_arrow>true</fill_arrow>
       <pv_value />
@@ -15490,7 +15490,7 @@ $(pv_value)</tooltip>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>112</height>
+      <height>110</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -15511,7 +15511,7 @@ $(pv_value)</tooltip>
         <color name="white" red="255" green="255" blue="255" />
       </background_color>
       <width>1</width>
-      <x>84</x>
+      <x>83</x>
       <name>Polyline_8</name>
       <y>20</y>
       <fill_level>0.0</fill_level>
@@ -15559,8 +15559,8 @@ $(pv_value)</tooltip>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>85</width>
-      <x>0</x>
+      <width>83</width>
+      <x>1</x>
       <name>Arc_13</name>
       <y>3</y>
       <foreground_color>
@@ -16928,6 +16928,69 @@ $(pv_value)</tooltip>
     </actions>
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <border_style>1</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <line_width>1</line_width>
+    <horizontal_fill>true</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <arrows>0</arrows>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-249ec8f1:15e3208a836:-2bae</wuid>
+    <transparent>false</transparent>
+    <points>
+      <point x="640" y="370" />
+      <point x="640" y="401" />
+      <point x="640" y="401" />
+      <point x="669" y="401" />
+      <point x="669" y="370" />
+      <point x="640" y="370" />
+      <point x="640" y="370" />
+      <point x="640" y="370" />
+      <point x="640" y="370" />
+    </points>
+    <fill_arrow>true</fill_arrow>
+    <pv_value />
+    <alpha>255</alpha>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>32</height>
+    <border_width>2</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>melba_010:so:on_get</pv_name>
+    <border_color>
+      <color red="107" green="107" blue="107" />
+    </border_color>
+    <anti_alias>true</anti_alias>
+    <line_style>0</line_style>
+    <arrow_length>20</arrow_length>
+    <widget_type>Polyline</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="30" green="144" blue="255" />
+    </background_color>
+    <width>30</width>
+    <x>640</x>
+    <name>Polyline melba_010:so:on_get</name>
+    <y>370</y>
+    <fill_level>0.0</fill_level>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
   </widget>
 </display>
