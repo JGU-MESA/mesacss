@@ -125,7 +125,7 @@ $(pv_value)</tooltip>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
+      <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <align_to_nearest_second>false</align_to_nearest_second>
     <visible>true</visible>
@@ -3596,7 +3596,7 @@ $(pv_value)</tooltip>
       <alpha>255</alpha>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>31</height>
       <border_width>1</border_width>
       <scale_options>
@@ -3950,7 +3950,7 @@ $(pv_value)</tooltip>
       <alpha>255</alpha>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>37</height>
       <border_width>1</border_width>
       <scale_options>
@@ -4850,7 +4850,7 @@ $(pv_value)</tooltip>
       <alpha>255</alpha>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>22</height>
       <border_width>1</border_width>
       <scale_options>
@@ -4909,7 +4909,7 @@ $(pv_value)</tooltip>
       <alpha>255</alpha>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>22</height>
       <border_width>1</border_width>
       <scale_options>
@@ -5821,7 +5821,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4da0</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -5906,13 +5906,13 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>19</height>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>23</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
         <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
+        <keep_wh_ratio>true</keep_wh_ratio>
       </scale_options>
       <visible>true</visible>
       <pv_name>$(WED):on_get</pv_name>
@@ -5930,7 +5930,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
-      <width>19</width>
+      <width>23</width>
       <x>3</x>
       <name>Rectangle $(WED):on_get</name>
       <y>3</y>
@@ -5957,13 +5957,13 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <rules />
       <enabled>true</enabled>
-      <wuid>-28995ef:15d5a519a9c:-4d9e</wuid>
+      <wuid>-28995ef:15d5a519a9c:-4d9d</wuid>
       <transparent>false</transparent>
       <points>
-        <point x="3" y="21" />
-        <point x="21" y="3" />
-        <point x="21" y="3" />
-        <point x="21" y="3" />
+        <point x="23" y="23" />
+        <point x="5" y="5" />
+        <point x="5" y="5" />
+        <point x="5" y="5" />
       </points>
       <fill_arrow>true</fill_arrow>
       <pv_value />
@@ -5992,9 +5992,9 @@ $(pv_value)</tooltip>
         <color red="0" green="0" blue="255" />
       </background_color>
       <width>19</width>
-      <x>3</x>
-      <name>Polyline_1</name>
-      <y>3</y>
+      <x>5</x>
+      <name>Polyline_7</name>
+      <y>5</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color red="255" green="0" blue="0" />
@@ -6015,13 +6015,13 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <rules />
       <enabled>true</enabled>
-      <wuid>-28995ef:15d5a519a9c:-4d9d</wuid>
+      <wuid>-28995ef:15d5a519a9c:-4d9e</wuid>
       <transparent>false</transparent>
       <points>
-        <point x="21" y="21" />
-        <point x="3" y="3" />
-        <point x="3" y="3" />
-        <point x="3" y="3" />
+        <point x="5" y="23" />
+        <point x="23" y="5" />
+        <point x="23" y="5" />
+        <point x="23" y="5" />
       </points>
       <fill_arrow>true</fill_arrow>
       <pv_value />
@@ -6050,9 +6050,9 @@ $(pv_value)</tooltip>
         <color red="0" green="0" blue="255" />
       </background_color>
       <width>19</width>
-      <x>3</x>
-      <name>Polyline_7</name>
-      <y>3</y>
+      <x>5</x>
+      <name>Polyline_1</name>
+      <y>5</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color red="255" green="0" blue="0" />
@@ -6155,8 +6155,8 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>19</height>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>23</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -6179,10 +6179,10 @@ $(pv_value)</tooltip>
       <background_color>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
-      <width>19</width>
-      <x>3</x>
+      <width>23</width>
+      <x>1</x>
       <name>Rectangle_7</name>
-      <y>3</y>
+      <y>1</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
@@ -6404,8 +6404,8 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>19</height>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>23</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -6428,10 +6428,10 @@ $(pv_value)</tooltip>
       <background_color>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
-      <width>19</width>
-      <x>3</x>
+      <width>23</width>
+      <x>1</x>
       <name>Rectangle_7</name>
-      <y>3</y>
+      <y>1</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
@@ -6592,7 +6592,7 @@ $(pv_value)</tooltip>
     <width>26</width>
     <x>580</x>
     <name>Grouping Container melba_030:trip_q1</name>
-    <y>768</y>
+    <y>766</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -6653,8 +6653,8 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>19</height>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>23</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -6677,7 +6677,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
-      <width>19</width>
+      <width>23</width>
       <x>3</x>
       <name>Rectangle_7</name>
       <y>3</y>
@@ -6707,10 +6707,10 @@ $(pv_value)</tooltip>
       <wuid>-28995ef:15d5a519a9c:-498e</wuid>
       <transparent>false</transparent>
       <points>
-        <point x="3" y="21" />
-        <point x="21" y="3" />
-        <point x="21" y="3" />
-        <point x="21" y="3" />
+        <point x="5" y="23" />
+        <point x="23" y="5" />
+        <point x="23" y="5" />
+        <point x="23" y="5" />
       </points>
       <fill_arrow>true</fill_arrow>
       <pv_value />
@@ -6739,9 +6739,9 @@ $(pv_value)</tooltip>
         <color red="0" green="0" blue="255" />
       </background_color>
       <width>19</width>
-      <x>3</x>
+      <x>5</x>
       <name>Polyline_1</name>
-      <y>3</y>
+      <y>5</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color red="255" green="0" blue="0" />
@@ -6765,10 +6765,10 @@ $(pv_value)</tooltip>
       <wuid>-28995ef:15d5a519a9c:-498d</wuid>
       <transparent>false</transparent>
       <points>
-        <point x="21" y="21" />
-        <point x="3" y="3" />
-        <point x="3" y="3" />
-        <point x="3" y="3" />
+        <point x="23" y="23" />
+        <point x="5" y="5" />
+        <point x="5" y="5" />
+        <point x="5" y="5" />
       </points>
       <fill_arrow>true</fill_arrow>
       <pv_value />
@@ -6797,9 +6797,9 @@ $(pv_value)</tooltip>
         <color red="0" green="0" blue="255" />
       </background_color>
       <width>19</width>
-      <x>3</x>
+      <x>5</x>
       <name>Polyline_7</name>
-      <y>3</y>
+      <y>5</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color red="255" green="0" blue="0" />
@@ -6902,8 +6902,8 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>19</height>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>23</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -6926,10 +6926,10 @@ $(pv_value)</tooltip>
       <background_color>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
-      <width>19</width>
-      <x>3</x>
+      <width>23</width>
+      <x>1</x>
       <name>Rectangle_7</name>
-      <y>3</y>
+      <y>1</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
@@ -7151,8 +7151,8 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>19</height>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>23</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -7175,10 +7175,10 @@ $(pv_value)</tooltip>
       <background_color>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
-      <width>19</width>
-      <x>3</x>
+      <width>23</width>
+      <x>1</x>
       <name>Rectangle_7</name>
-      <y>3</y>
+      <y>1</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
@@ -7400,8 +7400,8 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>19</height>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>23</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -7424,10 +7424,10 @@ $(pv_value)</tooltip>
       <background_color>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
-      <width>19</width>
-      <x>3</x>
+      <width>23</width>
+      <x>1</x>
       <name>Rectangle_7</name>
-      <y>3</y>
+      <y>1</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
@@ -7564,7 +7564,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4926</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -7649,8 +7649,8 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>19</height>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>23</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -7673,10 +7673,10 @@ $(pv_value)</tooltip>
       <background_color>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
-      <width>19</width>
-      <x>3</x>
+      <width>23</width>
+      <x>1</x>
       <name>Rectangle_7</name>
-      <y>3</y>
+      <y>1</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
@@ -7865,7 +7865,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>423aa673:15d5fd64cd6:-59c0</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -7950,8 +7950,8 @@ $(pv_value)</tooltip>
         <color red="255" green="255" blue="255" />
       </bg_gradient_color>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <height>19</height>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <height>23</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -7974,10 +7974,10 @@ $(pv_value)</tooltip>
       <background_color>
         <color name="off" red="192" green="192" blue="192" />
       </background_color>
-      <width>19</width>
-      <x>3</x>
+      <width>23</width>
+      <x>1</x>
       <name>Rectangle_7</name>
-      <y>3</y>
+      <y>1</y>
       <fill_level>0.0</fill_level>
       <foreground_color>
         <color name="Major" red="255" green="0" blue="0" />
@@ -9848,7 +9848,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-137c</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -9927,7 +9927,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-135c</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10006,7 +10006,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-135b</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10084,7 +10084,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-132b</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10163,7 +10163,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1316</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10242,7 +10242,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-12f1</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10320,7 +10320,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-12dd</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10399,7 +10399,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-12cf</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10478,7 +10478,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-12c4</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10557,7 +10557,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-129f</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10636,7 +10636,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1294</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10714,7 +10714,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1282</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10793,7 +10793,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1262</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10871,7 +10871,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1250</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -10949,7 +10949,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1240</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -11027,7 +11027,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1232</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -11105,7 +11105,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1224</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -11183,7 +11183,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1216</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -11262,7 +11262,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-1208</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -11341,7 +11341,7 @@ $(pv_value)</tooltip>
     <wuid>423aa673:15d5fd64cd6:-11fa</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Errors</text>
     <rotation_angle>270.0</rotation_angle>
     <scripts />
@@ -11431,7 +11431,7 @@ $(pv_value)</tooltip>
     <state_value_1>1.0</state_value_1>
     <pv_value />
     <state_value_0>0.0</state_value_0>
-    <height>13</height>
+    <height>16</height>
     <border_width>1</border_width>
     <visible>true</visible>
     <pv_name>melba_020:slit:pos_set</pv_name>
@@ -11456,7 +11456,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </state_color_2>
     <scripts />
-    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -11475,10 +11475,10 @@ $(pv_value)</tooltip>
       <color name="off" red="192" green="192" blue="192" />
     </background_color>
     <square_led>false</square_led>
-    <width>13</width>
-    <x>554</x>
+    <width>16</width>
+    <x>552</x>
     <data_type>0</data_type>
-    <y>457</y>
+    <y>455</y>
     <foreground_color>
       <color red="255" green="0" blue="0" />
     </foreground_color>
@@ -11524,7 +11524,7 @@ $(pv_value)</tooltip>
     <width>122</width>
     <x>24</x>
     <name>Check Box show melba image</name>
-    <y>23</y>
+    <y>33</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -13379,7 +13379,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>1911d35e:15dc22005fb:-524</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>27</height>
     <border_width>1</border_width>
@@ -13905,7 +13905,7 @@ $(pv_value)</tooltip>
       <alpha>255</alpha>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>12</height>
       <border_width>1</border_width>
       <scale_options>
@@ -13964,7 +13964,7 @@ $(pv_value)</tooltip>
       <alpha>255</alpha>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>12</height>
       <border_width>1</border_width>
       <scale_options>
@@ -14353,9 +14353,9 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>58</width>
-    <x>28</x>
+    <x>24</x>
     <name>Text Update</name>
-    <y>52</y>
+    <y>8</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -14457,7 +14457,7 @@ $(pv_value)</tooltip>
       <alpha>255</alpha>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>22</height>
       <border_width>1</border_width>
       <scale_options>
@@ -14516,7 +14516,7 @@ $(pv_value)</tooltip>
       <alpha>255</alpha>
       <rotation_angle>0.0</rotation_angle>
       <scripts />
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <height>22</height>
       <border_width>1</border_width>
       <scale_options>
@@ -16845,5 +16845,89 @@ $(pv_value)</tooltip>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
     </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0 ==0)&amp;&amp;((pv1==0)&amp;&amp;(pv2 == 0)&amp;&amp;(pv3==0)&amp;&amp;(pv4 == 0)&amp;&amp;(pv5==0)&amp;&amp;(pv6==0)&amp;&amp;(pv7==0)&amp;&amp;(pv8==0)&amp;&amp;(pv9==0)&amp;&amp;(pv10==0)&amp;&amp;(pv11==0)&amp;&amp;(pv12==0)&amp;&amp;(pv13==0)&amp;&amp;(pv14==0)&amp;&amp;(pv15==0))">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0 ==0)&amp;&amp;((pv1==1)||(pv2==1)||(pv3==1)||(pv4==1)||(pv5==1)||(pv6==1)||(pv7==1)||(pv8 ==1)||(pv9==1)||(pv10 ==1)||(pv11==1)||(pv12 ==1)||(pv13==1)||(pv14 ==1)||(pv15==1))">
+          <value>
+            <color name="on &amp; failure" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">melba:wedlposu01:on_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_appr_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_groundl_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_overvolt_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_overcurr_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_fan_get</pv>
+        <pv trig="true">melba:wedlposu01:stat--30vsup</pv>
+        <pv trig="true">melba:wedlposu01:stat_+30vsup_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_-5vsup_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_+5vsup_get</pv>
+        <pv trig="true">melba:wedlposu01:stat-phasemoni</pv>
+        <pv trig="true">melba:wedlposu01:stat_tempzdio_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_temprecti_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_watercool_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_tempowcard_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_fusepowcard_get</pv>
+      </rule>
+    </rules>
+    <enabled>true</enabled>
+    <wuid>-249ec8f1:15e3208a836:-7a2a</wuid>
+    <transparent>false</transparent>
+    <auto_size>false</auto_size>
+    <text>Wedlerkiste</text>
+    <scripts />
+    <height>25</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </background_color>
+    <width>90</width>
+    <x>24</x>
+    <name>Label_Wedlerkiste</name>
+    <y>58</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedlerkisten.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
   </widget>
 </display>
