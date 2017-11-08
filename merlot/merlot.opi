@@ -203,7 +203,7 @@
         <wuid>66a00161:15bc30f6918:-7a51</wuid>
         <transparent>true</transparent>
         <auto_size>false</auto_size>
-        <text>Current Value</text>
+        <text>Current Temp</text>
         <scripts />
         <height>25</height>
         <border_width>1</border_width>
@@ -243,7 +243,7 @@
         <wuid>66a00161:15bc30f6918:-7a50</wuid>
         <transparent>true</transparent>
         <auto_size>false</auto_size>
-        <text>Desired Value</text>
+        <text>Desired Temp</text>
         <scripts />
         <height>25</height>
         <border_width>1</border_width>
@@ -680,14 +680,14 @@ $(pv_value)</tooltip>
       </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <opi_file>merlot_channel_template.opi</opi_file>
+      <opi_file>merlot_channel_template_progressbar.opi</opi_file>
       <border_style>3</border_style>
       <tooltip></tooltip>
       <rules />
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-79a4</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -708,7 +708,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
+      <width>2</width>
       <x>133</x>
       <name>Linking Container</name>
       <y>0</y>
@@ -721,14 +721,14 @@ $(pv_value)</tooltip>
       </font>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <opi_file>merlot_channel_template.opi</opi_file>
+      <opi_file>merlot_channel_template_progressbar.opi</opi_file>
       <border_style>3</border_style>
       <tooltip></tooltip>
       <rules />
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-7951</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -749,7 +749,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
+      <width>2</width>
       <x>239</x>
       <name>Linking Container_1</name>
       <y>0</y>
@@ -762,14 +762,14 @@ $(pv_value)</tooltip>
       </font>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <opi_file>merlot_channel_template.opi</opi_file>
+      <opi_file>merlot_channel_template_progressbar.opi</opi_file>
       <border_style>3</border_style>
       <tooltip></tooltip>
       <rules />
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-792e</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -790,7 +790,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
+      <width>2</width>
       <x>345</x>
       <name>Linking Container_2</name>
       <y>0</y>
@@ -803,14 +803,14 @@ $(pv_value)</tooltip>
       </font>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <opi_file>merlot_channel_template.opi</opi_file>
+      <opi_file>merlot_channel_template_progressbar.opi</opi_file>
       <border_style>3</border_style>
       <tooltip></tooltip>
       <rules />
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-78f6</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -831,7 +831,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
+      <width>2</width>
       <x>451</x>
       <name>Linking Container_3</name>
       <y>0</y>
@@ -844,14 +844,14 @@ $(pv_value)</tooltip>
       </font>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <opi_file>merlot_channel_template.opi</opi_file>
+      <opi_file>merlot_channel_template_progressbar.opi</opi_file>
       <border_style>3</border_style>
       <tooltip></tooltip>
       <rules />
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-78c8</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -872,7 +872,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
+      <width>2</width>
       <x>557</x>
       <name>Linking Container_4</name>
       <y>0</y>
@@ -885,14 +885,14 @@ $(pv_value)</tooltip>
       </font>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <opi_file>merlot_channel_template.opi</opi_file>
+      <opi_file>merlot_channel_template_progressbar.opi</opi_file>
       <border_style>3</border_style>
       <tooltip></tooltip>
       <rules />
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-7884</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -913,7 +913,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
+      <width>2</width>
       <x>663</x>
       <name>Linking Container_5</name>
       <y>0</y>
@@ -926,14 +926,14 @@ $(pv_value)</tooltip>
       </font>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <opi_file>merlot_channel_template.opi</opi_file>
+      <opi_file>merlot_channel_template_progressbar.opi</opi_file>
       <border_style>3</border_style>
       <tooltip></tooltip>
       <rules />
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-7863</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -954,7 +954,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
+      <width>2</width>
       <x>769</x>
       <name>Linking Container_6</name>
       <y>0</y>
@@ -967,14 +967,14 @@ $(pv_value)</tooltip>
       </font>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-      <opi_file>merlot_channel_template.opi</opi_file>
+      <opi_file>merlot_channel_template_progressbar.opi</opi_file>
       <border_style>3</border_style>
       <tooltip></tooltip>
       <rules />
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-7842</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -995,7 +995,7 @@ $(pv_value)</tooltip>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
+      <width>2</width>
       <x>875</x>
       <name>Linking Container_7</name>
       <y>0</y>
