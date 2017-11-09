@@ -83,7 +83,7 @@
       <transparent>false</transparent>
       <lock_children>false</lock_children>
       <scripts />
-      <height>355</height>
+      <height>353</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -612,191 +612,63 @@ $(pv_value)</tooltip>
           <fontdata fontName="Segoe UI" height="12" style="0" />
         </font>
       </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-        <border_style>1</border_style>
-        <tooltip></tooltip>
+      <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+        <border_style>0</border_style>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <line_width>0</line_width>
+        <horizontal_fill>true</horizontal_fill>
+        <alarm_pulsing>false</alarm_pulsing>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
         <rules />
         <enabled>true</enabled>
-        <wuid>66eb3ca3:15f923252b9:2d24</wuid>
+        <wuid>43839236:15bc4463c1c:-7bee</wuid>
         <transparent>false</transparent>
-        <lock_children>false</lock_children>
+        <pv_value />
+        <alpha>255</alpha>
+        <bg_gradient_color>
+          <color red="255" green="255" blue="255" />
+        </bg_gradient_color>
         <scripts />
-        <height>38</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <height>39</height>
         <border_width>1</border_width>
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
           <keep_wh_ratio>false</keep_wh_ratio>
         </scale_options>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-        </macros>
         <visible>true</visible>
+        <pv_name></pv_name>
+        <gradient>false</gradient>
         <border_color>
-          <color name="JGURed" red="193" green="0" blue="42" />
+          <color red="0" green="128" blue="255" />
         </border_color>
-        <widget_type>Grouping Container</widget_type>
+        <anti_alias>true</anti_alias>
+        <line_style>0</line_style>
+        <widget_type>Rectangle</widget_type>
+        <fg_gradient_color>
+          <color red="255" green="255" blue="255" />
+        </fg_gradient_color>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
         <background_color>
           <color name="JGULightGray" red="172" green="172" blue="172" />
         </background_color>
-        <width>132</width>
+        <width>130</width>
         <x>0</x>
-        <name>Grouping Container</name>
+        <name>Rectangle</name>
         <y>311</y>
+        <fill_level>0.0</fill_level>
         <foreground_color>
-          <color name="JGULightGray" red="172" green="172" blue="172" />
+          <color red="255" green="0" blue="0" />
         </foreground_color>
         <actions hook="false" hook_all="false" />
-        <fc>false</fc>
-        <show_scrollbar>true</show_scrollbar>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
         </font>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <alarm_pulsing>false</alarm_pulsing>
-          <precision>0</precision>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <horizontal_alignment>1</horizontal_alignment>
-          <rules />
-          <pv_value />
-          <auto_size>false</auto_size>
-          <text></text>
-          <rotation_angle>0.0</rotation_angle>
-          <show_units>true</show_units>
-          <height>35</height>
-          <multiline_input>false</multiline_input>
-          <border_width>1</border_width>
-          <visible>true</visible>
-          <pv_name>loc://targettemp(30)</pv_name>
-          <selector_type>0</selector_type>
-          <border_color>
-            <color name="JGURed" red="193" green="0" blue="42" />
-          </border_color>
-          <precision_from_pv>true</precision_from_pv>
-          <widget_type>Text Input</widget_type>
-          <confirm_message></confirm_message>
-          <name>Text Input</name>
-          <style>0</style>
-          <actions hook="false" hook_all="false" />
-          <border_style>0</border_style>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <enabled>true</enabled>
-          <wuid>66eb3ca3:15f923252b9:2d0b</wuid>
-          <transparent>false</transparent>
-          <scripts />
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <format_type>0</format_type>
-          <limits_from_pv>false</limits_from_pv>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <width>59</width>
-          <x>0</x>
-          <y>0</y>
-          <maximum>300.0</maximum>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <minimum>0.0</minimum>
-          <font>
-            <fontdata fontName="Segoe UI" height="12" style="0" />
-          </font>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-          <toggle_button>false</toggle_button>
-          <border_style>0</border_style>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <alarm_pulsing>false</alarm_pulsing>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <push_action_index>0</push_action_index>
-          <rules />
-          <enabled>true</enabled>
-          <wuid>66eb3ca3:15f923252b9:2d20</wuid>
-          <pv_value />
-          <text>Set all Temp</text>
-          <scripts>
-            <path pathString="EmbeddedPy" checkConnect="false" sfe="true" seoe="true">
-              <scriptName>EmbeddedScript</scriptName>
-              <scriptText><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
-
-value = PVUtil.getDouble(pvs[1])
-
-pvs[2].setValue(value)
-pvs[3].setValue(value)
-pvs[4].setValue(value)
-pvs[5].setValue(value)
-pvs[6].setValue(value)
-pvs[7].setValue(value)
-pvs[8].setValue(value)
-pvs[9].setValue(value)]]></scriptText>
-              <pv trig="true">loc://trigger(0)</pv>
-              <pv trig="false">loc://targettemp</pv>
-              <pv trig="false">$(P)$(R)ch1:SetRampTargetTemp</pv>
-              <pv trig="false">$(P)$(R)ch2:SetRampTargetTemp</pv>
-              <pv trig="false">$(P)$(R)ch3:SetRampTargetTemp</pv>
-              <pv trig="false">$(P)$(R)ch4:SetRampTargetTemp</pv>
-              <pv trig="false">$(P)$(R)ch5:SetRampTargetTemp</pv>
-              <pv trig="false">$(P)$(R)ch6:SetRampTargetTemp</pv>
-              <pv trig="false">$(P)$(R)ch7:SetRampTargetTemp</pv>
-              <pv trig="false">$(P)$(R)ch8:SetRampTargetTemp</pv>
-            </path>
-          </scripts>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <height>35</height>
-          <border_width>1</border_width>
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <image></image>
-          <visible>true</visible>
-          <pv_name>loc://trigger(0)</pv_name>
-          <border_color>
-            <color name="JGURed" red="193" green="0" blue="42" />
-          </border_color>
-          <widget_type>Action Button</widget_type>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="240" green="240" blue="240" />
-          </background_color>
-          <width>69</width>
-          <x>60</x>
-          <name>Action Button</name>
-          <y>0</y>
-          <style>0</style>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <actions hook="false" hook_all="false">
-            <action type="WRITE_PV">
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-              <timeout>10</timeout>
-              <confirm_message>Are you sure you want to override the variables all target temperatures?</confirm_message>
-              <description>Set the target temperature for all channels.</description>
-            </action>
-          </actions>
-          <font>
-            <fontdata fontName="Segoe UI" height="8" style="0" />
-          </font>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
-          <fill_grids>false</fill_grids>
-          <number_of_columns>2</number_of_columns>
-          <wuid>66eb3ca3:15f923252b9:2d2a</wuid>
-          <grid_gap>1</grid_gap>
-          <widget_type>Grid Layout</widget_type>
-          <name>Grid Layout</name>
-        </widget>
+        <line_color>
+          <color red="128" green="0" blue="255" />
+        </line_color>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
         <fill_grids>false</fill_grids>
@@ -815,7 +687,7 @@ pvs[9].setValue(value)]]></scriptText>
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-79a4</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -836,8 +708,8 @@ pvs[9].setValue(value)]]></scriptText>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
-      <x>135</x>
+      <width>2</width>
+      <x>133</x>
       <name>Linking Container</name>
       <y>0</y>
       <foreground_color>
@@ -856,7 +728,7 @@ pvs[9].setValue(value)]]></scriptText>
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-7951</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -877,8 +749,8 @@ pvs[9].setValue(value)]]></scriptText>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
-      <x>241</x>
+      <width>2</width>
+      <x>239</x>
       <name>Linking Container_1</name>
       <y>0</y>
       <foreground_color>
@@ -897,7 +769,7 @@ pvs[9].setValue(value)]]></scriptText>
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-792e</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -918,8 +790,8 @@ pvs[9].setValue(value)]]></scriptText>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
-      <x>347</x>
+      <width>2</width>
+      <x>345</x>
       <name>Linking Container_2</name>
       <y>0</y>
       <foreground_color>
@@ -938,7 +810,7 @@ pvs[9].setValue(value)]]></scriptText>
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-78f6</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -959,8 +831,8 @@ pvs[9].setValue(value)]]></scriptText>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
-      <x>453</x>
+      <width>2</width>
+      <x>451</x>
       <name>Linking Container_3</name>
       <y>0</y>
       <foreground_color>
@@ -979,7 +851,7 @@ pvs[9].setValue(value)]]></scriptText>
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-78c8</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -1000,8 +872,8 @@ pvs[9].setValue(value)]]></scriptText>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
-      <x>559</x>
+      <width>2</width>
+      <x>557</x>
       <name>Linking Container_4</name>
       <y>0</y>
       <foreground_color>
@@ -1020,7 +892,7 @@ pvs[9].setValue(value)]]></scriptText>
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-7884</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -1041,8 +913,8 @@ pvs[9].setValue(value)]]></scriptText>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
-      <x>665</x>
+      <width>2</width>
+      <x>663</x>
       <name>Linking Container_5</name>
       <y>0</y>
       <foreground_color>
@@ -1061,7 +933,7 @@ pvs[9].setValue(value)]]></scriptText>
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-7863</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -1082,8 +954,8 @@ pvs[9].setValue(value)]]></scriptText>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
-      <x>771</x>
+      <width>2</width>
+      <x>769</x>
       <name>Linking Container_6</name>
       <y>0</y>
       <foreground_color>
@@ -1102,7 +974,7 @@ pvs[9].setValue(value)]]></scriptText>
       <enabled>true</enabled>
       <wuid>66a00161:15bc30f6918:-7842</wuid>
       <scripts />
-      <height>355</height>
+      <height>2</height>
       <border_width>1</border_width>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -1123,8 +995,8 @@ pvs[9].setValue(value)]]></scriptText>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <width>104</width>
-      <x>877</x>
+      <width>2</width>
+      <x>875</x>
       <name>Linking Container_7</name>
       <y>0</y>
       <foreground_color>
