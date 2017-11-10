@@ -151,9 +151,9 @@ $(pv_value)</tooltip>
       </row>
     </permutation_matrix>
     <width>823</width>
-    <x>7</x>
+    <x>26</x>
     <name>Image melba_simple</name>
-    <y>8</y>
+    <y>0</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -4817,6 +4817,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <pv_name>melba_030:pv</pv_name>
+          <GAUGE>melba_030:gauge</GAUGE>
         </macros>
         <replace>2</replace>
         <description></description>
@@ -5851,7 +5852,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>wedler_with_wobbel.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q1</WED>
@@ -6568,7 +6569,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4990</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -12444,7 +12445,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>82</width>
+    <width>96</width>
     <x>690</x>
     <name>Label_16</name>
     <y>939</y>
@@ -14424,6 +14425,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <pv_name>melba_060:pv</pv_name>
+          <GAUGE>melba_060:gauge</GAUGE>
         </macros>
         <replace>2</replace>
         <description></description>
@@ -15147,7 +15149,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>4cc33365:15e04198038:-6e44</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>152</height>
     <border_width>1</border_width>
