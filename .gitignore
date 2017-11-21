@@ -17,3 +17,6 @@ Thumbs.db
 !*.txt
 !*.def
 !*.py
+
+#Ignore the .project-files, otherwise there'll be conflicts in the local CSS
+.project
