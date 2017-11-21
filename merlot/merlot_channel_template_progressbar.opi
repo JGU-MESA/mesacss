@@ -223,28 +223,28 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <rules>
       <rule name="Change color depending on PV" prop_id="fill_color" out_exp="false">
-        <exp bool_exp="pv1&gt;1.1*pv0 &amp;&amp; pv2 == 1">
+        <exp bool_exp="pv1&gt;=pv0 &amp;&amp; pv2 == 1">
           <value>
             <color name="Minor" red="255" green="128" blue="0" />
           </value>
         </exp>
-        <exp bool_exp="pv1&gt;1.1*pv0 &amp;&amp; pv2 == 0">
+        <exp bool_exp="pv1&gt;=pv0 &amp;&amp; pv2 == 0">
           <value>
             <color name="Major" red="255" green="0" blue="0" />
           </value>
         </exp>
-        <exp bool_exp="pv1&lt; 1.1*pv0 &amp;&amp; pv2 == 1">
+        <exp bool_exp="pv1&lt; pv0 &amp;&amp; pv2 == 1">
           <value>
             <color name="Blue" red="0" green="0" blue="255" />
           </value>
         </exp>
-        <exp bool_exp="pv1&lt; 1.1*pv0 &amp;&amp; pv2 == 0">
+        <exp bool_exp="pv1&lt; pv0 &amp;&amp; pv2 == 0">
           <value>
             <color name="Header Background" red="94" green="151" blue="230" />
           </value>
         </exp>
-        <pv trig="true">$(P)$(R)ch$(ch):t_set</pv>
-        <pv trig="true">$(P)$(R)ch$(ch):t_get</pv>
+        <pv trig="false">$(P)$(R)ch$(ch):t_set</pv>
+        <pv trig="false">$(P)$(R)ch$(ch):t_get</pv>
         <pv trig="true">sim://flipflop(1)</pv>
       </rule>
     </rules>
