@@ -12,8 +12,11 @@ sp1_low_set_1PV  = sp1_low_set_1.getPV()
 sp2_high_set_1PV = sp2_high_set_1.getPV()
 sp2_low_set_1PV  = sp2_low_set_1.getPV()
 
+#ConsoleUtil.writeInfo(str(sp1_high_set_1PV.getValue()))
+#ConsoleUtil.writeInfo(str(sp2_high_set_1PV.getValue()))
+
 #first check pneuval PV connection
-if (sp1_high_set_1PV.getValue()):
+if ((sp1_high_set_1PV.getValue()) or (sp2_high_set_1PV.getValue())):
     label_gauge_sp1_high_set_2 = display.getWidget("Label_gauge_sp1_high_set_2")
     label_gauge_sp1_low_set_2  = display.getWidget("Label_gauge_sp1_low_set_2")
     label_gauge_sp2_high_set_2 = display.getWidget("Label_gauge_sp2_high_set_2")
@@ -40,10 +43,7 @@ if (sp1_high_set_1PV.getValue()):
     on_set_2PV     = on_set_2.getPV()
     loc_on_set_2PV = loc_on_set_2.getPV()
     
-    p_get   = display.getWidget("Text_Update_p_get")
-    p_getPV = p_get.getPV()
-    
-    ConsoleUtil.writeInfo("-----Orig thresholds-----")
+    ConsoleUtil.writeInfo("-----Original setpoints-----")
     #remember the original thresholds
     if ((sp1_high_set_1PV.getValue()) and (sp1_low_set_1PV.getValue())):
         sp1_high_set_orig = PVUtil.getDouble(sp1_high_set_1PV)
@@ -57,7 +57,7 @@ if (sp1_high_set_1PV.getValue()):
         ConsoleUtil.writeInfo(str(sp2_high_set_orig))
         ConsoleUtil.writeInfo(str(sp2_low_set_orig))
        
-    ConsoleUtil.writeInfo("-----New thresholds-----")
+    ConsoleUtil.writeInfo("-----New setpoints-----")
     if ((loc_sp1_high_set_1.getValue()) and (loc_sp1_low_set_1.getValue())):   
         ConsoleUtil.writeInfo(PVUtil.getString(loc_sp1_high_set_1PV))
         ConsoleUtil.writeInfo(PVUtil.getString(loc_sp1_low_set_1PV))
@@ -65,63 +65,68 @@ if (sp1_high_set_1PV.getValue()):
         ConsoleUtil.writeInfo(PVUtil.getString(loc_sp2_high_set_1PV))
         ConsoleUtil.writeInfo(PVUtil.getString(loc_sp2_low_set_1PV))   
     
-    #Labels for the input fields to set the orig thresholds
+    #Labels for the input fields to set the orig thresholds (reset)
     label_sp1_high_low = display.getWidget("Label_gauge_sp1_high_set_low")
     label_sp1_low_low  = display.getWidget("Label_gauge_sp1_low_set_low")
     label_sp2_high_low = display.getWidget("Label_gauge_sp2_high_set_low")
     label_sp2_low_low  = display.getWidget("Label_gauge_sp2_low_set_low")
     
-    #input fields to set the orig thresholds
-    loc_input_sp1_high_low = display.getWidget("Text_Input_gauge_sp1_high_set_low")
-    loc_input_sp1_low_low  = display.getWidget("Text_Input_gauge_sp1_low_set_low")
-    loc_input_sp2_high_low = display.getWidget("Text_Input_gauge_sp2_high_set_low")
-    loc_input_sp2_low_low  = display.getWidget("Text_Input_gauge_sp2_low_set_low")
+    #input fields to set the orig thresholds (reset)
+    loc_input_sp1_high_low = display.getWidget("Text_Update_gauge_sp1_high_set_low")
+    loc_input_sp1_low_low  = display.getWidget("Text_Update_gauge_sp1_low_set_low")
+    loc_input_sp2_high_low = display.getWidget("Text_Update_gauge_sp2_high_set_low")
+    loc_input_sp2_low_low  = display.getWidget("Text_Update_gauge_sp2_low_set_low")
+    
+    loc_input_sp1_high_lowPV = loc_input_sp1_high_low.getPV()
+    loc_input_sp1_low_lowPV  = loc_input_sp1_low_low.getPV()
+    loc_input_sp2_high_lowPV = loc_input_sp2_high_low.getPV()
+    loc_input_sp2_low_lowPV  = loc_input_sp2_low_low.getPV()
     
     #write old values to loc vars and new thresholds to PVs
-    if ((loc_sp1_high_set_1.getValue()) and (loc_sp1_low_set_1.getValue())): 
-        loc_input_sp1_high_low.setValue(sp1_high_set_orig)
-        loc_input_sp1_low_low.setValue(sp1_low_set_orig)
+    #if ((PVUtil.getDouble(loc_sp1_high_set_1PV) != 0.0) and (PVUtil.getDouble(loc_sp1_low_set_1PV != 0.0)):
+    if ((PVUtil.getString(loc_sp1_high_set_1PV) != '0.0') and (PVUtil.getString(loc_sp1_low_set_1PV) != '0.0')):
+        loc_input_sp1_high_lowPV.setValue(sp1_high_set_orig)
+        loc_input_sp1_low_lowPV.setValue(sp1_low_set_orig)
         sp1_high_set_1PV.setValue(PVUtil.getDouble(loc_sp1_high_set_1PV))
         sp1_low_set_1PV.setValue(PVUtil.getDouble(loc_sp1_low_set_1PV))
-    if ((loc_sp2_high_set_1.getValue()) and (loc_sp2_low_set_1.getValue())):
-        loc_input_sp2_high_low.setValue(sp2_high_set_orig)
-        loc_input_sp2_low_low.setValue(sp2_low_set_orig)
-        sp2_high_set_1PV.setValue(PVUtil.getDouble(loc_sp2_high_set_1PV))
-        sp2_low_set_1PV.setValue(PVUtil.getDouble(loc_sp2_low_set_1PV))  
-    
-    #ConsoleUtil.writeInfo("-----loc_on_setPV-----")
-    #loc_on = PVUtil.getLong(loc_on_setPV)
-    #ConsoleUtil.writeInfo(str(loc_on))
-    #ConsoleUtil.writeInfo(PVUtil.getString(loc_on_setPV))
-    on_set_1PV.setValue(PVUtil.getString(loc_on_set_1PV))
-    on_set_2PV.setValue(PVUtil.getString(loc_on_set_2PV)) 
-    ConsoleUtil.writeInfo("-----on_set_1-----")
-    ConsoleUtil.writeInfo(PVUtil.getString(on_set_1PV))
-    ConsoleUtil.writeInfo("-----on_set_2-----")
-    ConsoleUtil.writeInfo(PVUtil.getString(on_set_2PV)) 
-       
-    p_get.setVisible(True)  
-    
-    if ((loc_sp1_high_set_1.getValue()) and (loc_sp1_low_set_1.getValue())):
         label_sp1_high_low.setVisible(True)
         label_sp1_low_low.setVisible(True)
         loc_input_sp1_high_low.setVisible(True)
         loc_input_sp1_low_low.setVisible(True)
-    if ((loc_sp2_high_set_1.getValue()) and (loc_sp2_low_set_1.getValue())):   
+        if (PVUtil.getString(loc_on_set_1PV) == '1.0'):
+            #ConsoleUtil.writeInfo("-----loc_on_set_1-----")
+            #ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_1PV))
+            on_set_1PV.setValue(PVUtil.getString(loc_on_set_1PV))
+        else:
+            ConsoleUtil.writeInfo("You have forgotten to switch on $PNEUVAL1.")
+            ConsoleUtil.writeInfo("Close valve.opi and try again!")
+   
+    if ((PVUtil.getString(loc_sp2_high_set_1PV) != '0.0') and (PVUtil.getString(loc_sp2_low_set_1PV) != '0.0')):
+        loc_input_sp2_high_lowPV.setValue(sp2_high_set_orig)
+        loc_input_sp2_low_lowPV.setValue(sp2_low_set_orig)
+        sp2_high_set_1PV.setValue(PVUtil.getDouble(loc_sp2_high_set_1PV))
+        sp2_low_set_1PV.setValue(PVUtil.getDouble(loc_sp2_low_set_1PV)) 
         label_sp2_high_low.setVisible(True)
         label_sp2_low_low.setVisible(True)
         loc_input_sp2_high_low.setVisible(True)
-        loc_input_sp2_low_low.setVisible(True)   
-        
+        loc_input_sp2_low_low.setVisible(True) 
+        if (PVUtil.getString(loc_on_set_2PV) == '1.0'):
+            #ConsoleUtil.writeInfo("-----loc_on_set_2-----")
+            #ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_2PV)) 
+            on_set_2PV.setValue(PVUtil.getString(loc_on_set_2PV)) 
+        else:
+            ConsoleUtil.writeInfo("You have forgotten to switch on $PNEUVAL2.")
+            ConsoleUtil.writeInfo("Close valve.opi and try again!")  
 
-if (sp1_high_set_1PV.getValue()):
-    action = display.getWidget("Action Button")
-    blink  = display.getWidget("blink_action")
-    action.setVisible(False)       
+    blink  = display.getWidget("Text_Update_blink")
     blink.setVisible(True)
-    if (sp1_high_set_1PV.getValue()):
-        action_gauge_reset = display.getWidget("action_gauge_reset")
-        action_gauge_reset.setVisible(True)
+    action_reset = display.getWidget("Action_Button_reset")
+    action_reset.setVisible(True)
+    label_orig = display.getWidget("Label_original_setpoints")
+    label_orig.setVisible(True)
+    
+else:
+    ConsoleUtil.writeInfo("PVs are disconnected!")
     
     
  
