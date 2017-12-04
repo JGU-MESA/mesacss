@@ -1,254 +1,304 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
-  <show_close_button>true</show_close_button>
-  <rules />
-  <wuid>-2986a657:15f7c6799ed:-7f2c</wuid>
-  <show_grid>true</show_grid>
-  <auto_zoom_to_fit_all>true</auto_zoom_to_fit_all>
-  <scripts />
-  <height>500</height>
-  <macros>
-    <include_parent_macros>true</include_parent_macros>
-  </macros>
-  <boy_version>4.0.103.201506301920</boy_version>
-  <show_edit_range>true</show_edit_range>
-  <widget_type>Display</widget_type>
+  <actions hook="false" hook_all="false" />
   <auto_scale_widgets>
     <auto_scale_widgets>true</auto_scale_widgets>
     <min_width>-1</min_width>
     <min_height>-1</min_height>
   </auto_scale_widgets>
+  <auto_zoom_to_fit_all>true</auto_zoom_to_fit_all>
   <background_color>
     <color red="240" green="240" blue="240" />
   </background_color>
-  <width>800</width>
-  <x>-1</x>
-  <name></name>
-  <grid_space>6</grid_space>
-  <show_ruler>true</show_ruler>
-  <y>-1</y>
-  <snap_to_geometry>true</snap_to_geometry>
+  <boy_version>5.1.0.201707071649</boy_version>
   <foreground_color>
     <color red="192" green="192" blue="192" />
   </foreground_color>
-  <actions hook="false" hook_all="false" />
+  <grid_space>6</grid_space>
+  <height>500</height>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <name></name>
+  <rules />
+  <scripts />
+  <show_close_button>true</show_close_button>
+  <show_edit_range>true</show_edit_range>
+  <show_grid>true</show_grid>
+  <show_ruler>true</show_ruler>
+  <snap_to_geometry>true</snap_to_geometry>
+  <widget_type>Display</widget_type>
+  <width>510</width>
+  <wuid>-2986a657:15f7c6799ed:-7f2c</wuid>
+  <x>-1</x>
+  <y>-1</y>
   <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
+    <actions hook="false" hook_all="false" />
     <alarm_pulsing>true</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <rules />
-    <effect_3d>true</effect_3d>
-    <scale_font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </scale_font>
-    <horizontal>true</horizontal>
-    <pv_value />
-    <show_scale>true</show_scale>
-    <scale_format></scale_format>
-    <show_label>true</show_label>
-    <height>205</height>
-    <fill_color>
-      <color name="JGURed" red="193" green="0" blue="42" />
-    </fill_color>
-    <border_width>1</border_width>
-    <value_label_format></value_label_format>
-    <visible>true</visible>
-    <pv_name>steam_prep:lock_gauge:p_get</pv_name>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
     <border_color>
       <color name="JGUDarkGray" red="99" green="99" blue="99" />
     </border_color>
-    <widget_type>Progress Bar</widget_type>
-    <name>Text Update</name>
-    <show_hi>true</show_hi>
-    <actions hook="false" hook_all="false" />
-    <show_lo>true</show_lo>
     <border_style>0</border_style>
-    <show_lolo>true</show_lolo>
-    <show_minor_ticks>true</show_minor_ticks>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_markers>true</show_markers>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <origin>0.0</origin>
-    <show_hihi>true</show_hihi>
-    <log_scale>true</log_scale>
-    <enabled>true</enabled>
-    <wuid>-2986a657:15f7c6799ed:-7dd1</wuid>
-    <indicator_mode>false</indicator_mode>
-    <level_hihi>90.0</level_hihi>
-    <origin_ignored>true</origin_ignored>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
+    <border_width>1</border_width>
     <color_fillbackground>
       <color red="200" green="200" blue="200" />
     </color_fillbackground>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <level_hi>80.0</level_hi>
-    <transparent_background>true</transparent_background>
-    <level_lo>20.0</level_lo>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <limits_from_pv>false</limits_from_pv>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <level_lolo>10.0</level_lolo>
-    <width>799</width>
-    <x>0</x>
-    <y>0</y>
-    <maximum>1.0</maximum>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <minimum>1.0E-9</minimum>
-    <font>
-      <fontdata fontName="Segoe UI" height="48" style="0" />
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.meter" version="1.0.0">
-    <alarm_pulsing>true</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <rules />
-    <scale_font>
-      <fontdata fontName="Segoe UI" height="36" style="0" />
-    </scale_font>
-    <pv_value />
-    <show_scale>true</show_scale>
-    <scale_format></scale_format>
-    <height>257</height>
-    <border_width>1</border_width>
-    <value_label_format></value_label_format>
-    <visible>true</visible>
-    <show_value_label>true</show_value_label>
-    <pv_name>steam:peaktech2025:value_get</pv_name>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>Meter</widget_type>
-    <name>Text Update_1</name>
-    <show_hi>true</show_hi>
-    <actions hook="false" hook_all="false" />
-    <show_lo>true</show_lo>
-    <border_style>0</border_style>
-    <show_lolo>true</show_lolo>
-    <show_minor_ticks>true</show_minor_ticks>
-    <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
-    <show_markers>true</show_markers>
+    <color_hi>
+      <color red="255" green="128" blue="0" />
+    </color_hi>
     <color_hihi>
       <color red="255" green="0" blue="0" />
     </color_hihi>
-    <show_hihi>true</show_hihi>
-    <log_scale>false</log_scale>
-    <enabled>true</enabled>
-    <wuid>-2986a657:15f7c6799ed:-7dc7</wuid>
-    <level_hihi>10.0</level_hihi>
-    <color_hi>
-      <color red="255" green="255" blue="0" />
-    </color_hi>
-    <ramp_gradient>true</ramp_gradient>
     <color_lo>
-      <color name="Green" red="0" green="255" blue="0" />
+      <color red="255" green="128" blue="0" />
     </color_lo>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <level_hi>5.0</level_hi>
-    <level_lo>1.5</level_lo>
-    <needle_color>
-      <color name="JGURed" red="193" green="0" blue="42" />
-    </needle_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <limits_from_pv>false</limits_from_pv>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <level_lolo>1.0</level_lolo>
-    <width>564</width>
-    <x>0</x>
-    <y>206</y>
-    <maximum>10.0</maximum>
     <color_lolo>
-      <color name="Off Green" red="0" green="100" blue="0" />
+      <color red="255" green="0" blue="0" />
     </color_lolo>
+    <effect_3d>true</effect_3d>
+    <enabled>true</enabled>
+    <fill_color>
+      <color name="JGURed" red="193" green="0" blue="42" />
+    </fill_color>
+    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
+    <font>
+      <fontdata fontName="Segoe UI" height="48" style="0" pixels="false" />
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <minimum>0.0</minimum>
-    <font>
-      <fontdata fontName="Segoe UI" height="48" style="0" />
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-    <border_style>0</border_style>
-    <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
-    <alarm_pulsing>true</alarm_pulsing>
-    <precision>0</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>-2986a657:15f7c6799ed:-7d59</wuid>
-    <transparent>false</transparent>
+    <height>205</height>
+    <horizontal>true</horizontal>
+    <indicator_mode>false</indicator_mode>
+    <level_hi>80.0</level_hi>
+    <level_hihi>90.0</level_hihi>
+    <level_lo>20.0</level_lo>
+    <level_lolo>10.0</level_lolo>
+    <limits_from_pv>false</limits_from_pv>
+    <log_scale>true</log_scale>
+    <major_tick_step_hint>50</major_tick_step_hint>
+    <maximum>1.0</maximum>
+    <minimum>1.0E-9</minimum>
+    <name>Text Update</name>
+    <origin>0.0</origin>
+    <origin_ignored>true</origin_ignored>
+    <pv_name>steam_prep:lock_gauge:p_get</pv_name>
     <pv_value />
-    <auto_size>false</auto_size>
-    <text>######</text>
-    <rotation_angle>0.0</rotation_angle>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <show_units>true</show_units>
-    <height>258</height>
-    <border_width>1</border_width>
+    <rules />
+    <scale_font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </scale_font>
+    <scale_format></scale_format>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
+    <scripts />
+    <show_hi>true</show_hi>
+    <show_hihi>true</show_hihi>
+    <show_label>true</show_label>
+    <show_lo>true</show_lo>
+    <show_lolo>true</show_lolo>
+    <show_markers>true</show_markers>
+    <show_minor_ticks>true</show_minor_ticks>
+    <show_scale>true</show_scale>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent_background>true</transparent_background>
+    <value_label_format></value_label_format>
     <visible>true</visible>
-    <pv_name>steam:peaktech2025:value_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <widget_type>Progress Bar</widget_type>
+    <width>500</width>
+    <wuid>-2986a657:15f7c6799ed:-7dd1</wuid>
+    <x>0</x>
+    <y>0</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <precision_from_pv>true</precision_from_pv>
-    <widget_type>Text Update</widget_type>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <wrap_words>true</wrap_words>
-    <format_type>0</format_type>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <width>218</width>
-    <x>570</x>
-    <name>Text Update_2</name>
-    <y>206</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fc>false</fc>
     <font>
-      <fontdata fontName="Segoe UI" height="48" style="0" />
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>258</height>
+    <lock_children>true</lock_children>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <name>Grouping Container</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <tooltip></tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Grouping Container</widget_type>
+    <width>500</width>
+    <wuid>3755dcc8:15fdf398aa6:-737b</wuid>
+    <x>0</x>
+    <y>206</y>
+    <widget typeId="org.csstudio.opibuilder.widgets.gauge" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>true</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <color_hi>
+        <color red="255" green="255" blue="0" />
+      </color_hi>
+      <color_hihi>
+        <color red="255" green="0" blue="0" />
+      </color_hihi>
+      <color_lo>
+        <color name="Green" red="0" green="255" blue="0" />
+      </color_lo>
+      <color_lolo>
+        <color name="Off Green" red="0" green="100" blue="0" />
+      </color_lolo>
+      <effect_3d>true</effect_3d>
+      <enabled>true</enabled>
+      <font>
+        <fontdata fontName="Segoe UI" height="48" style="0" pixels="false" />
+      </font>
+      <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>246</height>
+      <level_hi>5.0</level_hi>
+      <level_hihi>10.0</level_hihi>
+      <level_lo>1.5</level_lo>
+      <level_lolo>1.0</level_lolo>
+      <limits_from_pv>false</limits_from_pv>
+      <log_scale>false</log_scale>
+      <major_tick_step_hint>50</major_tick_step_hint>
+      <maximum>10.0</maximum>
+      <minimum>0.0</minimum>
+      <name>Text Update_1</name>
+      <needle_color>
+        <color name="JGURed" red="193" green="0" blue="42" />
+      </needle_color>
+      <pv_name>steam:peaktech2025:value_get</pv_name>
+      <pv_value />
+      <ramp_gradient>true</ramp_gradient>
+      <rules />
+      <scale_font>
+        <fontdata fontName="Segoe UI" height="36" style="0" pixels="false" />
+      </scale_font>
+      <scale_format></scale_format>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_hi>true</show_hi>
+      <show_hihi>true</show_hihi>
+      <show_lo>true</show_lo>
+      <show_lolo>true</show_lolo>
+      <show_markers>true</show_markers>
+      <show_minor_ticks>true</show_minor_ticks>
+      <show_scale>true</show_scale>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <transparent_background>true</transparent_background>
+      <value_label_format></value_label_format>
+      <visible>true</visible>
+      <widget_type>Gauge</widget_type>
+      <width>246</width>
+      <wuid>-2986a657:15f7c6799ed:-7dc7</wuid>
+      <x>0</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>true</alarm_pulsing>
+      <auto_size>false</auto_size>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <fontdata fontName="Segoe UI" height="48" style="0" pixels="false" />
+      </font>
+      <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <format_type>0</format_type>
+      <height>258</height>
+      <horizontal_alignment>0</horizontal_alignment>
+      <name>Text Update_2</name>
+      <precision>0</precision>
+      <precision_from_pv>true</precision_from_pv>
+      <pv_name>steam:peaktech2025:value_get</pv_name>
+      <pv_value />
+      <rotation_angle>0.0</rotation_angle>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_units>true</show_units>
+      <text>######</text>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Text Update</widget_type>
+      <width>243</width>
+      <wrap_words>true</wrap_words>
+      <wuid>-2986a657:15f7c6799ed:-7d59</wuid>
+      <x>253</x>
+      <y>0</y>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
+    <fill_grids>false</fill_grids>
+    <grid_gap>1</grid_gap>
+    <name>Grid Layout</name>
+    <number_of_columns>1</number_of_columns>
+    <widget_type>Grid Layout</widget_type>
+    <wuid>3755dcc8:15fdf398aa6:-7374</wuid>
   </widget>
 </display>
