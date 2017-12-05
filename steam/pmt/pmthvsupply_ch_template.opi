@@ -50,7 +50,7 @@
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>20</height>
+    <height>30</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label</name>
     <rules />
@@ -66,7 +66,7 @@
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>119</width>
+    <width>150</width>
     <wrap_words>false</wrap_words>
     <wuid>25d80c1a:160122cc22b:-7e53</wuid>
     <x>0</x>
@@ -118,11 +118,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>119</width>
+    <width>150</width>
     <wrap_words>false</wrap_words>
     <wuid>25d80c1a:160122cc22b:-7e50</wuid>
     <x>0</x>
-    <y>22</y>
+    <y>32</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -146,7 +146,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <format_type>1</format_type>
+    <format_type>2</format_type>
     <height>30</height>
     <horizontal_alignment>2</horizontal_alignment>
     <name>Text Update_1</name>
@@ -170,11 +170,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>119</width>
+    <width>150</width>
     <wrap_words>false</wrap_words>
     <wuid>25d80c1a:160122cc22b:-7e4e</wuid>
     <x>0</x>
-    <y>54</y>
+    <y>64</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -203,8 +203,8 @@ $(pv_value)</tooltip>
     <horizontal_alignment>2</horizontal_alignment>
     <horizontal_buttons_layout>false</horizontal_buttons_layout>
     <limits_from_pv>true</limits_from_pv>
-    <maximum>Infinity</maximum>
-    <minimum>-Infinity</minimum>
+    <maximum>1.7976931348623157E308</maximum>
+    <minimum>-1.7976931348623157E308</minimum>
     <name>Text Update_2</name>
     <page_increment>10.0</page_increment>
     <precision>0</precision>
@@ -226,35 +226,50 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Spinner</widget_type>
-    <width>119</width>
+    <width>150</width>
     <wuid>25d80c1a:160122cc22b:-7c16</wuid>
     <x>0</x>
-    <y>86</y>
+    <y>96</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-    <actions hook="false" hook_all="false" />
+  <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
     <border_style>0</border_style>
     <border_width>1</border_width>
     <enabled>true</enabled>
-    <fc>false</fc>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      <fontdata fontName="Segoe UI" height="12" style="0" pixels="false" />
     </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color red="192" green="192" blue="192" />
+      <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>31</height>
-    <lock_children>false</lock_children>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-    </macros>
-    <name>Grouping Container</name>
+    <height>30</height>
+    <horizontal>true</horizontal>
+    <items>
+      <s>0 V</s>
+      <s>1000 V</s>
+    </items>
+    <items_from_pv>false</items_from_pv>
+    <name>Set U 0V</name>
+    <pv_name>$(P)$(R)u_set</pv_name>
+    <pv_value />
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -262,131 +277,17 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <show_scrollbar>false</show_scrollbar>
-    <tooltip></tooltip>
-    <transparent>false</transparent>
+    <selected_color>
+      <color red="255" green="255" blue="255" />
+    </selected_color>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     <visible>true</visible>
-    <widget_type>Grouping Container</widget_type>
-    <width>119</width>
-    <wuid>25d80c1a:160122cc22b:-6bfd</wuid>
+    <widget_type>Choice Button</widget_type>
+    <width>150</width>
+    <wuid>25d80c1a:160122cc22b:-7e24</wuid>
     <x>0</x>
-    <y>118</y>
-    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-      <actions hook="false" hook_all="false">
-        <action type="WRITE_PV">
-          <pv_name>$(pv_name)</pv_name>
-          <value>0</value>
-          <timeout>10</timeout>
-          <confirm_message></confirm_message>
-          <description></description>
-        </action>
-      </actions>
-      <alarm_pulsing>false</alarm_pulsing>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <fontdata fontName="Segoe UI" height="12" style="0" pixels="false" />
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>30</height>
-      <image></image>
-      <name>Set U 0V</name>
-      <push_action_index>0</push_action_index>
-      <pv_name>$(P)$(R)u_set</pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <style>0</style>
-      <text>0 V</text>
-      <toggle_button>false</toggle_button>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <visible>true</visible>
-      <widget_type>Action Button</widget_type>
-      <width>58</width>
-      <wuid>25d80c1a:160122cc22b:-7e24</wuid>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-      <actions hook="false" hook_all="false">
-        <action type="WRITE_PV">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1000</value>
-          <timeout>10</timeout>
-          <confirm_message>Set Channel $(CH) to 1kV?</confirm_message>
-          <description></description>
-        </action>
-      </actions>
-      <alarm_pulsing>false</alarm_pulsing>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <fontdata fontName="Segoe UI" height="12" style="0" pixels="false" />
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>30</height>
-      <image></image>
-      <name>Set U 1kV</name>
-      <push_action_index>0</push_action_index>
-      <pv_name>$(P)$(R)u_set</pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <style>0</style>
-      <text>1000 V</text>
-      <toggle_button>false</toggle_button>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <visible>true</visible>
-      <widget_type>Action Button</widget_type>
-      <width>58</width>
-      <wuid>25d80c1a:160122cc22b:-7e4d</wuid>
-      <x>59</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
-      <fill_grids>true</fill_grids>
-      <grid_gap>1</grid_gap>
-      <name>Grid Layout</name>
-      <number_of_columns>2</number_of_columns>
-      <widget_type>Grid Layout</widget_type>
-      <wuid>25d80c1a:160122cc22b:-6b5c</wuid>
-    </widget>
+    <y>128</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -441,10 +342,10 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>LED</widget_type>
-    <width>119</width>
+    <width>150</width>
     <wuid>25d80c1a:160122cc22b:-7dff</wuid>
     <x>0</x>
-    <y>151</y>
+    <y>160</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -503,12 +404,12 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Boolean Button</widget_type>
-    <width>119</width>
+    <width>150</width>
     <wuid>25d80c1a:160122cc22b:-71d6</wuid>
     <x>0</x>
-    <y>183</y>
+    <y>192</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <alarm_pulsing>false</alarm_pulsing>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
@@ -530,6 +431,7 @@ $(pv_value)</tooltip>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <height>27</height>
+    <horizontal>true</horizontal>
     <items_from_pv>true</items_from_pv>
     <name>Combo</name>
     <pv_name>$(P)$(R)range_set</pv_name>
@@ -541,17 +443,28 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
+    <selected_color>
+      <color name="JGURed" red="193" green="0" blue="42" />
+    </selected_color>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <visible>true</visible>
-    <widget_type>Combo</widget_type>
-    <width>119</width>
+    <widget_type>Choice Button</widget_type>
+    <width>150</width>
     <wuid>25d80c1a:160122cc22b:-6e0c</wuid>
     <x>0</x>
-    <y>215</y>
+    <y>224</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
-    <actions hook="false" hook_all="false" />
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
     <alarm_pulsing>false</alarm_pulsing>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
@@ -565,16 +478,17 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      <fontdata fontName="Segoe UI" height="12" style="0" pixels="false" />
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>27</height>
-    <items_from_pv>true</items_from_pv>
+    <height>30</height>
+    <image></image>
     <name>Combo_1</name>
-    <pv_name>$(P)$(R)autozero_set</pv_name>
+    <push_action_index>0</push_action_index>
+    <pv_name>$(P)$(R)zero_set</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -583,17 +497,28 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
+    <style>0</style>
+    <text>Set Zero</text>
+    <toggle_button>false</toggle_button>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <visible>true</visible>
-    <widget_type>Combo</widget_type>
-    <width>119</width>
+    <widget_type>Action Button</widget_type>
+    <width>150</width>
     <wuid>25d80c1a:160122cc22b:-6d14</wuid>
     <x>0</x>
-    <y>244</y>
+    <y>253</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
-    <actions hook="false" hook_all="false" />
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
     <alarm_pulsing>false</alarm_pulsing>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
@@ -607,16 +532,17 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      <fontdata fontName="Segoe UI" height="12" style="0" pixels="false" />
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>27</height>
-    <items_from_pv>true</items_from_pv>
+    <height>30</height>
+    <image></image>
     <name>Combo_2</name>
-    <pv_name>$(P)$(R)resetzero_set</pv_name>
+    <push_action_index>0</push_action_index>
+    <pv_name>$(P)$(R)zero_reset</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -625,14 +551,17 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
+    <style>0</style>
+    <text>Reset Zero</text>
+    <toggle_button>false</toggle_button>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <visible>true</visible>
-    <widget_type>Combo</widget_type>
-    <width>119</width>
+    <widget_type>Action Button</widget_type>
+    <width>150</width>
     <wuid>25d80c1a:160122cc22b:-6d0f</wuid>
     <x>0</x>
-    <y>273</y>
+    <y>285</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
     <fill_grids>true</fill_grids>
