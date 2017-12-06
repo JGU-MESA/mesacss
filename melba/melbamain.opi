@@ -5823,7 +5823,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4da0</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -17589,7 +17589,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>301f7d47:15fde222a31:-76ad</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -17600,6 +17600,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <macros>
       <include_parent_macros>true</include_parent_macros>
+      <LIGHT>steam_prep:light</LIGHT>
     </macros>
     <visible>true</visible>
     <border_color>
@@ -17616,7 +17617,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>lights.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <LIGHT>steam_prep:light</LIGHT>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>false</show_scrollbar>
     <font>
@@ -17635,6 +17646,11 @@ $(pv_value)</tooltip>
           <exp bool_exp="pv0==1">
             <value>
               <color name="on &amp; okay" red="0" green="255" blue="0" />
+            </value>
+          </exp>
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <pv trig="true">steam_prep:light:on_set</pv>
@@ -17803,7 +17819,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>301f7d47:15fde222a31:-7667</wuid>
     <transparent>false</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -17814,6 +17830,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <macros>
       <include_parent_macros>true</include_parent_macros>
+      <LIGHT>melba_020:scan:light</LIGHT>
     </macros>
     <visible>true</visible>
     <border_color>
@@ -17830,7 +17847,17 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>lights.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <LIGHT>melba_020:scan_light</LIGHT>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>false</fc>
     <show_scrollbar>false</show_scrollbar>
     <font>
@@ -17849,6 +17876,11 @@ $(pv_value)</tooltip>
           <exp bool_exp="pv0==1">
             <value>
               <color name="on &amp; okay" red="0" green="255" blue="0" />
+            </value>
+          </exp>
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <pv trig="true">melba_020:scan_light:on_set</pv>
@@ -19360,7 +19392,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-75d6464b:16002e38a62:-75f</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>37</height>
     <border_width>1</border_width>
@@ -19424,13 +19456,7 @@ $(pv_value)</tooltip>
               <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; (pvSAtr1!=&quot;Running&quot;)">
-            <value>
-              <color name="on &amp; failure" red="255" green="0" blue="0" />
-            </value>
-          </exp>
           <pv trig="true">$(PUMP):on_get</pv>
-          <pv trig="true">$(PUMP):stat_get</pv>
         </rule>
       </rules>
       <enabled>true</enabled>
@@ -19681,14 +19707,14 @@ $(pv_value)</tooltip>
     </background_color>
     <width>12</width>
     <x>194</x>
-    <name>Grouping Container_melba020scancam</name>
+    <name>Grouping Container_melba050scancam</name>
     <y>676</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_WEBPAGE">
-        <hyperlink>http://10.32.240.83 </hyperlink>
+        <hyperlink>http://10.32.240.86</hyperlink>
         <description></description>
       </action>
     </actions>
@@ -20029,18 +20055,18 @@ $(pv_value)</tooltip>
     </background_color>
     <width>41</width>
     <x>540</x>
-    <name>Grouping Container_27</name>
+    <name>Grouping Container_steam_laser</name>
     <y>327</y>
     <foreground_color>
       <color name="displaybackground" red="240" green="240" blue="240" />
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>../mesacss-github/laser50/laser50.opi</path>
+        <path>../laser50/laser50.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
-        <replace>1</replace>
+        <replace>2</replace>
         <description></description>
       </action>
     </actions>
@@ -20560,6 +20586,220 @@ $(pv_value)</tooltip>
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip>Use Microsoft Edge to open an url for the camera!</tooltip>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-7eca26e3:160259943ff:-16ce</wuid>
+    <transparent>true</transparent>
+    <lock_children>false</lock_children>
+    <scripts />
+    <height>31</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Grouping Container</widget_type>
+    <background_color>
+      <color name="no PV-name given" red="255" green="255" blue="0" />
+    </background_color>
+    <width>12</width>
+    <x>467</x>
+    <name>Grouping Container_melba020scancam_2</name>
+    <y>349</y>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_WEBPAGE">
+        <hyperlink>http://10.32.240.82</hyperlink>
+        <description></description>
+      </action>
+    </actions>
+    <fc>true</fc>
+    <show_scrollbar>false</show_scrollbar>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip>Use Microsoft Edge to open an url for the camera!</tooltip>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-7eca26e3:160259943ff:-169a</wuid>
+    <transparent>true</transparent>
+    <lock_children>true</lock_children>
+    <scripts />
+    <height>29</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Grouping Container</widget_type>
+    <background_color>
+      <color name="no PV-name given" red="255" green="255" blue="0" />
+    </background_color>
+    <width>30</width>
+    <x>448</x>
+    <name>Grouping Container_steamprepcam01</name>
+    <y>345</y>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_WEBPAGE">
+        <hyperlink>http://10.32.240.80</hyperlink>
+        <description></description>
+      </action>
+    </actions>
+    <fc>true</fc>
+    <show_scrollbar>false</show_scrollbar>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
+      <border_style>0</border_style>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <line_width>1</line_width>
+      <horizontal_fill>true</horizontal_fill>
+      <alarm_pulsing>false</alarm_pulsing>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <rules />
+      <enabled>true</enabled>
+      <wuid>-7eca26e3:160259943ff:-1699</wuid>
+      <transparent>false</transparent>
+      <points>
+        <point x="17" y="4" />
+        <point x="25" y="12" />
+        <point x="8" y="28" />
+        <point x="0" y="20" />
+        <point x="17" y="4" />
+        <point x="17" y="4" />
+        <point x="17" y="4" />
+      </points>
+      <pv_value />
+      <alpha>255</alpha>
+      <rotation_angle>45.0</rotation_angle>
+      <scripts />
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <height>25</height>
+      <border_width>1</border_width>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <visible>true</visible>
+      <pv_name></pv_name>
+      <border_color>
+        <color name="black" red="0" green="0" blue="0" />
+      </border_color>
+      <anti_alias>true</anti_alias>
+      <line_style>0</line_style>
+      <widget_type>Polygon</widget_type>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color name="no PV-name given" red="255" green="255" blue="0" />
+      </background_color>
+      <width>26</width>
+      <x>0</x>
+      <name>Polygon_7</name>
+      <y>4</y>
+      <fill_level>0.0</fill_level>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <actions hook="false" hook_all="false" />
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <line_color>
+        <color name="white" red="255" green="255" blue="255" />
+      </line_color>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
+      <border_style>0</border_style>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <line_width>1</line_width>
+      <horizontal_fill>true</horizontal_fill>
+      <alarm_pulsing>false</alarm_pulsing>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <rules />
+      <enabled>true</enabled>
+      <wuid>-7eca26e3:160259943ff:-1698</wuid>
+      <transparent>false</transparent>
+      <points>
+        <point x="23" y="0" />
+        <point x="29" y="7" />
+        <point x="22" y="9" />
+        <point x="20" y="7" />
+        <point x="23" y="0" />
+        <point x="23" y="0" />
+        <point x="23" y="0" />
+      </points>
+      <pv_value />
+      <alpha>255</alpha>
+      <rotation_angle>45.0</rotation_angle>
+      <scripts />
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <height>10</height>
+      <border_width>1</border_width>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <visible>true</visible>
+      <pv_name></pv_name>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <anti_alias>true</anti_alias>
+      <line_style>0</line_style>
+      <widget_type>Polygon</widget_type>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color name="no PV-name given" red="255" green="255" blue="0" />
+      </background_color>
+      <width>10</width>
+      <x>20</x>
+      <name>Polygon_6</name>
+      <y>0</y>
+      <fill_level>0.0</fill_level>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <actions hook="false" hook_all="false" />
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      </font>
+      <line_color>
+        <color name="white" red="255" green="255" blue="255" />
+      </line_color>
     </widget>
   </widget>
 </display>
