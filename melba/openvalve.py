@@ -94,9 +94,9 @@ if ((sp1_high_set_1PV.getValue()) or (sp2_high_set_1PV.getValue())):
         loc_input_sp1_high_low.setVisible(True)
         loc_input_sp1_low_low.setVisible(True)
         if (PVUtil.getString(loc_on_set_1PV) == '1.0'):
-            #ConsoleUtil.writeInfo("-----loc_on_set_1-----")
-            #ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_1PV))
             on_set_1PV.setValue(PVUtil.getString(loc_on_set_1PV))
+            ConsoleUtil.writeInfo("-----loc_on_set_1-----")
+            ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_1PV))
         else:
             ConsoleUtil.writeInfo("You have forgotten to switch on $PNEUVAL1.")
             ConsoleUtil.writeInfo("Close valve.opi and try again!")
@@ -111,9 +111,9 @@ if ((sp1_high_set_1PV.getValue()) or (sp2_high_set_1PV.getValue())):
         loc_input_sp2_high_low.setVisible(True)
         loc_input_sp2_low_low.setVisible(True) 
         if (PVUtil.getString(loc_on_set_2PV) == '1.0'):
-            #ConsoleUtil.writeInfo("-----loc_on_set_2-----")
-            #ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_2PV)) 
             on_set_2PV.setValue(PVUtil.getString(loc_on_set_2PV)) 
+            ConsoleUtil.writeInfo("-----loc_on_set_2-----")
+            ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_2PV)) 
         else:
             ConsoleUtil.writeInfo("You have forgotten to switch on $PNEUVAL2.")
             ConsoleUtil.writeInfo("Close valve.opi and try again!")  
