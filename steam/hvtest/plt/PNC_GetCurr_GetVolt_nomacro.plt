@@ -45,7 +45,7 @@
             <use_trace_names>true</use_trace_names>
             <right>false</right>
             <color>
-                <red>0</red>
+                <red>1</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
@@ -72,38 +72,36 @@
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
         </axis>
+        <axis>
+            <visible>true</visible>
+            <name>Pressure in mbar</name>
+            <use_axis_name>false</use_axis_name>
+            <use_trace_names>true</use_trace_names>
+            <right>true</right>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>1</blue>
+            </color>
+            <min>1.0E-12</min>
+            <max>1.0E-8</max>
+            <grid>false</grid>
+            <autoscale>false</autoscale>
+            <log_scale>true</log_scale>
+        </axis>
     </axes>
     <annotations>
     </annotations>
     <pvlist>
         <pv>
-            <display_name>PS Voltage</display_name>
-            <visible>true</visible>
-            <name>$(P)$(R)u_get</name>
-            <axis>0</axis>
-            <color>
-                <red>255</red>
-                <green>0</green>
-                <blue>0</blue>
-            </color>
-            <trace_type>AREA</trace_type>
-            <linewidth>2</linewidth>
-            <point_type>NONE</point_type>
-            <point_size>2</point_size>
-            <waveform_index>0</waveform_index>
-            <period>0.0</period>
-            <ring_size>100000</ring_size>
-            <request>OPTIMIZED</request>
-        </pv>
-        <pv>
             <display_name>PS Current</display_name>
             <visible>true</visible>
-            <name>$(P)$(R)i_get</name>
+            <name>steam:hv:i_get</name>
             <axis>1</axis>
             <color>
-                <red>0</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>255</red>
+                <green>165</green>
+                <blue>0</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
@@ -120,9 +118,9 @@
             <name>steam_prep:riesling_sl:i_get</name>
             <axis>2</axis>
             <color>
-                <red>128</red>
-                <green>0</green>
-                <blue>128</blue>
+                <red>0</red>
+                <green>128</green>
+                <blue>0</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
@@ -132,6 +130,54 @@
             <period>0.0</period>
             <ring_size>100000</ring_size>
             <request>OPTIMIZED</request>
+        </pv>
+        <pv>
+            <display_name>steam:gauge:p_get</display_name>
+            <visible>true</visible>
+            <name>steam:gauge:p_get</name>
+            <axis>3</axis>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>255</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <linewidth>2</linewidth>
+            <point_type>NONE</point_type>
+            <point_size>2</point_size>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
+        </pv>
+        <pv>
+            <display_name>PS Voltage</display_name>
+            <visible>true</visible>
+            <name>steam:hv:u_get</name>
+            <axis>0</axis>
+            <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <linewidth>2</linewidth>
+            <point_type>NONE</point_type>
+            <point_size>2</point_size>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>100000</ring_size>
+            <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
     </pvlist>
 </databrowser>
