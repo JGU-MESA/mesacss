@@ -16,38 +16,38 @@
         <green>255</green>
         <blue>255</blue>
     </background>
-    <title_font>Segoe UI|13|1</title_font>
-    <label_font>Segoe UI|9|1</label_font>
-    <scale_font>Segoe UI|8|0</scale_font>
-    <legend_font>Segoe UI|8|0</legend_font>
+    <title_font>Segoe UI|16|1</title_font>
+    <label_font>Segoe UI|14|1</label_font>
+    <scale_font>Segoe UI|14|0</scale_font>
+    <legend_font>Segoe UI|12|0</legend_font>
     <axes>
         <axis>
             <visible>true</visible>
-            <name>Current[nA]</name>
+            <name>Current</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>false</use_trace_names>
             <right>true</right>
             <color>
-                <red>255</red>
+                <red>1</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>1.0</min>
-            <max>10000.0</max>
+            <min>1.0E-9</min>
+            <max>2.0</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Pressure[mbar]</name>
+            <name>Pressure</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>false</use_trace_names>
             <right>false</right>
             <color>
                 <red>0</red>
                 <green>0</green>
-                <blue>0</blue>
+                <blue>1</blue>
             </color>
             <min>1.0E-11</min>
             <max>1.0E-6</max>
@@ -60,14 +60,14 @@
     </annotations>
     <pvlist>
         <pv>
-            <display_name>steam:nextorr:p_get</display_name>
+            <display_name>steam_prep:pump:p_get</display_name>
             <visible>true</visible>
-            <name>steam:nextorr:p_get</name>
+            <name>steam_prep:pump:p_get</name>
             <axis>1</axis>
             <color>
                 <red>0</red>
                 <green>0</green>
-                <blue>0</blue>
+                <blue>255</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
@@ -77,11 +77,16 @@
             <period>0.0</period>
             <ring_size>50000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>Epics Archiver</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
-            <display_name>steam:riesling:i_get</display_name>
+            <display_name>steam_prep:riesling_sl:i_get</display_name>
             <visible>true</visible>
-            <name>steam:riesling:i_get</name>
+            <name>steam_prep:riesling_sl:i_get</name>
             <axis>0</axis>
             <color>
                 <red>255</red>
@@ -96,6 +101,11 @@
             <period>0.0</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>Epics Archiver</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
     </pvlist>
 </databrowser>

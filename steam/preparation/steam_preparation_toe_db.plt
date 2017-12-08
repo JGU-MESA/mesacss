@@ -8,7 +8,7 @@
     <scroll>true</scroll>
     <update_period>1.0</update_period>
     <scroll_step>5</scroll_step>
-    <start>-30 minutes 0.0 seconds</start>
+    <start>-1 hour</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -16,10 +16,10 @@
         <green>255</green>
         <blue>255</blue>
     </background>
-    <title_font>Segoe UI|13|1</title_font>
-    <label_font>Segoe UI|9|1</label_font>
-    <scale_font>Segoe UI|8|0</scale_font>
-    <legend_font>Segoe UI|8|0</legend_font>
+    <title_font>Segoe UI|16|1</title_font>
+    <label_font>Segoe UI|14|1</label_font>
+    <scale_font>Segoe UI|14|0</scale_font>
+    <legend_font>Segoe UI|12|0</legend_font>
     <axes>
         <axis>
             <visible>true</visible>
@@ -28,9 +28,9 @@
             <use_trace_names>true</use_trace_names>
             <right>false</right>
             <color>
-                <red>193</red>
+                <red>0</red>
                 <green>0</green>
-                <blue>42</blue>
+                <blue>0</blue>
             </color>
             <min>0.0</min>
             <max>10.0</max>
@@ -62,7 +62,7 @@
         <pv>
             <display_name>Dispenser</display_name>
             <visible>true</visible>
-            <name>steam:toe_disp:i_get</name>
+            <name>steam_prep:toe_disp:i_get</name>
             <axis>0</axis>
             <color>
                 <red>255</red>
@@ -77,11 +77,16 @@
             <period>0.0</period>
             <ring_size>50000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>Epics Archiver</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
             <display_name>Fillament</display_name>
             <visible>true</visible>
-            <name>steam:toe_glueh:i_get</name>
+            <name>steam_prep:toe_glueh:i_get</name>
             <axis>0</axis>
             <color>
                 <red>0</red>
@@ -96,11 +101,16 @@
             <period>0.0</period>
             <ring_size>50000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>Epics Archiver</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
             <display_name>Dispenser Power</display_name>
             <visible>true</visible>
-            <name>steam:toe_disp:power_get</name>
+            <name>steam_prep:toe_disp:pow_get</name>
             <axis>1</axis>
             <color>
                 <red>255</red>
@@ -115,11 +125,16 @@
             <period>0.0</period>
             <ring_size>50000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>Epics Archiver</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
             <display_name>Fillament Power</display_name>
             <visible>true</visible>
-            <name>steam:toe_glueh:power_get</name>
+            <name>steam_prep:toe_glueh:pow_get</name>
             <axis>1</axis>
             <color>
                 <red>128</red>
@@ -134,6 +149,11 @@
             <period>0.0</period>
             <ring_size>50000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>Epics Archiver</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
     </pvlist>
 </databrowser>
