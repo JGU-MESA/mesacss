@@ -1,218 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
-  <show_close_button>true</show_close_button>
-  <rules />
-  <wuid>-7b99c6f9:15d93cfdb2b:-7e25</wuid>
-  <show_grid>true</show_grid>
-  <auto_zoom_to_fit_all>true</auto_zoom_to_fit_all>
-  <scripts />
-  <height>55</height>
-  <macros>
-    <include_parent_macros>true</include_parent_macros>
-  </macros>
-  <boy_version>4.0.103.201506301920</boy_version>
-  <show_edit_range>true</show_edit_range>
-  <widget_type>Display</widget_type>
+  <actions hook="false" hook_all="false" />
   <auto_scale_widgets>
     <auto_scale_widgets>true</auto_scale_widgets>
     <min_width>-1</min_width>
     <min_height>-1</min_height>
   </auto_scale_widgets>
+  <auto_zoom_to_fit_all>true</auto_zoom_to_fit_all>
   <background_color>
     <color red="240" green="240" blue="240" />
   </background_color>
-  <width>550</width>
-  <x>-1</x>
-  <name></name>
-  <grid_space>6</grid_space>
-  <show_ruler>true</show_ruler>
-  <y>-1</y>
-  <snap_to_geometry>true</snap_to_geometry>
+  <boy_version>5.1.0.201707071649</boy_version>
   <foreground_color>
     <color red="192" green="192" blue="192" />
   </foreground_color>
-  <actions hook="false" hook_all="false" />
+  <grid_space>6</grid_space>
+  <height>55</height>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <name></name>
+  <rules />
+  <scripts />
+  <show_close_button>true</show_close_button>
+  <show_edit_range>true</show_edit_range>
+  <show_grid>true</show_grid>
+  <show_ruler>true</show_ruler>
+  <snap_to_geometry>true</snap_to_geometry>
+  <widget_type>Display</widget_type>
+  <width>550</width>
+  <wuid>-7b99c6f9:15d93cfdb2b:-7e25</wuid>
+  <x>-1</x>
+  <y>-1</y>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <border_style>0</border_style>
-    <tooltip></tooltip>
-    <horizontal_alignment>1</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>-7b99c6f9:15d93cfdb2b:-7dff</wuid>
-    <transparent>false</transparent>
+    <actions hook="false" hook_all="false" />
     <auto_size>false</auto_size>
-    <text>$(PV_name)</text>
-    <scripts />
-    <height>25</height>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>Label</widget_type>
-    <wrap_words>true</wrap_words>
     <background_color>
       <color red="172" green="172" blue="172" />
     </background_color>
-    <width>199</width>
-    <x>0</x>
-    <name>Label</name>
-    <y>0</y>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <show_scrollbar>false</show_scrollbar>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
-    <border_style>3</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <alarm_pulsing>false</alarm_pulsing>
-    <precision>3</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <horizontal_alignment>1</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>-7b99c6f9:15d93cfdb2b:-7dfe</wuid>
-    <transparent>false</transparent>
-    <pv_value />
-    <scripts />
-    <buttons_on_left>false</buttons_on_left>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
     <height>25</height>
-    <border_width>1</border_width>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label</name>
+    <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <visible>true</visible>
-    <pv_name>$(P)$(R)$(PV_set)</pv_name>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>$(PV_name) in $(EGU)</text>
+    <tooltip></tooltip>
+    <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
-    <format>0</format>
-    <horizontal_buttons_layout>false</horizontal_buttons_layout>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <precision_from_pv>false</precision_from_pv>
-    <widget_type>Spinner</widget_type>
-    <step_increment>1.0</step_increment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>199</width>
+    <wrap_words>true</wrap_words>
+    <wuid>-7b99c6f9:15d93cfdb2b:-7dff</wuid>
+    <x>0</x>
+    <y>0</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <limits_from_pv>true</limits_from_pv>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <page_increment>10.0</page_increment>
-    <width>199</width>
-    <x>0</x>
-    <name>Spinner</name>
-    <y>25</y>
-    <maximum>1.7976931348623157E308</maximum>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <minimum>-1.7976931348623157E308</minimum>
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
-    <alarm_pulsing>true</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <rules />
-    <effect_3d>true</effect_3d>
-    <scale_font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </scale_font>
-    <horizontal>true</horizontal>
-    <pv_value />
-    <show_scale>true</show_scale>
-    <scale_format></scale_format>
-    <show_label>false</show_label>
-    <height>50</height>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
-    <border_width>1</border_width>
-    <value_label_format></value_label_format>
-    <visible>true</visible>
-    <pv_name>$(P)$(R)$(PV_get)</pv_name>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <widget_type>Progress Bar</widget_type>
-    <name>Progress Bar</name>
-    <show_hi>true</show_hi>
-    <actions hook="false" hook_all="false" />
-    <show_lo>false</show_lo>
-    <border_style>0</border_style>
-    <show_lolo>false</show_lolo>
-    <show_minor_ticks>true</show_minor_ticks>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_markers>false</show_markers>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <origin>0.0</origin>
-    <show_hihi>true</show_hihi>
-    <log_scale>true</log_scale>
+    <border_style>3</border_style>
+    <border_width>1</border_width>
+    <buttons_on_left>false</buttons_on_left>
     <enabled>true</enabled>
-    <wuid>-7b99c6f9:15d93cfdb2b:-7dfd</wuid>
-    <indicator_mode>false</indicator_mode>
-    <level_hihi>90.0</level_hihi>
-    <origin_ignored>true</origin_ignored>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <format>0</format>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_buttons_layout>false</horizontal_buttons_layout>
+    <limits_from_pv>true</limits_from_pv>
+    <maximum>1.7976931348623157E308</maximum>
+    <minimum>-1.7976931348623157E308</minimum>
+    <name>Spinner</name>
+    <page_increment>10.0</page_increment>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>$(P)$(R)$(PV_set)</pv_name>
+    <pv_value />
+    <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
-    <color_fillbackground>
-      <color red="200" green="200" blue="200" />
-    </color_fillbackground>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <level_hi>80.0</level_hi>
-    <transparent_background>true</transparent_background>
-    <level_lo>20.0</level_lo>
+    <scripts />
+    <show_text>true</show_text>
+    <step_increment>1.0</step_increment>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Spinner</widget_type>
+    <width>199</width>
+    <wuid>-7b99c6f9:15d93cfdb2b:-7dfe</wuid>
+    <x>0</x>
+    <y>25</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>true</alarm_pulsing>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <limits_from_pv>true</limits_from_pv>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <level_lolo>10.0</level_lolo>
-    <width>343</width>
-    <x>198</x>
-    <y>0</y>
-    <maximum>100.0</maximum>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <color_fillbackground>
+      <color red="200" green="200" blue="200" />
+    </color_fillbackground>
+    <color_hi>
+      <color red="255" green="128" blue="0" />
+    </color_hi>
+    <color_hihi>
+      <color red="255" green="0" blue="0" />
+    </color_hihi>
+    <color_lo>
+      <color red="255" green="128" blue="0" />
+    </color_lo>
     <color_lolo>
       <color red="255" green="0" blue="0" />
     </color_lolo>
+    <effect_3d>true</effect_3d>
+    <enabled>true</enabled>
+    <fill_color>
+      <color red="0" green="0" blue="255" />
+    </fill_color>
+    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <height>50</height>
+    <horizontal>true</horizontal>
+    <indicator_mode>false</indicator_mode>
+    <level_hi>80.0</level_hi>
+    <level_hihi>90.0</level_hihi>
+    <level_lo>20.0</level_lo>
+    <level_lolo>10.0</level_lolo>
+    <limits_from_pv>true</limits_from_pv>
+    <log_scale>true</log_scale>
+    <major_tick_step_hint>50</major_tick_step_hint>
+    <maximum>100.0</maximum>
     <minimum>0.0</minimum>
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
+    <name>Progress Bar</name>
+    <origin>0.0</origin>
+    <origin_ignored>true</origin_ignored>
+    <pv_name>$(P)$(R)$(PV_get)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </scale_font>
+    <scale_format></scale_format>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_hi>true</show_hi>
+    <show_hihi>true</show_hihi>
+    <show_label>true</show_label>
+    <show_lo>false</show_lo>
+    <show_lolo>false</show_lolo>
+    <show_markers>false</show_markers>
+    <show_minor_ticks>true</show_minor_ticks>
+    <show_scale>true</show_scale>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent_background>true</transparent_background>
+    <value_label_format></value_label_format>
+    <visible>true</visible>
+    <widget_type>Progress Bar</widget_type>
+    <width>343</width>
+    <wuid>-7b99c6f9:15d93cfdb2b:-7dfd</wuid>
+    <x>198</x>
+    <y>0</y>
   </widget>
 </display>
