@@ -6,7 +6,7 @@
   <show_grid>true</show_grid>
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <scripts />
-  <height>420</height>
+  <height>320</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
@@ -85,7 +85,7 @@ $(pv_value)</tooltip>
     <wuid>-a5d1172:15a8f9359c0:-7c3d</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Value</text>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
@@ -104,7 +104,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <precision_from_pv>true</precision_from_pv>
+    <precision_from_pv>false</precision_from_pv>
     <widget_type>Text Update</widget_type>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <wrap_words>false</wrap_words>
@@ -112,10 +112,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>43</width>
+    <width>100</width>
     <x>162</x>
     <name>Text Update $(GAUGE):p_get</name>
-    <y>354</y>
+    <y>264</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -155,99 +155,7 @@ $(pv_value)</tooltip>
     <width>121</width>
     <x>30</x>
     <name>Label p_get</name>
-    <y>354</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-    <border_style>1</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <alarm_pulsing>false</alarm_pulsing>
-    <precision>0</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>-a5d1172:15a8f9359c0:-78ea</wuid>
-    <transparent>false</transparent>
-    <pv_value />
-    <auto_size>true</auto_size>
-    <text>Value</text>
-    <rotation_angle>0.0</rotation_angle>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <show_units>true</show_units>
-    <height>25</height>
-    <border_width>2</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <pv_name>$(GAUGE):ReadSensorOn</pv_name>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <precision_from_pv>true</precision_from_pv>
-    <widget_type>Text Update</widget_type>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <wrap_words>false</wrap_words>
-    <format_type>1</format_type>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <width>43</width>
-    <x>162</x>
-    <name>Text Update $(GAUGE):ReadSensorOn</name>
-    <y>138</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <border_style>1</border_style>
-    <tooltip></tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>-a5d1172:15a8f9359c0:-78e9</wuid>
-    <transparent>false</transparent>
-    <auto_size>false</auto_size>
-    <text>ReadSensorOn	</text>
-    <scripts />
-    <height>25</height>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color name="black" red="0" green="0" blue="0" />
-    </border_color>
-    <widget_type>Label</widget_type>
-    <wrap_words>false</wrap_words>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <width>121</width>
-    <x>30</x>
-    <name>Label ReadSensorOn</name>
-    <y>138</y>
+    <y>264</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -271,9 +179,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <points>
       <point x="12" y="12" />
-      <point x="12" y="411" />
-      <point x="12" y="411" />
-      <point x="351" y="411" />
+      <point x="12" y="311" />
+      <point x="12" y="311" />
+      <point x="351" y="311" />
       <point x="351" y="12" />
       <point x="12" y="12" />
       <point x="12" y="12" />
@@ -286,7 +194,7 @@ $(pv_value)</tooltip>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>400</height>
+    <height>300</height>
     <border_width>2</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -328,7 +236,7 @@ $(pv_value)</tooltip>
     <wuid>1b6e8b21:15d50bd59e4:-7e22</wuid>
     <transparent>false</transparent>
     <auto_size>false</auto_size>
-    <text>Status</text>
+    <text>stat_get</text>
     <scripts />
     <height>25</height>
     <border_width>1</border_width>
@@ -350,7 +258,7 @@ $(pv_value)</tooltip>
     <width>121</width>
     <x>30</x>
     <name>Label Status</name>
-    <y>174</y>
+    <y>84</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -372,7 +280,7 @@ $(pv_value)</tooltip>
     <wuid>1b6e8b21:15d50bd59e4:-7e12</wuid>
     <transparent>false</transparent>
     <pv_value />
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <text>Value</text>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
@@ -386,7 +294,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>$(GAUGE):Status</pv_name>
+    <pv_name>$(GAUGE):stat_get</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -399,50 +307,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>43</width>
+    <width>100</width>
     <x>162</x>
-    <name>Text Update $(GAUGE):Status</name>
-    <y>174</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <border_style>1</border_style>
-    <tooltip></tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>8fc7b63:15dd00c860b:-70a7</wuid>
-    <transparent>false</transparent>
-    <auto_size>false</auto_size>
-    <text>SetSensorOn</text>
-    <scripts />
-    <height>25</height>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color name="black" red="0" green="0" blue="0" />
-    </border_color>
-    <widget_type>Label</widget_type>
-    <wrap_words>false</wrap_words>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <width>121</width>
-    <x>30</x>
-    <name>Label SetSensorOn</name>
-    <y>72</y>
+    <name>Text Update $(GAUGE):stat_get</name>
+    <y>84</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -482,7 +350,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>$(GAUGE):SetSensorOn</pv_name>
+    <pv_name>$(GAUGE):on_set</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -497,10 +365,10 @@ $(pv_value)</tooltip>
     </background_color>
     <boolean_label_position>0</boolean_label_position>
     <width>40</width>
-    <x>162</x>
-    <name>Text Update $(GAUGE):SetSensorOn</name>
+    <x>264</x>
+    <name>Text Update $(GAUGE):on_set</name>
     <data_type>0</data_type>
-    <y>72</y>
+    <y>18</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -542,7 +410,7 @@ $(pv_value)</tooltip>
     <width>121</width>
     <x>30</x>
     <name>Label sp1_high_set</name>
-    <y>210</y>
+    <y>120</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -582,7 +450,7 @@ $(pv_value)</tooltip>
     <width>121</width>
     <x>30</x>
     <name>Label sp1_low_set</name>
-    <y>246</y>
+    <y>156</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -622,7 +490,7 @@ $(pv_value)</tooltip>
     <width>121</width>
     <x>30</x>
     <name>Label sp2_high_set</name>
-    <y>282</y>
+    <y>192</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -662,7 +530,7 @@ $(pv_value)</tooltip>
     <width>121</width>
     <x>30</x>
     <name>Label sp2_low_set</name>
-    <y>318</y>
+    <y>228</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -718,12 +586,12 @@ $(pv_value)</tooltip>
     </background_color>
     <width>100</width>
     <x>162</x>
-    <y>210</y>
-    <maximum>Infinity</maximum>
+    <y>120</y>
+    <maximum>1.7976931348623157E308</maximum>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <minimum>-Infinity</minimum>
+    <minimum>-1.7976931348623157E308</minimum>
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
     </font>
@@ -775,7 +643,7 @@ $(pv_value)</tooltip>
     </background_color>
     <width>100</width>
     <x>162</x>
-    <y>282</y>
+    <y>192</y>
     <maximum>1.7976931348623157E308</maximum>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -832,7 +700,7 @@ $(pv_value)</tooltip>
     </background_color>
     <width>100</width>
     <x>162</x>
-    <y>318</y>
+    <y>228</y>
     <maximum>1.7976931348623157E308</maximum>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -889,7 +757,7 @@ $(pv_value)</tooltip>
     </background_color>
     <width>100</width>
     <x>162</x>
-    <y>246</y>
+    <y>156</y>
     <maximum>1.7976931348623157E308</maximum>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -898,5 +766,59 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
     </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <pv_value />
+    <height>18</height>
+    <border_width>1</border_width>
+    <visible>true</visible>
+    <pv_name>$(GAUGE):on_get</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>LED</widget_type>
+    <name>LED $(GAUGE):on_get</name>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <enabled>true</enabled>
+    <wuid>-249ec8f1:15e3208a836:-5815</wuid>
+    <on_color>
+      <color name="on &amp; okay" red="0" green="255" blue="0" />
+    </on_color>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <on_label>ON</on_label>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <off_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </off_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <square_led>false</square_led>
+    <width>18</width>
+    <x>42</x>
+    <data_type>0</data_type>
+    <y>36</y>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
   </widget>
 </display>
