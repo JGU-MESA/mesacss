@@ -33,15 +33,15 @@ if ((sp1_high_set_1PV.getValue()) or (sp2_high_set_1PV.getValue())):
     loc_sp2_high_set_1PV = loc_sp2_high_set_1.getPV()
     loc_sp2_low_set_1PV  = loc_sp2_low_set_1.getPV()
     
-    on_set_1     = display.getWidget("Boolean_Switch_on_set_pneuval1")
-    loc_on_set_1 = display.getWidget("Boolean_Switch_on_set_pneuval1_loc")
-    on_set_2     = display.getWidget("Boolean_Switch_on_set_pneuval2")
-    loc_on_set_2 = display.getWidget("Boolean_Switch_on_set_pneuval2_loc")
+    #on_set_1     = display.getWidget("Boolean_Switch_on_set_pneuval1")
+    #loc_on_set_1 = display.getWidget("Boolean_Switch_on_set_pneuval1_loc")
+    #on_set_2     = display.getWidget("Boolean_Switch_on_set_pneuval2")
+    #loc_on_set_2 = display.getWidget("Boolean_Switch_on_set_pneuval2_loc")
     
-    on_set_1PV     = on_set_1.getPV()
-    loc_on_set_1PV = loc_on_set_1.getPV()
-    on_set_2PV     = on_set_2.getPV()
-    loc_on_set_2PV = loc_on_set_2.getPV()
+    #on_set_1PV     = on_set_1.getPV()
+    #loc_on_set_1PV = loc_on_set_1.getPV()
+    #on_set_2PV     = on_set_2.getPV()
+    #loc_on_set_2PV = loc_on_set_2.getPV()
     
     ConsoleUtil.writeInfo("-----Original setpoints-----")
     #remember the original thresholds
@@ -93,15 +93,16 @@ if ((sp1_high_set_1PV.getValue()) or (sp2_high_set_1PV.getValue())):
         label_sp1_low_low.setVisible(True)
         loc_input_sp1_high_low.setVisible(True)
         loc_input_sp1_low_low.setVisible(True)
-        if (PVUtil.getString(loc_on_set_1PV) == '1.0'):
-            on_set_1PV.setValue(PVUtil.getLong(loc_on_set_1PV))
-            ConsoleUtil.writeInfo("-----loc_on_set_1-----")
-            ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_1PV))
-            ConsoleUtil.writeInfo("-----real on_set_1-----")
-            ConsoleUtil.writeInfo(PVUtil.getString(on_set_1PV))
-        else:
-            ConsoleUtil.writeInfo("You have forgotten to switch on $PNEUVAL1.")
-            ConsoleUtil.writeInfo("Close valve.opi and try again!")
+        #if (PVUtil.getString(loc_on_set_1PV) == '1.0'):
+            #on_set_1PV.setValue(1)   #funktioniert
+            ##on_set_1PV.setValue(PVUtil.getString(loc_on_set_1PV))
+            #ConsoleUtil.writeInfo("-----loc_on_set_1-----")
+            #ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_1PV))
+            #ConsoleUtil.writeInfo("-----real on_set_1-----")
+            #ConsoleUtil.writeInfo(PVUtil.getString(on_set_1PV))
+        #else:
+            #ConsoleUtil.writeInfo("You have forgotten to switch on $PNEUVAL1.")
+            #ConsoleUtil.writeInfo("Close valve.opi and try again!")
    
     if ((PVUtil.getString(loc_sp2_high_set_1PV) != '0.0') and (PVUtil.getString(loc_sp2_low_set_1PV) != '0.0')):
         loc_input_sp2_high_lowPV.setValue(sp2_high_set_orig)
@@ -112,15 +113,16 @@ if ((sp1_high_set_1PV.getValue()) or (sp2_high_set_1PV.getValue())):
         label_sp2_low_low.setVisible(True)
         loc_input_sp2_high_low.setVisible(True)
         loc_input_sp2_low_low.setVisible(True) 
-        if (PVUtil.getString(loc_on_set_2PV) == '1.0'):
-            on_set_2PV.setValue(PVUtil.getLong(loc_on_set_2PV)) 
-            ConsoleUtil.writeInfo("-----loc_on_set_2-----")
-            ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_2PV)) 
-            ConsoleUtil.writeInfo("-----real on_set_2-----")
-            ConsoleUtil.writeInfo(PVUtil.getString(on_set_2PV)) 
-        else:
-            ConsoleUtil.writeInfo("You have forgotten to switch on $PNEUVAL2.")
-            ConsoleUtil.writeInfo("Close valve.opi and try again!")  
+        #if (PVUtil.getString(loc_on_set_2PV) == '1.0'):
+            #on_set_2PV.setValue(1)    #funktioniert
+            ##on_set_2PV.setValue(PVUtil.getString(loc_on_set_2PV)) 
+            #ConsoleUtil.writeInfo("-----loc_on_set_2-----")
+            #ConsoleUtil.writeInfo(PVUtil.getString(loc_on_set_2PV)) 
+            #ConsoleUtil.writeInfo("-----real on_set_2-----")
+            #ConsoleUtil.writeInfo(PVUtil.getString(on_set_2PV)) 
+        #else:
+            #ConsoleUtil.writeInfo("You have forgotten to switch on $PNEUVAL2.")
+            #ConsoleUtil.writeInfo("Close valve.opi and try again!")  
 
     blink  = display.getWidget("Text_Update_blink")
     blink.setVisible(True)
