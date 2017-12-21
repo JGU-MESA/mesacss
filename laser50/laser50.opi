@@ -68,7 +68,7 @@
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>550</width>
+    <width>253</width>
     <wrap_words>false</wrap_words>
     <wuid>5529e879:157e67404f4:-7ff4</wuid>
     <x>0</x>
@@ -185,7 +185,7 @@
       <labels_from_pv>false</labels_from_pv>
       <name>Boolean Button</name>
       <off_color>
-        <color red="0" green="100" blue="0" />
+        <color name="Dark Gray Border" red="190" green="190" blue="190" />
       </off_color>
       <off_label>SET OFF</off_label>
       <on_color>
@@ -249,7 +249,7 @@ $(pv_value)</tooltip>
       <height>50</height>
       <name>LED</name>
       <off_color>
-        <color red="0" green="100" blue="0" />
+        <color name="Dark Gray Border" red="190" green="190" blue="190" />
       </off_color>
       <off_label>OFF</off_label>
       <on_color>
@@ -971,7 +971,7 @@ $(pv_value)</tooltip>
       <height>50</height>
       <name>LED</name>
       <off_color>
-        <color red="0" green="100" blue="0" />
+        <color name="Dark Gray Border" red="190" green="190" blue="190" />
       </off_color>
       <off_label>OFF</off_label>
       <on_color>
@@ -1026,7 +1026,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>50</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -1132,7 +1132,7 @@ $(pv_value)</tooltip>
       <height>50</height>
       <name>LED</name>
       <off_color>
-        <color red="0" green="100" blue="0" />
+        <color name="Dark Gray Border" red="190" green="190" blue="190" />
       </off_color>
       <off_label>OFF</off_label>
       <on_color>
@@ -1179,7 +1179,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>50</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -1285,7 +1285,7 @@ $(pv_value)</tooltip>
       <height>50</height>
       <name>LED</name>
       <off_color>
-        <color red="0" green="100" blue="0" />
+        <color name="Dark Gray Border" red="190" green="190" blue="190" />
       </off_color>
       <off_label>OFF</off_label>
       <on_color>
@@ -1524,8 +1524,8 @@ $(pv_value)</tooltip>
       <horizontal_alignment>1</horizontal_alignment>
       <horizontal_buttons_layout>false</horizontal_buttons_layout>
       <limits_from_pv>true</limits_from_pv>
-      <maximum>Infinity</maximum>
-      <minimum>-Infinity</minimum>
+      <maximum>1.7976931348623157E308</maximum>
+      <minimum>-1.7976931348623157E308</minimum>
       <name>Text Update_3</name>
       <page_increment>10.0</page_increment>
       <precision>0</precision>
@@ -1645,12 +1645,170 @@ $(pv_value)</tooltip>
       <y>25</y>
     </widget>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
-    <fill_grids>false</fill_grids>
-    <grid_gap>0</grid_gap>
-    <name>Grid Layout</name>
-    <number_of_columns>1</number_of_columns>
-    <widget_type>Grid Layout</widget_type>
-    <wuid>-3baea3e9:15b60ea2a8e:-7d3a</wuid>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>50</height>
+    <image></image>
+    <name>Boolean Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>$(P)laser_shutter:ls_set</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>Open Shutter</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>97</width>
+    <wuid>-779fcb3a:160796895c7:-7f96</wuid>
+    <x>252</x>
+    <y>0</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>50</height>
+    <image></image>
+    <name>Boolean Button_1</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>$(P)laser_shutter:ls_set</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>Close Shutter</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>97</width>
+    <wuid>-779fcb3a:160796895c7:-7f95</wuid>
+    <x>349</x>
+    <y>0</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <bit>-1</bit>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <bulb_border>3</bulb_border>
+    <bulb_border_color>
+      <color red="150" green="150" blue="150" />
+    </bulb_border_color>
+    <data_type>0</data_type>
+    <effect_3d>true</effect_3d>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>50</height>
+    <name>LED</name>
+    <off_color>
+      <color name="Dark Gray Border" red="190" green="190" blue="190" />
+    </off_color>
+    <off_label>CLOSE</off_label>
+    <on_color>
+      <color name="Green" red="0" green="255" blue="0" />
+    </on_color>
+    <on_label>OPEN</on_label>
+    <pv_name>$(P)laser_shutter:ls_get</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_boolean_label>true</show_boolean_label>
+    <square_led>true</square_led>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>LED</widget_type>
+    <width>96</width>
+    <wuid>-779fcb3a:160796895c7:-7f8a</wuid>
+    <x>445</x>
+    <y>0</y>
   </widget>
 </display>
