@@ -288,7 +288,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_010:so:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -367,7 +367,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_010:sh:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -486,7 +486,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_010:sv:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -565,7 +565,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_020:sv:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -5733,7 +5733,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_020:sh:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -5824,7 +5824,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4da0</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -9158,11 +9158,11 @@ $(pv_value)</tooltip>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
+      <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_020:trip_q1:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9240,7 +9240,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_020:trip_sh1:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9318,7 +9318,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_020:trip_sv1:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9396,7 +9396,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_020:trip_q2:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9474,7 +9474,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_020:trip_sh2:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9552,7 +9552,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_020:trip_sv2:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9630,7 +9630,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_020:trip_q3:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9709,7 +9709,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_030:sh:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9788,7 +9788,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_030:sv:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>0</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9857,7 +9857,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -9866,7 +9866,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_030:trip_q1:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9881,7 +9881,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>587</x>
     <name>Text Update melba_030:trip_q1:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -9936,7 +9936,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -9945,7 +9945,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_030:trip_sh1:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -9960,7 +9960,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>573</x>
     <name>Text Update melba_030:trip_sh1:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10015,7 +10015,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10024,7 +10024,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_030:trip_sv1:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10039,7 +10039,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>558</x>
     <name>Text Update melba_030:trip_sv1:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10093,7 +10093,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10102,7 +10102,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_030:trip_q2:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10115,9 +10115,9 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>15</width>
-    <x>544</x>
+    <x>546</x>
     <name>Text Update melba_030:trip_q2:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10172,7 +10172,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10181,7 +10181,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_030:trip_sh2:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10196,7 +10196,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>530</x>
     <name>Text Update melba_030:trip_sh2:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10251,7 +10251,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10260,7 +10260,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_030:trip_sv2:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10275,7 +10275,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>518</x>
     <name>Text Update melba_030:trip_sv2:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10329,7 +10329,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10338,7 +10338,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_030:trip_q3:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10353,7 +10353,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>505</x>
     <name>Text Update melba_030:trip_q3:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10408,7 +10408,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10432,7 +10432,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>430</x>
     <name>Text Update melba_040:sh:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10487,7 +10487,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10496,7 +10496,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_040:sv:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10511,7 +10511,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>418</x>
     <name>Text Update melba_040:sv:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10566,7 +10566,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10575,7 +10575,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_050:sh:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10590,7 +10590,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>343</x>
     <name>Text Update melba_050:sh:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10645,7 +10645,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10654,7 +10654,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_050:sv:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10669,7 +10669,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>330</x>
     <name>Text Update melba_050:sv:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10723,7 +10723,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10732,7 +10732,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_050:trip_q1:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10747,7 +10747,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>300</x>
     <name>Text Update melba_050:trip_q1:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10802,7 +10802,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10811,7 +10811,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_050:trip_sh1:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10826,7 +10826,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>286</x>
     <name>Text Update melba_050:trip_sh1:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10880,7 +10880,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10889,7 +10889,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_050:trip_sv1:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10904,7 +10904,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>273</x>
     <name>Text Update melba_050:trip_sv1:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -10958,7 +10958,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -10967,7 +10967,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_050:trip_q2:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -10982,7 +10982,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>258</x>
     <name>Text Update melba_050:trip_q2:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -11036,7 +11036,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11045,7 +11045,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_050:trip_sh2:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -11060,7 +11060,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>246</x>
     <name>Text Update melba_050:trip_sh2:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -11114,7 +11114,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11123,7 +11123,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_050:trip_sv2:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -11138,7 +11138,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>232</x>
     <name>Text Update melba_050:trip_sv2:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -11192,7 +11192,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11201,7 +11201,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_050:trip_q3:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -11216,7 +11216,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>220</x>
     <name>Text Update melba_050:trip_q3:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -11271,7 +11271,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11280,7 +11280,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_060:sh:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -11295,7 +11295,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>173</x>
     <name>Text Update melba_060:sh:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -11350,7 +11350,7 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <show_units>false</show_units>
-    <height>30</height>
+    <height>40</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -11359,7 +11359,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <visible>false</visible>
     <pv_name>melba_060:sv:stat_get</pv_name>
-    <vertical_alignment>1</vertical_alignment>
+    <vertical_alignment>2</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -11374,7 +11374,7 @@ $(pv_value)</tooltip>
     <width>15</width>
     <x>159</x>
     <name>Text Update melba_060:sv:stat_get</name>
-    <y>733</y>
+    <y>724</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -21894,9 +21894,9 @@ $(pv_value)</tooltip>
             <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
-        <pv trig="true">alarm1</pv>
-        <pv trig="true">alarm2</pv>
-        <pv trig="true">alarm3</pv>
+        <pv trig="true">mexh3:wm_wedlposu01:alarm</pv>
+        <pv trig="true">steam:wm_laser:alarm</pv>
+        <pv trig="true">melba_060:wm_beamdump:alarm</pv>
       </rule>
     </rules>
     <enabled>true</enabled>
@@ -21953,14 +21953,14 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pvStr0==&quot;HV ON&quot;">
-          <value>
-            <color name="on &amp; okay" red="0" green="255" blue="0" />
-          </value>
-        </exp>
-        <exp bool_exp="pvStr0==&quot;OFF&quot;">
+        <exp bool_exp="pv0==0">
           <value>
             <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
         <pv trig="true">mexh3:pmt_hv:on_get</pv>
@@ -21997,7 +21997,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
-      <color name="black" red="0" green="0" blue="0" />
+      <color name="off" red="192" green="192" blue="192" />
     </background_color>
     <width>18</width>
     <x>551</x>
@@ -22033,7 +22033,21 @@ $(pv_value)</tooltip>
     <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <rules />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">mexh3:pmt_hv:on_get</pv>
+      </rule>
+    </rules>
     <enabled>true</enabled>
     <wuid>20be2959:1606deccadb:-5c90</wuid>
     <transparent>false</transparent>
@@ -22065,7 +22079,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
-      <color name="black" red="0" green="0" blue="0" />
+      <color name="off" red="192" green="192" blue="192" />
     </background_color>
     <width>18</width>
     <x>606</x>
@@ -22101,14 +22115,28 @@ $(pv_value)</tooltip>
     <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <rules />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">mexh3:pmt_hv:on_get</pv>
+      </rule>
+    </rules>
     <enabled>true</enabled>
     <wuid>20be2959:1606deccadb:-5c87</wuid>
     <transparent>false</transparent>
     <pv_value />
     <alpha>255</alpha>
     <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
+      <color name="white" red="255" green="255" blue="255" />
     </bg_gradient_color>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -22133,7 +22161,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
-      <color name="black" red="0" green="0" blue="0" />
+      <color name="no PV-name given" red="255" green="255" blue="0" />
     </background_color>
     <width>18</width>
     <x>690</x>
@@ -22159,7 +22187,21 @@ $(pv_value)</tooltip>
     <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <rules />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="pv1==1">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">mexh3:pmt_hv:on_get</pv>
+      </rule>
+    </rules>
     <enabled>true</enabled>
     <wuid>20be2959:1606deccadb:-5c80</wuid>
     <transparent>false</transparent>
@@ -22191,7 +22233,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
-      <color name="black" red="0" green="0" blue="0" />
+      <color name="no PV-name given" red="255" green="255" blue="0" />
     </background_color>
     <width>18</width>
     <x>192</x>
