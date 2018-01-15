@@ -1063,7 +1063,7 @@ the others to 0.</text>
     <enabled>true</enabled>
     <wuid>-75d6464b:16002e38a62:1325</wuid>
     <transparent>false</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>133</height>
     <border_width>1</border_width>
@@ -1183,7 +1183,7 @@ $(pv_value)</tooltip>
       <multiline_input>false</multiline_input>
       <border_width>1</border_width>
       <visible>false</visible>
-      <pv_name>loc://gauge_sp1_low_set(5.00E-9)</pv_name>
+      <pv_name>loc://gauge_sp1_low_set(5.00E-10)</pv_name>
       <selector_type>0</selector_type>
       <border_color>
         <color red="0" green="128" blue="255" />
@@ -1311,7 +1311,7 @@ $(pv_value)</tooltip>
       <multiline_input>false</multiline_input>
       <border_width>1</border_width>
       <visible>false</visible>
-      <pv_name>loc://gauge_sp2_low_set(5.00E-9)</pv_name>
+      <pv_name>loc://gauge_sp2_low_set(5.00E-10)</pv_name>
       <selector_type>0</selector_type>
       <border_color>
         <color red="0" green="128" blue="255" />
