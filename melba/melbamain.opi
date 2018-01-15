@@ -1083,7 +1083,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_020:sh</WEDH>
@@ -1303,7 +1303,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_030:sh</WEDH>
@@ -1997,7 +1997,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_040:sh</WEDH>
@@ -2217,7 +2217,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_050:sh</WEDH>
@@ -2437,7 +2437,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_060:sh</WEDH>
@@ -2657,7 +2657,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_030:trip_sh1</WEDH>
@@ -2877,7 +2877,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_030:trip_sh2</WEDH>
@@ -3097,7 +3097,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_050:trip_sh1</WEDH>
@@ -3317,7 +3317,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_050:trip_sh2</WEDH>
@@ -3506,7 +3506,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>1b6e8b21:15d50bd59e4:-7e63</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>36</height>
     <border_width>1</border_width>
@@ -3536,7 +3536,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>pumpe.opi</path>
+        <path>subopi/pumpe.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PUMP>melba_020:pump</PUMP>
@@ -3671,7 +3671,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_020:trip_sh1</WEDH>
@@ -3890,7 +3890,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>pumpe.opi</path>
+        <path>subopi/pumpe.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PUMP>melba_030:pump</PUMP>
@@ -4024,7 +4024,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>scanner.opi</path>
+        <path>subopi/scanner.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <SCAN>melba_020:scan</SCAN>
@@ -4140,7 +4140,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>scanner.opi</path>
+        <path>subopi/scanner.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <SCAN>melba_050:scan</SCAN>
@@ -4226,7 +4226,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-3da12f84:15d549a29ff:-7c64</wuid>
     <transparent>false</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>37</height>
     <border_width>1</border_width>
@@ -4256,7 +4256,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>toellner.opi</path>
+        <path>subopi/toellner.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <TOELL>melba_030:a</TOELL>
@@ -4814,7 +4814,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>valve.opi</path>
+        <path>subopi/valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PNEUVAL1>melba_010:pv</PNEUVAL1>
@@ -5854,7 +5854,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q1</WED>
@@ -6103,7 +6103,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q3</WED>
@@ -6352,7 +6352,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q2</WED>
@@ -6571,7 +6571,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4990</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -6601,7 +6601,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_030:trip_q1</WED>
@@ -6850,7 +6850,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_030:trip_q2</WED>
@@ -7099,7 +7099,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_030:trip_q3</WED>
@@ -7348,7 +7348,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_050:trip_q1</WED>
@@ -7567,7 +7567,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4926</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -7597,7 +7597,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_050:trip_q2</WED>
@@ -7898,7 +7898,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_050:trip_q2</WED>
@@ -8147,7 +8147,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>slit.opi</path>
+        <path>subopi/slit.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <SLIT>melba_020:slit</SLIT>
@@ -13040,7 +13040,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_010:so</WED>
@@ -13382,7 +13382,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>1911d35e:15dc22005fb:-524</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>27</height>
     <border_width>1</border_width>
@@ -13413,7 +13413,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_010:sh</WEDH>
@@ -13633,7 +13633,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_020:trip_sh2</WEDH>
@@ -13872,7 +13872,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>valve.opi</path>
+        <path>subopi/valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PNEUVAL1>melba_010:pv</PNEUVAL1>
@@ -14231,7 +14231,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>steam_gauge.opi</path>
+        <path>subopi/steam_gauge.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <GAUGE>steam:gauge</GAUGE>
@@ -14311,7 +14311,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>vacom_gauge.opi</path>
+        <path>subopi/vacom_gauge.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <GAUGE>melba_030:gauge</GAUGE>
@@ -14434,7 +14434,16 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
-    <actions hook="true" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>subopi/valve.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>true</fc>
     <show_scrollbar>false</show_scrollbar>
     <font>
@@ -14804,7 +14813,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>steam:sh</WEDH>
@@ -16071,7 +16080,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedlerkiste.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
@@ -18969,7 +18978,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <actions hook="false" hook_all="false">
         <action type="OPEN_DISPLAY">
-          <path>steam_pumpe.opi</path>
+          <path>subopi/steam_pumpe.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <PUMP>steam:pumpe</PUMP>
@@ -21931,7 +21940,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>watermeter.opi</path>
+        <path>subopi/watermeter.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
@@ -22009,7 +22018,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>pmt.opi</path>
+        <path>subopi/pmt.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PMT> steam:pmt1</PMT>
@@ -22091,7 +22100,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>pmt.opi</path>
+        <path>subopi/pmt.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PMT>steam:pmt2</PMT>
@@ -22587,7 +22596,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>pmthvsupply.opi</path>
+        <path>subopi/pmthvsupply.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
