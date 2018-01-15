@@ -3,7 +3,7 @@
     <title>MERLOT All channel temperature</title>
     <save_changes>true</save_changes>
     <show_legend>false</show_legend>
-    <show_toolbar>false</show_toolbar>
+    <show_toolbar>true</show_toolbar>
     <grid>false</grid>
     <scroll>true</scroll>
     <update_period>1.0</update_period>
@@ -40,16 +40,6 @@
         </axis>
     </axes>
     <annotations>
-        <annotation>
-            <pv>1</pv>
-            <time>2016-10-24 10:49:59.588 +0200</time>
-            <value>196.844</value>
-            <offset>
-                <x>20</x>
-                <y>-20</y>
-            </offset>
-            <text>Bimetall wurde zu fr&#252;h ausgel&#246;st, obwohl Regler bei 250&#176;C eingestellt war&#13;&#10;HF-230-02</text>
-        </annotation>
     </annotations>
     <pvlist>
         <pv>
@@ -70,16 +60,6 @@
             <period>0.0</period>
             <ring_size>100000</ring_size>
             <request>OPTIMIZED</request>
-            <archive>
-                <name>RDB</name>
-                <url>jdbc:mysql://localhost/archive</url>
-                <key>1</key>
-            </archive>
-            <archive>
-                <name>- All -</name>
-                <url>xnds://localhost/archive/cgi/ArchiveDataServer.cgi</url>
-                <key>1</key>
-            </archive>
         </pv>
         <pv>
             <display_name>2</display_name>
