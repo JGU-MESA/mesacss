@@ -5824,7 +5824,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4da0</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -5854,7 +5854,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_with_wobbel.opi</path>
+        <path>wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q1</WED>
