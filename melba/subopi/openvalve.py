@@ -87,8 +87,8 @@ if ((sp1_high_get_1PV.getValue()) or (sp2_high_get_1PV.getValue())):
     if ((PVUtil.getString(loc_sp1_high_set_1PV) != '0.0') and (PVUtil.getString(loc_sp1_low_set_1PV) != '0.0')):
         loc_input_sp1_high_lowPV.setValue(sp1_high_set_orig)
         loc_input_sp1_low_lowPV.setValue(sp1_low_set_orig)
-        sp1_high_set_1PV.setValue(PVUtil.getDouble(loc_sp1_high_set_1PV))
-        sp1_low_set_1PV.setValue(PVUtil.getDouble(loc_sp1_low_set_1PV))
+        sp1_high_get_1PV.setValue(PVUtil.getDouble(loc_sp1_high_set_1PV))
+        sp1_low_get_1PV.setValue(PVUtil.getDouble(loc_sp1_low_set_1PV))
         label_sp1_high_low.setVisible(True)
         label_sp1_low_low.setVisible(True)
         loc_input_sp1_high_low.setVisible(True)
@@ -107,8 +107,8 @@ if ((sp1_high_get_1PV.getValue()) or (sp2_high_get_1PV.getValue())):
     if ((PVUtil.getString(loc_sp2_high_set_1PV) != '0.0') and (PVUtil.getString(loc_sp2_low_set_1PV) != '0.0')):
         loc_input_sp2_high_lowPV.setValue(sp2_high_set_orig)
         loc_input_sp2_low_lowPV.setValue(sp2_low_set_orig)
-        sp2_high_set_1PV.setValue(PVUtil.getDouble(loc_sp2_high_set_1PV))
-        sp2_low_set_1PV.setValue(PVUtil.getDouble(loc_sp2_low_set_1PV)) 
+        sp2_high_get_1PV.setValue(PVUtil.getDouble(loc_sp2_high_set_1PV))
+        sp2_low_get_1PV.setValue(PVUtil.getDouble(loc_sp2_low_set_1PV)) 
         label_sp2_high_low.setVisible(True)
         label_sp2_low_low.setVisible(True)
         loc_input_sp2_high_low.setVisible(True)
