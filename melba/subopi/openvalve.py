@@ -8,9 +8,9 @@ sp2_high_get_1 = display.getWidget("Text_Update_gauge_sp2_high_get")
 sp2_low_get_1  = display.getWidget("Text_Update_gauge_sp2_low_get")
 
 sp1_high_get_1PV = sp1_high_get_1.getPV()
-sp1_low_get_1PV  = sp1_low_set_1.getPV()
-sp2_high_get_1PV = sp2_high_set_1.getPV()
-sp2_low_get_1PV  = sp2_low_set_1.getPV()
+sp1_low_get_1PV  = sp1_low_get_1.getPV()
+sp2_high_get_1PV = sp2_high_get_1.getPV()
+sp2_low_get_1PV  = sp2_low_get_1.getPV()
 
 #ConsoleUtil.writeInfo(str(sp1_high_set_1PV.getValue()))
 #ConsoleUtil.writeInfo(str(sp2_high_set_1PV.getValue()))
