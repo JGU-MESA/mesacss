@@ -5824,7 +5824,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4da0</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -16036,11 +16036,11 @@ $(pv_value)</tooltip>
         <pv trig="true">melba:wedlposu01:stat_overvolt_get</pv>
         <pv trig="true">melba:wedlposu01:stat_overcurr_get</pv>
         <pv trig="true">melba:wedlposu01:stat_fan_get</pv>
-        <pv trig="true">melba:wedlposu01:stat--30vsup</pv>
+        <pv trig="true">melba:wedlposu01:stat_-30vsup_get</pv>
         <pv trig="true">melba:wedlposu01:stat_+30vsup_get</pv>
         <pv trig="true">melba:wedlposu01:stat_-5vsup_get</pv>
         <pv trig="true">melba:wedlposu01:stat_+5vsup_get</pv>
-        <pv trig="true">melba:wedlposu01:stat-phasemoni</pv>
+        <pv trig="true">melba:wedlposu01:stat_phasemoni_get</pv>
         <pv trig="true">melba:wedlposu01:stat_tempzdio_get</pv>
         <pv trig="true">melba:wedlposu01:stat_temprecti_get</pv>
         <pv trig="true">melba:wedlposu01:stat_watercool_get</pv>
