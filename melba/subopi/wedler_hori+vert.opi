@@ -6,7 +6,7 @@
   <show_grid>true</show_grid>
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <scripts />
-  <height>300</height>
+  <height>330</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
@@ -21,7 +21,7 @@
   <background_color>
     <color red="240" green="240" blue="240" />
   </background_color>
-  <width>960</width>
+  <width>750</width>
   <x>-1</x>
   <name></name>
   <grid_space>6</grid_space>
@@ -32,106 +32,6 @@
     <color red="192" green="192" blue="192" />
   </foreground_color>
   <actions hook="false" hook_all="false" />
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <border_style>0</border_style>
-    <tooltip></tooltip>
-    <horizontal_alignment>1</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>62c3afca:158bae0ae22:-717e</wuid>
-    <transparent>true</transparent>
-    <auto_size>true</auto_size>
-    <text>$(WEDH)</text>
-    <scripts />
-    <height>22</height>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>Label</widget_type>
-    <wrap_words>false</wrap_words>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <width>80</width>
-    <x>126</x>
-    <name>Label</name>
-    <y>30</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Arial" height="14" style="1">MELBA Title</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
-    <toggle_button>true</toggle_button>
-    <border_style>0</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <push_action_index>0</push_action_index>
-    <rules />
-    <effect_3d>true</effect_3d>
-    <bit>-1</bit>
-    <enabled>true</enabled>
-    <wuid>62c3afca:158bae0ae22:-7027</wuid>
-    <on_color>
-      <color red="0" green="255" blue="0" />
-    </on_color>
-    <show_confirm_dialog>0</show_confirm_dialog>
-    <password></password>
-    <pv_value />
-    <released_action_index>0</released_action_index>
-    <scripts />
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>53</height>
-    <on_label>ON</on_label>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <pv_name>$(WEDH):on_set</pv_name>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>Boolean Switch</widget_type>
-    <off_color>
-      <color name="off" red="192" green="192" blue="192" />
-    </off_color>
-    <confirm_message>Are your sure you want to do this?</confirm_message>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="128" green="128" blue="128" />
-    </background_color>
-    <boolean_label_position>0</boolean_label_position>
-    <width>34</width>
-    <x>360</x>
-    <name>Boolean Button</name>
-    <data_type>0</data_type>
-    <y>24</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <show_boolean_label>false</show_boolean_label>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <off_label>OFF</off_label>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
     <border_style>3</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
@@ -172,7 +72,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <page_increment>0.001</page_increment>
-    <width>100</width>
+    <width>120</width>
     <x>120</x>
     <name>Text Input</name>
     <y>96</y>
@@ -193,7 +93,7 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-a5d1172:15a8f9359c0:-7c3d</wuid>
@@ -226,10 +126,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>100</width>
+    <width>120</width>
     <x>120</x>
     <name>Text Update_3</name>
-    <y>180</y>
+    <y>168</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -269,7 +169,7 @@ $(pv_value)</tooltip>
     <width>80</width>
     <x>30</x>
     <name>Label_5</name>
-    <y>180</y>
+    <y>168</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -318,62 +218,10 @@ $(pv_value)</tooltip>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
     </font>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-    <border_style>1</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <alarm_pulsing>false</alarm_pulsing>
-    <precision>2</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>-a5d1172:15a8f9359c0:-7af0</wuid>
-    <transparent>false</transparent>
-    <pv_value />
-    <auto_size>false</auto_size>
-    <text>Value</text>
-    <rotation_angle>0.0</rotation_angle>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <show_units>true</show_units>
-    <height>25</height>
-    <border_width>2</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <pv_name>$(WEDH):devi</pv_name>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <precision_from_pv>false</precision_from_pv>
-    <widget_type>Text Update</widget_type>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <wrap_words>false</wrap_words>
-    <format_type>0</format_type>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <width>100</width>
-    <x>366</x>
-    <name>Text Update_5</name>
-    <y>204</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <border_style>1</border_style>
     <tooltip></tooltip>
-    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_alignment>0</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-a5d1172:15a8f9359c0:-7ae0</wuid>
@@ -399,9 +247,9 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>80</width>
-    <x>270</x>
+    <x>30</x>
     <name>Label_8</name>
-    <y>204</y>
+    <y>240</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -417,7 +265,7 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-a5d1172:15a8f9359c0:-78ea</wuid>
@@ -450,10 +298,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>100</width>
+    <width>120</width>
     <x>120</x>
     <name>Text Update_6</name>
-    <y>222</y>
+    <y>204</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -493,7 +341,7 @@ $(pv_value)</tooltip>
     <width>80</width>
     <x>30</x>
     <name>Label_9</name>
-    <y>222</y>
+    <y>204</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -501,239 +349,6 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
     </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
-    <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <rules />
-    <effect_3d>true</effect_3d>
-    <bit>-1</bit>
-    <pv_value />
-    <height>19</height>
-    <border_width>1</border_width>
-    <visible>true</visible>
-    <pv_name>$(WEDH):on_get</pv_name>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>LED</widget_type>
-    <name>LED</name>
-    <actions hook="false" hook_all="false" />
-    <show_boolean_label>false</show_boolean_label>
-    <border_style>0</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <enabled>true</enabled>
-    <wuid>47acfad5:15b58428be1:-7d40</wuid>
-    <on_color>
-      <color red="0" green="255" blue="0" />
-    </on_color>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <on_label>ON</on_label>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <off_color>
-      <color name="off" red="192" green="192" blue="192" />
-    </off_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <square_led>false</square_led>
-    <width>19</width>
-    <x>91</x>
-    <data_type>0</data_type>
-    <y>33</y>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <off_label>OFF</off_label>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.meter" version="1.0.0">
-    <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <rules />
-    <scale_font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </scale_font>
-    <pv_value />
-    <show_scale>true</show_scale>
-    <scale_format></scale_format>
-    <height>91</height>
-    <border_width>1</border_width>
-    <value_label_format></value_label_format>
-    <visible>true</visible>
-    <show_value_label>false</show_value_label>
-    <pv_name>$(WEDH):devi</pv_name>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>Meter</widget_type>
-    <name>Meter_1</name>
-    <show_hi>true</show_hi>
-    <actions hook="false" hook_all="false" />
-    <show_lo>true</show_lo>
-    <border_style>5</border_style>
-    <show_lolo>true</show_lolo>
-    <show_minor_ticks>true</show_minor_ticks>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_markers>true</show_markers>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <show_hihi>true</show_hihi>
-    <log_scale>false</log_scale>
-    <enabled>true</enabled>
-    <wuid>-5869b17a:15ca6883c47:-7ede</wuid>
-    <level_hihi>90.0</level_hihi>
-    <color_hi>
-      <color red="255" green="255" blue="0" />
-    </color_hi>
-    <ramp_gradient>true</ramp_gradient>
-    <color_lo>
-      <color red="255" green="255" blue="0" />
-    </color_lo>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <level_hi>80.0</level_hi>
-    <level_lo>20.0</level_lo>
-    <needle_color>
-      <color red="255" green="0" blue="0" />
-    </needle_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <limits_from_pv>true</limits_from_pv>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <level_lolo>10.0</level_lolo>
-    <width>196</width>
-    <x>270</x>
-    <y>96</y>
-    <maximum>100.0</maximum>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <minimum>0.0</minimum>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <border_style>0</border_style>
-    <tooltip></tooltip>
-    <horizontal_alignment>1</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>-2eefa401:15d3ac8d06b:-7f61</wuid>
-    <transparent>true</transparent>
-    <auto_size>true</auto_size>
-    <text>$(WEDV)</text>
-    <scripts />
-    <height>22</height>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>Label</widget_type>
-    <wrap_words>false</wrap_words>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <width>80</width>
-    <x>612</x>
-    <name>Label_10</name>
-    <y>30</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Arial" height="14" style="1">MELBA Title</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
-    <toggle_button>true</toggle_button>
-    <border_style>0</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <push_action_index>0</push_action_index>
-    <rules />
-    <effect_3d>true</effect_3d>
-    <bit>-1</bit>
-    <enabled>true</enabled>
-    <wuid>-2eefa401:15d3ac8d06b:-7f60</wuid>
-    <on_color>
-      <color red="0" green="255" blue="0" />
-    </on_color>
-    <show_confirm_dialog>0</show_confirm_dialog>
-    <password></password>
-    <pv_value />
-    <released_action_index>0</released_action_index>
-    <scripts />
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>53</height>
-    <on_label>ON</on_label>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <pv_name>$(WEDV):on_set</pv_name>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>Boolean Switch</widget_type>
-    <off_color>
-      <color name="off" red="192" green="192" blue="192" />
-    </off_color>
-    <confirm_message>Are your sure you want to do this?</confirm_message>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="128" green="128" blue="128" />
-    </background_color>
-    <boolean_label_position>0</boolean_label_position>
-    <width>34</width>
-    <x>846</x>
-    <name>Boolean Button_1</name>
-    <data_type>0</data_type>
-    <y>24</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <show_boolean_label>false</show_boolean_label>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <off_label>OFF</off_label>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
     <border_style>3</border_style>
@@ -775,8 +390,8 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <page_increment>0.001</page_increment>
-    <width>100</width>
-    <x>606</x>
+    <width>120</width>
+    <x>492</x>
     <name>Text Input_1</name>
     <y>96</y>
     <maximum>1.7976931348623157E308</maximum>
@@ -796,7 +411,7 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-2eefa401:15d3ac8d06b:-7f5d</wuid>
@@ -829,10 +444,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>100</width>
-    <x>606</x>
+    <width>120</width>
+    <x>492</x>
     <name>Text Update_8</name>
-    <y>174</y>
+    <y>168</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -870,9 +485,9 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>80</width>
-    <x>516</x>
+    <x>402</x>
     <name>Label_11</name>
-    <y>174</y>
+    <y>168</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -910,61 +525,9 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>80</width>
-    <x>516</x>
+    <x>402</x>
     <name>Label_12</name>
     <y>96</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-    <border_style>1</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <alarm_pulsing>false</alarm_pulsing>
-    <precision>2</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>-2eefa401:15d3ac8d06b:-7f5a</wuid>
-    <transparent>false</transparent>
-    <pv_value />
-    <auto_size>false</auto_size>
-    <text>Value</text>
-    <rotation_angle>0.0</rotation_angle>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <show_units>true</show_units>
-    <height>25</height>
-    <border_width>2</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <pv_name>$(WEDV):devi</pv_name>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <precision_from_pv>false</precision_from_pv>
-    <widget_type>Text Update</widget_type>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <wrap_words>false</wrap_words>
-    <format_type>0</format_type>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <width>100</width>
-    <x>854</x>
-    <name>Text Update_9</name>
-    <y>204</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -1002,9 +565,9 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>80</width>
-    <x>758</x>
+    <x>402</x>
     <name>Label_13</name>
-    <y>204</y>
+    <y>240</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -1020,7 +583,7 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-2eefa401:15d3ac8d06b:-7f58</wuid>
@@ -1053,10 +616,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>100</width>
-    <x>606</x>
+    <width>120</width>
+    <x>492</x>
     <name>Text Update_10</name>
-    <y>210</y>
+    <y>204</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -1094,148 +657,15 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>80</width>
-    <x>516</x>
+    <x>402</x>
     <name>Label_14</name>
-    <y>210</y>
+    <y>204</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
-    <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <rules />
-    <effect_3d>true</effect_3d>
-    <bit>-1</bit>
-    <pv_value />
-    <height>19</height>
-    <border_width>1</border_width>
-    <visible>true</visible>
-    <pv_name>$(WEDV):on_get</pv_name>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>LED</widget_type>
-    <name>LED_1</name>
-    <actions hook="false" hook_all="false" />
-    <show_boolean_label>false</show_boolean_label>
-    <border_style>0</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <enabled>true</enabled>
-    <wuid>-2eefa401:15d3ac8d06b:-7f56</wuid>
-    <on_color>
-      <color red="0" green="255" blue="0" />
-    </on_color>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <on_label>ON</on_label>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <off_color>
-      <color name="off" red="192" green="192" blue="192" />
-    </off_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <square_led>false</square_led>
-    <width>19</width>
-    <x>577</x>
-    <data_type>0</data_type>
-    <y>31</y>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <off_label>OFF</off_label>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.meter" version="1.0.0">
-    <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <rules />
-    <scale_font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </scale_font>
-    <pv_value />
-    <show_scale>true</show_scale>
-    <scale_format></scale_format>
-    <height>91</height>
-    <border_width>1</border_width>
-    <value_label_format></value_label_format>
-    <visible>true</visible>
-    <show_value_label>false</show_value_label>
-    <pv_name>$(WEDV):devi</pv_name>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>Meter</widget_type>
-    <name>Meter_3</name>
-    <show_hi>true</show_hi>
-    <actions hook="false" hook_all="false" />
-    <show_lo>true</show_lo>
-    <border_style>5</border_style>
-    <show_lolo>true</show_lolo>
-    <show_minor_ticks>true</show_minor_ticks>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_markers>true</show_markers>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <show_hihi>true</show_hihi>
-    <log_scale>false</log_scale>
-    <enabled>true</enabled>
-    <wuid>-2eefa401:15d3ac8d06b:-7f55</wuid>
-    <level_hihi>90.0</level_hihi>
-    <color_hi>
-      <color red="255" green="255" blue="0" />
-    </color_hi>
-    <ramp_gradient>true</ramp_gradient>
-    <color_lo>
-      <color red="255" green="255" blue="0" />
-    </color_lo>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <level_hi>80.0</level_hi>
-    <level_lo>20.0</level_lo>
-    <needle_color>
-      <color red="255" green="0" blue="0" />
-    </needle_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <limits_from_pv>true</limits_from_pv>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <level_lolo>10.0</level_lolo>
-    <width>196</width>
-    <x>758</x>
-    <y>96</y>
-    <maximum>100.0</maximum>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <minimum>0.0</minimum>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
@@ -1253,10 +683,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <points>
       <point x="12" y="12" />
-      <point x="12" y="281" />
-      <point x="12" y="281" />
-      <point x="483" y="281" />
-      <point x="483" y="12" />
+      <point x="12" y="319" />
+      <point x="12" y="319" />
+      <point x="367" y="319" />
+      <point x="367" y="12" />
       <point x="12" y="12" />
       <point x="12" y="12" />
       <point x="12" y="12" />
@@ -1268,7 +698,7 @@ $(pv_value)</tooltip>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>270</height>
+    <height>308</height>
     <border_width>2</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -1288,7 +718,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="30" green="144" blue="255" />
     </background_color>
-    <width>472</width>
+    <width>356</width>
     <x>12</x>
     <name>Polyline</name>
     <y>12</y>
@@ -1315,15 +745,15 @@ $(pv_value)</tooltip>
     <wuid>-2eefa401:15d3adab8de:4cbd</wuid>
     <transparent>false</transparent>
     <points>
-      <point x="498" y="12" />
-      <point x="498" y="281" />
-      <point x="498" y="281" />
-      <point x="967" y="281" />
-      <point x="967" y="12" />
-      <point x="498" y="12" />
-      <point x="498" y="12" />
-      <point x="498" y="12" />
-      <point x="498" y="12" />
+      <point x="384" y="12" />
+      <point x="384" y="319" />
+      <point x="384" y="319" />
+      <point x="739" y="319" />
+      <point x="739" y="12" />
+      <point x="384" y="12" />
+      <point x="384" y="12" />
+      <point x="384" y="12" />
+      <point x="384" y="12" />
     </points>
     <fill_arrow>true</fill_arrow>
     <pv_value />
@@ -1331,7 +761,7 @@ $(pv_value)</tooltip>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>270</height>
+    <height>308</height>
     <border_width>2</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -1351,8 +781,8 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="30" green="144" blue="255" />
     </background_color>
-    <width>470</width>
-    <x>498</x>
+    <width>356</width>
+    <x>384</x>
     <name>Polyline_1</name>
     <y>12</y>
     <fill_level>0.0</fill_level>
@@ -1409,14 +839,14 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>100</width>
+    <width>120</width>
     <x>120</x>
-    <y>138</y>
-    <maximum>Infinity</maximum>
+    <y>132</y>
+    <maximum>1.7976931348623157E308</maximum>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <minimum>-Infinity</minimum>
+    <minimum>-1.7976931348623157E308</minimum>
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
     </font>
@@ -1452,7 +882,7 @@ $(pv_value)</tooltip>
     <width>80</width>
     <x>30</x>
     <name>Label_17</name>
-    <y>138</y>
+    <y>132</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -1506,9 +936,9 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>100</width>
-    <x>606</x>
-    <y>138</y>
+    <width>120</width>
+    <x>492</x>
+    <y>132</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -1545,9 +975,9 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>80</width>
-    <x>516</x>
+    <x>402</x>
     <name>Label_18</name>
-    <y>138</y>
+    <y>132</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -1597,7 +1027,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>35</width>
-    <x>219</x>
+    <x>244</x>
     <name>Text Update_12</name>
     <y>96</y>
     <foreground_color>
@@ -1649,7 +1079,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>35</width>
-    <x>706</x>
+    <x>616</x>
     <name>Text Update_13</name>
     <y>96</y>
     <foreground_color>
@@ -1659,5 +1089,637 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
     </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>1</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>2</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>2</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pv0 &gt;= pv1) || (pv0&lt;=pv3)">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0 &gt;= pv2) || (pv0&lt;=pv4)">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">$(WEDH):devi</pv>
+        <pv trig="true">$(WEDH):devi.HIGH</pv>
+        <pv trig="true">$(WEDH):devi.HIHI</pv>
+        <pv trig="true">$(WEDH):devi.LOW</pv>
+        <pv trig="true">$(WEDH):devi.LOLO</pv>
+      </rule>
+    </rules>
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:2947</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>false</auto_size>
+    <text>Value</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <show_units>true</show_units>
+    <height>25</height>
+    <border_width>2</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>$(WEDH):devi</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>true</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>0</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>120</width>
+    <x>120</x>
+    <name>Text Update_14</name>
+    <y>240</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>1</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>2</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>2</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pv0 &gt;= pv1) || (pv0&lt;=pv3)">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0 &gt;= pv2) || (pv0&lt;=pv4)">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">$(WEDV):devi</pv>
+        <pv trig="true">$(WEDV):devi.HIGH</pv>
+        <pv trig="true">$(WEDV):devi.HIHI</pv>
+        <pv trig="true">$(WEDV):devi.LOW</pv>
+        <pv trig="true">$(WEDV):devi.LOLO</pv>
+      </rule>
+    </rules>
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:2957</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>false</auto_size>
+    <text>Value</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <show_units>true</show_units>
+    <height>25</height>
+    <border_width>2</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>$(WEDV):devi</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>true</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>0</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>120</width>
+    <x>492</x>
+    <name>Text Update_15</name>
+    <y>240</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>1</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>2</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>2</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:2976</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>false</auto_size>
+    <text>Value</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <show_units>true</show_units>
+    <height>25</height>
+    <border_width>2</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>$(WEDH):stat_get</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>false</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>4</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>120</width>
+    <x>120</x>
+    <name>Text Update_27</name>
+    <y>276</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>1</border_style>
+    <tooltip></tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:2977</wuid>
+    <transparent>false</transparent>
+    <auto_size>false</auto_size>
+    <text>stat_get</text>
+    <scripts />
+    <height>25</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color name="black" red="0" green="0" blue="0" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>80</width>
+    <x>30</x>
+    <name>Label_31</name>
+    <y>276</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>1</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>2</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>2</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:2984</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>false</auto_size>
+    <text>Value</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <show_units>true</show_units>
+    <height>25</height>
+    <border_width>2</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>$(WEDV):stat_get</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>false</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>4</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>120</width>
+    <x>492</x>
+    <name>Text Update_28</name>
+    <y>276</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>1</border_style>
+    <tooltip></tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:2985</wuid>
+    <transparent>false</transparent>
+    <auto_size>false</auto_size>
+    <text>stat_get</text>
+    <scripts />
+    <height>25</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color name="black" red="0" green="0" blue="0" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>80</width>
+    <x>402</x>
+    <name>Label_32</name>
+    <y>276</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip></tooltip>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>62c3afca:158bae0ae22:-717e</wuid>
+    <transparent>true</transparent>
+    <auto_size>true</auto_size>
+    <text>$(WEDH)</text>
+    <scripts />
+    <height>22</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>80</width>
+    <x>65</x>
+    <name>Label</name>
+    <y>30</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="14" style="1">MELBA Title</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>62c3afca:158bae0ae22:-7027</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>53</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>$(WEDH):on_set</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Switch</widget_type>
+    <off_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="128" green="128" blue="128" />
+    </background_color>
+    <boolean_label_position>0</boolean_label_position>
+    <width>34</width>
+    <x>299</x>
+    <name>Boolean Button</name>
+    <data_type>0</data_type>
+    <y>24</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <pv_value />
+    <height>19</height>
+    <border_width>1</border_width>
+    <visible>true</visible>
+    <pv_name>$(WEDH):on_get</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>LED</widget_type>
+    <name>LED</name>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <enabled>true</enabled>
+    <wuid>47acfad5:15b58428be1:-7d40</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <on_label>ON</on_label>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <off_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </off_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <square_led>false</square_led>
+    <width>19</width>
+    <x>30</x>
+    <data_type>0</data_type>
+    <y>33</y>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip></tooltip>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-2eefa401:15d3ac8d06b:-7f61</wuid>
+    <transparent>true</transparent>
+    <auto_size>true</auto_size>
+    <text>$(WEDV)</text>
+    <scripts />
+    <height>22</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>80</width>
+    <x>437</x>
+    <name>Label_10</name>
+    <y>30</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="14" style="1">MELBA Title</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2eefa401:15d3ac8d06b:-7f60</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>53</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>$(WEDV):on_set</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Switch</widget_type>
+    <off_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="128" green="128" blue="128" />
+    </background_color>
+    <boolean_label_position>0</boolean_label_position>
+    <width>34</width>
+    <x>671</x>
+    <name>Boolean Button_1</name>
+    <data_type>0</data_type>
+    <y>24</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <pv_value />
+    <height>19</height>
+    <border_width>1</border_width>
+    <visible>true</visible>
+    <pv_name>$(WEDV):on_get</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>LED</widget_type>
+    <name>LED_1</name>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <enabled>true</enabled>
+    <wuid>-2eefa401:15d3ac8d06b:-7f56</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <on_label>ON</on_label>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <off_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </off_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <square_led>false</square_led>
+    <width>19</width>
+    <x>402</x>
+    <data_type>0</data_type>
+    <y>31</y>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
   </widget>
 </display>
