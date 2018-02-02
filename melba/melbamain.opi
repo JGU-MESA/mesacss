@@ -13382,7 +13382,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>1911d35e:15dc22005fb:-524</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>27</height>
     <border_width>1</border_width>
@@ -16020,32 +16020,18 @@ $(pv_value)</tooltip>
             <color name="off" red="192" green="192" blue="192" />
           </value>
         </exp>
-        <exp bool_exp="(pv0 ==0)&amp;&amp;((pv1==0)&amp;&amp;(pv2 == 0)&amp;&amp;(pv3==0)&amp;&amp;(pv4 == 0)&amp;&amp;(pv5==0)&amp;&amp;(pv6==0)&amp;&amp;(pv7==0)&amp;&amp;(pv8==0)&amp;&amp;(pv9==0)&amp;&amp;(pv10==0)&amp;&amp;(pv11==0)&amp;&amp;(pv12==0)&amp;&amp;(pv13==0)&amp;&amp;(pv14==0)&amp;&amp;(pv15==0))">
+        <exp bool_exp="(pv0 ==0) &amp;&amp; (pv1==0)">
           <value>
             <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
-        <exp bool_exp="(pv0 ==0)&amp;&amp;((pv1==1)||(pv2==1)||(pv3==1)||(pv4==1)||(pv5==1)||(pv6==1)||(pv7==1)||(pv8 ==1)||(pv9==1)||(pv10 ==1)||(pv11==1)||(pv12 ==1)||(pv13==1)||(pv14 ==1)||(pv15==1))">
+        <exp bool_exp="(pv0 ==0) || (pv1==1)">
           <value>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
         <pv trig="true">melba:wedlposu01:on_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_appr_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_groundl_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_overvolt_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_overcurr_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_fan_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_-30vsup_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_+30vsup_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_-5vsup_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_+5vsup_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_phasemoni_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_tempzdio_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_temprecti_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_watercool_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_tempowcard_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_fusepowcard_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_get</pv>
       </rule>
     </rules>
     <enabled>true</enabled>
@@ -22692,6 +22678,164 @@ $(pv_value)</tooltip>
     <x>8</x>
     <name>Label_18</name>
     <y>850</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>0</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==1 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==2 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==3 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">steam:sh:stat_get</pv>
+        <pv trig="true">steam:sh:on_get</pv>
+      </rule>
+      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0 == 1) &amp;&amp; (pv1!=0)">
+          <value>true</value>
+        </exp>
+        <pv trig="true">steam:sh:on_get</pv>
+        <pv trig="true">steam:sh:stat_get</pv>
+      </rule>
+    </rules>
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:450a</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>true</auto_size>
+    <text>Errors</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <show_units>false</show_units>
+    <height>15</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>false</visible>
+    <pv_name>steam:sh:stat_get</pv_name>
+    <vertical_alignment>0</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>false</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>4</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>30</width>
+    <x>600</x>
+    <name>Text Update steam:sh:stat_get</name>
+    <y>306</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>0</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==1 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==2 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==3 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">steam:sv:stat_get</pv>
+        <pv trig="true">steam:sv:on_get</pv>
+      </rule>
+      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1!=0)">
+          <value>true</value>
+        </exp>
+        <pv trig="true">steam:sv:on_get</pv>
+        <pv trig="true">steam:sv:stat_get</pv>
+      </rule>
+    </rules>
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:450b</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>true</auto_size>
+    <text>Errors</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <show_units>false</show_units>
+    <height>15</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>false</visible>
+    <pv_name>steam:sh:stat_get</pv_name>
+    <vertical_alignment>0</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>false</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>4</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>30</width>
+    <x>600</x>
+    <name>Text Update steam:sh:stat_get</name>
+    <y>319</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
