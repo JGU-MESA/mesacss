@@ -1237,8 +1237,17 @@ $(pv_value)</tooltip>
     <precision>2</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>2</horizontal_alignment>
-    <rules />
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0 != 0">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">$(WEDH)</pv>
+      </rule>
+    </rules>
     <enabled>true</enabled>
     <wuid>-3826a2f4:161049140ee:2976</wuid>
     <transparent>false</transparent>
@@ -1329,8 +1338,17 @@ $(pv_value)</tooltip>
     <precision>2</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>2</horizontal_alignment>
-    <rules />
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0 != 0">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">$(WEDV):stat_get</pv>
+      </rule>
+    </rules>
     <enabled>true</enabled>
     <wuid>-3826a2f4:161049140ee:2984</wuid>
     <transparent>false</transparent>
