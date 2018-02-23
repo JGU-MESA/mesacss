@@ -6,7 +6,7 @@
   <show_grid>true</show_grid>
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <scripts />
-  <height>580</height>
+  <height>600</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
@@ -1244,8 +1244,17 @@ $(pv_value)</tooltip>
     <precision>2</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>2</horizontal_alignment>
-    <rules />
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0 != 0">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">$(WED):stat_get</pv>
+      </rule>
+    </rules>
     <enabled>true</enabled>
     <wuid>-3826a2f4:161049140ee:1e2c</wuid>
     <transparent>false</transparent>
@@ -1524,7 +1533,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>30</width>
-    <x>414</x>
+    <x>420</x>
     <name>Text Update_12</name>
     <y>453</y>
     <foreground_color>
@@ -1581,7 +1590,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>156</x>
+    <x>162</x>
     <y>420</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -1619,7 +1628,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>24</x>
+    <x>30</x>
     <name>Label_11</name>
     <y>419</y>
     <foreground_color>
@@ -1676,7 +1685,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>156</x>
+    <x>162</x>
     <y>384</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -1714,7 +1723,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>24</x>
+    <x>30</x>
     <name>Label_12</name>
     <y>383</y>
     <foreground_color>
@@ -1754,7 +1763,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>24</x>
+    <x>30</x>
     <name>Label_16</name>
     <y>527</y>
     <foreground_color>
@@ -1806,7 +1815,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>156</x>
+    <x>162</x>
     <name>Text_Input_iwobble_orig</name>
     <y>528</y>
     <foreground_color>
@@ -1846,7 +1855,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>24</x>
+    <x>30</x>
     <name>Label_25</name>
     <y>455</y>
     <foreground_color>
@@ -1903,7 +1912,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>156</x>
+    <x>162</x>
     <y>456</y>
     <maximum>1.7976931348623157E308</maximum>
     <foreground_color>
@@ -1943,7 +1952,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>24</x>
+    <x>30</x>
     <name>Label_26</name>
     <y>491</y>
     <foreground_color>
@@ -2000,7 +2009,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>120</width>
-    <x>156</x>
+    <x>162</x>
     <y>492</y>
     <maximum>1.7976931348623157E308</maximum>
     <foreground_color>
@@ -2045,7 +2054,7 @@ $(pv_value)</tooltip>
       <color red="240" green="240" blue="240" />
     </background_color>
     <width>80</width>
-    <x>318</x>
+    <x>324</x>
     <name>Action Button_Start_Wobble</name>
     <y>421</y>
     <style>0</style>
@@ -2099,7 +2108,7 @@ $(pv_value)</tooltip>
       <color red="240" green="240" blue="240" />
     </background_color>
     <width>80</width>
-    <x>318</x>
+    <x>324</x>
     <name>Action Button_Stop_Wobble</name>
     <y>475</y>
     <style>0</style>
@@ -2119,125 +2128,6 @@ $(pv_value)</tooltip>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-    <border_style>1</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <alarm_pulsing>false</alarm_pulsing>
-    <precision>0</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
-    <rules>
-      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>
-            <color name="Major" red="255" green="0" blue="0" />
-          </value>
-        </exp>
-        <exp bool_exp="pv0==0">
-          <value>
-            <color red="240" green="240" blue="240" />
-          </value>
-        </exp>
-        <pv trig="true">sim://ramp(0,1,1,0.5)</pv>
-      </rule>
-      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0 != -1">
-          <value>true</value>
-        </exp>
-        <pv trig="true">wobblet</pv>
-      </rule>
-    </rules>
-    <enabled>true</enabled>
-    <wuid>-49bd9c3:161557c1840:-60f7</wuid>
-    <transparent>false</transparent>
-    <pv_value />
-    <auto_size>false</auto_size>
-    <text>######</text>
-    <rotation_angle>0.0</rotation_angle>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <show_units>false</show_units>
-    <height>25</height>
-    <border_width>0</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>false</visible>
-    <pv_name>wobblet</pv_name>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color name="black" red="0" green="0" blue="0" />
-    </border_color>
-    <precision_from_pv>false</precision_from_pv>
-    <widget_type>Text Update</widget_type>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <wrap_words>false</wrap_words>
-    <format_type>1</format_type>
-    <background_color>
-      <color name="Major" red="255" green="0" blue="0" />
-    </background_color>
-    <width>55</width>
-    <x>206</x>
-    <name>Text Update_33</name>
-    <y>330</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <border_style>1</border_style>
-    <tooltip></tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
-    <rules>
-      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0!=-1">
-          <value>true</value>
-        </exp>
-        <pv trig="true">wobblet</pv>
-      </rule>
-    </rules>
-    <enabled>true</enabled>
-    <wuid>-49bd9c3:161557c1840:-520a</wuid>
-    <transparent>false</transparent>
-    <auto_size>false</auto_size>
-    <text>Channel</text>
-    <scripts />
-    <height>25</height>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>false</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color name="black" red="0" green="0" blue="0" />
-    </border_color>
-    <widget_type>Label</widget_type>
-    <wrap_words>false</wrap_words>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <width>62</width>
-    <x>134</x>
-    <name>Label_38</name>
-    <y>330</y>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
-    </font>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <border_style>1</border_style>
     <tooltip>$(pv_name)
@@ -2245,10 +2135,10 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <rules>
       <rule name="Visible_Rule" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0!=-1">
+        <exp bool_exp="pvStr0!=0">
           <value>true</value>
         </exp>
-        <pv trig="true">wobblet</pv>
+        <pv trig="true">wobble_name</pv>
       </rule>
     </rules>
     <enabled>true</enabled>
@@ -2275,8 +2165,75 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>61</width>
-    <x>272</x>
+    <x>290</x>
     <name>Text Update_34</name>
+    <y>330</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>1</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>0</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules>
+      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvStr0 != 0">
+          <value>true</value>
+        </exp>
+        <pv trig="true">wobble_name</pv>
+      </rule>
+      <rule name="Blinking_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">sim://ramp(0,1,1,0.5)</pv>
+      </rule>
+    </rules>
+    <enabled>false</enabled>
+    <wuid>33e0788:16193579efc:-3b79</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>false</auto_size>
+    <text>######</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <show_units>false</show_units>
+    <height>25</height>
+    <border_width>0</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>false</visible>
+    <pv_name>wobble_name</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color name="black" red="0" green="0" blue="0" />
+    </border_color>
+    <precision_from_pv>false</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>1</format_type>
+    <background_color>
+      <color name="white" red="255" green="255" blue="255" />
+    </background_color>
+    <width>151</width>
+    <x>128</x>
+    <name>Text Update_36</name>
     <y>330</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
