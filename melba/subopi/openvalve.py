@@ -1,16 +1,15 @@
 from org.csstudio.opibuilder.scriptUtil import PVUtil
 from org.csstudio.opibuilder.scriptUtil import ConsoleUtil
 
+sp1_high_set_1 = display.getWidget("Text_Update_gauge_sp1_high_set")
+sp1_low_set_1  = display.getWidget("Text_Update_gauge_sp1_low_set")
+sp2_high_set_1 = display.getWidget("Text_Update_gauge_sp2_high_set")
+sp2_low_set_1  = display.getWidget("Text_Update_gauge_sp2_low_set")
 
-sp1_high_get_1 = display.getWidget("Text_Update_gauge_sp1_high_get")
-sp1_low_get_1  = display.getWidget("Text_Update_gauge_sp1_low_get")
-sp2_high_get_1 = display.getWidget("Text_Update_gauge_sp2_high_get")
-sp2_low_get_1  = display.getWidget("Text_Update_gauge_sp2_low_get")
-
-sp1_high_get_1PV = sp1_high_get_1.getPV()
-sp1_low_get_1PV  = sp1_low_set_1.getPV()
-sp2_high_get_1PV = sp2_high_set_1.getPV()
-sp2_low_get_1PV  = sp2_low_set_1.getPV()
+sp1_high_set_1PV = sp1_high_set_1.getPV()
+sp1_low_set_1PV  = sp1_low_set_1.getPV()
+sp2_high_set_1PV = sp2_high_set_1.getPV()
+sp2_low_set_1PV  = sp2_low_set_1.getPV()
 
 #ConsoleUtil.writeInfo(str(sp1_high_set_1PV.getValue()))
 #ConsoleUtil.writeInfo(str(sp2_high_set_1PV.getValue()))
@@ -46,14 +45,14 @@ if ((sp1_high_get_1PV.getValue()) or (sp2_high_get_1PV.getValue())):
     ConsoleUtil.writeInfo("-----Original setpoints-----")
     #remember the original thresholds
     if ((sp1_high_get_1PV.getValue()) and (sp1_low_get_1PV.getValue())):
-        sp1_high_set_orig = PVUtil.getDouble(sp1_high_get_1PV)
-        sp1_low_set_orig  = PVUtil.getDouble(sp1_low_get_1PV)
+        sp1_high_set_orig = PVUtil.getDouble(sp1_high_set_1PV)
+        sp1_low_set_orig  = PVUtil.getDouble(sp1_low_set_1PV)
         ConsoleUtil.writeInfo(str(sp1_high_set_orig))
         ConsoleUtil.writeInfo(str(sp1_low_set_orig))
 
     if ((sp2_high_get_1PV.getValue()) and (sp2_low_get_1PV.getValue())):   
-        sp2_high_set_orig = PVUtil.getDouble(sp2_high_get_1PV)
-        sp2_low_set_orig  = PVUtil.getDouble(sp2_low_get_1PV)
+        sp2_high_set_orig = PVUtil.getDouble(sp2_high_set_1PV)
+        sp2_low_set_orig  = PVUtil.getDouble(sp2_low_set_1PV)
         ConsoleUtil.writeInfo(str(sp2_high_set_orig))
         ConsoleUtil.writeInfo(str(sp2_low_set_orig))
        
@@ -87,8 +86,8 @@ if ((sp1_high_get_1PV.getValue()) or (sp2_high_get_1PV.getValue())):
     if ((PVUtil.getString(loc_sp1_high_set_1PV) != '0.0') and (PVUtil.getString(loc_sp1_low_set_1PV) != '0.0')):
         loc_input_sp1_high_lowPV.setValue(sp1_high_set_orig)
         loc_input_sp1_low_lowPV.setValue(sp1_low_set_orig)
-        sp1_high_set_1PV.setValue(PVUtil.getDouble(loc_sp1_high_set_1PV))
-        sp1_low_set_1PV.setValue(PVUtil.getDouble(loc_sp1_low_set_1PV))
+        sp1_high_get_1PV.setValue(PVUtil.getDouble(loc_sp1_high_set_1PV))
+        sp1_low_get_1PV.setValue(PVUtil.getDouble(loc_sp1_low_set_1PV))
         label_sp1_high_low.setVisible(True)
         label_sp1_low_low.setVisible(True)
         loc_input_sp1_high_low.setVisible(True)
@@ -107,8 +106,8 @@ if ((sp1_high_get_1PV.getValue()) or (sp2_high_get_1PV.getValue())):
     if ((PVUtil.getString(loc_sp2_high_set_1PV) != '0.0') and (PVUtil.getString(loc_sp2_low_set_1PV) != '0.0')):
         loc_input_sp2_high_lowPV.setValue(sp2_high_set_orig)
         loc_input_sp2_low_lowPV.setValue(sp2_low_set_orig)
-        sp2_high_set_1PV.setValue(PVUtil.getDouble(loc_sp2_high_set_1PV))
-        sp2_low_set_1PV.setValue(PVUtil.getDouble(loc_sp2_low_set_1PV)) 
+        sp2_high_get_1PV.setValue(PVUtil.getDouble(loc_sp2_high_set_1PV))
+        sp2_low_get_1PV.setValue(PVUtil.getDouble(loc_sp2_low_set_1PV)) 
         label_sp2_high_low.setVisible(True)
         label_sp2_low_low.setVisible(True)
         loc_input_sp2_high_low.setVisible(True)

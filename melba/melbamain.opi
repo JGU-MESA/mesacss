@@ -1083,7 +1083,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_020:sh</WEDH>
@@ -1303,7 +1303,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_030:sh</WEDH>
@@ -1997,7 +1997,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_040:sh</WEDH>
@@ -2217,7 +2217,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_050:sh</WEDH>
@@ -2437,7 +2437,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_060:sh</WEDH>
@@ -2657,7 +2657,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_030:trip_sh1</WEDH>
@@ -2877,7 +2877,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_030:trip_sh2</WEDH>
@@ -3097,7 +3097,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_050:trip_sh1</WEDH>
@@ -3317,7 +3317,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_050:trip_sh2</WEDH>
@@ -3506,7 +3506,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>1b6e8b21:15d50bd59e4:-7e63</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>36</height>
     <border_width>1</border_width>
@@ -3536,7 +3536,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>pumpe.opi</path>
+        <path>subopi/pumpe.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PUMP>melba_020:pump</PUMP>
@@ -3671,7 +3671,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_020:trip_sh1</WEDH>
@@ -3890,7 +3890,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>pumpe.opi</path>
+        <path>subopi/pumpe.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PUMP>melba_030:pump</PUMP>
@@ -4024,7 +4024,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>scanner.opi</path>
+        <path>subopi/scanner.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <SCAN>melba_020:scan</SCAN>
@@ -4140,7 +4140,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>scanner.opi</path>
+        <path>subopi/scanner.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <SCAN>melba_050:scan</SCAN>
@@ -4226,7 +4226,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-3da12f84:15d549a29ff:-7c64</wuid>
     <transparent>false</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>37</height>
     <border_width>1</border_width>
@@ -4256,7 +4256,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>toellner.opi</path>
+        <path>subopi/toellner.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <TOELL>melba_030:a</TOELL>
@@ -4814,7 +4814,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>valve.opi</path>
+        <path>subopi/valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PNEUVAL1>melba_010:pv</PNEUVAL1>
@@ -5854,7 +5854,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q1</WED>
@@ -6103,7 +6103,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q3</WED>
@@ -6352,7 +6352,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q2</WED>
@@ -6571,7 +6571,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4990</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -6601,7 +6601,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_030:trip_q1</WED>
@@ -6850,7 +6850,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_030:trip_q2</WED>
@@ -7099,7 +7099,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_030:trip_q3</WED>
@@ -7348,7 +7348,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_050:trip_q1</WED>
@@ -7567,7 +7567,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4926</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -7597,7 +7597,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_050:trip_q2</WED>
@@ -7898,7 +7898,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_050:trip_q2</WED>
@@ -8147,7 +8147,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>slit.opi</path>
+        <path>subopi/slit.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <SLIT>melba_020:slit</SLIT>
@@ -13040,7 +13040,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_010:so</WED>
@@ -13382,7 +13382,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>1911d35e:15dc22005fb:-524</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>27</height>
     <border_width>1</border_width>
@@ -13413,7 +13413,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_010:sh</WEDH>
@@ -13633,7 +13633,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>melba_020:trip_sh2</WEDH>
@@ -13872,7 +13872,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>valve.opi</path>
+        <path>subopi/valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PNEUVAL1>melba_010:pv</PNEUVAL1>
@@ -14231,7 +14231,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>steam_gauge.opi</path>
+        <path>subopi/steam_gauge.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <GAUGE>steam:gauge</GAUGE>
@@ -14311,7 +14311,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>vacom_gauge.opi</path>
+        <path>subopi/vacom_gauge.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <GAUGE>melba_030:gauge</GAUGE>
@@ -14434,7 +14434,16 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
-    <actions hook="true" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>subopi/valve.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
     <fc>true</fc>
     <show_scrollbar>false</show_scrollbar>
     <font>
@@ -14804,7 +14813,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedler_hori+vert.opi</path>
+        <path>subopi/wedler_hori+vert.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WEDH>steam:sh</WEDH>
@@ -15183,7 +15192,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>heinz.opi</path>
+        <path>subopi/heinz.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <HEINZ>steam:hv</HEINZ>
@@ -16011,32 +16020,18 @@ $(pv_value)</tooltip>
             <color name="off" red="192" green="192" blue="192" />
           </value>
         </exp>
-        <exp bool_exp="(pv0 ==0)&amp;&amp;((pv1==0)&amp;&amp;(pv2 == 0)&amp;&amp;(pv3==0)&amp;&amp;(pv4 == 0)&amp;&amp;(pv5==0)&amp;&amp;(pv6==0)&amp;&amp;(pv7==0)&amp;&amp;(pv8==0)&amp;&amp;(pv9==0)&amp;&amp;(pv10==0)&amp;&amp;(pv11==0)&amp;&amp;(pv12==0)&amp;&amp;(pv13==0)&amp;&amp;(pv14==0)&amp;&amp;(pv15==0))">
+        <exp bool_exp="(pv0 ==0) &amp;&amp; (pv1==0)">
           <value>
             <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
-        <exp bool_exp="(pv0 ==0)&amp;&amp;((pv1==1)||(pv2==1)||(pv3==1)||(pv4==1)||(pv5==1)||(pv6==1)||(pv7==1)||(pv8 ==1)||(pv9==1)||(pv10 ==1)||(pv11==1)||(pv12 ==1)||(pv13==1)||(pv14 ==1)||(pv15==1))">
+        <exp bool_exp="(pv0 ==0) || (pv1==1)">
           <value>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
         <pv trig="true">melba:wedlposu01:on_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_appr_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_groundl_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_overvolt_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_overcurr_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_fan_get</pv>
-        <pv trig="true">melba:wedlposu01:stat--30vsup</pv>
-        <pv trig="true">melba:wedlposu01:stat_+30vsup_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_-5vsup_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_+5vsup_get</pv>
-        <pv trig="true">melba:wedlposu01:stat-phasemoni</pv>
-        <pv trig="true">melba:wedlposu01:stat_tempzdio_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_temprecti_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_watercool_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_tempowcard_get</pv>
-        <pv trig="true">melba:wedlposu01:stat_fusepowcard_get</pv>
+        <pv trig="true">melba:wedlposu01:stat_get</pv>
       </rule>
     </rules>
     <enabled>true</enabled>
@@ -16071,7 +16066,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>wedlerkiste.opi</path>
+        <path>subopi/wedlerkiste.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
@@ -18855,7 +18850,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-75d6464b:16002e38a62:-75f</wuid>
     <transparent>true</transparent>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <scripts />
     <height>37</height>
     <border_width>1</border_width>
@@ -18885,7 +18880,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>steam_pumpe.opi</path>
+        <path>subopi/steam_pumpe.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PUMP>steam:pump</PUMP>
@@ -18967,17 +18962,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="255" green="0" blue="0" />
       </foreground_color>
-      <actions hook="false" hook_all="false">
-        <action type="OPEN_DISPLAY">
-          <path>steam_pumpe.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-            <PUMP>steam:pumpe</PUMP>
-          </macros>
-          <replace>2</replace>
-          <description></description>
-        </action>
-      </actions>
+      <actions hook="false" hook_all="false" />
       <font>
         <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
@@ -21931,7 +21916,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>watermeter.opi</path>
+        <path>subopi/watermeter.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
@@ -21942,88 +21927,6 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
     </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
-    <border_style>0</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <line_width>0</line_width>
-    <horizontal_fill>true</horizontal_fill>
-    <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <rules>
-      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>
-            <color name="off" red="192" green="192" blue="192" />
-          </value>
-        </exp>
-        <exp bool_exp="pv0==1">
-          <value>
-            <color name="on &amp; okay" red="0" green="255" blue="0" />
-          </value>
-        </exp>
-        <pv trig="true">mexh3:pmt_hv:on_get</pv>
-      </rule>
-    </rules>
-    <enabled>true</enabled>
-    <wuid>20be2959:1606deccadb:-5c9c</wuid>
-    <transparent>false</transparent>
-    <pv_value />
-    <alpha>255</alpha>
-    <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </bg_gradient_color>
-    <scripts />
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>24</height>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <pv_name></pv_name>
-    <gradient>false</gradient>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <anti_alias>true</anti_alias>
-    <line_style>0</line_style>
-    <widget_type>Rectangle</widget_type>
-    <fg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </fg_gradient_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color name="off" red="192" green="192" blue="192" />
-    </background_color>
-    <width>18</width>
-    <x>551</x>
-    <name>Rectangle_steam:pmt1</name>
-    <y>139</y>
-    <fill_level>0.0</fill_level>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="true" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>pmt.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <PMT> steam:pmt1</PMT>
-        </macros>
-        <replace>2</replace>
-        <description></description>
-      </action>
-    </actions>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
     <border_style>0</border_style>
@@ -22091,7 +21994,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>pmt.opi</path>
+        <path>subopi/pmt.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PMT>steam:pmt2</PMT>
@@ -22587,7 +22490,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>pmthvsupply.opi</path>
+        <path>subopi/pmthvsupply.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
@@ -22597,6 +22500,338 @@ $(pv_value)</tooltip>
     </actions>
     <font>
       <opifont.name fontName="Arial" height="12" style="0">MELBA Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <line_width>0</line_width>
+    <horizontal_fill>true</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">mexh3:pmt_hv:on_get</pv>
+      </rule>
+    </rules>
+    <enabled>true</enabled>
+    <wuid>4a4b97f6:160f9ec41d3:-59a9</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <alpha>255</alpha>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>24</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name></pv_name>
+    <gradient>false</gradient>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <anti_alias>true</anti_alias>
+    <line_style>0</line_style>
+    <widget_type>Rectangle</widget_type>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </background_color>
+    <width>18</width>
+    <x>551</x>
+    <name>Rectangle_ steam:pmt1</name>
+    <y>139</y>
+    <fill_level>0.0</fill_level>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>subopi/pmt.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <PMT>steam:pmt1</PMT>
+        </macros>
+        <replace>2</replace>
+        <description></description>
+      </action>
+    </actions>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>1</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>2</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>4a4b97f6:160f9ec41d3:-550b</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>true</auto_size>
+    <text>Value</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <show_units>true</show_units>
+    <height>19</height>
+    <border_width>2</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>melba_060:bd:i_get</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>true</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>2</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>32</width>
+    <x>75</x>
+    <name>Text Update melba_060:bd:i_get</name>
+    <y>851</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip></tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>4a4b97f6:160f9ec41d3:-5391</wuid>
+    <transparent>true</transparent>
+    <auto_size>false</auto_size>
+    <text>Strahlstrom</text>
+    <scripts />
+    <height>20</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>65</width>
+    <x>8</x>
+    <name>Label_18</name>
+    <y>850</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>0</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==1 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==2 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==3 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">steam:sh:stat_get</pv>
+        <pv trig="true">steam:sh:on_get</pv>
+      </rule>
+      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0 == 1) &amp;&amp; (pv1!=0)">
+          <value>true</value>
+        </exp>
+        <pv trig="true">steam:sh:on_get</pv>
+        <pv trig="true">steam:sh:stat_get</pv>
+      </rule>
+    </rules>
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:450a</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>true</auto_size>
+    <text>Errors</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <show_units>false</show_units>
+    <height>15</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>false</visible>
+    <pv_name>steam:sh:stat_get</pv_name>
+    <vertical_alignment>0</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>false</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>4</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>30</width>
+    <x>600</x>
+    <name>Text Update steam:sh:stat_get</name>
+    <y>306</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <precision>0</precision>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <horizontal_alignment>0</horizontal_alignment>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==1 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==2 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==3 &amp;&amp; pv1==1">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">steam:sv:stat_get</pv>
+        <pv trig="true">steam:sv:on_get</pv>
+      </rule>
+      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1!=0)">
+          <value>true</value>
+        </exp>
+        <pv trig="true">steam:sv:on_get</pv>
+        <pv trig="true">steam:sv:stat_get</pv>
+      </rule>
+    </rules>
+    <enabled>true</enabled>
+    <wuid>-3826a2f4:161049140ee:450b</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <auto_size>true</auto_size>
+    <text>Errors</text>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <show_units>false</show_units>
+    <height>15</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>false</visible>
+    <pv_name>steam:sh:stat_get</pv_name>
+    <vertical_alignment>0</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <precision_from_pv>false</precision_from_pv>
+    <widget_type>Text Update</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <wrap_words>false</wrap_words>
+    <format_type>4</format_type>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>30</width>
+    <x>600</x>
+    <name>Text Update steam:sh:stat_get</name>
+    <y>319</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
   </widget>
 </display>
