@@ -4024,10 +4024,11 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>subopi/scanner.opi</path>
+        <path>subopi/scanner_enhanced.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <SCAN>melba_020:scan</SCAN>
+          <GAUGE>melba_030:gauge</GAUGE>
         </macros>
         <replace>2</replace>
         <description></description>
@@ -4140,10 +4141,11 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>subopi/scanner.opi</path>
+        <path>subopi/scanner_enhanced.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <SCAN>melba_050:scan</SCAN>
+          <GAUGE>melba_060:gauge</GAUGE>
         </macros>
         <replace>2</replace>
         <description></description>
@@ -6073,7 +6075,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-28995ef:15d5a519a9c:-4b9a</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
