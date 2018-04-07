@@ -10,7 +10,7 @@
 #!**/*
 !.gitignore
 Thumbs.db
-*.pvs
+!*.pvs
 !*.opi
 !*.plt
 !*.pdf
