@@ -15,7 +15,7 @@
     <color red="192" green="192" blue="192" />
   </foreground_color>
   <grid_space>6</grid_space>
-  <height>700</height>
+  <height>650</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
     <P>steam:</P>
@@ -24,7 +24,7 @@
   <name>laser50</name>
   <rules />
   <scripts />
-  <show_close_button>true</show_close_button>
+  <show_close_button>false</show_close_button>
   <show_edit_range>true</show_edit_range>
   <show_grid>true</show_grid>
   <show_ruler>false</show_ruler>
@@ -70,7 +70,7 @@
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>326</width>
+    <width>327</width>
     <wuid>-e32f607:1610ead98cc:-7602</wuid>
     <x>0</x>
     <y>0</y>
@@ -320,10 +320,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>326</width>
+    <width>327</width>
     <wuid>3c8bfa8e:15d97789171:-79f1</wuid>
     <x>0</x>
-    <y>50</y>
+    <y>53</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <auto_size>false</auto_size>
@@ -522,7 +522,7 @@ $(pv_value)</tooltip>
     </macros>
     <name>Linking Container</name>
     <opi_file>laser50_template.opi</opi_file>
-    <resize_behaviour>0</resize_behaviour>
+    <resize_behaviour>1</resize_behaviour>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -536,7 +536,7 @@ $(pv_value)</tooltip>
     <width>327</width>
     <wuid>-7b99c6f9:15d93cfdb2b:-7d33</wuid>
     <x>0</x>
-    <y>101</y>
+    <y>106</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -576,10 +576,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>326</width>
+    <width>327</width>
     <wuid>1d19cf16:160310984c7:-7b4a</wuid>
     <x>0</x>
-    <y>157</y>
+    <y>161</y>
     <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <alarm_pulsing>false</alarm_pulsing>
@@ -606,10 +606,10 @@ $(pv_value)</tooltip>
       <items>
         <s>1</s>
         <s>300</s>
-        <s>350</s>
         <s>500</s>
-        <s>550</s>
-        <s>600</s>
+        <s>700</s>
+        <s>1000</s>
+        <s>2000</s>
       </items>
       <items_from_pv>false</items_from_pv>
       <name>Action Button</name>
@@ -658,12 +658,12 @@ $(pv_value)</tooltip>
       <height>25</height>
       <horizontal>true</horizontal>
       <items>
-        <s>1000</s>
-        <s>2000</s>
         <s>2500</s>
         <s>3000</s>
         <s>3500</s>
         <s>4000</s>
+        <s>9000</s>
+        <s>11000</s>
       </items>
       <items_from_pv>false</items_from_pv>
       <name>Action Button</name>
@@ -717,7 +717,7 @@ $(pv_value)</tooltip>
     </macros>
     <name>Linking Container_1</name>
     <opi_file>laser50_template.opi</opi_file>
-    <resize_behaviour>0</resize_behaviour>
+    <resize_behaviour>1</resize_behaviour>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -731,7 +731,7 @@ $(pv_value)</tooltip>
     <width>327</width>
     <wuid>-7b99c6f9:15d93cfdb2b:-7b75</wuid>
     <x>0</x>
-    <y>213</y>
+    <y>220</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -761,7 +761,7 @@ $(pv_value)</tooltip>
     </macros>
     <name>Linking Container_2</name>
     <opi_file>laser50_template.opi</opi_file>
-    <resize_behaviour>0</resize_behaviour>
+    <resize_behaviour>1</resize_behaviour>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -775,7 +775,7 @@ $(pv_value)</tooltip>
     <width>327</width>
     <wuid>-7b99c6f9:15d93cfdb2b:-7b5f</wuid>
     <x>0</x>
-    <y>269</y>
+    <y>275</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -805,7 +805,7 @@ $(pv_value)</tooltip>
     </macros>
     <name>Linking Container_3</name>
     <opi_file>laser50_template.opi</opi_file>
-    <resize_behaviour>0</resize_behaviour>
+    <resize_behaviour>1</resize_behaviour>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -819,7 +819,7 @@ $(pv_value)</tooltip>
     <width>327</width>
     <wuid>-7b99c6f9:15d93cfdb2b:-7b26</wuid>
     <x>0</x>
-    <y>325</y>
+    <y>330</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -840,7 +840,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>51</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -860,7 +860,7 @@ $(pv_value)</tooltip>
     <width>327</width>
     <wuid>-7b99c6f9:15d93cfdb2b:-78d3</wuid>
     <x>0</x>
-    <y>377</y>
+    <y>385</y>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="WRITE_PV">
@@ -1196,7 +1196,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>51</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -1213,10 +1213,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>326</width>
+    <width>327</width>
     <wuid>-7b99c6f9:15d93cfdb2b:-7820</wuid>
-    <x>1</x>
-    <y>427</y>
+    <x>0</x>
+    <y>438</y>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="WRITE_PV">
@@ -1315,7 +1315,7 @@ $(pv_value)</tooltip>
       <scale_options>
         <width_scalable>true</width_scalable>
         <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
+        <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
       <scripts />
       <show_boolean_label>false</show_boolean_label>
@@ -1349,7 +1349,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>51</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -1366,10 +1366,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>326</width>
+    <width>327</width>
     <wuid>-7b99c6f9:15d93cfdb2b:-7738</wuid>
-    <x>1</x>
-    <y>477</y>
+    <x>0</x>
+    <y>491</y>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="WRITE_PV">
@@ -1468,7 +1468,7 @@ $(pv_value)</tooltip>
       <scale_options>
         <width_scalable>true</width_scalable>
         <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
+        <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
       <scripts />
       <show_boolean_label>false</show_boolean_label>
@@ -1519,10 +1519,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>326</width>
+    <width>327</width>
     <wuid>-e32f607:1610ead98cc:-75fe</wuid>
     <x>0</x>
-    <y>527</y>
+    <y>544</y>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="OPEN_FILE">
@@ -1597,7 +1597,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <format_type>2</format_type>
+      <format_type>7</format_type>
       <height>25</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Text Update</name>
@@ -1649,7 +1649,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <format_type>2</format_type>
+      <format_type>7</format_type>
       <height>25</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Text Update</name>
@@ -1779,7 +1779,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>26</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -1796,10 +1796,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>326</width>
+    <width>327</width>
     <wuid>-e32f607:1610ead98cc:-75fa</wuid>
     <x>0</x>
-    <y>576</y>
+    <y>596</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <auto_size>false</auto_size>
