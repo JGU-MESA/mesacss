@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<pvtable version="3.0">
+    <nbMeasure>1</nbMeasure>
+    <pvlist>
+        <pv>
+            <selected>true</selected>
+            <name>steam:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:31:28.091968863</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:31:28.091968863</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.74</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>steam:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:29:49.802385315</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:29:49.802385315</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-1.4</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:so:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:29:26.694486618</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:29:26.694486618</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.4600000000000001</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:34:22.381154421</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:34:22.381154421</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.26</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:33:00.341577195</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:33:00.341577195</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.6799999999999999</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:28:03.968906251</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:28:03.968906251</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.9000000000000006</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:24:59.925711108</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:24:59.925711108</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.48000000000000026</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sv1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:05:30.855114772</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:05:30.855114772</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.1700000000000012</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sh1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:05:30.861110244</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:05:30.861110244</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1.4</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:07:32.524559054</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:07:32.524559054</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.0599999999999997</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q3:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:05:30.873110869</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:05:30.873110869</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.39400000000001945</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:05:30.879115879</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:05:30.879115879</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1.1969591984239969E-15</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:05:30.885115696</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:05:30.885115696</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.0</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:a:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-01-17 13:05:30.808493746</saved_value_timestamp>
+            <timestamp_measure>2018-01-17 13:05:30.808493746</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1.2</saved_value>
+        </pv>
+    </pvlist>
+</pvtable>
+

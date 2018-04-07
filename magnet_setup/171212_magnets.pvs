@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<pvtable version="3.0">
+    <nbMeasure>1</nbMeasure>
+    <pvlist>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q3:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp></saved_value_timestamp>
+            <timestamp_measure>2017-12-12 17:30:19.024787895</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp></saved_value_timestamp>
+            <timestamp_measure>2017-12-12 17:32:12.114268374</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:so:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp></saved_value_timestamp>
+            <timestamp_measure>2017-12-12 17:27:52.833474471</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>steam:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp></saved_value_timestamp>
+            <timestamp_measure>2017-12-12 17:14:53.854096642</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>steam:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp></saved_value_timestamp>
+            <timestamp_measure>2017-12-12 17:07:59.141992133</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+        </pv>
+    </pvlist>
+</pvtable>
+
