@@ -1247,6 +1247,12 @@ $(pv_value)</tooltip>
         </exp>
         <pv trig="true">$(WEDH)</pv>
       </rule>
+      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv trig="true">$(WEDH):on_get</pv>
+      </rule>
     </rules>
     <enabled>true</enabled>
     <wuid>-3826a2f4:161049140ee:2976</wuid>
@@ -1265,7 +1271,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <visible>true</visible>
+    <visible>false</visible>
     <pv_name>$(WEDH):stat_get</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
@@ -1295,7 +1301,14 @@ $(pv_value)</tooltip>
     <border_style>1</border_style>
     <tooltip></tooltip>
     <horizontal_alignment>0</horizontal_alignment>
-    <rules />
+    <rules>
+      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv trig="true">$(WEDH):on_get</pv>
+      </rule>
+    </rules>
     <enabled>true</enabled>
     <wuid>-3826a2f4:161049140ee:2977</wuid>
     <transparent>false</transparent>
@@ -1309,7 +1322,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <visible>true</visible>
+    <visible>false</visible>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color name="black" red="0" green="0" blue="0" />
@@ -1348,6 +1361,12 @@ $(pv_value)</tooltip>
         </exp>
         <pv trig="true">$(WEDV):stat_get</pv>
       </rule>
+      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv trig="true">$(WEDV):on_get</pv>
+      </rule>
     </rules>
     <enabled>true</enabled>
     <wuid>-3826a2f4:161049140ee:2984</wuid>
@@ -1366,7 +1385,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <visible>true</visible>
+    <visible>false</visible>
     <pv_name>$(WEDV):stat_get</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
@@ -1396,7 +1415,14 @@ $(pv_value)</tooltip>
     <border_style>1</border_style>
     <tooltip></tooltip>
     <horizontal_alignment>0</horizontal_alignment>
-    <rules />
+    <rules>
+      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv trig="true">$(WEDV):on_get</pv>
+      </rule>
+    </rules>
     <enabled>true</enabled>
     <wuid>-3826a2f4:161049140ee:2985</wuid>
     <transparent>false</transparent>
@@ -1410,7 +1436,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <visible>true</visible>
+    <visible>false</visible>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color name="black" red="0" green="0" blue="0" />
