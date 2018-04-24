@@ -1,0 +1,707 @@
+<?xml version="1.0"?>
+<pvtable version="3.0">
+    <nbMeasure>1</nbMeasure>
+    <pvlist>
+        <pv>
+            <selected>true</selected>
+            <name>steam:sv:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 15:56:40.582952043</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 15:56:40.582952043</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>steam:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:23:57.613738512</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:23:57.613738512</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.74</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>steam:sh:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 14:37:30.581478725</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 14:37:30.581478725</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>steam:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:02:18.298611045</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:02:18.298611045</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-1.4</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:so:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:51.485444113</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:51.485444113</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:so:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:23:57.657839028</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:23:57.657839028</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.46</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:sv:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:24:01.410499905</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:24:01.410499905</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:20:32.619689539</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:20:32.619689539</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.730000000000001</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:sh:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:24:01.437503497</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:24:01.437503497</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_010:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:47.931593347</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:47.931593347</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.7199999999999999</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:sv:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:51.566378736</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:51.566378736</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:23:57.723730134</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:23:57.723730134</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.35000000000000075</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:sh:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:51.593375815</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:51.593375815</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:11:35.050106538</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:11:35.050106538</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.49</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q1:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:51.620369891</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:51.620369891</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:23:57.767747118</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:23:57.767747118</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.020000000000000025</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sv1:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:51.647371945</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:51.647371945</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sv1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:01:56.548719303</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:01:56.548719303</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1.1400000000000008</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sh1:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:16:20.582605007</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:16:20.582605007</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sh1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:23:57.811724337</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:23:57.811724337</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.18999999999999884</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q2:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:24:01.599497064</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:24:01.599497064</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sv2:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:24:01.626509137</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:24:01.626509137</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sv2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:48.063589535</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:48.063589535</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1.0500000000000018</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sh2:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:24:01.653511184</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:24:01.653511184</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_sh2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:23:57.855734846</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:23:57.855734846</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.17999999999999883</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:48.107618052</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:48.107618052</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.08000000000000003</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q3:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:24:01.680499531</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:24:01.680499531</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_020:trip_q3:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:48.129570183</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:48.129570183</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.14999999999998015</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:sv:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:51.809382145</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:51.809382145</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:22:47.131041300</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:22:47.131041300</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1.2699999999999998</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:sh:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:51.836385169</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:51.836385169</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:22:38.006111888</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:22:38.006111888</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.41000000000000136</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:a:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:47.806177446</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:47.806177446</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:a:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:58:58.309744830</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:58:58.309744830</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>2.0</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_q1:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:51.863390640</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:51.863390640</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_q1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:35:36.984559747</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:35:36.984559747</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.20000000000000107</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_sv1:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:23:00.581795532</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:23:00.581795532</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_sv1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:28:37.060445473</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:28:37.060445473</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.3300000000000013</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_sh1:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:23:01.118788253</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:23:01.118788253</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_sh1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:28:20.202559329</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:28:20.202559329</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.12999999999999978</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_q2:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:23:03.822791542</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:23:03.822791542</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_q2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:36:45.241317363</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:36:45.241317363</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.3800000000000001</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_sv2:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:29:06.077122482</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:29:06.077122482</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_sv2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:30:42.625881629</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:30:42.625881629</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.08999999999999997</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_sh2:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:29:03.477149712</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:29:03.477149712</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_sh2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:30:43.625846430</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:30:43.625846430</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>3.122502256758253E-17</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_q3:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:29:21.680050781</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:29:21.680050781</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_030:trip_q3:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:35:58.501495931</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:35:58.501495931</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.22999999999999998</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_040:sv:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:32:31.968200952</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:32:31.968200952</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_040:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:34:13.829930707</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:34:13.829930707</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.6500000000000004</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_040:sh:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:32:31.995204774</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:32:31.995204774</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_040:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 09:40:48.371634737</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 09:40:48.371634737</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.1399999999999999</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:sv:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:32:32.022190761</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:32:32.022190761</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:sv:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:38:38.801817005</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:38:38.801817005</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.5299999999999991</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:sh:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 13:32:32.049194578</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 13:32:32.049194578</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:sh:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:38:53.191806646</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:38:53.191806646</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.6300000000000003</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_q1:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:37:43.258887514</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:37:43.258887514</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_q1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:45:19.974963475</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:45:19.974963475</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.13999999999999996</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_sv1:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:39:30.599337054</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:39:30.599337054</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_sv1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:40:19.110267145</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:40:19.110267145</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.04</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_sh1:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:39:30.626307943</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:39:30.626307943</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_sh1:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:40:44.285255305</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:40:44.285255305</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.08000000000000008</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_q2:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:39:31.313312016</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:39:31.313312016</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_q2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:44:56.797073980</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:44:56.797073980</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.2600000000000001</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_sv2:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:41:40.582731896</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:41:40.582731896</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_sv2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:42:19.163734770</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:42:19.163734770</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.2900000000000001</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_sh2:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:41:40.609731882</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:41:40.609731882</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_sh2:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:43:49.525315883</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:43:49.525315883</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>-0.6099999999999992</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_q3:on_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:41:43.089698507</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:41:43.089698507</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>1</saved_value>
+        </pv>
+        <pv>
+            <selected>true</selected>
+            <name>melba_050:trip_q3:i_set</name>
+            <tolerance>0.01</tolerance>
+            <saved_value_timestamp>2018-04-23 16:44:49.310285217</saved_value_timestamp>
+            <timestamp_measure>2018-04-23 16:44:49.310285217</timestamp_measure>
+            <conf>false</conf>
+            <measure>false</measure>
+            <saved_value>0.7000000000000005</saved_value>
+        </pv>
+    </pvlist>
+</pvtable>
+
