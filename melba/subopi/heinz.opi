@@ -45,11 +45,7 @@
     <enabled>true</enabled>
     <fc>false</fc>
     <font>
-<<<<<<< HEAD
       <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-=======
-      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -97,11 +93,7 @@
       <effect_3d>true</effect_3d>
       <enabled>true</enabled>
       <font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -318,11 +310,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <format_type>0</format_type>
       <height>50</height>
-<<<<<<< HEAD
-      <horizontal_alignment>0</horizontal_alignment>
-=======
       <horizontal_alignment>2</horizontal_alignment>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       <name>Meter</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
@@ -374,11 +362,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <format_type>0</format_type>
       <height>50</height>
-<<<<<<< HEAD
-      <horizontal_alignment>0</horizontal_alignment>
-=======
       <horizontal_alignment>2</horizontal_alignment>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       <name>Meter</name>
       <precision>5</precision>
       <precision_from_pv>true</precision_from_pv>
@@ -407,8 +391,6 @@ $(pv_value)</tooltip>
       <y>236</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-<<<<<<< HEAD
-=======
       <actions hook="false" hook_all="true">
         <action type="WRITE_PV">
           <pv_name>$(pv_name).SCAN</pv_name>
@@ -481,7 +463,6 @@ $(pv_value)</tooltip>
       <y>295</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       <actions hook="false" hook_all="true">
         <action type="WRITE_PV">
           <pv_name>$(pv_name).SCAN</pv_name>
@@ -508,120 +489,15 @@ $(pv_value)</tooltip>
         <color red="0" green="128" blue="255" />
       </border_color>
       <border_style>0</border_style>
-      <border_width>2</border_width>
-      <enabled>true</enabled>
-      <font>
-<<<<<<< HEAD
-        <fontdata fontName="Sans" height="14" style="1" pixels="false" />
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>50</height>
-      <image></image>
-      <name>Action Button_1</name>
-      <push_action_index>0</push_action_index>
-      <pv_name>$(HEINZ):u_set</pv_name>
-      <pv_value />
-      <rules>
-        <rule name="ShowStateBorderStyle" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>1</value>
-          </exp>
-          <exp bool_exp="pv0 != 1">
-            <value>0</value>
-          </exp>
-          <pv trig="true">$(pv_name).OROC</pv>
-        </rule>
-      </rules>
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <style>0</style>
-<<<<<<< HEAD
-      <text>Ramp
-1kV/s</text>
-=======
-      <text>Ramp off</text>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
-      <toggle_button>false</toggle_button>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <visible>true</visible>
-      <widget_type>Action Button</widget_type>
-<<<<<<< HEAD
-      <width>107</width>
-      <wuid>-7eccc06:159257c9249:-7fcd</wuid>
-      <x>146</x>
-      <y>295</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-      <actions hook="false" hook_all="true">
-        <action type="WRITE_PV">
-          <pv_name>$(pv_name).SCAN</pv_name>
-          <value>0</value>
-          <timeout>10</timeout>
-          <confirm_message>Scan wird auf Passive gesetzt? (=Rampgeschwindigkeit)</confirm_message>
-          <description>$(pv_name).SCAN wird auf Passive gesetzt</description>
-        </action>
-        <action type="WRITE_PV">
-          <pv_name>$(pv_name).OROC</pv_name>
-          <value>0</value>
-          <timeout>10</timeout>
-          <confirm_message>OROC wird auf 1 $(pv_name).EGU gesetzt</confirm_message>
-          <description>Ramprate ist nun $(pv_name).OROC/$(pv_name).SCAN</description>
-        </action>
-      </actions>
-      <alarm_pulsing>false</alarm_pulsing>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-=======
-      <width>173</width>
-      <wuid>-7eccc06:159257c9249:-7fa8</wuid>
-      <x>612</x>
-      <y>295</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <auto_size>false</auto_size>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="255" green="255" blue="255" />
-      </background_color>
-      <border_alarm_sensitive>true</border_alarm_sensitive>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-<<<<<<< HEAD
       <border_width>2</border_width>
       <enabled>true</enabled>
       <font>
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-<<<<<<< HEAD
       <height>50</height>
       <image></image>
       <name>Action Button_1</name>
@@ -639,25 +515,12 @@ $(pv_value)</tooltip>
           <pv trig="true">$(pv_name).OROC</pv>
         </rule>
       </rules>
-=======
-      <format_type>0</format_type>
-      <height>50</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>Text Update_1</name>
-      <precision>0</precision>
-      <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(HEINZ):debug</pv_name>
-      <pv_value />
-      <rotation_angle>0.0</rotation_angle>
-      <rules />
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       <scale_options>
         <width_scalable>true</width_scalable>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
       <scripts />
-<<<<<<< HEAD
       <style>0</style>
       <text>Ramp off</text>
       <toggle_button>false</toggle_button>
@@ -669,21 +532,6 @@ $(pv_value)</tooltip>
       <wuid>-7eccc06:159257c9249:-7fa8</wuid>
       <x>612</x>
       <y>295</y>
-=======
-      <show_units>true</show_units>
-      <text>######</text>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent>false</transparent>
-      <vertical_alignment>1</vertical_alignment>
-      <visible>true</visible>
-      <widget_type>Text Update</widget_type>
-      <width>333</width>
-      <wrap_words>false</wrap_words>
-      <wuid>-19d23c7a:159a6a132ed:-7e1d</wuid>
-      <x>152</x>
-      <y>358</y>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -698,11 +546,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -743,11 +587,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -788,11 +628,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -833,11 +669,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -878,11 +710,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -926,11 +754,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -981,11 +805,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -1019,52 +839,6 @@ $(pv_value)</tooltip>
       <wuid>-25b02986:15ad1afb2d6:-7ed9</wuid>
       <x>324</x>
       <y>236</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <auto_size>false</auto_size>
-      <background_color>
-        <color red="172" green="172" blue="172" />
-      </background_color>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <fontdata fontName="Sans" height="16" style="1" pixels="false" />
-      </font>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>50</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>Label_10</name>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <show_scrollbar>false</show_scrollbar>
-<<<<<<< HEAD
-      <text>Average</text>
-=======
-      <text>Last debug
-message</text>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
-      <tooltip></tooltip>
-      <transparent>false</transparent>
-      <vertical_alignment>1</vertical_alignment>
-      <visible>true</visible>
-      <widget_type>Label</widget_type>
-      <width>141</width>
-      <wrap_words>true</wrap_words>
-      <wuid>-25b02986:15ad1afb2d6:-7e14</wuid>
-      <x>0</x>
-      <y>358</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1126,11 +900,7 @@ message</text>
       <pv_value />
       <rules />
       <scale_font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </scale_font>
       <scale_format></scale_format>
       <scale_options>
@@ -1433,11 +1203,7 @@ $(pv_value)</tooltip>
       <effect_3d>false</effect_3d>
       <enabled>true</enabled>
       <font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
-=======
-        <opifont.name fontName="Sans" height="17" style="1" pixels="false">Header 1</opifont.name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -1684,48 +1450,6 @@ $(pv_value)</tooltip>
       <x>612</x>
       <y>358</y>
     </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <auto_size>false</auto_size>
-      <background_color>
-        <color red="172" green="172" blue="172" />
-      </background_color>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <fontdata fontName="Sans" height="16" style="1" pixels="false" />
-      </font>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>50</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>Label</name>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <show_scrollbar>false</show_scrollbar>
-      <text>Ramp
-state:</text>
-      <tooltip></tooltip>
-      <transparent>false</transparent>
-      <vertical_alignment>1</vertical_alignment>
-      <visible>true</visible>
-      <widget_type>Label</widget_type>
-      <width>105</width>
-      <wrap_words>true</wrap_words>
-      <wuid>77de929a:15d2c51e1e8:-7e79</wuid>
-      <x>496</x>
-      <y>358</y>
-    </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <alarm_pulsing>true</alarm_pulsing>
@@ -1802,7 +1526,6 @@ state:</text>
         </rule>
       </rules>
       <scale_font>
-<<<<<<< HEAD
         <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </scale_font>
       <scale_format></scale_format>
@@ -1863,18 +1586,12 @@ $(pv_value)</tooltip>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules />
-=======
-        <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
-      </scale_font>
-      <scale_format></scale_format>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       <scale_options>
         <width_scalable>true</width_scalable>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
       <scripts />
-<<<<<<< HEAD
       <show_units>true</show_units>
       <text>######</text>
       <tooltip>$(pv_name)
@@ -1888,26 +1605,6 @@ $(pv_value)</tooltip>
       <wuid>-78d875e:157d2da58a7:-7ff9</wuid>
       <x>558</x>
       <y>0</y>
-=======
-      <show_hi>true</show_hi>
-      <show_hihi>true</show_hihi>
-      <show_label>true</show_label>
-      <show_lo>true</show_lo>
-      <show_lolo>true</show_lolo>
-      <show_markers>false</show_markers>
-      <show_minor_ticks>true</show_minor_ticks>
-      <show_scale>true</show_scale>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent_background>true</transparent_background>
-      <value_label_format></value_label_format>
-      <visible>true</visible>
-      <widget_type>Progress Bar</widget_type>
-      <width>431</width>
-      <wuid>7b9f828f:15da72867ed:-79fe</wuid>
-      <x>146</x>
-      <y>59</y>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1921,19 +1618,11 @@ $(pv_value)</tooltip>
       <border_color>
         <color red="0" green="128" blue="255" />
       </border_color>
-<<<<<<< HEAD
       <border_style>5</border_style>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
         <fontdata fontName="Sans" height="18" style="0" pixels="false" />
-=======
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <fontdata fontName="Sans" height="12" style="0" pixels="false" />
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -1942,17 +1631,10 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <height>50</height>
       <horizontal_alignment>0</horizontal_alignment>
-<<<<<<< HEAD
       <name>Meter</name>
       <precision>5</precision>
       <precision_from_pv>true</precision_from_pv>
       <pv_name>$(HEINZ):aver_get</pv_name>
-=======
-      <name>Text Update</name>
-      <precision>0</precision>
-      <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(HEINZ):id_get</pv_name>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules />
@@ -1969,11 +1651,10 @@ $(pv_value)</tooltip>
       <transparent>false</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
-<<<<<<< HEAD
       <widget_type>Text Update</widget_type>
-      <width>87</width>
+      <width>173</width>
       <wrap_words>false</wrap_words>
-      <wuid>2503a08e:162f71708b6:-7a39</wuid>
+      <wuid>2503a08e:162f71708b6:-7e19</wuid>
       <x>404</x>
       <y>358</y>
     </widget>
@@ -1993,7 +1674,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -2002,7 +1683,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <height>50</height>
       <horizontal_alignment>1</horizontal_alignment>
-      <name>Label</name>
+      <name>Label_1</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
       <pv_name></pv_name>
@@ -2016,8 +1697,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <scripts />
       <show_units>true</show_units>
-      <text>Average&#xD;
-Get</text>
+      <text>GET</text>
       <tooltip></tooltip>
       <transparent>false</transparent>
       <vertical_alignment>1</vertical_alignment>
@@ -2025,7 +1705,7 @@ Get</text>
       <widget_type>Text Update</widget_type>
       <width>75</width>
       <wrap_words>true</wrap_words>
-      <wuid>2503a08e:162f71708b6:-7a31</wuid>
+      <wuid>2503a08e:162f71708b6:-7e17</wuid>
       <x>324</x>
       <y>358</y>
     </widget>
@@ -2064,24 +1744,57 @@ Get</text>
       </scale_options>
       <scripts />
       <selected_color>
-        <color red="255" green="255" blue="255" />
+        <color red="77" green="77" blue="77" />
       </selected_color>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
       <visible>true</visible>
       <widget_type>Choice Button</widget_type>
       <width>173</width>
-      <wuid>2503a08e:162f71708b6:-794c</wuid>
+      <wuid>2503a08e:162f71708b6:-7e1a</wuid>
       <x>146</x>
       <y>358</y>
-=======
-      <widget_type>Text Update</widget_type>
-      <width>227</width>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <auto_size>false</auto_size>
+      <background_color>
+        <color red="172" green="172" blue="172" />
+      </background_color>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Segoe UI" height="17" style="1" pixels="false">Header 1</opifont.name>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>50</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <name>Label</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_scrollbar>false</show_scrollbar>
+      <text>Average</text>
+      <tooltip></tooltip>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Label</widget_type>
+      <width>141</width>
       <wrap_words>true</wrap_words>
-      <wuid>-78d875e:157d2da58a7:-7ff9</wuid>
-      <x>558</x>
-      <y>0</y>
->>>>>>> d33ede45f3ed3fe488fe516dd66d4a55a08ca9df
+      <wuid>2503a08e:162f71708b6:-7e18</wuid>
+      <x>0</x>
+      <y>358</y>
     </widget>
   </widget>
 </display>
