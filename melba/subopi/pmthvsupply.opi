@@ -18,7 +18,6 @@
   <height>600</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <P>steam:</P>
   </macros>
   <name></name>
   <rules />
@@ -46,7 +45,7 @@
     <enabled>true</enabled>
     <fc>false</fc>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -126,7 +125,7 @@
       <enabled>true</enabled>
       <fc>false</fc>
       <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+        <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="192" green="192" blue="192" />
@@ -377,7 +376,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <fc>false</fc>
       <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+        <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="192" green="192" blue="192" />
@@ -558,7 +557,7 @@ $(pv_value)</tooltip>
         <enabled>true</enabled>
         <fc>false</fc>
         <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+          <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
         <foreground_color>
           <color red="192" green="192" blue="192" />
@@ -598,12 +597,12 @@ $(pv_value)</tooltip>
           <border_width>1</border_width>
           <enabled>true</enabled>
           <font>
-            <opifont.name fontName="Segoe UI" height="11" style="1" pixels="false">Header 3</opifont.name>
+            <opifont.name fontName="Sans" height="11" style="1" pixels="false">Header 3</opifont.name>
           </font>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
-          <height>20</height>
+          <height>18</height>
           <horizontal_alignment>1</horizontal_alignment>
           <name>Label_1</name>
           <rules />
@@ -619,7 +618,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>56</width>
+          <width>69</width>
           <wrap_words>false</wrap_words>
           <wuid>25d80c1a:160122cc22b:-73a6</wuid>
           <x>0</x>
@@ -769,7 +768,7 @@ $(pv_value)</tooltip>
           </fg_gradient_color>
           <fill_level>0.0</fill_level>
           <font>
-            <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+            <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
           </font>
           <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
           <foreground_color>
@@ -945,7 +944,7 @@ for range</text>
         <border_width>1</border_width>
         <enabled>true</enabled>
         <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+          <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
         <foreground_color>
           <color red="192" green="192" blue="192" />
@@ -956,6 +955,7 @@ for range</text>
           <include_parent_macros>true</include_parent_macros>
           <R>pmt1_hv:</R>
           <CH>0</CH>
+          <P>steam:</P>
         </macros>
         <name>Linking Container</name>
         <opi_file>pmthvsupply_ch_template.opi</opi_file>
@@ -987,7 +987,7 @@ for range</text>
         <border_width>1</border_width>
         <enabled>true</enabled>
         <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+          <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
         <foreground_color>
           <color red="192" green="192" blue="192" />
@@ -996,8 +996,9 @@ for range</text>
         <height>309</height>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <R>pmt2_hv:</R>
+          <R>scan_pmt_hv:</R>
           <CH>1</CH>
+          <P>melba_020:</P>
         </macros>
         <name>Linking Container_1</name>
         <opi_file>pmthvsupply_ch_template.opi</opi_file>
@@ -1029,7 +1030,7 @@ for range</text>
         <border_width>1</border_width>
         <enabled>true</enabled>
         <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+          <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
         <foreground_color>
           <color red="192" green="192" blue="192" />
@@ -1038,8 +1039,8 @@ for range</text>
         <height>309</height>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <P>test:</P>
-          <R>ch2:</R>
+          <P>melba_050:</P>
+          <R>scan_pmt_hv:</R>
           <CH>2</CH>
         </macros>
         <name>Linking Container_2</name>
@@ -1072,7 +1073,7 @@ for range</text>
         <border_width>1</border_width>
         <enabled>true</enabled>
         <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+          <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
         <foreground_color>
           <color red="192" green="192" blue="192" />
@@ -1081,8 +1082,8 @@ for range</text>
         <height>309</height>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <P>test:</P>
-          <R>ch3:</R>
+          <P>melba_010:</P>
+          <R>s_pmt_hv:</R>
           <CH>3</CH>
         </macros>
         <name>Linking Container_3</name>
