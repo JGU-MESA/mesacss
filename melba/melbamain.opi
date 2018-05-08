@@ -19,7 +19,7 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
-  <name></name>
+  <name>HF-iOC-Status:ACCESS</name>
   <rules />
   <scripts />
   <show_close_button>true</show_close_button>
@@ -82,6 +82,15 @@
           <value>true</value>
         </exp>
         <pv trig="true">loc://showimg</pv>
+      </rule>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==1)">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">steam:hv:on_get</pv>
+        <pv trig="true">steam:laser:on_get</pv>
       </rule>
     </rules>
     <scale_options>
@@ -217,6 +226,15 @@ $(pv_value)</tooltip>
           <value>true</value>
         </exp>
         <pv trig="true">loc://showimg</pv>
+      </rule>
+      <rule name="Background_Color_Rule" prop_id="bg_gradient_color" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==1)">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">steam:hv:on_get</pv>
+        <pv trig="true">steam:laser:on_get</pv>
       </rule>
     </rules>
     <scale_options>
@@ -2650,7 +2668,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>25</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WEDH>melba_030:trip_sh1</WEDH>
@@ -5787,66 +5805,6 @@ $(pv_value)</tooltip>
     <wuid>-28995ef:15d5a519a9c:-650f</wuid>
     <x>600</x>
     <y>445</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <auto_size>true</auto_size>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>1</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <format_type>0</format_type>
-    <height>19</height>
-    <horizontal_alignment>0</horizontal_alignment>
-    <name>Text Update melba_010:so:devi</name>
-    <precision>2</precision>
-    <precision_from_pv>false</precision_from_pv>
-    <pv_name>melba_010:so:devi</pv_name>
-    <pv_value />
-    <rotation_angle>0.0</rotation_angle>
-    <rules>
-      <rule name="Visible_Rule" prop_id="visible" out_exp="false">
-        <exp bool_exp="(pv1=1) &amp;&amp;((pv0&gt;=900) || (pv0&lt;=-900))">
-          <value>true</value>
-        </exp>
-        <pv trig="true">melba_010:so:devi</pv>
-        <pv trig="true">melba_010:so:on_get</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <show_units>true</show_units>
-    <text>Value</text>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>false</visible>
-    <widget_type>Text Update</widget_type>
-    <width>32</width>
-    <wrap_words>false</wrap_words>
-    <wuid>-28995ef:15d5a519a9c:-64e5</wuid>
-    <x>720</x>
-    <y>415</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="true" hook_all="false">
@@ -13447,7 +13405,7 @@ $(pv_value)</tooltip>
       <WEDH>melba_010:sh</WEDH>
       <WEDV>melba_010:sv</WEDV>
     </macros>
-    <name>Grouping Container melba_020:sh+sv_1</name>
+    <name>Grouping Container melba_010:sh+sv</name>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -14844,7 +14802,7 @@ $(pv_value)</tooltip>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
     <height>27</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WEDH>steam:sh</WEDH>
@@ -14922,7 +14880,7 @@ $(pv_value)</tooltip>
               <color name="on &amp; okay" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; ((pv1!=0) || ((pv2&gt;=pv3) || (pv&lt;=pv4)))">
+          <exp bool_exp="(pv0==1) &amp;&amp; ((pv1!=0) || ((pv2&gt;=pv3) || (pv2&lt;=pv4)))">
             <value>
               <color name="on &amp; failure" red="255" green="0" blue="0" />
             </value>
@@ -15037,7 +14995,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <alarm_pulsing>false</alarm_pulsing>
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
       <color red="255" green="255" blue="255" />
@@ -15057,12 +15015,12 @@ $(pv_value)</tooltip>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <format_type>2</format_type>
-    <height>19</height>
+    <height>18</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update melba_040:diff_down:p_get</name>
     <precision>2</precision>
     <precision_from_pv>false</precision_from_pv>
-    <pv_name>melba_040:diff_down:p_get</pv_name>
+    <pv_name>melba_040:diffp_down:p_get</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
@@ -15088,7 +15046,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>32</width>
+    <width>50</width>
     <wrap_words>false</wrap_words>
     <wuid>4cc33365:15e04198038:-765e</wuid>
     <x>410</x>
@@ -15137,7 +15095,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <alarm_pulsing>false</alarm_pulsing>
-    <auto_size>true</auto_size>
+    <auto_size>false</auto_size>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
       <color red="255" green="255" blue="255" />
@@ -15157,12 +15115,12 @@ $(pv_value)</tooltip>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <format_type>2</format_type>
-    <height>19</height>
+    <height>18</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update melba_040:diff_up:p_get</name>
     <precision>2</precision>
     <precision_from_pv>false</precision_from_pv>
-    <pv_name>melba_040:diff_up:p_get</pv_name>
+    <pv_name>melba_040:diffp_up:p_get</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
@@ -15188,7 +15146,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>32</width>
+    <width>50</width>
     <wrap_words>false</wrap_words>
     <wuid>4cc33365:15e04198038:-764c</wuid>
     <x>410</x>
@@ -24201,8 +24159,8 @@ $(pv_value)</tooltip>
     <widget_type>Grouping Container</widget_type>
     <width>44</width>
     <wuid>7954404b:162f70629fe:-6f99</wuid>
-    <x>786</x>
-    <y>228</y>
+    <x>724</x>
+    <y>388</y>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <background_color>
@@ -25315,8 +25273,8 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <border_style>1</border_style>
-    <border_width>2</border_width>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
@@ -25325,16 +25283,39 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <format_type>1</format_type>
+    <format_type>0</format_type>
     <height>18</height>
-    <horizontal_alignment>2</horizontal_alignment>
-    <name>Text Update steam:pmt2:i_get_1</name>
-    <precision>2</precision>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Text Update_Sicherheitskette</name>
+    <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>melba_050:scan_pmt:i_get</pv_name>
+    <pv_name></pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
-    <rules />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>
+            <color name="on &amp; failure" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">steam:hv:on_get</pv>
+      </rule>
+      <rule name="Text_Rule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>Sicherheitskette auf</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>Sicherheitskette zu</value>
+        </exp>
+        <pv trig="true">steam:hv:on_get</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -25342,18 +25323,18 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_units>true</show_units>
-    <text>Value</text>
+    <text></text>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>99</width>
+    <width>108</width>
     <wrap_words>false</wrap_words>
-    <wuid>-559b3da3:162de7dbfcb:-6df3</wuid>
-    <x>190</x>
-    <y>867</y>
+    <wuid>-6fe11bb7:16301d49271:-5f6c</wuid>
+    <x>251</x>
+    <y>54</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -25367,8 +25348,8 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <border_style>1</border_style>
-    <border_width>2</border_width>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
@@ -25377,16 +25358,41 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <format_type>1</format_type>
+    <format_type>0</format_type>
     <height>18</height>
     <horizontal_alignment>2</horizontal_alignment>
-    <name>Text Update steam:pmt1:i_get_1</name>
-    <precision>2</precision>
+    <name>Text Update_Beam_on/off</name>
+    <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>melba_010:s_pmt:i_get</pv_name>
+    <pv_name></pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
-    <rules />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==1)">
+          <value>
+            <color name="on &amp; failure" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0==0) || (pv1==0)">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <pv trig="true">steam:hv:on_get</pv>
+        <pv trig="true">steam:laser:on_get</pv>
+      </rule>
+      <rule name="Text_Rule" prop_id="text" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==1)">
+          <value>Beam on</value>
+        </exp>
+        <exp bool_exp="(pv0==0) || (pv1==0)">
+          <value>Beam off</value>
+        </exp>
+        <pv trig="true">steam:hv:on_get</pv>
+        <pv trig="true">steam:laser:on_get</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -25394,17 +25400,88 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_units>true</show_units>
-    <text>Value</text>
+    <text></text>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>96</width>
+    <width>54</width>
     <wrap_words>false</wrap_words>
-    <wuid>-559b3da3:162de7dbfcb:-6de9</wuid>
-    <x>518</x>
-    <y>397</y>
+    <wuid>-6fe11bb7:16301d49271:-5231</wuid>
+    <x>531</x>
+    <y>54</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>subopi/IOC-Status.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <mode>7</mode>
+        <description></description>
+      </action>
+    </actions>
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>25</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_PMT_Supply_1</name>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pvStr0==&quot;Running&quot;)&amp;&amp;(pvStr1==&quot;Running&quot;)&amp;&amp;(pvStr2==&quot;Running&quot;)&amp;&amp;(pvStr3==&quot;Running&quot;)&amp;&amp;(pvStr4==&quot;Running&quot;)&amp;&amp;(pvStr5==&quot;Running&quot;)&amp;&amp;(pvStr6==&quot;Running&quot;)&amp;&amp;(pvStr7==&quot;Running&quot;)&amp;&amp; (pvStr8==&quot;Running&quot;)">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pvStr0!=&quot;Running&quot;)||(pvStr1!=&quot;Running&quot;)||(pvStr2!=&quot;Running&quot;)||(pvStr3!=&quot;Running&quot;)||(pvStr4!=&quot;Running&quot;)||(pvStr5!=&quot;Running&quot;)||(pvStr6!=&quot;Running&quot;)||(pvStr7!=&quot;Running&quot;)|| (pvStr8!=&quot;Running&quot;)">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">HF-IOC-Status:ACCESS</pv>
+        <pv trig="true">MELBA1-IOC-Status:ACCESS</pv>
+        <pv trig="true">MELBAPLV-IOC-Status:ACCESS</pv>
+        <pv trig="true">MELBASCAN-IOC-Status:ACCESS</pv>
+        <pv trig="true">STEAM1-IOC-Status:ACCESS</pv>
+        <pv trig="true">STEAMPREB-IOC-Status:ACCESS</pv>
+        <pv trig="true">TOE-IOC-Status:ACCESS</pv>
+        <pv trig="true">WEDL-IOC-Status:ACCESS</pv>
+        <pv trig="true">WASU-IOC-Status:ACCESS</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>IOC-Status</text>
+    <tooltip></tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>90</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-5995eb79:1633f0ba2cf:-6d0d</wuid>
+    <x>24</x>
+    <y>136</y>
   </widget>
 </display>
