@@ -19,7 +19,7 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
-  <name>HF-iOC-Status:ACCESS</name>
+  <name></name>
   <rules />
   <scripts />
   <show_close_button>true</show_close_button>
@@ -13840,7 +13840,7 @@ $(pv_value)</tooltip>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
     <height>12</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PNEUVAL1>melba_010:pv</PNEUVAL1>
@@ -25420,7 +25420,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
-        <mode>7</mode>
+        <mode>8</mode>
         <description></description>
       </action>
     </actions>
@@ -25445,12 +25445,12 @@ $(pv_value)</tooltip>
     <name>Label_PMT_Supply_1</name>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="(pvStr0==&quot;Running&quot;)&amp;&amp;(pvStr1==&quot;Running&quot;)&amp;&amp;(pvStr2==&quot;Running&quot;)&amp;&amp;(pvStr3==&quot;Running&quot;)&amp;&amp;(pvStr4==&quot;Running&quot;)&amp;&amp;(pvStr5==&quot;Running&quot;)&amp;&amp;(pvStr6==&quot;Running&quot;)&amp;&amp;(pvStr7==&quot;Running&quot;)&amp;&amp; (pvStr8==&quot;Running&quot;)">
+        <exp bool_exp="(pvStr0==&quot;Running&quot;)&amp;&amp;(pvStr1==&quot;Running&quot;)&amp;&amp;(pvStr2==&quot;Running&quot;)&amp;&amp;(pvStr3==&quot;Running&quot;)&amp;&amp;(pvStr4==&quot;Running&quot;)&amp;&amp;(pvStr5==&quot;Running&quot;)&amp;&amp;(pvStr6==&quot;Running&quot;)&amp;&amp;(pvStr7==&quot;Running&quot;)&amp;&amp; (pvStr8==&quot;Running&quot;)&amp;&amp; (pvStr9==&quot;Running&quot;)">
           <value>
             <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
-        <exp bool_exp="(pvStr0!=&quot;Running&quot;)||(pvStr1!=&quot;Running&quot;)||(pvStr2!=&quot;Running&quot;)||(pvStr3!=&quot;Running&quot;)||(pvStr4!=&quot;Running&quot;)||(pvStr5!=&quot;Running&quot;)||(pvStr6!=&quot;Running&quot;)||(pvStr7!=&quot;Running&quot;)|| (pvStr8!=&quot;Running&quot;)">
+        <exp bool_exp="(pvStr0!=&quot;Running&quot;)||(pvStr1!=&quot;Running&quot;)||(pvStr2!=&quot;Running&quot;)||(pvStr3!=&quot;Running&quot;)||(pvStr4!=&quot;Running&quot;)||(pvStr5!=&quot;Running&quot;)||(pvStr6!=&quot;Running&quot;)||(pvStr7!=&quot;Running&quot;)|| (pvStr8!=&quot;Running&quot;)|| (pvStr9!=&quot;Running&quot;)">
           <value>
             <color name="Major" red="255" green="0" blue="0" />
           </value>
@@ -25464,6 +25464,7 @@ $(pv_value)</tooltip>
         <pv trig="true">TOE-IOC-Status:ACCESS</pv>
         <pv trig="true">WEDL-IOC-Status:ACCESS</pv>
         <pv trig="true">WASU-IOC-Status:ACCESS</pv>
+        <pv trig="true">LASER-IOC-Status:ACCESS</pv>
       </rule>
     </rules>
     <scale_options>
