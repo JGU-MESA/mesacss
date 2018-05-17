@@ -23,34 +23,34 @@
     <axes>
         <axis>
             <visible>true</visible>
-            <name>Value 1</name>
+            <name>Current [A]</name>
             <use_axis_name>false</use_axis_name>
             <use_trace_names>true</use_trace_names>
-            <right>false</right>
+            <right>true</right>
             <color>
                 <red>0</red>
                 <green>0</green>
-                <blue>0</blue>
+                <blue>1</blue>
             </color>
             <min>1.0E-12</min>
             <max>1.0E-8</max>
-            <grid>false</grid>
+            <grid>true</grid>
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Value 2</name>
+            <name>Voltage [V]</name>
             <use_axis_name>false</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>false</right>
             <color>
-                <red>0</red>
+                <red>1</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>120.1312</min>
-            <max>120.1688</max>
+            <min>0.0</min>
+            <max>500.0</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
@@ -65,9 +65,9 @@
             <name>steam:anode:i_get</name>
             <axis>0</axis>
             <color>
-                <red>255</red>
+                <red>0</red>
                 <green>0</green>
-                <blue>0</blue>
+                <blue>255</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
@@ -89,8 +89,8 @@
             <name>steam_prep:abacus:u_get</name>
             <axis>1</axis>
             <color>
-                <red>0</red>
-                <green>255</green>
+                <red>255</red>
+                <green>0</green>
                 <blue>0</blue>
             </color>
             <trace_type>AREA</trace_type>
@@ -101,6 +101,11 @@
             <period>0.0</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>1</key>
+            </archive>
         </pv>
     </pvlist>
 </databrowser>

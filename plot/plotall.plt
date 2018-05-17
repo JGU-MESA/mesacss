@@ -5,11 +5,11 @@
     <show_legend>false</show_legend>
     <show_toolbar>true</show_toolbar>
     <grid>false</grid>
-    <scroll>false</scroll>
+    <scroll>true</scroll>
     <update_period>0.1</update_period>
     <scroll_step>1</scroll_step>
-    <start>2018-04-27 12:35:45.142</start>
-    <end>2018-04-27 14:02:45.713</end>
+    <start>-15 minutes 0.0 seconds</start>
+    <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
         <red>255</red>
@@ -23,7 +23,7 @@
     <axes>
         <axis>
             <visible>true</visible>
-            <name>Voltage in kV</name>
+            <name>Voltage [kV]</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>true</right>
@@ -40,7 +40,7 @@
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Current in mA</name>
+            <name>Current [mA]</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>false</right>
@@ -57,7 +57,7 @@
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Current in A</name>
+            <name>Current [A]</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>false</right>
@@ -74,7 +74,7 @@
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Pressure in mbar</name>
+            <name>Pressure [mbar]</name>
             <use_axis_name>false</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>true</right>
@@ -83,8 +83,8 @@
                 <green>0</green>
                 <blue>1</blue>
             </color>
-            <min>2.5118864315095718E-17</min>
-            <max>3.981071705534969E8</max>
+            <min>2.1707198297011254E-17</min>
+            <max>2.255316759300923E-7</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
