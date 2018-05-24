@@ -3901,7 +3901,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>37</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PUMP>melba_030:pump</PUMP>
@@ -7856,7 +7856,7 @@ $(pv_value)</tooltip>
         <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <WED>melba_050:trip_q2</WED>
+          <WED>melba_050:trip_q3</WED>
         </macros>
         <mode>7</mode>
         <description></description>
@@ -7879,7 +7879,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>26</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WED>melba_050:trip_q3</WED>
@@ -21091,6 +21091,88 @@ $(pv_value)</tooltip>
         <path>subopi/pmt.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
+          <PMT>steam:pmt1</PMT>
+        </macros>
+        <mode>7</mode>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </background_color>
+    <bg_gradient_color>
+      <color name="no PV-name given" red="255" green="255" blue="0" />
+    </bg_gradient_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="white" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>1</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <gradient>false</gradient>
+    <height>24</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>0</line_width>
+    <name>Rectangle_ steam:pmt1</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">mexh3:pmt_hv:on_get</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Rectangle</widget_type>
+    <width>18</width>
+    <wuid>20be2959:1606deccadb:-5c90</wuid>
+    <x>606</x>
+    <y>276</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>subopi/pmt.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
           <PMT>melba_020:scan_pmt</PMT>
         </macros>
         <mode>7</mode>
@@ -21191,9 +21273,9 @@ $(pv_value)</tooltip>
     </bg_gradient_color>
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
-      <color red="0" green="128" blue="255" />
+      <color name="white" red="255" green="255" blue="255" />
     </border_color>
-    <border_style>0</border_style>
+    <border_style>1</border_style>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <fg_gradient_color>
@@ -21724,88 +21806,6 @@ $(pv_value)</tooltip>
         <path>subopi/pmt.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <PMT>steam:pmt1</PMT>
-        </macros>
-        <mode>0</mode>
-        <description></description>
-      </action>
-    </actions>
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color name="off" red="192" green="192" blue="192" />
-    </background_color>
-    <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </bg_gradient_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </fg_gradient_color>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <gradient>false</gradient>
-    <height>24</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <line_style>0</line_style>
-    <line_width>0</line_width>
-    <name>Rectangle_ steam:pmt1</name>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules>
-      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>
-            <color name="off" red="192" green="192" blue="192" />
-          </value>
-        </exp>
-        <exp bool_exp="pv0==1">
-          <value>
-            <color name="on &amp; okay" red="0" green="255" blue="0" />
-          </value>
-        </exp>
-        <pv trig="true">mexh3:pmt_hv:on_get</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Rectangle</widget_type>
-    <width>18</width>
-    <wuid>3608df60:162b3f55514:-1145</wuid>
-    <x>719</x>
-    <y>643</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
-    <actions hook="true" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>subopi/pmt.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
           <PMT>steam:pmt2</PMT>
         </macros>
         <mode>0</mode>
@@ -21824,9 +21824,9 @@ $(pv_value)</tooltip>
     </bg_gradient_color>
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
-      <color red="0" green="128" blue="255" />
+      <color name="white" red="255" green="255" blue="255" />
     </border_color>
-    <border_style>0</border_style>
+    <border_style>1</border_style>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <fg_gradient_color>
@@ -23935,13 +23935,13 @@ $(pv_value)</tooltip>
       <color name="off" red="192" green="192" blue="192" />
     </background_color>
     <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
+      <color name="no PV-name given" red="255" green="255" blue="0" />
     </bg_gradient_color>
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
-      <color red="0" green="128" blue="255" />
+      <color name="white" red="255" green="255" blue="255" />
     </border_color>
-    <border_style>0</border_style>
+    <border_style>1</border_style>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <fg_gradient_color>
@@ -24851,7 +24851,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>30</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <LIGHT>melba_020:scan_light</LIGHT>
@@ -25972,5 +25972,125 @@ $(pv_value)</tooltip>
         <y>9</y>
       </widget>
     </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="on &amp; failure" red="255" green="0" blue="0" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fill>true</fill>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>16</height>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>Arc_gauge_thresholds</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pv0==7E-10) &amp;&amp; (pv1==5E-10) &amp;&amp;(pv2==7E-10) &amp;&amp;(pv3==5E-10)">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">melba_030:gauge:sp1_high_get</pv>
+        <pv trig="true">melba_030:gauge:sp1_low_get</pv>
+        <pv trig="true">melba_030:gauge:sp2_high_get</pv>
+        <pv trig="true">melba_030:gauge:sp2_low_get</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <start_angle>0</start_angle>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <total_angle>360</total_angle>
+    <visible>true</visible>
+    <widget_type>Arc</widget_type>
+    <width>16</width>
+    <wuid>2e5f45e2:16387d3620a:b5d</wuid>
+    <x>760</x>
+    <y>336</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="on &amp; failure" red="255" green="0" blue="0" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fill>true</fill>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>16</height>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>Arc_gauge_thresholds_2</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pv0==7E-10) &amp;&amp; (pv1==5E-10) &amp;&amp;(pv2==7E-10) &amp;&amp;(pv3==5E-10)">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">melba_030:gauge:sp1_high_get</pv>
+        <pv trig="true">melba_030:gauge:sp1_low_get</pv>
+        <pv trig="true">melba_030:gauge:sp2_high_get</pv>
+        <pv trig="true">melba_030:gauge:sp2_low_get</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <start_angle>0</start_angle>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <total_angle>360</total_angle>
+    <visible>true</visible>
+    <widget_type>Arc</widget_type>
+    <width>16</width>
+    <wuid>2e5f45e2:16387d3620a:-be</wuid>
+    <x>477</x>
+    <y>886</y>
   </widget>
 </display>
