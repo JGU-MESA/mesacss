@@ -98,12 +98,12 @@
     <format>0</format>
     <height>25</height>
     <horizontal_alignment>1</horizontal_alignment>
-    <horizontal_buttons_layout>false</horizontal_buttons_layout>
+    <horizontal_buttons_layout>true</horizontal_buttons_layout>
     <limits_from_pv>true</limits_from_pv>
     <maximum>1.7976931348623157E308</maximum>
     <minimum>-1.7976931348623157E308</minimum>
     <name>Spinner</name>
-    <page_increment>10.0</page_increment>
+    <page_increment>250.0</page_increment>
     <precision>3</precision>
     <precision_from_pv>false</precision_from_pv>
     <pv_name>$(P)$(R)$(PV_set)</pv_name>
@@ -116,7 +116,7 @@
     </scale_options>
     <scripts />
     <show_text>true</show_text>
-    <step_increment>1.0</step_increment>
+    <step_increment>100.0</step_increment>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
