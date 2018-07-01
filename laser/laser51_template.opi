@@ -15,7 +15,7 @@
     <color red="192" green="192" blue="192" />
   </foreground_color>
   <grid_space>6</grid_space>
-  <height>55</height>
+  <height>25</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
@@ -28,7 +28,7 @@
   <show_ruler>true</show_ruler>
   <snap_to_geometry>true</snap_to_geometry>
   <widget_type>Display</widget_type>
-  <width>325</width>
+  <width>330</width>
   <wuid>-7b99c6f9:15d93cfdb2b:-7e25</wuid>
   <x>-1</x>
   <y>-1</y>
@@ -45,7 +45,7 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      <fontdata fontName="Segoe UI" height="9" style="0" pixels="false" />
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -67,7 +67,7 @@
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>125</width>
+    <width>120</width>
     <wrap_words>true</wrap_words>
     <wuid>-7b99c6f9:15d93cfdb2b:-7dff</wuid>
     <x>0</x>
@@ -89,7 +89,7 @@
     <buttons_on_left>false</buttons_on_left>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+      <fontdata fontName="Segoe UI" height="10" style="0" pixels="false" />
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -103,7 +103,7 @@
     <maximum>1.7976931348623157E308</maximum>
     <minimum>-1.7976931348623157E308</minimum>
     <name>Spinner</name>
-    <page_increment>10.0</page_increment>
+    <page_increment>250.0</page_increment>
     <precision>3</precision>
     <precision_from_pv>false</precision_from_pv>
     <pv_name>$(P)$(R)$(PV_set)</pv_name>
@@ -116,21 +116,22 @@
     </scale_options>
     <scripts />
     <show_text>true</show_text>
-    <step_increment>1.0</step_increment>
+    <step_increment>100.0</step_increment>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Spinner</widget_type>
-    <width>125</width>
+    <width>100</width>
     <wuid>-7b99c6f9:15d93cfdb2b:-7dfe</wuid>
-    <x>0</x>
-    <y>25</y>
+    <x>120</x>
+    <y>0</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <alarm_pulsing>true</alarm_pulsing>
+    <auto_size>false</auto_size>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
       <color red="240" green="240" blue="240" />
@@ -141,79 +142,50 @@ $(pv_value)</tooltip>
     </border_color>
     <border_style>0</border_style>
     <border_width>1</border_width>
-    <color_fillbackground>
-      <color red="200" green="200" blue="200" />
-    </color_fillbackground>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <effect_3d>true</effect_3d>
     <enabled>true</enabled>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
     <font>
-      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+      <fontdata fontName="Segoe UI" height="10" style="0" pixels="false" />
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>50</height>
-    <horizontal>true</horizontal>
-    <indicator_mode>false</indicator_mode>
-    <level_hi>80.0</level_hi>
-    <level_hihi>90.0</level_hihi>
-    <level_lo>20.0</level_lo>
-    <level_lolo>10.0</level_lolo>
-    <limits_from_pv>true</limits_from_pv>
-    <log_scale>true</log_scale>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <maximum>100.0</maximum>
-    <minimum>0.0</minimum>
+    <format_type>0</format_type>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
     <name>Progress Bar</name>
-    <origin>0.0</origin>
-    <origin_ignored>true</origin_ignored>
+    <precision>0</precision>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(P)$(R)$(PV_get)</pv_name>
     <pv_value />
+    <rotation_angle>0.0</rotation_angle>
     <rules />
-    <scale_font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-    </scale_font>
-    <scale_format></scale_format>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <show_hi>true</show_hi>
-    <show_hihi>true</show_hihi>
-    <show_label>true</show_label>
-    <show_lo>false</show_lo>
-    <show_lolo>false</show_lolo>
-    <show_markers>false</show_markers>
-    <show_minor_ticks>true</show_minor_ticks>
-    <show_scale>true</show_scale>
+    <show_units>true</show_units>
+    <text>######</text>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <transparent_background>true</transparent_background>
-    <value_label_format></value_label_format>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
-    <widget_type>Progress Bar</widget_type>
-    <width>200</width>
+    <widget_type>Text Update</widget_type>
+    <width>100</width>
+    <wrap_words>false</wrap_words>
     <wuid>-7b99c6f9:15d93cfdb2b:-7dfd</wuid>
-    <x>124</x>
+    <x>220</x>
     <y>0</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
+    <fill_grids>false</fill_grids>
+    <grid_gap>0</grid_gap>
+    <name>Grid Layout</name>
+    <number_of_columns>3</number_of_columns>
+    <widget_type>Grid Layout</widget_type>
+    <wuid>-6d4fda68:16455ee39b3:-7cf2</wuid>
   </widget>
 </display>
