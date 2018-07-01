@@ -16007,12 +16007,12 @@ $(pv_value)</tooltip>
             <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
-        <exp bool_exp="(pv1==1) &amp;&amp; (pv2==0)">
+        <exp bool_exp="(pv1!=0) &amp;&amp; (pv2==0)">
           <value>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
-        <exp bool_exp="(pv1==1) &amp;&amp; (pv2==1)">
+        <exp bool_exp="(pv1!=0) &amp;&amp; (pv2==1)">
           <value>
             <color red="240" green="240" blue="240" />
           </value>
@@ -26154,68 +26154,6 @@ $(pv_value)</tooltip>
     <wuid>1cf87b6f:163f3ed8197:-46c1</wuid>
     <x>352</x>
     <y>658</y>
-    <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="no PV-name given" red="255" green="255" blue="0" />
-      </background_color>
-      <border_alarm_sensitive>true</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill_level>0.0</fill_level>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="255" green="0" blue="0" />
-      </foreground_color>
-      <height>37</height>
-      <horizontal_fill>true</horizontal_fill>
-      <line_color>
-        <color name="white" red="255" green="255" blue="255" />
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Polygon melba_040:pump:on_get</name>
-      <points>
-        <point x="21" y="36" />
-        <point x="9" y="36" />
-        <point x="9" y="12" />
-        <point x="0" y="12" />
-        <point x="0" y="0" />
-        <point x="30" y="0" />
-        <point x="30" y="12" />
-        <point x="21" y="12" />
-      </points>
-      <pv_name></pv_name>
-      <pv_value />
-      <rotation_angle>0.0</rotation_angle>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Polygon</widget_type>
-      <width>31</width>
-      <wuid>1cf87b6f:163f3ed8197:-46c0</wuid>
-      <x>0</x>
-      <y>0</y>
-    </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="true" hook_all="false">
@@ -26245,7 +26183,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>36</height>
+    <height>37</height>
     <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
@@ -26264,10 +26202,10 @@ $(pv_value)</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>37</width>
+    <width>36</width>
     <wuid>1cf87b6f:163f3ed8197:-44ee</wuid>
-    <x>337</x>
-    <y>565</y>
+    <x>354</x>
+    <y>654</y>
     <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <alarm_pulsing>false</alarm_pulsing>
@@ -26292,7 +26230,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="255" green="0" blue="0" />
       </foreground_color>
-      <height>31</height>
+      <height>37</height>
       <horizontal_fill>true</horizontal_fill>
       <line_color>
         <color name="white" red="255" green="255" blue="255" />
@@ -26301,14 +26239,14 @@ $(pv_value)</tooltip>
       <line_width>1</line_width>
       <name>Polygon melba_040:diffp_up</name>
       <points>
-        <point x="0" y="21" />
-        <point x="0" y="9" />
-        <point x="24" y="9" />
-        <point x="24" y="0" />
-        <point x="36" y="0" />
-        <point x="36" y="30" />
-        <point x="24" y="30" />
-        <point x="24" y="21" />
+        <point x="21" y="36" />
+        <point x="9" y="36" />
+        <point x="9" y="12" />
+        <point x="0" y="12" />
+        <point x="0" y="0" />
+        <point x="30" y="0" />
+        <point x="30" y="12" />
+        <point x="21" y="12" />
       </points>
       <pv_name>melba_040:diffp_up:on_get</pv_name>
       <pv_value />
@@ -26345,10 +26283,50 @@ $(pv_value)</tooltip>
       <transparent>false</transparent>
       <visible>true</visible>
       <widget_type>Polygon</widget_type>
-      <width>37</width>
+      <width>31</width>
       <wuid>1cf87b6f:163f3ed8197:-44ed</wuid>
       <x>0</x>
       <y>0</y>
     </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>true</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color name="black" red="0" green="0" blue="0" />
+    </border_color>
+    <border_style>1</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>17</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label melba_040:diffp_up</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>diffp_up</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>62</width>
+    <wrap_words>false</wrap_words>
+    <wuid>1cf87b6f:163f3ed8197:6ac2</wuid>
+    <x>337</x>
+    <y>580</y>
   </widget>
 </display>
