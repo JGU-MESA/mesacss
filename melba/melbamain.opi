@@ -18876,7 +18876,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>laser50/laser51.opi</path>
+        <path>../laser/laser51.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
@@ -26127,7 +26127,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <fc>false</fc>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -26178,7 +26178,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <fc>false</fc>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -26224,7 +26224,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <fill_level>0.0</fill_level>
       <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+        <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -26302,12 +26302,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>17</height>
+    <height>16</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label melba_040:diffp_up</name>
     <rules />
@@ -26323,7 +26323,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>46</width>
+    <width>51</width>
     <wrap_words>false</wrap_words>
     <wuid>1cf87b6f:163f3ed8197:6ac2</wuid>
     <x>337</x>
