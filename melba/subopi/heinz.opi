@@ -3653,6 +3653,89 @@ $(pv_value)</tooltip>
         <wuid>-7e0cbdc8:162fb91c8ef:-6f0a</wuid>
       </widget>
     </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <bulb_border>3</bulb_border>
+      <bulb_border_color>
+        <color red="150" green="150" blue="150" />
+      </bulb_border_color>
+      <data_type>1</data_type>
+      <effect_3d>true</effect_3d>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <height>50</height>
+      <name>LED</name>
+      <off_state>0</off_state>
+      <on_state>1</on_state>
+      <pv_name>melba_010:pv:on_get</pv_name>
+      <pv_value />
+      <rules>
+        <rule name="VALVE Closed color" prop_id="state_color_0" out_exp="true">
+          <exp bool_exp="pvStr0 == 'Closed' &amp;&amp; pv1 == 0 &amp;&amp; pv2 == 1">
+            <value>ColorFontUtil.getColorFromRGB(190,190,190)</value>
+          </exp>
+          <exp bool_exp="pvStr0 == 'Closed' &amp;&amp; pv1 == 1 &amp;&amp; pv2 == 1">
+            <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+          </exp>
+          <pv trig="true">$(pv_name)</pv>
+          <pv trig="true">sim://flipflop(.66)</pv>
+          <pv trig="true">$(HEINZ):on_get</pv>
+        </rule>
+      </rules>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_boolean_label>true</show_boolean_label>
+      <square_led>true</square_led>
+      <state_color_0>
+        <color name="Dark Gray Border" red="190" green="190" blue="190" />
+      </state_color_0>
+      <state_color_1>
+        <color red="0" green="255" blue="0" />
+      </state_color_1>
+      <state_color_2>
+        <color name="Minor" red="255" green="128" blue="0" />
+      </state_color_2>
+      <state_color_fallback>
+        <color name="Purple" red="128" green="0" blue="255" />
+      </state_color_fallback>
+      <state_count>3</state_count>
+      <state_label_0>VALVE CLOSED</state_label_0>
+      <state_label_1>VALVE OPEN</state_label_1>
+      <state_label_2>VALVE UNDEFINED</state_label_2>
+      <state_label_fallback>ERR</state_label_fallback>
+      <state_value_0>0.0</state_value_0>
+      <state_value_1>1.0</state_value_1>
+      <state_value_2>2.0</state_value_2>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>LED</widget_type>
+      <width>118</width>
+      <wuid>-11256eca:1645a5c6ebd:-414f</wuid>
+      <x>675</x>
+      <y>0</y>
+    </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.gridLayout" version="1.0.0">
       <fill_grids>false</fill_grids>
       <grid_gap>2</grid_gap>
