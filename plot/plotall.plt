@@ -8,7 +8,7 @@
     <scroll>true</scroll>
     <update_period>0.1</update_period>
     <scroll_step>1</scroll_step>
-    <start>-5 minutes 0.0 seconds</start>
+    <start>-15 minutes 0.0 seconds</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -23,7 +23,7 @@
     <axes>
         <axis>
             <visible>true</visible>
-            <name>Voltage in kV</name>
+            <name>Voltage [kV]</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>true</right>
@@ -32,15 +32,15 @@
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>0.0</min>
-            <max>200.0</max>
+            <min>-495.0</min>
+            <max>112.0</max>
             <grid>true</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Current in mA</name>
+            <name>Current [mA]</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>false</right>
@@ -49,15 +49,15 @@
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>0.0</min>
-            <max>1.0</max>
+            <min>-0.027100000000000003</min>
+            <max>0.016800000000000002</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Anodecurrent in mA</name>
+            <name>Current [A]</name>
             <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>false</right>
@@ -66,15 +66,15 @@
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>1.0E-10</min>
-            <max>1.0</max>
+            <min>5.141006567181788E-12</min>
+            <max>5.141006567181767</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Pressure in mbar</name>
+            <name>Pressure [mbar]</name>
             <use_axis_name>false</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>true</right>
@@ -83,8 +83,8 @@
                 <green>0</green>
                 <blue>1</blue>
             </color>
-            <min>1.0E-12</min>
-            <max>1.0E-8</max>
+            <min>2.1707198297011254E-17</min>
+            <max>2.255316759300923E-7</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
@@ -100,8 +100,8 @@
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>0.0</min>
-            <max>66000.0</max>
+            <min>41.0</min>
+            <max>916.0</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
@@ -131,7 +131,7 @@
             <archive>
                 <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>1</key>
+                <key>0</key>
             </archive>
         </pv>
         <pv>
@@ -152,11 +152,16 @@
             <period>0.0</period>
             <ring_size>100000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
             <display_name>Anodecurrent</display_name>
             <visible>true</visible>
-            <name>steam_prep:riesling_sl:i_get</name>
+            <name>steam:anode:i_get</name>
             <axis>2</axis>
             <color>
                 <red>0</red>
@@ -171,6 +176,11 @@
             <period>0.0</period>
             <ring_size>100000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
             <display_name>STEAM Pressure</display_name>
@@ -190,6 +200,11 @@
             <period>0.0</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
             <display_name>PS Voltage</display_name>
@@ -209,6 +224,11 @@
             <period>0.0</period>
             <ring_size>100000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
             <display_name>Beam Dump</display_name>
@@ -228,6 +248,11 @@
             <period>0.0</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
             <display_name>melba_030:gauge:p_get</display_name>
@@ -247,6 +272,59 @@
             <period>0.0</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
+        </pv>
+        <pv>
+            <display_name>melba_060:gauge:p_get</display_name>
+            <visible>true</visible>
+            <name>melba_060:gauge:p_get</name>
+            <axis>3</axis>
+            <color>
+                <red>128</red>
+                <green>0</green>
+                <blue>128</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <linewidth>2</linewidth>
+            <point_type>NONE</point_type>
+            <point_size>2</point_size>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
+        </pv>
+        <pv>
+            <display_name>steam:hv_abacus:i_get</display_name>
+            <visible>true</visible>
+            <name>steam:hv_abacus:i_get</name>
+            <axis>2</axis>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <linewidth>2</linewidth>
+            <point_type>NONE</point_type>
+            <point_size>2</point_size>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
     </pvlist>
 </databrowser>

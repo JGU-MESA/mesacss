@@ -14212,19 +14212,23 @@ $(pv_value)</tooltip>
     </permutation_matrix>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="(pv0 &gt;= pv1)">
+        <exp bool_exp="pv0 ==0">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0 ==1">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv1!=0">
           <value>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
-        <exp bool_exp="(pv0 &gt;= pv2)">
-          <value>
-            <color name="Minor" red="255" green="128" blue="0" />
-          </value>
-        </exp>
-        <pv trig="true">steam:gauge:p_get</pv>
-        <pv trig="true">steam:gauge:p_get.HIHI</pv>
-        <pv trig="true">steam:gauge:p_get.HIGH</pv>
+        <pv trig="true">steam:gauge:on_get</pv>
+        <pv trig="true">steam:gauge:error_get</pv>
       </rule>
     </rules>
     <scale_options>
@@ -14297,15 +14301,21 @@ $(pv_value)</tooltip>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
         <exp bool_exp="pv0 ==0">
           <value>
-            <color name="on &amp; okay" red="0" green="255" blue="0" />
+            <color name="off" red="192" green="192" blue="192" />
           </value>
         </exp>
         <exp bool_exp="pv0 ==1">
           <value>
-            <color name="off" red="192" green="192" blue="192" />
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="pv1!=0">
+          <value>
+            <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
         <pv trig="true">melba_030:gauge:on_get</pv>
+        <pv trig="true">melba_030:gauge:stat_get</pv>
       </rule>
     </rules>
     <scale_options>
@@ -14668,12 +14678,12 @@ $(pv_value)</tooltip>
     </permutation_matrix>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0 ==1">
+        <exp bool_exp="pv0 ==0">
           <value>
             <color name="off" red="192" green="192" blue="192" />
           </value>
         </exp>
-        <exp bool_exp="pv0 ==0">
+        <exp bool_exp="pv0 ==1">
           <value>
             <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
