@@ -78,7 +78,7 @@
             <ring_size>50000</ring_size>
             <request>OPTIMIZED</request>
             <archive>
-                <name>Epics Archiver</name>
+                <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
                 <key>0</key>
             </archive>
@@ -102,7 +102,7 @@
             <ring_size>50000</ring_size>
             <request>OPTIMIZED</request>
             <archive>
-                <name>Epics Archiver</name>
+                <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
                 <key>0</key>
             </archive>
@@ -126,7 +126,7 @@
             <ring_size>50000</ring_size>
             <request>OPTIMIZED</request>
             <archive>
-                <name>Epics Archiver</name>
+                <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
                 <key>0</key>
             </archive>
@@ -150,7 +150,7 @@
             <ring_size>50000</ring_size>
             <request>OPTIMIZED</request>
             <archive>
-                <name>Epics Archiver</name>
+                <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
                 <key>0</key>
             </archive>

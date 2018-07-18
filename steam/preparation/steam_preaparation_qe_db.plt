@@ -8,7 +8,7 @@
     <scroll>true</scroll>
     <update_period>1.0</update_period>
     <scroll_step>5</scroll_step>
-    <start>-1.00 h</start>
+    <start>-10 minutes 0.0 seconds</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -23,17 +23,17 @@
     <axes>
         <axis>
             <visible>true</visible>
-            <name>Current [mA]</name>
-            <use_axis_name>false</use_axis_name>
+            <name>Current</name>
+            <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>true</right>
             <color>
-                <red>0</red>
+                <red>1</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
             <min>1.0E-9</min>
-            <max>2.0</max>
+            <max>0.01</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
@@ -41,13 +41,13 @@
         <axis>
             <visible>true</visible>
             <name>Pressure</name>
-            <use_axis_name>false</use_axis_name>
+            <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>false</right>
             <color>
                 <red>0</red>
                 <green>0</green>
-                <blue>0</blue>
+                <blue>1</blue>
             </color>
             <min>1.0E-11</min>
             <max>1.0E-6</max>
@@ -58,29 +58,29 @@
         <axis>
             <visible>true</visible>
             <name>QE</name>
-            <use_axis_name>false</use_axis_name>
+            <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>true</right>
             <color>
-                <red>0</red>
+                <red>1</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
             <min>0.0</min>
-            <max>6.0</max>
+            <max>2.0</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
         </axis>
         <axis>
             <visible>true</visible>
-            <name>Value 4</name>
-            <use_axis_name>false</use_axis_name>
+            <name>DISP_Current</name>
+            <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>false</right>
             <color>
                 <red>0</red>
-                <green>0</green>
+                <green>1</green>
                 <blue>0</blue>
             </color>
             <min>0.0</min>
@@ -120,7 +120,7 @@
         <pv>
             <display_name>steam_prep:riesling_sl:i_get</display_name>
             <visible>true</visible>
-            <name>steam_prep:riesling_sl:i_get</name>
+            <name>steam:anode:i_get</name>
             <axis>0</axis>
             <color>
                 <red>255</red>

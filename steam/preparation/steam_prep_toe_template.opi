@@ -276,12 +276,12 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <format_type>0</format_type>
+    <format_type>7</format_type>
     <height>40</height>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <name>Text Update</name>
-    <precision>0</precision>
-    <precision_from_pv>true</precision_from_pv>
+    <precision>2</precision>
+    <precision_from_pv>false</precision_from_pv>
     <pv_name>$(P)$(R)pow_get</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -368,12 +368,12 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <format_type>0</format_type>
+    <format_type>7</format_type>
     <height>40</height>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <name>Text Update</name>
-    <precision>0</precision>
-    <precision_from_pv>true</precision_from_pv>
+    <precision>2</precision>
+    <precision_from_pv>false</precision_from_pv>
     <pv_name>$(P)$(R)i_get</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -460,12 +460,12 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <format_type>0</format_type>
+    <format_type>7</format_type>
     <height>40</height>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <name>Text Update</name>
-    <precision>0</precision>
-    <precision_from_pv>true</precision_from_pv>
+    <precision>2</precision>
+    <precision_from_pv>false</precision_from_pv>
     <pv_name>$(P)$(R)u_get</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
