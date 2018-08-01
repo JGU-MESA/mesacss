@@ -21472,7 +21472,7 @@ $(pv_value)</tooltip>
         <border_width>1</border_width>
         <confirm_message>Do you really want to turn on this light?</confirm_message>
         <data_type>0</data_type>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
@@ -22148,7 +22148,7 @@ $(pv_value)</tooltip>
         <border_width>1</border_width>
         <confirm_message>Do you really want to turn on this light?</confirm_message>
         <data_type>0</data_type>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
@@ -22220,7 +22220,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>30</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <LIGHT>melba_050:scan_light</LIGHT>
@@ -22261,7 +22261,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>21</height>
-      <lock_children>false</lock_children>
+      <lock_children>true</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <LIGHT>melba_050:scan_light</LIGHT>
@@ -22486,7 +22486,7 @@ $(pv_value)</tooltip>
         <border_width>1</border_width>
         <confirm_message>Do you really want to turn on this light?</confirm_message>
         <data_type>0</data_type>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
