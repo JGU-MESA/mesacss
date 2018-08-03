@@ -8,7 +8,7 @@
     <scroll>true</scroll>
     <update_period>1.0</update_period>
     <scroll_step>5</scroll_step>
-    <start>-10 minutes 0.0 seconds</start>
+    <start>-2 hours 0.0 seconds</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -80,7 +80,7 @@
             <right>false</right>
             <color>
                 <red>0</red>
-                <green>1</green>
+                <green>0</green>
                 <blue>0</blue>
             </color>
             <min>0.0</min>
@@ -166,9 +166,9 @@
             <name>steam_prep:toe_disp:i_get</name>
             <axis>3</axis>
             <color>
-                <red>0</red>
-                <green>255</green>
-                <blue>127</blue>
+                <red>128</red>
+                <green>0</green>
+                <blue>128</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
