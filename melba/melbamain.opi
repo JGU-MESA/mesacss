@@ -4847,7 +4847,7 @@ $(pv_value)</tooltip>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
     <height>43</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PNEUVAL1>melba_010:pv</PNEUVAL1>
@@ -4871,7 +4871,7 @@ $(pv_value)</tooltip>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
-        <pv trig="true">$(PNEUVAL2):on_get</pv>
+        <pv trig="true">$(PNEUVAL1):on_get</pv>
       </rule>
     </rules>
     <scale_options>
@@ -5824,6 +5824,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q1</WED>
+          <WEDLKI>melba:wedlposu01</WEDLKI>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -6073,6 +6074,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q3</WED>
+          <WEDLKI>melba:wedlposu01</WEDLKI>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -6322,6 +6324,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_020:trip_q2</WED>
+          <WEDLKI>melba:wedlposu01</WEDLKI>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -6571,6 +6574,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_030:trip_q1</WED>
+          <WEDLKI>melba:wedlposu01</WEDLKI>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -6820,6 +6824,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_030:trip_q2</WED>
+          <WEDLKI>melba:wedlposu01</WEDLKI>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -7069,6 +7074,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_030:trip_q3</WED>
+          <WEDLKI>melba:wedlposu01</WEDLKI>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -7318,6 +7324,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_050:trip_q1</WED>
+          <WEDLKI>melba:wedlposu01</WEDLKI>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -7567,6 +7574,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_050:trip_q2</WED>
+          <WEDLKI>melba:wedlposu01</WEDLKI>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -7868,6 +7876,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <WED>melba_050:trip_q3</WED>
+          <WEDLKI>melba:wedlposu01</WEDLKI>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -13058,6 +13067,8 @@ $(pv_value)</tooltip>
         <path>subopi/valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
+          <PNEUVAL1>melba_060:pv</PNEUVAL1>
+          <GAUGE>melba_060:gauge</GAUGE>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -13080,10 +13091,10 @@ $(pv_value)</tooltip>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
     <height>43</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <PNEUVAL>melba_060:pv</PNEUVAL>
+      <PNEUVAL1>melba_060:pv</PNEUVAL1>
     </macros>
     <name>Grouping Container melba_060:pv</name>
     <rules>
@@ -13103,7 +13114,7 @@ $(pv_value)</tooltip>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
-        <pv trig="true">$(PNEUVAL):on_get</pv>
+        <pv trig="true">$(PNEUVAL1):on_get</pv>
       </rule>
     </rules>
     <scale_options>
