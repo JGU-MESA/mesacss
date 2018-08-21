@@ -18,6 +18,7 @@
   <height>1020</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
+    <LIGHT>melba_050:scan_light</LIGHT>
   </macros>
   <name></name>
   <rules />
@@ -4847,7 +4848,7 @@ $(pv_value)</tooltip>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
     <height>43</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PNEUVAL1>melba_010:pv</PNEUVAL1>
@@ -4871,7 +4872,7 @@ $(pv_value)</tooltip>
             <color name="on &amp; failure" red="255" green="0" blue="0" />
           </value>
         </exp>
-        <pv trig="true">$(PNEUVAL1):on_get</pv>
+        <pv trig="true">$(PNEUVAL2):on_get</pv>
       </rule>
     </rules>
     <scale_options>
@@ -21483,7 +21484,7 @@ $(pv_value)</tooltip>
         <border_width>1</border_width>
         <confirm_message>Do you really want to turn on this light?</confirm_message>
         <data_type>0</data_type>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
@@ -21511,7 +21512,7 @@ $(pv_value)</tooltip>
         </scale_options>
         <scripts />
         <show_boolean_label>false</show_boolean_label>
-        <show_confirm_dialog>2</show_confirm_dialog>
+        <show_confirm_dialog>0</show_confirm_dialog>
         <stretch_to_fit>false</stretch_to_fit>
         <toggle_button>true</toggle_button>
         <tooltip>$(pv_name)
@@ -21523,6 +21524,344 @@ $(pv_value)</tooltip>
         <wuid>2e5f45e2:16387d3620a:-71b7</wuid>
         <x>-2</x>
         <y>-1</y>
+      </widget>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>subopi/light.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <LIGHT>melba_020:scan_light</LIGHT>
+        </macros>
+        <mode>8</mode>
+        <description></description>
+      </action>
+    </actions>
+    <background_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fc>false</fc>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>30</height>
+    <lock_children>true</lock_children>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <LIGHT>melba_020:scan_light</LIGHT>
+    </macros>
+    <name>Grouping Container_melba_020:scan_light_subopi</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>true</show_scrollbar>
+    <tooltip>Click to open light.opi</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Grouping Container</widget_type>
+    <width>30</width>
+    <wuid>2e5f45e2:16387d3620a:-4997</wuid>
+    <x>536</x>
+    <y>663</y>
+    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+      <actions hook="true" hook_all="false" />
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <fc>false</fc>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <height>21</height>
+      <lock_children>true</lock_children>
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+        <LIGHT>melba_020:scan_light</LIGHT>
+      </macros>
+      <name>Grouping Container_melba_020:scan_light</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_scrollbar>false</show_scrollbar>
+      <tooltip></tooltip>
+      <transparent>false</transparent>
+      <visible>true</visible>
+      <widget_type>Grouping Container</widget_type>
+      <width>21</width>
+      <wuid>7bfe0da8:1603042bdbb:-481e</wuid>
+      <x>4</x>
+      <y>4</y>
+      <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <alpha>255</alpha>
+        <anti_alias>true</anti_alias>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color name="off" red="192" green="192" blue="192" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <fill>true</fill>
+        <font>
+          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color name="white" red="255" green="255" blue="255" />
+        </foreground_color>
+        <height>21</height>
+        <line_style>0</line_style>
+        <line_width>1</line_width>
+        <name>Arc</name>
+        <pv_name>melba_020:scan_light:on_set</pv_name>
+        <pv_value />
+        <rules>
+          <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+            <exp bool_exp="pv0==1">
+              <value>
+                <color name="on &amp; okay" red="0" green="255" blue="0" />
+              </value>
+            </exp>
+            <exp bool_exp="pv0==0">
+              <value>
+                <color name="off" red="192" green="192" blue="192" />
+              </value>
+            </exp>
+            <exp bool_exp="pv1!=pv0">
+              <value>
+                <color name="on &amp; failure" red="255" green="0" blue="0" />
+              </value>
+            </exp>
+            <pv trig="true">$(LIGHT):on_get</pv>
+            <pv trig="true">$(LIGHT):on_set</pv>
+          </rule>
+        </rules>
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <start_angle>0</start_angle>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <total_angle>360</total_angle>
+        <visible>true</visible>
+        <widget_type>Arc</widget_type>
+        <width>21</width>
+        <wuid>7bfe0da8:1603042bdbb:-481d</wuid>
+        <x>0</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <alpha>255</alpha>
+        <anti_alias>true</anti_alias>
+        <arrow_length>20</arrow_length>
+        <arrows>0</arrows>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color name="white" red="255" green="255" blue="255" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <fill_arrow>true</fill_arrow>
+        <fill_level>0.0</fill_level>
+        <font>
+          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="255" green="0" blue="0" />
+        </foreground_color>
+        <height>14</height>
+        <horizontal_fill>true</horizontal_fill>
+        <line_style>0</line_style>
+        <line_width>1</line_width>
+        <name>Polyline</name>
+        <points>
+          <point x="4" y="16" />
+          <point x="17" y="3" />
+          <point x="17" y="3" />
+          <point x="17" y="3" />
+        </points>
+        <pv_name></pv_name>
+        <pv_value />
+        <rotation_angle>0.0</rotation_angle>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Polyline</widget_type>
+        <width>14</width>
+        <wuid>7bfe0da8:1603042bdbb:-481c</wuid>
+        <x>4</x>
+        <y>3</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <alpha>255</alpha>
+        <anti_alias>true</anti_alias>
+        <arrow_length>20</arrow_length>
+        <arrows>0</arrows>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color name="white" red="255" green="255" blue="255" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <fill_arrow>true</fill_arrow>
+        <fill_level>0.0</fill_level>
+        <font>
+          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="255" green="0" blue="0" />
+        </foreground_color>
+        <height>14</height>
+        <horizontal_fill>true</horizontal_fill>
+        <line_style>0</line_style>
+        <line_width>1</line_width>
+        <name>Polyline_3</name>
+        <points>
+          <point x="16" y="16" />
+          <point x="3" y="3" />
+          <point x="3" y="3" />
+          <point x="3" y="3" />
+        </points>
+        <pv_name></pv_name>
+        <pv_value />
+        <rotation_angle>0.0</rotation_angle>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Polyline</widget_type>
+        <width>14</width>
+        <wuid>7bfe0da8:1603042bdbb:-481b</wuid>
+        <x>3</x>
+        <y>3</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <align_to_nearest_second>false</align_to_nearest_second>
+        <auto_size>true</auto_size>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <bit>-1</bit>
+        <boolean_label_position>0</boolean_label_position>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <confirm_message>Do you really want to turn on this light?</confirm_message>
+        <data_type>0</data_type>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>24</height>
+        <name>Image Boolean Button</name>
+        <no_animation>false</no_animation>
+        <off_image></off_image>
+        <off_label>OFF</off_label>
+        <on_image></on_image>
+        <on_label>ON</on_label>
+        <password></password>
+        <push_action_index>0</push_action_index>
+        <pv_name>melba_020:scan_light:on_set</pv_name>
+        <pv_value />
+        <released_action_index>0</released_action_index>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_boolean_label>false</show_boolean_label>
+        <show_confirm_dialog>0</show_confirm_dialog>
+        <stretch_to_fit>false</stretch_to_fit>
+        <toggle_button>true</toggle_button>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparency>false</transparency>
+        <visible>true</visible>
+        <widget_type>Image Boolean Button</widget_type>
+        <width>24</width>
+        <wuid>7bfe0da8:1603042bdbb:-481a</wuid>
+        <x>0</x>
+        <y>0</y>
       </widget>
     </widget>
   </widget>
@@ -21555,7 +21894,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>30</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <LIGHT>steam:light</LIGHT>
@@ -21596,7 +21935,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>21</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <LIGHT>steam:light</LIGHT>
@@ -21861,344 +22200,6 @@ $(pv_value)</tooltip>
         <wuid>7bfe0da8:1603042bdbb:-7c7f</wuid>
         <x>-1</x>
         <y>-1</y>
-      </widget>
-    </widget>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-    <actions hook="true" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>subopi/light.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <LIGHT>melba_020:scan_light</LIGHT>
-        </macros>
-        <mode>8</mode>
-        <description></description>
-      </action>
-    </actions>
-    <background_color>
-      <color name="off" red="192" green="192" blue="192" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fc>false</fc>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <height>30</height>
-    <lock_children>true</lock_children>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-      <LIGHT>melba_020:scan_light</LIGHT>
-    </macros>
-    <name>Grouping Container_melba_020:scan_light_subopi</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <show_scrollbar>true</show_scrollbar>
-    <tooltip>Click to open light.opi</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Grouping Container</widget_type>
-    <width>30</width>
-    <wuid>2e5f45e2:16387d3620a:-4997</wuid>
-    <x>536</x>
-    <y>663</y>
-    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-      <actions hook="true" hook_all="false" />
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fc>false</fc>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
-      <height>21</height>
-      <lock_children>true</lock_children>
-      <macros>
-        <include_parent_macros>true</include_parent_macros>
-        <LIGHT>melba_020:scan_light</LIGHT>
-      </macros>
-      <name>Grouping Container_melba_020:scan_light</name>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <show_scrollbar>false</show_scrollbar>
-      <tooltip></tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Grouping Container</widget_type>
-      <width>21</width>
-      <wuid>7bfe0da8:1603042bdbb:-481e</wuid>
-      <x>4</x>
-      <y>4</y>
-      <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <alarm_pulsing>false</alarm_pulsing>
-        <alpha>255</alpha>
-        <anti_alias>true</anti_alias>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color name="off" red="192" green="192" blue="192" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <fill>true</fill>
-        <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color name="white" red="255" green="255" blue="255" />
-        </foreground_color>
-        <height>21</height>
-        <line_style>0</line_style>
-        <line_width>1</line_width>
-        <name>Arc</name>
-        <pv_name></pv_name>
-        <pv_value />
-        <rules>
-          <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="on &amp; okay" red="0" green="255" blue="0" />
-              </value>
-            </exp>
-            <exp bool_exp="pv0==0">
-              <value>
-                <color name="off" red="192" green="192" blue="192" />
-              </value>
-            </exp>
-            <exp bool_exp="pv1!=pv0">
-              <value>
-                <color name="on &amp; failure" red="255" green="0" blue="0" />
-              </value>
-            </exp>
-            <pv trig="true">$(LIGHT):on_get</pv>
-            <pv trig="true">$(LIGHT):on_set</pv>
-          </rule>
-        </rules>
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>true</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <start_angle>0</start_angle>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <total_angle>360</total_angle>
-        <visible>true</visible>
-        <widget_type>Arc</widget_type>
-        <width>21</width>
-        <wuid>7bfe0da8:1603042bdbb:-481d</wuid>
-        <x>0</x>
-        <y>0</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <alarm_pulsing>false</alarm_pulsing>
-        <alpha>255</alpha>
-        <anti_alias>true</anti_alias>
-        <arrow_length>20</arrow_length>
-        <arrows>0</arrows>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color name="white" red="255" green="255" blue="255" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <fill_arrow>true</fill_arrow>
-        <fill_level>0.0</fill_level>
-        <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="255" green="0" blue="0" />
-        </foreground_color>
-        <height>14</height>
-        <horizontal_fill>true</horizontal_fill>
-        <line_style>0</line_style>
-        <line_width>1</line_width>
-        <name>Polyline</name>
-        <points>
-          <point x="4" y="16" />
-          <point x="17" y="3" />
-          <point x="17" y="3" />
-          <point x="17" y="3" />
-        </points>
-        <pv_name></pv_name>
-        <pv_value />
-        <rotation_angle>0.0</rotation_angle>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>true</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Polyline</widget_type>
-        <width>14</width>
-        <wuid>7bfe0da8:1603042bdbb:-481c</wuid>
-        <x>4</x>
-        <y>3</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <alarm_pulsing>false</alarm_pulsing>
-        <alpha>255</alpha>
-        <anti_alias>true</anti_alias>
-        <arrow_length>20</arrow_length>
-        <arrows>0</arrows>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color name="white" red="255" green="255" blue="255" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <fill_arrow>true</fill_arrow>
-        <fill_level>0.0</fill_level>
-        <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="255" green="0" blue="0" />
-        </foreground_color>
-        <height>14</height>
-        <horizontal_fill>true</horizontal_fill>
-        <line_style>0</line_style>
-        <line_width>1</line_width>
-        <name>Polyline_3</name>
-        <points>
-          <point x="16" y="16" />
-          <point x="3" y="3" />
-          <point x="3" y="3" />
-          <point x="3" y="3" />
-        </points>
-        <pv_name></pv_name>
-        <pv_value />
-        <rotation_angle>0.0</rotation_angle>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>true</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Polyline</widget_type>
-        <width>14</width>
-        <wuid>7bfe0da8:1603042bdbb:-481b</wuid>
-        <x>3</x>
-        <y>3</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <alarm_pulsing>false</alarm_pulsing>
-        <align_to_nearest_second>false</align_to_nearest_second>
-        <auto_size>true</auto_size>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="240" green="240" blue="240" />
-        </background_color>
-        <bit>-1</bit>
-        <boolean_label_position>0</boolean_label_position>
-        <border_alarm_sensitive>true</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <confirm_message>Do you really want to turn on this light?</confirm_message>
-        <data_type>0</data_type>
-        <enabled>false</enabled>
-        <font>
-          <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>24</height>
-        <name>Image Boolean Button</name>
-        <no_animation>false</no_animation>
-        <off_image></off_image>
-        <off_label>OFF</off_label>
-        <on_image></on_image>
-        <on_label>ON</on_label>
-        <password></password>
-        <push_action_index>0</push_action_index>
-        <pv_name>$(LIGHT):on_set</pv_name>
-        <pv_value />
-        <released_action_index>0</released_action_index>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_boolean_label>false</show_boolean_label>
-        <show_confirm_dialog>2</show_confirm_dialog>
-        <stretch_to_fit>false</stretch_to_fit>
-        <toggle_button>true</toggle_button>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparency>false</transparency>
-        <visible>true</visible>
-        <widget_type>Image Boolean Button</widget_type>
-        <width>24</width>
-        <wuid>7bfe0da8:1603042bdbb:-481a</wuid>
-        <x>0</x>
-        <y>0</y>
       </widget>
     </widget>
   </widget>
@@ -22497,7 +22498,7 @@ $(pv_value)</tooltip>
         <border_width>1</border_width>
         <confirm_message>Do you really want to turn on this light?</confirm_message>
         <data_type>0</data_type>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
         <font>
           <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
         </font>
@@ -22525,7 +22526,7 @@ $(pv_value)</tooltip>
         </scale_options>
         <scripts />
         <show_boolean_label>false</show_boolean_label>
-        <show_confirm_dialog>2</show_confirm_dialog>
+        <show_confirm_dialog>0</show_confirm_dialog>
         <stretch_to_fit>false</stretch_to_fit>
         <toggle_button>true</toggle_button>
         <tooltip>$(pv_name)
@@ -23505,5 +23506,65 @@ $(pv_value)</tooltip>
     <wuid>1cf87b6f:164a7340d84:-6196</wuid>
     <x>673</x>
     <y>72</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <align_to_nearest_second>false</align_to_nearest_second>
+    <auto_size>true</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <bit>-1</bit>
+    <boolean_label_position>0</boolean_label_position>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <confirm_message>Are you sure you want to do this?</confirm_message>
+    <data_type>0</data_type>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>100</height>
+    <name>Image Boolean Button</name>
+    <no_animation>false</no_animation>
+    <off_image></off_image>
+    <off_label>OFF</off_label>
+    <on_image></on_image>
+    <on_label>ON</on_label>
+    <password></password>
+    <push_action_index>0</push_action_index>
+    <pv_name></pv_name>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_boolean_label>false</show_boolean_label>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <stretch_to_fit>false</stretch_to_fit>
+    <toggle_button>true</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparency>false</transparency>
+    <visible>true</visible>
+    <widget_type>Image Boolean Button</widget_type>
+    <width>100</width>
+    <wuid>57a70b66:165578bd73a:-615a</wuid>
+    <x>123</x>
+    <y>468</y>
   </widget>
 </display>
