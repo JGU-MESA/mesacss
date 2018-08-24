@@ -15866,7 +15866,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <tooltip>Use Microsoft Edge to open an url for the camera!</tooltip>
+    <tooltip>The url for the camera will be opened.</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
@@ -15997,7 +15997,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="true" hook_all="false">
       <action type="OPEN_WEBPAGE">
-        <hyperlink>http://10.32.240.86</hyperlink>
+        <hyperlink>http://10.32.240.83</hyperlink>
         <description></description>
       </action>
     </actions>
@@ -16031,7 +16031,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <tooltip>Use Microsoft Edge to open an url for the camera!</tooltip>
+    <tooltip>The url for the camera will be opened.</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
@@ -16196,7 +16196,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <tooltip>Use Microsoft Edge to open an url for the camera!</tooltip>
+    <tooltip>The url for the camera will be opened.</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
@@ -16987,7 +16987,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <tooltip>Use Microsoft Edge to open an url for the camera!</tooltip>
+    <tooltip>The url for the camera will be opened.</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
@@ -17441,7 +17441,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <tooltip>Use Microsoft Edge to open an url for the camera!</tooltip>
+    <tooltip>The url for the camera will be opened.</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
