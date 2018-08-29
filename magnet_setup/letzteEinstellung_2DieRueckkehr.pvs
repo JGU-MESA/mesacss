@@ -6,8 +6,8 @@
             <selected>true</selected>
             <name>steam:sv:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.372358164</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.372358164</timestamp_measure>
+            <saved_value_timestamp>2018-08-27 08:50:14.168565833</saved_value_timestamp>
+            <timestamp_measure>2018-08-27 08:50:14.168565833</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -16,18 +16,18 @@
             <selected>true</selected>
             <name>steam:sv:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 16:28:46.552943604</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:45:28.063759860</timestamp_measure>
+            <saved_value_timestamp>2018-08-27 17:14:14.119379695</saved_value_timestamp>
+            <timestamp_measure>2018-08-27 17:14:14.119379695</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.22999999999999954</saved_value>
+            <saved_value>-0.2800000000000013</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>steam:sh:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.399347165</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.399347165</timestamp_measure>
+            <saved_value_timestamp>2018-08-27 08:50:14.195567310</saved_value_timestamp>
+            <timestamp_measure>2018-08-27 08:50:14.195567310</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -36,98 +36,98 @@
             <selected>true</selected>
             <name>steam:sh:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 16:27:30.511099485</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:45:42.918744045</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 13:22:53.833101299</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 13:22:53.833101299</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.6999999999999993</saved_value>
+            <saved_value>-1.2699999999999998</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_010:so:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.426358909</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.426358909</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 12:36:33.507787836</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 12:36:33.507787836</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_010:so:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 18:12:09.362716918</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:46:18.006650875</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 12:36:29.589038972</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 12:36:29.589038972</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.41999999999999993</saved_value>
+            <saved_value>-3.5735303605122226E-16</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_010:sv:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.453359200</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.453359200</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 11:26:18.844730924</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 11:26:18.844730924</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_010:sv:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 16:31:35.876440305</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:54:54.554286016</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 11:26:18.075932855</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 11:26:18.075932855</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.009999999999999525</saved_value>
+            <saved_value>4.753142324176451E-16</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_010:sh:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.480355611</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.480355611</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 11:26:18.871711130</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 11:26:18.871711130</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_010:sh:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 16:27:10.342132244</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:49:02.058201252</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:30:39.091707913</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:30:39.091707913</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>5.793976409762536E-16</saved_value>
+            <saved_value>-1.1969591984239969E-15</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:sv:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.507341233</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.507341233</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:31:22.969412399</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:31:22.969412399</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:sv:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.698674211</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:52:28.904688987</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:31:03.313613565</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:31:03.313613565</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.039999999999999425</saved_value>
+            <saved_value>1.1900203045200897E-15</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:sh:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.534359674</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.534359674</timestamp_measure>
+            <saved_value_timestamp>2018-08-27 17:28:38.641869132</saved_value_timestamp>
+            <timestamp_measure>2018-08-27 17:28:38.641869132</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -136,38 +136,38 @@
             <selected>true</selected>
             <name>melba_020:sh:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 16:24:50.379690385</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:52:15.055775235</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:32:07.144475226</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:32:07.144475226</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-3.0184188481996443E-16</saved_value>
+            <saved_value>1.0799999999999996</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_q1:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 18:11:04.515667358</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 09:38:30.182192800</timestamp_measure>
+            <saved_value_timestamp>2018-08-27 17:18:42.676405743</saved_value_timestamp>
+            <timestamp_measure>2018-08-27 17:18:42.676405743</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0</saved_value>
+            <saved_value>1</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_q1:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 18:09:30.552169335</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 17:33:18.613067507</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:21:07.231916672</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:21:07.231916672</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1.8821749714348357E-16</saved_value>
+            <saved_value>0.26199999999999996</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_sv1:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 18:07:24.516254299</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 09:38:30.209193807</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:31:43.069354192</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:31:43.069354192</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -176,18 +176,18 @@
             <selected>true</selected>
             <name>melba_020:trip_sv1:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 18:09:53.886083010</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:30:23.017205742</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:35:42.037971399</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:35:42.037971399</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.33000000000000024</saved_value>
+            <saved_value>-0.04000000000000009</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_sh1:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 18:07:30.010236882</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 09:38:30.236196477</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:32:13.533256715</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:32:13.533256715</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -196,18 +196,18 @@
             <selected>true</selected>
             <name>melba_020:trip_sh1:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 18:10:51.830918461</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:30:29.804263684</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:35:29.549973884</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:35:29.549973884</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.0899999999999988</saved_value>
+            <saved_value>-0.9700000000000019</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_q2:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 18:07:24.543250206</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 17:31:24.516156800</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 13:26:32.706345659</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 13:26:32.706345659</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -216,78 +216,78 @@
             <selected>true</selected>
             <name>melba_020:trip_sv2:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.669362234</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.669362234</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:35:07.914844757</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:35:07.914844757</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0</saved_value>
+            <saved_value>1</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_sv2:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.823577875</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:53.823577875</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:37:42.280594235</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:37:42.280594235</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.09999999999999896</saved_value>
+            <saved_value>-0.03999999999999898</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_sh2:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.696369346</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.696369346</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:35:07.264838771</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:35:07.264838771</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0</saved_value>
+            <saved_value>1</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_sh2:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.845587251</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:53.845587251</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 08:37:47.573623060</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 08:37:47.573623060</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.7000000000000016</saved_value>
+            <saved_value>0.5899999999999992</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_q2:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-07-02 18:35:33.512038183</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 18:00:33.790754516</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:21:07.297932214</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:21:07.297932214</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.33000000000000057</saved_value>
+            <saved_value>0.2819999999999989</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_q3:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.723359447</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:56:54.514710529</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 13:28:03.028106471</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 13:28:03.028106471</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0</saved_value>
+            <saved_value>1</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_020:trip_q3:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.889532345</saved_value_timestamp>
-            <timestamp_measure>2018-07-03 16:56:41.676970594</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:20:36.265996250</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:20:36.265996250</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.44000000000002004</saved_value>
+            <saved_value>0.059999999999999096</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:sv:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.750361406</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.750361406</timestamp_measure>
+            <saved_value_timestamp>2018-08-27 08:50:14.546583141</saved_value_timestamp>
+            <timestamp_measure>2018-08-27 08:50:14.546583141</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -296,18 +296,18 @@
             <selected>true</selected>
             <name>melba_030:sv:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.911574755</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:53.911574755</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:18:59.141234266</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:18:59.141234266</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1.2699999999999998</saved_value>
+            <saved_value>0.0900000000000008</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:sh:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.777361072</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.777361072</timestamp_measure>
+            <saved_value_timestamp>2018-08-27 08:50:14.573575311</saved_value_timestamp>
+            <timestamp_measure>2018-08-27 08:50:14.573575311</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -316,18 +316,18 @@
             <selected>true</selected>
             <name>melba_030:sh:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.933652731</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:53.933652731</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:43:00.580447412</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:43:00.580447412</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.41000000000000136</saved_value>
+            <saved_value>-0.31999999999999895</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:a:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.461482312</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:53.461482312</timestamp_measure>
+            <saved_value_timestamp>2018-08-10 08:36:45.783187189</saved_value_timestamp>
+            <timestamp_measure>2018-08-10 08:36:45.783187189</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -336,38 +336,38 @@
             <selected>true</selected>
             <name>melba_030:a:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.522736800</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:53.522736800</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:44:56.334828405</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:44:56.334828405</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>2.0</saved_value>
+            <saved_value>0.81000000000011</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_q1:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.804354320</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.804354320</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:45:32.689833860</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:45:32.689833860</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_q1:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.955618296</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:53.955618296</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:45:34.962015990</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:45:34.962015990</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.17000000000000104</saved_value>
+            <saved_value>-1.1969591984239969E-15</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_sv1:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.831362342</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.831362342</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:14:35.738755228</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:14:35.738755228</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -376,18 +376,18 @@
             <selected>true</selected>
             <name>melba_030:trip_sv1:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.977562739</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:53.977562739</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:18:59.207266728</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:18:59.207266728</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.3300000000000013</saved_value>
+            <saved_value>0.11999999999999884</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_sh1:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.858353996</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.858353996</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 13:53:32.707062930</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 13:53:32.707062930</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -396,18 +396,18 @@
             <selected>true</selected>
             <name>melba_030:trip_sh1:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:53.999594982</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:53.999594982</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:18:59.229221830</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:18:59.229221830</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.12999999999999978</saved_value>
+            <saved_value>0.18200000000000033</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_q2:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.885351820</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.885351820</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:45:45.249788403</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:45:45.249788403</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -416,78 +416,78 @@
             <selected>true</selected>
             <name>melba_030:trip_q2:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.021555626</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.021555626</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:46:45.791841340</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:46:45.791841340</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.3800000000000001</saved_value>
+            <saved_value>0.36500000000000016</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_sv2:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.912329230</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.912329230</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 09:14:53.881864621</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 09:14:53.881864621</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_sv2:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.043628729</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.043628729</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 09:14:46.687149355</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 09:14:46.687149355</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.08999999999999997</saved_value>
+            <saved_value>1.1969591984239969E-15</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_sh2:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.939351109</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.939351109</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:11:55.783161593</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:11:55.783161593</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_sh2:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.065577294</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.065577294</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:18:59.295239631</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:18:59.295239631</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>3.122502256758253E-17</saved_value>
+            <saved_value>2.42861286636753E-17</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_q3:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.966360496</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.966360496</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:38:35.233913886</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:38:35.233913886</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_030:trip_q3:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.087563518</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.087563518</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:32:40.585035335</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:32:40.585035335</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.22999999999999998</saved_value>
+            <saved_value>-0.19899999999999984</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_040:sv:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:55.993345230</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:55.993345230</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 09:26:53.906067693</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 09:26:53.906067693</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -496,38 +496,38 @@
             <selected>true</selected>
             <name>melba_040:sv:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.109572926</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.109572926</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:48:19.023567079</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:48:19.023567079</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.6500000000000004</saved_value>
+            <saved_value>1.0499999999999996</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_040:sh:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.020352895</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.020352895</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:34:47.884542366</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:34:47.884542366</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_040:sh:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.131551161</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.131551161</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:31:32.399278993</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:31:32.399278993</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.1399999999999999</saved_value>
+            <saved_value>2.42861286636753E-17</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:sv:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.047375606</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.047375606</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:39:53.296718978</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:39:53.296718978</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -536,18 +536,18 @@
             <selected>true</selected>
             <name>melba_050:sv:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.153580558</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.153580558</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:48:17.751589289</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:48:17.751589289</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.5299999999999991</saved_value>
+            <saved_value>-0.21999999999999886</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:sh:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.074348620</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.074348620</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:39:18.881818852</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:39:18.881818852</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
             <saved_value>1</saved_value>
@@ -556,151 +556,151 @@
             <selected>true</selected>
             <name>melba_050:sh:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.175553763</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.175553763</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:39:47.217938769</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:39:47.217938769</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.6300000000000003</saved_value>
+            <saved_value>0.3500000000000001</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_q1:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.101359143</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.101359143</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:38:23.376963932</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:38:23.376963932</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_q1:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.197522090</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.197522090</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:30:17.689484114</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:30:17.689484114</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.050000000000000086</saved_value>
+            <saved_value>3.469446951953614E-17</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_sv1:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.128366411</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.128366411</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:19:00.381091499</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:19:00.381091499</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_sv1:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.219539622</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.219539622</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 12:36:30.176002346</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 12:36:30.176002346</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.04</saved_value>
+            <saved_value>0.31100000000000005</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_sh1:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.155341856</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.155341856</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:19:00.408048270</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:19:00.408048270</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_sh1:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.257522838</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.257522838</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 12:36:30.197999360</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 12:36:30.197999360</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.08000000000000008</saved_value>
+            <saved_value>0.01000000000000008</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_q2:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.182331235</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.182331235</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:38:25.218945525</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:38:25.218945525</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_q2:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.279533149</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.279533149</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:30:11.192447927</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:30:11.192447927</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.3200000000000002</saved_value>
+            <saved_value>2.1510571102112408E-16</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_sv2:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.209355298</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.209355298</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:19:00.462021392</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:19:00.462021392</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_sv2:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.301548456</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.301548456</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:18:59.530247770</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:18:59.530247770</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.2900000000000001</saved_value>
+            <saved_value>0.0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_sh2:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.236347795</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.236347795</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:19:00.494024172</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:19:00.494024172</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_sh2:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.323510635</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.323510635</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:18:59.552252958</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:18:59.552252958</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>-0.6099999999999992</saved_value>
+            <saved_value>0.0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_q3:on_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:56.263344377</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:56.263344377</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:38:25.648972952</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:38:25.648972952</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>1</saved_value>
+            <saved_value>0</saved_value>
         </pv>
         <pv>
             <selected>true</selected>
             <name>melba_050:trip_q3:i_set</name>
             <tolerance>0.01</tolerance>
-            <saved_value_timestamp>2018-06-14 13:32:54.345543508</saved_value_timestamp>
-            <timestamp_measure>2018-06-14 13:32:54.345543508</timestamp_measure>
+            <saved_value_timestamp>2018-08-28 14:30:04.940471047</saved_value_timestamp>
+            <timestamp_measure>2018-08-28 14:30:04.940471047</timestamp_measure>
             <conf>false</conf>
             <measure>false</measure>
-            <saved_value>0.20000000000000007</saved_value>
+            <saved_value>1.1969591984239969E-15</saved_value>
         </pv>
     </pvlist>
 </pvtable>
