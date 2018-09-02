@@ -28,12 +28,12 @@
             <use_trace_names>true</use_trace_names>
             <right>true</right>
             <color>
-                <red>1</red>
+                <red>0</red>
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>-495.0</min>
-            <max>112.0</max>
+            <min>-490.0</min>
+            <max>110.0</max>
             <grid>true</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
@@ -75,16 +75,16 @@
         <axis>
             <visible>true</visible>
             <name>Pressure [mbar]</name>
-            <use_axis_name>false</use_axis_name>
+            <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>true</right>
             <color>
                 <red>0</red>
                 <green>0</green>
-                <blue>1</blue>
+                <blue>0</blue>
             </color>
-            <min>2.1707198297011254E-17</min>
-            <max>2.255316759300923E-7</max>
+            <min>7.522445313350012E-18</min>
+            <max>1.889552831437686E-7</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
@@ -92,7 +92,7 @@
         <axis>
             <visible>true</visible>
             <name>PMT Counts</name>
-            <use_axis_name>false</use_axis_name>
+            <use_axis_name>true</use_axis_name>
             <use_trace_names>true</use_trace_names>
             <right>false</right>
             <color>
@@ -100,8 +100,8 @@
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>41.0</min>
-            <max>916.0</max>
+            <min>-3000.0</min>
+            <max>164000.0</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
@@ -110,6 +110,30 @@
     <annotations>
     </annotations>
     <pvlist>
+        <pv>
+            <display_name>Beam Dump</display_name>
+            <visible>true</visible>
+            <name>melba_060:bd:i_get</name>
+            <axis>2</axis>
+            <color>
+                <red>30</red>
+                <green>182</green>
+                <blue>30</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <linewidth>2</linewidth>
+            <point_type>NONE</point_type>
+            <point_size>2</point_size>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>1</key>
+            </archive>
+        </pv>
         <pv>
             <display_name>melba_020:scan_pmt:i_get</display_name>
             <visible>true</visible>
@@ -131,7 +155,7 @@
             <archive>
                 <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>0</key>
+                <key>1</key>
             </archive>
         </pv>
         <pv>
@@ -140,9 +164,9 @@
             <name>steam:hv:i_get</name>
             <axis>1</axis>
             <color>
-                <red>165</red>
-                <green>42</green>
-                <blue>42</blue>
+                <red>190</red>
+                <green>0</green>
+                <blue>0</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
@@ -155,7 +179,7 @@
             <archive>
                 <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>0</key>
+                <key>1</key>
             </archive>
         </pv>
         <pv>
@@ -164,9 +188,9 @@
             <name>steam:anode:i_get</name>
             <axis>2</axis>
             <color>
-                <red>0</red>
-                <green>128</green>
-                <blue>0</blue>
+                <red>191</red>
+                <green>191</green>
+                <blue>191</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
@@ -179,7 +203,7 @@
             <archive>
                 <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>0</key>
+                <key>1</key>
             </archive>
         </pv>
         <pv>
@@ -203,7 +227,7 @@
             <archive>
                 <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>0</key>
+                <key>1</key>
             </archive>
         </pv>
         <pv>
@@ -227,31 +251,7 @@
             <archive>
                 <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>0</key>
-            </archive>
-        </pv>
-        <pv>
-            <display_name>Beam Dump</display_name>
-            <visible>true</visible>
-            <name>melba_060:bd:i_get</name>
-            <axis>2</axis>
-            <color>
-                <red>0</red>
-                <green>255</green>
-                <blue>0</blue>
-            </color>
-            <trace_type>AREA</trace_type>
-            <linewidth>2</linewidth>
-            <point_type>NONE</point_type>
-            <point_size>2</point_size>
-            <waveform_index>0</waveform_index>
-            <period>0.0</period>
-            <ring_size>5000</ring_size>
-            <request>OPTIMIZED</request>
-            <archive>
-                <name>mesastorage1</name>
-                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>0</key>
+                <key>1</key>
             </archive>
         </pv>
         <pv>
@@ -260,9 +260,9 @@
             <name>melba_030:gauge:p_get</name>
             <axis>3</axis>
             <color>
-                <red>255</red>
-                <green>127</green>
-                <blue>0</blue>
+                <red>0</red>
+                <green>252</green>
+                <blue>255</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
@@ -275,7 +275,7 @@
             <archive>
                 <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>0</key>
+                <key>1</key>
             </archive>
         </pv>
         <pv>
@@ -284,9 +284,9 @@
             <name>melba_060:gauge:p_get</name>
             <axis>3</axis>
             <color>
-                <red>128</red>
-                <green>0</green>
-                <blue>128</blue>
+                <red>20</red>
+                <green>161</green>
+                <blue>163</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
@@ -299,7 +299,7 @@
             <archive>
                 <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>0</key>
+                <key>1</key>
             </archive>
         </pv>
         <pv>
@@ -308,9 +308,9 @@
             <name>steam:hv_abacus:i_get</name>
             <axis>2</axis>
             <color>
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
+                <red>165</red>
+                <green>236</green>
+                <blue>85</blue>
             </color>
             <trace_type>AREA</trace_type>
             <linewidth>2</linewidth>
@@ -323,7 +323,31 @@
             <archive>
                 <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
-                <key>0</key>
+                <key>1</key>
+            </archive>
+        </pv>
+        <pv>
+            <display_name>melba_050:scan_pmt:i_get</display_name>
+            <visible>true</visible>
+            <name>melba_050:scan_pmt:i_get</name>
+            <axis>4</axis>
+            <color>
+                <red>207</red>
+                <green>126</green>
+                <blue>171</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <linewidth>2</linewidth>
+            <point_type>NONE</point_type>
+            <point_size>2</point_size>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>1</key>
             </archive>
         </pv>
     </pvlist>
