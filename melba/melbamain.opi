@@ -23062,10 +23062,21 @@ $(pv_value)</tooltip>
             <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
+        <exp bool_exp="((pv0!=7E-10) || (pv1!=5E-10) || (pv2!=7E-10) || (pv3!=5E-10)) &amp;&amp; (pv4==1)">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="((pv0!=7E-10) || (pv1!=5E-10) || (pv2!=7E-10) || (pv3!=5E-10)) &amp;&amp; (pv4==0)">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0" />
+          </value>
+        </exp>
         <pv trig="true">melba_030:gauge:sp1_high_get</pv>
         <pv trig="true">melba_030:gauge:sp1_low_get</pv>
         <pv trig="true">melba_030:gauge:sp2_high_get</pv>
         <pv trig="true">melba_030:gauge:sp2_low_get</pv>
+        <pv trig="true">sim://flipflop(0.5)</pv>
       </rule>
     </rules>
     <scale_options>
@@ -23121,10 +23132,21 @@ $(pv_value)</tooltip>
             <color name="on &amp; okay" red="0" green="255" blue="0" />
           </value>
         </exp>
+        <exp bool_exp="((pv0!=7E-10) || (pv1!=5E-10) ||(pv2!=7E-10) ||(pv3!=5E-10)) &amp;&amp; (pv4==1)">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="((pv0!=7E-10) || (pv1!=5E-10) ||(pv2!=7E-10) ||(pv3!=5E-10)) &amp;&amp; (pv4==0)">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0" />
+          </value>
+        </exp>
         <pv trig="true">melba_030:gauge:sp1_high_get</pv>
         <pv trig="true">melba_030:gauge:sp1_low_get</pv>
         <pv trig="true">melba_030:gauge:sp2_high_get</pv>
         <pv trig="true">melba_030:gauge:sp2_low_get</pv>
+        <pv trig="true">sim://flipflop(0.5)</pv>
       </rule>
     </rules>
     <scale_options>
@@ -23575,5 +23597,69 @@ $(pv_value)</tooltip>
     <wuid>57a70b66:165578bd73a:-615a</wuid>
     <x>123</x>
     <y>468</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="on" red="0" green="255" blue="0" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>25</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Text Update_1</name>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==1)">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==0)">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">loc://fastmode(0)</pv>
+        <pv trig="true">sim://flipflop(0.5)</pv>
+      </rule>
+      <rule name="Text_Rule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>Slow mode</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>Fast mode</value>
+        </exp>
+        <pv trig="true">loc://fastmode</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text></text>
+    <tooltip>Wedler measurement mode</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>80</width>
+    <wrap_words>false</wrap_words>
+    <wuid>57a70b66:165578bd73a:-3894</wuid>
+    <x>251</x>
+    <y>54</y>
   </widget>
 </display>
