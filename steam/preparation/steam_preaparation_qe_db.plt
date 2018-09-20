@@ -8,7 +8,7 @@
     <scroll>true</scroll>
     <update_period>1.0</update_period>
     <scroll_step>5</scroll_step>
-    <start>-2 hours 0.0 seconds</start>
+    <start>-10 minutes 0.0 seconds</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -94,7 +94,7 @@
     </annotations>
     <pvlist>
         <pv>
-            <display_name>steam_prep:pump:p_get</display_name>
+            <display_name>Prepchamber Pressure</display_name>
             <visible>true</visible>
             <name>steam_prep:pump:p_get</name>
             <axis>1</axis>
@@ -118,7 +118,7 @@
             </archive>
         </pv>
         <pv>
-            <display_name>steam_prep:riesling_sl:i_get</display_name>
+            <display_name>Anode Current</display_name>
             <visible>true</visible>
             <name>steam:anode:i_get</name>
             <axis>0</axis>
@@ -142,7 +142,7 @@
             </archive>
         </pv>
         <pv>
-            <display_name>steam_prep:qe_get</display_name>
+            <display_name>QE</display_name>
             <visible>true</visible>
             <name>steam_prep:qe_get</name>
             <axis>2</axis>
@@ -161,7 +161,7 @@
             <request>OPTIMIZED</request>
         </pv>
         <pv>
-            <display_name>steam_prep:toe_disp:i_get</display_name>
+            <display_name>Dispenser Current</display_name>
             <visible>true</visible>
             <name>steam_prep:toe_disp:i_get</name>
             <axis>3</axis>
