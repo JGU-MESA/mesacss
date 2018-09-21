@@ -19,6 +19,7 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
     <LIGHT>melba_050:scan_light</LIGHT>
+    <WEDLKI>melba:wedlposu01</WEDLKI>
   </macros>
   <name></name>
   <rules />
@@ -23631,7 +23632,7 @@ $(pv_value)</tooltip>
             <color name="Minor" red="255" green="128" blue="0" />
           </value>
         </exp>
-        <pv trig="true">loc://fastmode(0)</pv>
+        <pv trig="true">$(WEDLKI):auto_get</pv>
         <pv trig="true">sim://flipflop(0.5)</pv>
       </rule>
       <rule name="Text_Rule" prop_id="text" out_exp="false">
@@ -23641,7 +23642,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="pv0==1">
           <value>Fast mode</value>
         </exp>
-        <pv trig="true">loc://fastmode</pv>
+        <pv trig="true">$(WEDLKI):auto_get</pv>
       </rule>
     </rules>
     <scale_options>
