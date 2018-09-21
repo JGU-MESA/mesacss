@@ -2185,13 +2185,6 @@ $(pv_value)</tooltip>
         <confirm_message></confirm_message>
         <description></description>
       </action>
-      <action type="WRITE_PV">
-        <pv_name>loc://fastmode(0)</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
@@ -2247,20 +2240,13 @@ $(pv_value)</tooltip>
       </action>
       <action type="WRITE_PV">
         <pv_name>$(WEDLKI):auto_set</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>loc://trig</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
       </action>
       <action type="WRITE_PV">
-        <pv_name>loc://fastmode(0)</pv_name>
+        <pv_name>loc://trig</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2503,7 +2489,16 @@ $(pv_value)</tooltip>
     <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label_41</name>
-    <rules />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="on" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">$(WEDLKI):auto_get</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -2635,7 +2630,16 @@ $(pv_value)</tooltip>
     <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label_43</name>
-    <rules />
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>
+            <color name="on" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">$(WEDLKI):auto_get</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
