@@ -4849,7 +4849,7 @@ $(pv_value)</tooltip>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
     <height>43</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PNEUVAL1>melba_010:pv</PNEUVAL1>
@@ -13070,6 +13070,7 @@ $(pv_value)</tooltip>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PNEUVAL1>melba_060:pv</PNEUVAL1>
+          <PNEUVAL2>melba_140:pv</PNEUVAL2>
           <GAUGE>melba_060:gauge</GAUGE>
         </macros>
         <mode>8</mode>
@@ -13093,10 +13094,11 @@ $(pv_value)</tooltip>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
     <height>43</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PNEUVAL1>melba_060:pv</PNEUVAL1>
+      <PNEUVAL2>melba:140:pv</PNEUVAL2>
     </macros>
     <name>Grouping Container melba_060:pv</name>
     <rules>
