@@ -221,7 +221,7 @@
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -241,7 +241,7 @@
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>
@@ -426,7 +426,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <height>25</height>
       <horizontal_alignment>1</horizontal_alignment>
-      <name>Label_PV8</name>
+      <name>Label_PV2</name>
       <rules />
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -474,7 +474,7 @@ $(pv_value)</tooltip>
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -494,7 +494,7 @@ $(pv_value)</tooltip>
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>
@@ -727,7 +727,7 @@ $(pv_value)</tooltip>
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -747,7 +747,7 @@ $(pv_value)</tooltip>
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>
@@ -980,7 +980,7 @@ $(pv_value)</tooltip>
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -1000,7 +1000,7 @@ $(pv_value)</tooltip>
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>
@@ -1233,7 +1233,7 @@ $(pv_value)</tooltip>
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -1253,7 +1253,7 @@ $(pv_value)</tooltip>
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>
@@ -1486,7 +1486,7 @@ $(pv_value)</tooltip>
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -1506,7 +1506,7 @@ $(pv_value)</tooltip>
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>
@@ -1839,7 +1839,7 @@ $(pv_value)</tooltip>
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -1859,7 +1859,7 @@ $(pv_value)</tooltip>
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>
@@ -1992,7 +1992,7 @@ $(pv_value)</tooltip>
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -2007,12 +2007,12 @@ $(pv_value)</tooltip>
               <color name="Minor" red="255" green="128" blue="0" />
             </value>
           </exp>
-          <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
+          <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
             <value>
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>
@@ -2197,7 +2197,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <height>25</height>
       <horizontal_alignment>1</horizontal_alignment>
-      <name>Label_PV8</name>
+      <name>Label_PV9</name>
       <rules />
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -2245,7 +2245,7 @@ $(pv_value)</tooltip>
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -2265,7 +2265,7 @@ $(pv_value)</tooltip>
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>
@@ -2450,7 +2450,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <height>25</height>
       <horizontal_alignment>1</horizontal_alignment>
-      <name>Label_PV8</name>
+      <name>Label_PV10</name>
       <rules />
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -2498,7 +2498,7 @@ $(pv_value)</tooltip>
       <name>Label_endswitch</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(PV):open_get</pv_name>
+      <pv_name>$(PV):on_get</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules>
@@ -2513,12 +2513,12 @@ $(pv_value)</tooltip>
               <color name="Minor" red="255" green="128" blue="0" />
             </value>
           </exp>
-          <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
+          <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
             <value>
               <color name="on" red="0" green="255" blue="0" />
             </value>
           </exp>
-          <pv trig="true">$(PV):open_get</pv>
+          <pv trig="true">$(PV):on_get</pv>
           <pv trig="true">$(PV):ok</pv>
         </rule>
       </rules>

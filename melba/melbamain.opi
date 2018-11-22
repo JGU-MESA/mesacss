@@ -13071,7 +13071,7 @@ $(pv_value)</tooltip>
           <include_parent_macros>true</include_parent_macros>
           <PNEUVAL1>melba_060:pv</PNEUVAL1>
           <PNEUVAL2>melba_140:pv</PNEUVAL2>
-          <GAUGE>melba_060:gauge</GAUGE>
+          <GAUGE>melba_120:gauge</GAUGE>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -13098,7 +13098,7 @@ $(pv_value)</tooltip>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PNEUVAL1>melba_060:pv</PNEUVAL1>
-      <PNEUVAL2>melba:140:pv</PNEUVAL2>
+      <PNEUVAL2>melba_140:pv</PNEUVAL2>
     </macros>
     <name>Grouping Container melba_060:pv</name>
     <rules>
