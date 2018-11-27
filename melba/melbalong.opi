@@ -10356,12 +10356,13 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>subopi/valve.opi</path>
+        <path>subopi/valve2.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <PNEUVAL1>melba_060:pv</PNEUVAL1>
           <PNEUVAL2>melba_140:pv</PNEUVAL2>
-          <GAUGE>melba_160:gauge</GAUGE>
+          <GAUGE1>melba_120:gauge</GAUGE1>
+          <GAUGE2>melba_160:gauge</GAUGE2>
         </macros>
         <mode>8</mode>
         <description></description>
