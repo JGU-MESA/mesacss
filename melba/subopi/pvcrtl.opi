@@ -28,7 +28,7 @@
   <show_ruler>true</show_ruler>
   <snap_to_geometry>true</snap_to_geometry>
   <widget_type>Display</widget_type>
-  <width>900</width>
+  <width>1000</width>
   <wuid>1cf87b6f:163f3ed8197:-5e00</wuid>
   <x>0</x>
   <y>0</y>
@@ -69,8 +69,8 @@
     <width>240</width>
     <wrap_words>false</wrap_words>
     <wuid>1cf87b6f:163f3ed8197:-17b</wuid>
-    <x>324</x>
-    <y>20</y>
+    <x>426</x>
+    <y>18</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -131,7 +131,7 @@
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PV>melba_140:pv</PV>
@@ -233,7 +233,7 @@
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -282,7 +282,7 @@
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>54</height>
+      <height>53</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_Border</name>
       <rules />
@@ -302,7 +302,7 @@
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:2261</wuid>
       <x>0</x>
-      <y>48</y>
+      <y>47</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -384,10 +384,10 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <PV>PV2</PV>
+      <PV>melba_060:pv</PV>
     </macros>
     <name>Grouping Container_PV2</name>
     <rules />
@@ -402,9 +402,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>68</width>
+    <width>80</width>
     <wuid>1cf87b6f:163f3ed8197:-ab0</wuid>
-    <x>247</x>
+    <x>248</x>
     <y>84</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -419,7 +419,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -440,7 +440,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-aaf</wuid>
       <x>0</x>
@@ -486,7 +486,7 @@ $(pv_value)</tooltip>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -511,7 +511,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Text Update</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-aae</wuid>
       <x>0</x>
@@ -535,7 +535,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>54</height>
+      <height>53</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_Border</name>
       <rules />
@@ -551,11 +551,11 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:2adc</wuid>
       <x>0</x>
-      <y>48</y>
+      <y>47</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -612,7 +612,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
       <visible>true</visible>
       <widget_type>Boolean Switch</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wuid>1cf87b6f:163f3ed8197:60e8</wuid>
       <x>0</x>
       <y>68</y>
@@ -637,7 +637,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PV>PV3</PV>
@@ -655,9 +655,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>68</width>
+    <width>80</width>
     <wuid>1cf87b6f:163f3ed8197:-a5b</wuid>
-    <x>314</x>
+    <x>328</x>
     <y>84</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -672,7 +672,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -693,7 +693,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-a5a</wuid>
       <x>0</x>
@@ -739,7 +739,7 @@ $(pv_value)</tooltip>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -764,7 +764,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Text Update</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-a59</wuid>
       <x>0</x>
@@ -788,7 +788,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>54</height>
+      <height>53</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_Border</name>
       <rules />
@@ -804,11 +804,11 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:2b85</wuid>
       <x>0</x>
-      <y>48</y>
+      <y>47</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -865,7 +865,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
       <visible>true</visible>
       <widget_type>Boolean Switch</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wuid>1cf87b6f:163f3ed8197:60f1</wuid>
       <x>0</x>
       <y>68</y>
@@ -890,7 +890,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PV>PV4</PV>
@@ -908,9 +908,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>68</width>
+    <width>80</width>
     <wuid>1cf87b6f:163f3ed8197:-9db</wuid>
-    <x>381</x>
+    <x>408</x>
     <y>84</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -925,7 +925,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -946,7 +946,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-9da</wuid>
       <x>0</x>
@@ -992,7 +992,7 @@ $(pv_value)</tooltip>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -1017,7 +1017,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Text Update</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-9d9</wuid>
       <x>0</x>
@@ -1041,7 +1041,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>54</height>
+      <height>53</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_Border</name>
       <rules />
@@ -1057,11 +1057,11 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:2b8e</wuid>
       <x>0</x>
-      <y>48</y>
+      <y>47</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1118,7 +1118,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
       <visible>true</visible>
       <widget_type>Boolean Switch</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wuid>1cf87b6f:163f3ed8197:60f8</wuid>
       <x>0</x>
       <y>68</y>
@@ -1143,7 +1143,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PV>PV5</PV>
@@ -1161,9 +1161,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>68</width>
+    <width>80</width>
     <wuid>1cf87b6f:163f3ed8197:-99a</wuid>
-    <x>448</x>
+    <x>488</x>
     <y>84</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1178,7 +1178,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -1199,7 +1199,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-999</wuid>
       <x>0</x>
@@ -1245,7 +1245,7 @@ $(pv_value)</tooltip>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -1270,7 +1270,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Text Update</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-998</wuid>
       <x>0</x>
@@ -1294,7 +1294,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>54</height>
+      <height>53</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_Border</name>
       <rules />
@@ -1310,11 +1310,11 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:2b9a</wuid>
       <x>0</x>
-      <y>48</y>
+      <y>47</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1371,7 +1371,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
       <visible>true</visible>
       <widget_type>Boolean Switch</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wuid>1cf87b6f:163f3ed8197:60ff</wuid>
       <x>0</x>
       <y>68</y>
@@ -1396,7 +1396,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PV>PV6</PV>
@@ -1414,9 +1414,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>68</width>
+    <width>80</width>
     <wuid>1cf87b6f:163f3ed8197:-861</wuid>
-    <x>515</x>
+    <x>568</x>
     <y>84</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1431,7 +1431,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -1452,7 +1452,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-860</wuid>
       <x>0</x>
@@ -1498,7 +1498,7 @@ $(pv_value)</tooltip>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -1523,7 +1523,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Text Update</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-85f</wuid>
       <x>0</x>
@@ -1547,7 +1547,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>54</height>
+      <height>53</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_Border</name>
       <rules />
@@ -1563,11 +1563,11 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:2ba3</wuid>
       <x>0</x>
-      <y>48</y>
+      <y>47</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1624,7 +1624,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
       <visible>true</visible>
       <widget_type>Boolean Switch</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wuid>1cf87b6f:163f3ed8197:6106</wuid>
       <x>0</x>
       <y>68</y>
@@ -1649,7 +1649,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PV>PV7</PV>
@@ -1667,9 +1667,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>68</width>
-    <wuid>1cf87b6f:163f3ed8197:-7f4</wuid>
-    <x>582</x>
+    <width>80</width>
+    <wuid>-539e2938:167732798a2:-7923</wuid>
+    <x>648</x>
     <y>84</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1684,7 +1684,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -1705,111 +1705,11 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
-      <wuid>1cf87b6f:163f3ed8197:-7f3</wuid>
+      <wuid>-539e2938:167732798a2:-7922</wuid>
       <x>0</x>
       <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <auto_size>false</auto_size>
-      <background_color>
-        <color red="255" green="255" blue="255" />
-      </background_color>
-      <border_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </border_color>
-      <border_style>1</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>54</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <name>Label_Border</name>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <text></text>
-      <tooltip></tooltip>
-      <transparent>true</transparent>
-      <vertical_alignment>1</vertical_alignment>
-      <visible>true</visible>
-      <widget_type>Label</widget_type>
-      <width>68</width>
-      <wrap_words>false</wrap_words>
-      <wuid>1cf87b6f:163f3ed8197:2bac</wuid>
-      <x>0</x>
-      <y>48</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <bit>-1</bit>
-      <boolean_label_position>0</boolean_label_position>
-      <border_alarm_sensitive>true</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <confirm_message>Are you sure you want to do this?</confirm_message>
-      <data_type>0</data_type>
-      <effect_3d>true</effect_3d>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>34</height>
-      <name>Boolean Switch</name>
-      <off_color>
-        <color name="off" red="192" green="192" blue="192" />
-      </off_color>
-      <off_label>OFF</off_label>
-      <on_color>
-        <color red="0" green="255" blue="0" />
-      </on_color>
-      <on_label>ON</on_label>
-      <password></password>
-      <push_action_index>0</push_action_index>
-      <pv_name>$(PV):on_set</pv_name>
-      <pv_value />
-      <released_action_index>0</released_action_index>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <show_boolean_label>false</show_boolean_label>
-      <show_confirm_dialog>0</show_confirm_dialog>
-      <toggle_button>true</toggle_button>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <visible>true</visible>
-      <widget_type>Boolean Switch</widget_type>
-      <width>68</width>
-      <wuid>1cf87b6f:163f3ed8197:5f3c</wuid>
-      <x>0</x>
-      <y>68</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1851,7 +1751,7 @@ $(pv_value)</tooltip>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -1876,11 +1776,111 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Text Update</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
-      <wuid>1cf87b6f:163f3ed8197:-7f2</wuid>
+      <wuid>-539e2938:167732798a2:-7921</wuid>
       <x>0</x>
       <y>24</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <auto_size>false</auto_size>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <border_color>
+        <color name="black" red="0" green="0" blue="0" />
+      </border_color>
+      <border_style>1</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>53</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <name>Label_Border</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <text></text>
+      <tooltip></tooltip>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Label</widget_type>
+      <width>80</width>
+      <wrap_words>false</wrap_words>
+      <wuid>-539e2938:167732798a2:-7920</wuid>
+      <x>0</x>
+      <y>47</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <bit>-1</bit>
+      <boolean_label_position>0</boolean_label_position>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <confirm_message>Are you sure you want to do this?</confirm_message>
+      <data_type>0</data_type>
+      <effect_3d>true</effect_3d>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>34</height>
+      <name>Boolean Switch</name>
+      <off_color>
+        <color name="off" red="192" green="192" blue="192" />
+      </off_color>
+      <off_label>OFF</off_label>
+      <on_color>
+        <color red="0" green="255" blue="0" />
+      </on_color>
+      <on_label>ON</on_label>
+      <password></password>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(PV):on_set</pv_name>
+      <pv_value />
+      <released_action_index>0</released_action_index>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_boolean_label>false</show_boolean_label>
+      <show_confirm_dialog>0</show_confirm_dialog>
+      <toggle_button>true</toggle_button>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>Boolean Switch</widget_type>
+      <width>80</width>
+      <wuid>-539e2938:167732798a2:-791f</wuid>
+      <x>0</x>
+      <y>68</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -1902,7 +1902,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PV>PV8</PV>
@@ -1920,9 +1920,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>68</width>
+    <width>80</width>
     <wuid>1cf87b6f:163f3ed8197:-6cd</wuid>
-    <x>649</x>
+    <x>728</x>
     <y>84</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1937,7 +1937,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -1958,7 +1958,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-6cc</wuid>
       <x>0</x>
@@ -2004,7 +2004,7 @@ $(pv_value)</tooltip>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -2029,7 +2029,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Text Update</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-6cb</wuid>
       <x>0</x>
@@ -2053,7 +2053,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>54</height>
+      <height>53</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_Border</name>
       <rules />
@@ -2069,11 +2069,11 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:2bb5</wuid>
       <x>0</x>
-      <y>48</y>
+      <y>47</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -2130,7 +2130,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
       <visible>true</visible>
       <widget_type>Boolean Switch</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wuid>1cf87b6f:163f3ed8197:610d</wuid>
       <x>0</x>
       <y>68</y>
@@ -2155,7 +2155,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PV>PV9</PV>
@@ -2173,9 +2173,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>68</width>
+    <width>80</width>
     <wuid>1cf87b6f:163f3ed8197:-64b</wuid>
-    <x>716</x>
+    <x>808</x>
     <y>84</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -2190,7 +2190,7 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
@@ -2211,7 +2211,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-64a</wuid>
       <x>0</x>
@@ -2257,7 +2257,7 @@ $(pv_value)</tooltip>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -2282,7 +2282,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Text Update</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:-649</wuid>
       <x>0</x>
@@ -2306,7 +2306,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>54</height>
+      <height>53</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_Border</name>
       <rules />
@@ -2322,11 +2322,11 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>1cf87b6f:163f3ed8197:2bbe</wuid>
       <x>0</x>
-      <y>48</y>
+      <y>47</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -2383,7 +2383,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
       <visible>true</visible>
       <widget_type>Boolean Switch</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wuid>1cf87b6f:163f3ed8197:6114</wuid>
       <x>0</x>
       <y>68</y>
@@ -2408,7 +2408,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>102</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PV>PV10</PV>
@@ -2426,9 +2426,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>68</width>
-    <wuid>1cf87b6f:163f3ed8197:-59d</wuid>
-    <x>783</x>
+    <width>80</width>
+    <wuid>-539e2938:167732798a2:-78e1</wuid>
+    <x>888</x>
     <y>84</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -2443,14 +2443,14 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
       <height>25</height>
       <horizontal_alignment>1</horizontal_alignment>
-      <name>Label_PV10</name>
+      <name>Label_PV9</name>
       <rules />
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -2464,9 +2464,9 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
-      <wuid>1cf87b6f:163f3ed8197:-59c</wuid>
+      <wuid>-539e2938:167732798a2:-78e0</wuid>
       <x>0</x>
       <y>0</y>
     </widget>
@@ -2510,7 +2510,7 @@ $(pv_value)</tooltip>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==0)">
             <value>
-              <color name="Minor" red="255" green="128" blue="0" />
+              <color name="off" red="192" green="192" blue="192" />
             </value>
           </exp>
           <exp bool_exp="(pv1==1) &amp;&amp; (pv0==1)">
@@ -2535,9 +2535,9 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Text Update</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
-      <wuid>1cf87b6f:163f3ed8197:-59b</wuid>
+      <wuid>-539e2938:167732798a2:-78df</wuid>
       <x>0</x>
       <y>24</y>
     </widget>
@@ -2559,7 +2559,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>54</height>
+      <height>53</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_Border</name>
       <rules />
@@ -2575,11 +2575,11 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>68</width>
+      <width>80</width>
       <wrap_words>false</wrap_words>
-      <wuid>1cf87b6f:163f3ed8197:2bc7</wuid>
+      <wuid>-539e2938:167732798a2:-78de</wuid>
       <x>0</x>
-      <y>48</y>
+      <y>47</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolSwitch" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -2636,8 +2636,8 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
       <visible>true</visible>
       <widget_type>Boolean Switch</widget_type>
-      <width>68</width>
-      <wuid>1cf87b6f:163f3ed8197:611b</wuid>
+      <width>80</width>
+      <wuid>-539e2938:167732798a2:-78dd</wuid>
       <x>0</x>
       <y>68</y>
     </widget>
@@ -2655,9 +2655,9 @@ $(pv_value)</tooltip>
     </background_color>
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
-      <color red="30" green="144" blue="255" />
+      <color name="black" red="0" green="0" blue="0" />
     </border_color>
-    <border_style>0</border_style>
+    <border_style>1</border_style>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <fill_arrow>true</fill_arrow>
@@ -2669,16 +2669,16 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="255" green="0" blue="0" />
     </foreground_color>
-    <height>102</height>
+    <height>101</height>
     <horizontal_fill>true</horizontal_fill>
     <line_style>0</line_style>
     <line_width>1</line_width>
     <name>Polyline_rechts</name>
     <points>
-      <point x="851" y="185" />
-      <point x="851" y="84" />
-      <point x="851" y="84" />
-      <point x="851" y="84" />
+      <point x="968" y="184" />
+      <point x="968" y="84" />
+      <point x="968" y="84" />
+      <point x="968" y="84" />
     </points>
     <pv_name></pv_name>
     <pv_value />
@@ -2697,67 +2697,8 @@ $(pv_value)</tooltip>
     <widget_type>Polyline</widget_type>
     <width>1</width>
     <wuid>1cf87b6f:163f3ed8197:-285</wuid>
-    <x>851</x>
+    <x>968</x>
     <y>84</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <arrow_length>20</arrow_length>
-    <arrows>0</arrows>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color name="black" red="0" green="0" blue="0" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fill_arrow>true</fill_arrow>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <height>1</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_style>0</line_style>
-    <line_width>2</line_width>
-    <name>Polyline_unten</name>
-    <points>
-      <point x="168" y="185" />
-      <point x="851" y="185" />
-      <point x="851" y="185" />
-      <point x="851" y="185" />
-      <point x="851" y="185" />
-    </points>
-    <pv_name></pv_name>
-    <pv_value />
-    <rotation_angle>0.0</rotation_angle>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Polyline</widget_type>
-    <width>684</width>
-    <wuid>1cf87b6f:163f3ed8197:-449</wuid>
-    <x>168</x>
-    <y>185</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
