@@ -10,7 +10,7 @@
   <background_color>
     <color red="240" green="240" blue="240" />
   </background_color>
-  <boy_version>5.1.0.201707071649</boy_version>
+  <boy_version>5.1.0</boy_version>
   <foreground_color>
     <color red="192" green="192" blue="192" />
   </foreground_color>
@@ -18,7 +18,7 @@
   <height>320</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <RIES>melba_060:bd</RIES>
+    <RIES>melba_160:bd</RIES>
   </macros>
   <name></name>
   <rules />
