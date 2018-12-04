@@ -245,7 +245,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>25</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WED>melba_080:so</WED>
@@ -679,7 +679,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <background_color>
-      <color red="240" green="240" blue="240" />
+      <color name="off" red="192" green="192" blue="192" />
     </background_color>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -687,15 +687,15 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <border_width>1</border_width>
     <enabled>true</enabled>
-    <fc>false</fc>
+    <fc>true</fc>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
-      <color red="192" green="192" blue="192" />
+      <color name="black" red="0" green="0" blue="0" />
     </foreground_color>
     <height>25</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WED>melba_060:so</WED>
@@ -732,7 +732,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <tooltip>melba_060:so</tooltip>
+    <tooltip>$(WED)</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
@@ -864,7 +864,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <gradient>false</gradient>
       <height>23</height>
@@ -901,7 +901,7 @@ $(pv_value)</tooltip>
       <anti_alias>true</anti_alias>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color red="240" green="240" blue="240" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -951,7 +951,7 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="black" red="0" green="0" blue="0" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -967,7 +967,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <height>1</height>
       <horizontal_fill>true</horizontal_fill>
@@ -1010,7 +1010,7 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="black" red="0" green="0" blue="0" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -1026,7 +1026,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <height>1</height>
       <horizontal_fill>true</horizontal_fill>
@@ -2903,7 +2903,7 @@ $(pv_value)</tooltip>
     <width>25</width>
     <wuid>1cf87b6f:1648dbe4ad0:2c31</wuid>
     <x>772</x>
-    <y>310</y>
+    <y>354</y>
     <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <alarm_pulsing>false</alarm_pulsing>
@@ -6415,7 +6415,7 @@ $(pv_value)</tooltip>
         <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <WED>melba_060:so</WED>
+          <WED>melba_070:c_so2</WED>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -6441,9 +6441,9 @@ $(pv_value)</tooltip>
     <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <WED>melba_060:so</WED>
+      <WED>melba_070:c_so2</WED>
     </macros>
-    <name>Grouping Container_melba_060:so_1</name>
+    <name>Grouping Container_melba_070:c_so2</name>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
         <exp bool_exp="pv0==0">
@@ -6475,7 +6475,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <tooltip>melba_060:so</tooltip>
+    <tooltip>$(WED)</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
@@ -6810,7 +6810,7 @@ $(pv_value)</tooltip>
         <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <WED>melba_060:so</WED>
+          <WED>melba_070:c_so1</WED>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -6836,9 +6836,9 @@ $(pv_value)</tooltip>
     <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <WED>melba_060:so</WED>
+      <WED>melba_070:c_so1</WED>
     </macros>
-    <name>Grouping Container_melba_060:so_2</name>
+    <name>Grouping Container_melba_070:c_so1</name>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
         <exp bool_exp="pv0==0">
@@ -6870,7 +6870,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <tooltip>melba_060:so</tooltip>
+    <tooltip>$(WED)</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
@@ -12737,7 +12737,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>30</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <LIGHT>melba_150:spr_light</LIGHT>
@@ -12757,7 +12757,7 @@ $(pv_value)</tooltip>
     <widget_type>Grouping Container</widget_type>
     <width>30</width>
     <wuid>-539e2938:1677393b89b:-65b9</wuid>
-    <x>222</x>
+    <x>221</x>
     <y>355</y>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <actions hook="true" hook_all="false" />
@@ -12778,7 +12778,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>21</height>
-      <lock_children>false</lock_children>
+      <lock_children>true</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <LIGHT>melba_150:spr_light</LIGHT>
@@ -13141,8 +13141,8 @@ $(pv_value)</tooltip>
     <widget_type>Grouping Container</widget_type>
     <width>12</width>
     <wuid>-539e2938:1677393b89b:-5ea9</wuid>
-    <x>246</x>
-    <y>246</y>
+    <x>230</x>
+    <y>424</y>
     <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <alarm_pulsing>false</alarm_pulsing>
@@ -13176,13 +13176,13 @@ $(pv_value)</tooltip>
       <line_width>1</line_width>
       <name>Polygon_6</name>
       <points>
-        <point x="11" y="30" />
-        <point x="2" y="30" />
-        <point x="5" y="23" />
-        <point x="8" y="23" />
-        <point x="11" y="30" />
-        <point x="11" y="30" />
-        <point x="11" y="30" />
+        <point x="1" y="0" />
+        <point x="10" y="0" />
+        <point x="7" y="7" />
+        <point x="4" y="7" />
+        <point x="1" y="0" />
+        <point x="1" y="0" />
+        <point x="1" y="0" />
       </points>
       <pv_name></pv_name>
       <pv_value />
@@ -13201,8 +13201,8 @@ $(pv_value)</tooltip>
       <widget_type>Polygon</widget_type>
       <width>10</width>
       <wuid>-539e2938:1677393b89b:-5ea8</wuid>
-      <x>2</x>
-      <y>23</y>
+      <x>1</x>
+      <y>0</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -13260,7 +13260,7 @@ $(pv_value)</tooltip>
       <width>12</width>
       <wuid>-539e2938:1677393b89b:-5ea7</wuid>
       <x>0</x>
-      <y>-1</y>
+      <y>7</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -13306,7 +13306,7 @@ $(pv_value)</tooltip>
     <widget_type>Grouping Container</widget_type>
     <width>12</width>
     <wuid>-539e2938:1677393b89b:-659b</wuid>
-    <x>292</x>
+    <x>284</x>
     <y>303</y>
     <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -13774,10 +13774,10 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <height>19</height>
     <horizontal_alignment>2</horizontal_alignment>
-    <name>Text Update melba_070:c_colm:i_get_1</name>
+    <name>Text Update melba_070:c_colr:i_get_1</name>
     <precision>2</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>melba_070:c_colm:i_get</pv_name>
+    <pv_name>melba_070:c_colr:i_get</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
