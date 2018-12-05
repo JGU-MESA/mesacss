@@ -2179,7 +2179,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="WRITE_PV">
-        <pv_name>loc://trig</pv_name>
+        <pv_name>loc://trigwed</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2209,7 +2209,7 @@ $(pv_value)</tooltip>
     <image></image>
     <name>Action Button</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://trig(0)</pv_name>
+    <pv_name>loc://trigwed(0)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -2246,7 +2246,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="WRITE_PV">
-        <pv_name>loc://trig</pv_name>
+        <pv_name>loc://trigwed</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2276,7 +2276,7 @@ $(pv_value)</tooltip>
     <image></image>
     <name>Action Button_1</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://action(0)</pv_name>
+    <pv_name>loc://actionwed(0)</pv_name>
     <pv_value />
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
@@ -2295,7 +2295,7 @@ $(pv_value)</tooltip>
             <color red="240" green="240" blue="240" />
           </value>
         </exp>
-        <pv trig="true">loc://trig</pv>
+        <pv trig="true">loc://trigwed</pv>
         <pv trig="true">sim://flipflop(0.5)</pv>
       </rule>
     </rules>
