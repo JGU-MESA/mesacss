@@ -8,7 +8,7 @@
   </auto_scale_widgets>
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <background_color>
-    <color red="240" green="240" blue="240" />
+    <color name="displaybackground" red="240" green="240" blue="240" />
   </background_color>
   <boy_version>5.1.0</boy_version>
   <foreground_color>
@@ -18,6 +18,7 @@
   <height>640</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
+    <WEDLKI>melba:wedlposu01</WEDLKI>
   </macros>
   <name></name>
   <rules />
@@ -229,7 +230,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <background_color>
-      <color red="240" green="240" blue="240" />
+      <color name="off" red="192" green="192" blue="192" />
     </background_color>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -237,15 +238,15 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <border_width>1</border_width>
     <enabled>true</enabled>
-    <fc>false</fc>
+    <fc>true</fc>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
-      <color red="192" green="192" blue="192" />
+      <color name="black" red="0" green="0" blue="0" />
     </foreground_color>
     <height>25</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WED>melba_080:so</WED>
@@ -414,7 +415,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <gradient>false</gradient>
       <height>23</height>
@@ -451,7 +452,7 @@ $(pv_value)</tooltip>
       <anti_alias>true</anti_alias>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color red="240" green="240" blue="240" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -501,7 +502,7 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="black" red="0" green="0" blue="0" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -517,7 +518,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <height>1</height>
       <horizontal_fill>true</horizontal_fill>
@@ -560,7 +561,7 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="black" red="0" green="0" blue="0" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -576,7 +577,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <height>1</height>
       <horizontal_fill>true</horizontal_fill>
@@ -695,7 +696,7 @@ $(pv_value)</tooltip>
       <color name="black" red="0" green="0" blue="0" />
     </foreground_color>
     <height>25</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WED>melba_060:so</WED>
@@ -3776,7 +3777,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <background_color>
-      <color red="240" green="240" blue="240" />
+      <color name="off" red="192" green="192" blue="192" />
     </background_color>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -3784,12 +3785,12 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <border_width>1</border_width>
     <enabled>true</enabled>
-    <fc>false</fc>
+    <fc>true</fc>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
-      <color red="192" green="192" blue="192" />
+      <color name="black" red="0" green="0" blue="0" />
     </foreground_color>
     <height>25</height>
     <lock_children>true</lock_children>
@@ -3961,7 +3962,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <gradient>false</gradient>
       <height>23</height>
@@ -3998,7 +3999,7 @@ $(pv_value)</tooltip>
       <anti_alias>true</anti_alias>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color red="240" green="240" blue="240" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -4048,7 +4049,7 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="black" red="0" green="0" blue="0" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -4064,7 +4065,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <height>1</height>
       <horizontal_fill>true</horizontal_fill>
@@ -4107,7 +4108,7 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="black" red="0" green="0" blue="0" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -4123,7 +4124,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <height>1</height>
       <horizontal_fill>true</horizontal_fill>
@@ -4361,7 +4362,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>31</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <SCAN>melba_130:scan</SCAN>
@@ -4382,7 +4383,7 @@ $(pv_value)</tooltip>
     <width>25</width>
     <wuid>1cf87b6f:1648dbe4ad0:2c67</wuid>
     <x>460</x>
-    <y>310</y>
+    <y>354</y>
     <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <alarm_pulsing>false</alarm_pulsing>
@@ -10545,56 +10546,6 @@ $(pv_value)</tooltip>
       <y>21</y>
     </widget>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="true" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>subopi/pvcrtl.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-        </macros>
-        <mode>7</mode>
-        <description></description>
-      </action>
-    </actions>
-    <auto_size>false</auto_size>
-    <background_color>
-      <color name="off" red="192" green="192" blue="192" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>25</height>
-    <horizontal_alignment>0</horizontal_alignment>
-    <name>Label_Wedlerkiste_1</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <text>PValveCtrl</text>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>90</width>
-    <wrap_words>false</wrap_words>
-    <wuid>-2111977e:1672c8118a2:-5083</wuid>
-    <x>30</x>
-    <y>48</y>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <background_color>
@@ -12711,10 +12662,10 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>subopi/light.opi</path>
+        <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <LIGHT>melba_150:spr_light</LIGHT>
+          <WED>melba_150:spr_light</WED>
         </macros>
         <mode>8</mode>
         <description></description>
@@ -12740,7 +12691,7 @@ $(pv_value)</tooltip>
     <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <LIGHT>melba_150:spr_light</LIGHT>
+      <WED>melba_150:spr_light</WED>
     </macros>
     <name>Grouping Container_melba_150:spr_light_subopi</name>
     <rules />
@@ -12781,7 +12732,7 @@ $(pv_value)</tooltip>
       <lock_children>true</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
-        <LIGHT>melba_150:spr_light</LIGHT>
+        <WED>melba_150:spr_light</WED>
       </macros>
       <name>Grouping Container_melba_150:spr_light</name>
       <rules />
@@ -12828,7 +12779,7 @@ $(pv_value)</tooltip>
         <line_style>0</line_style>
         <line_width>1</line_width>
         <name>Arc</name>
-        <pv_name>$(LIGHT):on_get</pv_name>
+        <pv_name>$(WED):on_get</pv_name>
         <pv_value />
         <rules>
           <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
@@ -12847,8 +12798,8 @@ $(pv_value)</tooltip>
                 <color name="on &amp; failure" red="255" green="0" blue="0" />
               </value>
             </exp>
-            <pv trig="true">$(LIGHT):on_get</pv>
-            <pv trig="true">$(LIGHT):on_set</pv>
+            <pv trig="true">$(WED):on_get</pv>
+            <pv trig="true">$(WED):on_set</pv>
           </rule>
         </rules>
         <scale_options>
@@ -13020,7 +12971,7 @@ $(pv_value)</tooltip>
         <on_label>ON</on_label>
         <password></password>
         <push_action_index>0</push_action_index>
-        <pv_name>$(LIGHT):on_set</pv_name>
+        <pv_name>$(WED):on_set</pv_name>
         <pv_value />
         <released_action_index>0</released_action_index>
         <rules />
@@ -13800,5 +13751,207 @@ $(pv_value)</tooltip>
     <wuid>-539e2938:1677393b89b:-4906</wuid>
     <x>1036</x>
     <y>316</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="displaybackground" red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Text Update_Beam_on/off</name>
+    <precision>0</precision>
+    <precision_from_pv>true</precision_from_pv>
+    <pv_name></pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==1)">
+          <value>
+            <color name="on &amp; failure" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0==0) || (pv1==0)">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <pv trig="true">steam:hv:on_get</pv>
+        <pv trig="true">steam:laser:on_get</pv>
+      </rule>
+      <rule name="Text_Rule" prop_id="text" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==1)">
+          <value>Beam on</value>
+        </exp>
+        <exp bool_exp="(pv0==0) || (pv1==0)">
+          <value>Beam off</value>
+        </exp>
+        <pv trig="true">steam:hv:on_get</pv>
+        <pv trig="true">steam:laser:on_get</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>true</show_units>
+    <text></text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>80</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-7ef48338:1677821675a:-1648</wuid>
+    <x>204</x>
+    <y>48</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="on" red="0" green="255" blue="0" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Text Update_1</name>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==1)">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==0)">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">$(WEDLKI):auto_get</pv>
+        <pv trig="true">sim://flipflop(0.5)</pv>
+      </rule>
+      <rule name="Text_Rule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>Slow mode</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>Fast mode</value>
+        </exp>
+        <pv trig="true">$(WEDLKI):auto_get</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text></text>
+    <tooltip>Wedler measurement mode</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>80</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-7ef48338:1677821675a:-1647</wuid>
+    <x>117</x>
+    <y>48</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="12" style="0" pixels="false">MELBA Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_Abluft</name>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvStr0!=&quot;bad&quot;">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pvStr0==&quot;bad&quot;) &amp;&amp; (pv1==0)">
+          <value>
+            <color name="on &amp; failure" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pvStr0==&quot;bad&quot;) &amp;&amp; (pv1==1)">
+          <value>
+            <color red="240" green="240" blue="240" />
+          </value>
+        </exp>
+        <pv trig="true">exhaust:get</pv>
+        <pv trig="true">sim://ramp(0,1,1,0.5)</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Abluft</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>80</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-7ef48338:1677821675a:-fcf</wuid>
+    <x>30</x>
+    <y>48</y>
   </widget>
 </display>
