@@ -696,7 +696,7 @@ $(pv_value)</tooltip>
       <color name="black" red="0" green="0" blue="0" />
     </foreground_color>
     <height>25</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WED>melba_060:so</WED>
@@ -4382,7 +4382,7 @@ $(pv_value)</tooltip>
     <widget_type>Grouping Container</widget_type>
     <width>25</width>
     <wuid>1cf87b6f:1648dbe4ad0:2c67</wuid>
-    <x>460</x>
+    <x>461</x>
     <y>354</y>
     <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -5713,446 +5713,6 @@ $(pv_value)</tooltip>
       <y>0</y>
     </widget>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-    <actions hook="true" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>subopi/wedler_hori+vert.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <WEDH>melba_140:trip_sh2</WEDH>
-          <WEDV>melba_140:trip_sv2</WEDV>
-        </macros>
-        <mode>8</mode>
-        <description></description>
-      </action>
-    </actions>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fc>false</fc>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <height>25</height>
-    <lock_children>true</lock_children>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-      <WEDH>melba_140:trip_sh2</WEDH>
-      <WEDV>melba_140:trip_sv2</WEDV>
-    </macros>
-    <name>Grouping Container melba_140:trip_sh2+sv2</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <show_scrollbar>false</show_scrollbar>
-    <tooltip></tooltip>
-    <transparent>true</transparent>
-    <visible>true</visible>
-    <widget_type>Grouping Container</widget_type>
-    <width>27</width>
-    <wuid>1cf87b6f:1648dbe4ad0:327f</wuid>
-    <x>328</x>
-    <y>367</y>
-    <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
-      <actions hook="true" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="off" red="192" green="192" blue="192" />
-      </background_color>
-      <border_alarm_sensitive>true</border_alarm_sensitive>
-      <border_color>
-        <color name="white" red="255" green="255" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill_level>0.0</fill_level>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="255" green="0" blue="0" />
-      </foreground_color>
-      <height>25</height>
-      <horizontal_fill>true</horizontal_fill>
-      <line_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Polygon $(WEDH)</name>
-      <points>
-        <point x="13" y="0" />
-        <point x="13" y="24" />
-        <point x="26" y="24" />
-        <point x="26" y="24" />
-        <point x="26" y="24" />
-        <point x="26" y="24" />
-      </points>
-      <pv_name>$(WEDH):on_get</pv_name>
-      <pv_value />
-      <rotation_angle>0.0</rotation_angle>
-      <rules>
-        <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>
-              <color name="off" red="192" green="192" blue="192" />
-            </value>
-          </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; (pv1==0) &amp;&amp; ((pv2&lt;pv3) &amp;&amp; (pv2&gt;pv4))">
-            <value>
-              <color name="on &amp; okay" red="0" green="255" blue="0" />
-            </value>
-          </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; ((pv1!=0) || ((pv2&gt;=pv3) || (pv2&lt;=pv4)))">
-            <value>
-              <color name="on &amp; failure" red="255" green="0" blue="0" />
-            </value>
-          </exp>
-          <pv trig="true">$(WEDH):on_get</pv>
-          <pv trig="true">$(WEDH):stat_get</pv>
-          <pv trig="true">$(WEDH):devi</pv>
-          <pv trig="true">$(WEDH):devi.HIGH</pv>
-          <pv trig="true">$(WEDH):devi.LOW</pv>
-        </rule>
-      </rules>
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Polygon</widget_type>
-      <width>14</width>
-      <wuid>1cf87b6f:1648dbe4ad0:3280</wuid>
-      <x>13</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
-      <actions hook="true" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="off &amp; okay" red="192" green="192" blue="192" />
-      </background_color>
-      <border_alarm_sensitive>true</border_alarm_sensitive>
-      <border_color>
-        <color name="white" red="255" green="255" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill_level>0.0</fill_level>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="255" green="0" blue="0" />
-      </foreground_color>
-      <height>25</height>
-      <horizontal_fill>true</horizontal_fill>
-      <line_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Polygon $WEDV</name>
-      <points>
-        <point x="13" y="0" />
-        <point x="13" y="24" />
-        <point x="0" y="24" />
-        <point x="0" y="24" />
-        <point x="0" y="24" />
-        <point x="0" y="24" />
-      </points>
-      <pv_name>$(WEDV):on_get</pv_name>
-      <pv_value />
-      <rotation_angle>0.0</rotation_angle>
-      <rules>
-        <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-          <exp bool_exp="(pv0==0)">
-            <value>
-              <color name="off &amp; okay" red="192" green="192" blue="192" />
-            </value>
-          </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; (pv1==0) &amp;&amp; ((pv2&lt;pv3) &amp;&amp; (pv2&gt;pv4))">
-            <value>
-              <color name="on &amp; okay" red="0" green="255" blue="0" />
-            </value>
-          </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; ((pv1!=0) || ((pv2&gt;=pv3) || (pv2&lt;=-pv4)))">
-            <value>
-              <color name="on &amp; failure" red="255" green="0" blue="0" />
-            </value>
-          </exp>
-          <pv trig="true">$(WEDV):on_get</pv>
-          <pv trig="true">$(WEDV):stat_get</pv>
-          <pv trig="true">$(WEDV):devi</pv>
-          <pv trig="true">$(WEDV):devi.HIGH</pv>
-          <pv trig="true">$(WEDV):devi.LOW</pv>
-        </rule>
-      </rules>
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Polygon</widget_type>
-      <width>14</width>
-      <wuid>1cf87b6f:1648dbe4ad0:3281</wuid>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-    <actions hook="true" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>subopi/wedler_hori+vert.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <WEDH>melba_150:sh</WEDH>
-          <WEDV>melba_150:sv</WEDV>
-        </macros>
-        <mode>8</mode>
-        <description></description>
-      </action>
-    </actions>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fc>false</fc>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <height>25</height>
-    <lock_children>true</lock_children>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-      <WEDH>melba_150:sh</WEDH>
-      <WEDV>melba_150:sv</WEDV>
-    </macros>
-    <name>Grouping Container melba_150:sh+sv</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <show_scrollbar>false</show_scrollbar>
-    <tooltip></tooltip>
-    <transparent>true</transparent>
-    <visible>true</visible>
-    <widget_type>Grouping Container</widget_type>
-    <width>27</width>
-    <wuid>1cf87b6f:1648dbe4ad0:329f</wuid>
-    <x>292</x>
-    <y>367</y>
-    <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
-      <actions hook="true" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="off" red="192" green="192" blue="192" />
-      </background_color>
-      <border_alarm_sensitive>true</border_alarm_sensitive>
-      <border_color>
-        <color name="white" red="255" green="255" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill_level>0.0</fill_level>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="255" green="0" blue="0" />
-      </foreground_color>
-      <height>25</height>
-      <horizontal_fill>true</horizontal_fill>
-      <line_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Polygon $(WEDH)</name>
-      <points>
-        <point x="13" y="0" />
-        <point x="13" y="24" />
-        <point x="26" y="24" />
-        <point x="26" y="24" />
-        <point x="26" y="24" />
-        <point x="26" y="24" />
-      </points>
-      <pv_name>$(WEDH):on_get</pv_name>
-      <pv_value />
-      <rotation_angle>0.0</rotation_angle>
-      <rules>
-        <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>
-              <color name="off" red="192" green="192" blue="192" />
-            </value>
-          </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; (pv1==0) &amp;&amp; ((pv2&lt;pv3) &amp;&amp; (pv2&gt;pv4))">
-            <value>
-              <color name="on &amp; okay" red="0" green="255" blue="0" />
-            </value>
-          </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; ((pv1!=0) || ((pv2&gt;=pv3) || (pv2&lt;=pv4)))">
-            <value>
-              <color name="on &amp; failure" red="255" green="0" blue="0" />
-            </value>
-          </exp>
-          <pv trig="true">$(WEDH):on_get</pv>
-          <pv trig="true">$(WEDH):stat_get</pv>
-          <pv trig="true">$(WEDH):devi</pv>
-          <pv trig="true">$(WEDH):devi.HIGH</pv>
-          <pv trig="true">$(WEDH):devi.LOW</pv>
-        </rule>
-      </rules>
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Polygon</widget_type>
-      <width>14</width>
-      <wuid>1cf87b6f:1648dbe4ad0:32a0</wuid>
-      <x>13</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
-      <actions hook="true" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="off &amp; okay" red="192" green="192" blue="192" />
-      </background_color>
-      <border_alarm_sensitive>true</border_alarm_sensitive>
-      <border_color>
-        <color name="white" red="255" green="255" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill_level>0.0</fill_level>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="255" green="0" blue="0" />
-      </foreground_color>
-      <height>25</height>
-      <horizontal_fill>true</horizontal_fill>
-      <line_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Polygon $WEDV</name>
-      <points>
-        <point x="13" y="0" />
-        <point x="13" y="24" />
-        <point x="0" y="24" />
-        <point x="0" y="24" />
-        <point x="0" y="24" />
-        <point x="0" y="24" />
-      </points>
-      <pv_name>$(WEDV):on_get</pv_name>
-      <pv_value />
-      <rotation_angle>0.0</rotation_angle>
-      <rules>
-        <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-          <exp bool_exp="(pv0==0)">
-            <value>
-              <color name="off &amp; okay" red="192" green="192" blue="192" />
-            </value>
-          </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; (pv1==0) &amp;&amp; ((pv2&lt;pv3) &amp;&amp; (pv2&gt;pv4))">
-            <value>
-              <color name="on &amp; okay" red="0" green="255" blue="0" />
-            </value>
-          </exp>
-          <exp bool_exp="(pv0==1) &amp;&amp; ((pv1!=0) || ((pv2&gt;=pv3) || (pv2&lt;=-pv4)))">
-            <value>
-              <color name="on &amp; failure" red="255" green="0" blue="0" />
-            </value>
-          </exp>
-          <pv trig="true">$(WEDV):on_get</pv>
-          <pv trig="true">$(WEDV):stat_get</pv>
-          <pv trig="true">$(WEDV):devi</pv>
-          <pv trig="true">$(WEDV):devi.HIGH</pv>
-          <pv trig="true">$(WEDV):devi.LOW</pv>
-        </rule>
-      </rules>
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Polygon</widget_type>
-      <width>14</width>
-      <wuid>1cf87b6f:1648dbe4ad0:32a1</wuid>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <auto_size>false</auto_size>
@@ -6416,14 +5976,14 @@ $(pv_value)</tooltip>
         <path>subopi/wedler.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <WED>melba_070:c_so2</WED>
+          <WED>melba_070:c_so</WED>
         </macros>
         <mode>8</mode>
         <description></description>
       </action>
     </actions>
     <background_color>
-      <color red="240" green="240" blue="240" />
+      <color name="off" red="192" green="192" blue="192" />
     </background_color>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -6431,415 +5991,20 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <border_width>1</border_width>
     <enabled>true</enabled>
-    <fc>false</fc>
+    <fc>true</fc>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
-      <color red="192" green="192" blue="192" />
+      <color name="black" red="0" green="0" blue="0" />
     </foreground_color>
     <height>25</height>
     <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <WED>melba_070:c_so2</WED>
+      <WED>melba_070:c_so</WED>
     </macros>
-    <name>Grouping Container_melba_070:c_so2</name>
-    <rules>
-      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>
-            <color name="off" red="192" green="192" blue="192" />
-          </value>
-        </exp>
-        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==0) &amp;&amp; ((pv2&lt;pv3) &amp;&amp; (pv2&gt;pv4))">
-          <value>
-            <color name="on" red="0" green="255" blue="0" />
-          </value>
-        </exp>
-        <exp bool_exp="(pv0==1) &amp;&amp; ((pv1!=0) || ((pv2&gt;=pv3) || (pv2&lt;=pv4)))">
-          <value>
-            <color name="error" red="255" green="0" blue="0" />
-          </value>
-        </exp>
-        <pv trig="true">$(WED):on_get</pv>
-        <pv trig="true">$(WED):stat_get</pv>
-        <pv trig="true">$(WED):devi</pv>
-        <pv trig="true">$(WED):devi.HIGH</pv>
-        <pv trig="true">$(WED):devi.LOW</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <show_scrollbar>false</show_scrollbar>
-    <tooltip>$(WED)</tooltip>
-    <transparent>true</transparent>
-    <visible>true</visible>
-    <widget_type>Grouping Container</widget_type>
-    <width>14</width>
-    <wuid>1cf87b6f:1648dbe4ad0:54f6</wuid>
-    <x>1005</x>
-    <y>367</y>
-    <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="off" red="192" green="192" blue="192" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill>true</fill>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>25</height>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Arc_2</name>
-      <pv_name></pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <start_angle>90</start_angle>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <total_angle>90</total_angle>
-      <visible>true</visible>
-      <widget_type>Arc</widget_type>
-      <width>6</width>
-      <wuid>1cf87b6f:1648dbe4ad0:54f7</wuid>
-      <x>0</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="off" red="192" green="192" blue="192" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill>true</fill>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>25</height>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Arc_1</name>
-      <pv_name></pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <start_angle>180</start_angle>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <total_angle>90</total_angle>
-      <visible>true</visible>
-      <widget_type>Arc</widget_type>
-      <width>6</width>
-      <wuid>1cf87b6f:1648dbe4ad0:54f8</wuid>
-      <x>0</x>
-      <y>-1</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="off" red="192" green="192" blue="192" />
-      </background_color>
-      <bg_gradient_color>
-        <color red="255" green="255" blue="255" />
-      </bg_gradient_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fg_gradient_color>
-        <color red="255" green="255" blue="255" />
-      </fg_gradient_color>
-      <fill_level>0.0</fill_level>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="255" green="0" blue="0" />
-      </foreground_color>
-      <gradient>false</gradient>
-      <height>23</height>
-      <horizontal_fill>true</horizontal_fill>
-      <line_color>
-        <color red="128" green="0" blue="255" />
-      </line_color>
-      <line_style>0</line_style>
-      <line_width>0</line_width>
-      <name>Rectangle</name>
-      <pv_name></pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Rectangle</widget_type>
-      <width>6</width>
-      <wuid>1cf87b6f:1648dbe4ad0:54f9</wuid>
-      <x>3</x>
-      <y>1</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill>true</fill>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>25</height>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Arc</name>
-      <pv_name></pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <start_angle>180</start_angle>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <total_angle>360</total_angle>
-      <visible>true</visible>
-      <widget_type>Arc</widget_type>
-      <width>6</width>
-      <wuid>1cf87b6f:1648dbe4ad0:54fa</wuid>
-      <x>7</x>
-      <y>0</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <arrow_length>20</arrow_length>
-      <arrows>0</arrows>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill_arrow>true</fill_arrow>
-      <fill_level>0.0</fill_level>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="255" green="0" blue="0" />
-      </foreground_color>
-      <height>1</height>
-      <horizontal_fill>true</horizontal_fill>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Polyline_1</name>
-      <points>
-        <point x="3" y="1" />
-        <point x="10" y="1" />
-        <point x="10" y="1" />
-        <point x="10" y="1" />
-        <point x="10" y="1" />
-      </points>
-      <pv_name></pv_name>
-      <pv_value />
-      <rotation_angle>0.0</rotation_angle>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Polyline</widget_type>
-      <width>8</width>
-      <wuid>1cf87b6f:1648dbe4ad0:54fb</wuid>
-      <x>3</x>
-      <y>1</y>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <alarm_pulsing>false</alarm_pulsing>
-      <alpha>255</alpha>
-      <anti_alias>true</anti_alias>
-      <arrow_length>20</arrow_length>
-      <arrows>0</arrows>
-      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-      <background_color>
-        <color name="black" red="0" green="0" blue="0" />
-      </background_color>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fill_arrow>true</fill_arrow>
-      <fill_level>0.0</fill_level>
-      <font>
-        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color red="255" green="0" blue="0" />
-      </foreground_color>
-      <height>1</height>
-      <horizontal_fill>true</horizontal_fill>
-      <line_style>0</line_style>
-      <line_width>1</line_width>
-      <name>Polyline_2</name>
-      <points>
-        <point x="3" y="24" />
-        <point x="10" y="24" />
-        <point x="10" y="24" />
-        <point x="10" y="24" />
-        <point x="10" y="24" />
-      </points>
-      <pv_name></pv_name>
-      <pv_value />
-      <rotation_angle>0.0</rotation_angle>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>true</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Polyline</widget_type>
-      <width>8</width>
-      <wuid>1cf87b6f:1648dbe4ad0:54fc</wuid>
-      <x>3</x>
-      <y>24</y>
-    </widget>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-    <actions hook="true" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>subopi/wedler.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <WED>melba_070:c_so1</WED>
-        </macros>
-        <mode>8</mode>
-        <description></description>
-      </action>
-    </actions>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fc>false</fc>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <height>25</height>
-    <lock_children>true</lock_children>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-      <WED>melba_070:c_so1</WED>
-    </macros>
-    <name>Grouping Container_melba_070:c_so1</name>
+    <name>Grouping Container_melba_070:c_so</name>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
         <exp bool_exp="pv0==0">
@@ -7003,7 +6168,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <gradient>false</gradient>
       <height>23</height>
@@ -7040,7 +6205,7 @@ $(pv_value)</tooltip>
       <anti_alias>true</anti_alias>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color red="240" green="240" blue="240" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -7090,7 +6255,7 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="black" red="0" green="0" blue="0" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -7106,7 +6271,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <height>1</height>
       <horizontal_fill>true</horizontal_fill>
@@ -7149,7 +6314,7 @@ $(pv_value)</tooltip>
       <arrows>0</arrows>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
-        <color name="black" red="0" green="0" blue="0" />
+        <color name="off" red="192" green="192" blue="192" />
       </background_color>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <border_color>
@@ -7165,7 +6330,7 @@ $(pv_value)</tooltip>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color red="255" green="0" blue="0" />
+        <color name="black" red="0" green="0" blue="0" />
       </foreground_color>
       <height>1</height>
       <horizontal_fill>true</horizontal_fill>
@@ -13953,5 +13118,493 @@ $(pv_value)</tooltip>
     <wuid>-7ef48338:1677821675a:-fcf</wuid>
     <x>30</x>
     <y>48</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>subopi/wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_070:c_so</WED>
+        </macros>
+        <mode>8</mode>
+        <description></description>
+      </action>
+    </actions>
+    <background_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fc>true</fc>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="black" red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>25</height>
+    <lock_children>true</lock_children>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <WED>melba_070:c_so</WED>
+    </macros>
+    <name>Grouping Container_melba_070:c_so_1</name>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==0) &amp;&amp; ((pv2&lt;pv3) &amp;&amp; (pv2&gt;pv4))">
+          <value>
+            <color name="on" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0==1) &amp;&amp; ((pv1!=0) || ((pv2&gt;=pv3) || (pv2&lt;=pv4)))">
+          <value>
+            <color name="error" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">$(WED):on_get</pv>
+        <pv trig="true">$(WED):stat_get</pv>
+        <pv trig="true">$(WED):devi</pv>
+        <pv trig="true">$(WED):devi.HIGH</pv>
+        <pv trig="true">$(WED):devi.LOW</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <tooltip>$(WED)</tooltip>
+    <transparent>true</transparent>
+    <visible>true</visible>
+    <widget_type>Grouping Container</widget_type>
+    <width>14</width>
+    <wuid>-7ef48338:1677821675a:dc</wuid>
+    <x>1006</x>
+    <y>367</y>
+    <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <alpha>255</alpha>
+      <anti_alias>true</anti_alias>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color name="off" red="192" green="192" blue="192" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <fill>true</fill>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="black" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>25</height>
+      <line_style>0</line_style>
+      <line_width>1</line_width>
+      <name>Arc_2</name>
+      <pv_name></pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <start_angle>90</start_angle>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <total_angle>90</total_angle>
+      <visible>true</visible>
+      <widget_type>Arc</widget_type>
+      <width>6</width>
+      <wuid>-7ef48338:1677821675a:dd</wuid>
+      <x>0</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <alpha>255</alpha>
+      <anti_alias>true</anti_alias>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color name="off" red="192" green="192" blue="192" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <fill>true</fill>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="black" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>25</height>
+      <line_style>0</line_style>
+      <line_width>1</line_width>
+      <name>Arc_1</name>
+      <pv_name></pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <start_angle>180</start_angle>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <total_angle>90</total_angle>
+      <visible>true</visible>
+      <widget_type>Arc</widget_type>
+      <width>6</width>
+      <wuid>-7ef48338:1677821675a:de</wuid>
+      <x>0</x>
+      <y>-1</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <alpha>255</alpha>
+      <anti_alias>true</anti_alias>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color name="off" red="192" green="192" blue="192" />
+      </background_color>
+      <bg_gradient_color>
+        <color red="255" green="255" blue="255" />
+      </bg_gradient_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <fg_gradient_color>
+        <color red="255" green="255" blue="255" />
+      </fg_gradient_color>
+      <fill_level>0.0</fill_level>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="black" red="0" green="0" blue="0" />
+      </foreground_color>
+      <gradient>false</gradient>
+      <height>23</height>
+      <horizontal_fill>true</horizontal_fill>
+      <line_color>
+        <color red="128" green="0" blue="255" />
+      </line_color>
+      <line_style>0</line_style>
+      <line_width>0</line_width>
+      <name>Rectangle</name>
+      <pv_name></pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <transparent>false</transparent>
+      <visible>true</visible>
+      <widget_type>Rectangle</widget_type>
+      <width>6</width>
+      <wuid>-7ef48338:1677821675a:df</wuid>
+      <x>3</x>
+      <y>1</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <alpha>255</alpha>
+      <anti_alias>true</anti_alias>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color name="off" red="192" green="192" blue="192" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <fill>true</fill>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="black" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>25</height>
+      <line_style>0</line_style>
+      <line_width>1</line_width>
+      <name>Arc</name>
+      <pv_name></pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <start_angle>180</start_angle>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <total_angle>360</total_angle>
+      <visible>true</visible>
+      <widget_type>Arc</widget_type>
+      <width>6</width>
+      <wuid>-7ef48338:1677821675a:e0</wuid>
+      <x>7</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <alpha>255</alpha>
+      <anti_alias>true</anti_alias>
+      <arrow_length>20</arrow_length>
+      <arrows>0</arrows>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color name="off" red="192" green="192" blue="192" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <fill_arrow>true</fill_arrow>
+      <fill_level>0.0</fill_level>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="black" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>1</height>
+      <horizontal_fill>true</horizontal_fill>
+      <line_style>0</line_style>
+      <line_width>1</line_width>
+      <name>Polyline_1</name>
+      <points>
+        <point x="3" y="1" />
+        <point x="10" y="1" />
+        <point x="10" y="1" />
+        <point x="10" y="1" />
+        <point x="10" y="1" />
+      </points>
+      <pv_name></pv_name>
+      <pv_value />
+      <rotation_angle>0.0</rotation_angle>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <transparent>false</transparent>
+      <visible>true</visible>
+      <widget_type>Polyline</widget_type>
+      <width>8</width>
+      <wuid>-7ef48338:1677821675a:e1</wuid>
+      <x>3</x>
+      <y>1</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <alpha>255</alpha>
+      <anti_alias>true</anti_alias>
+      <arrow_length>20</arrow_length>
+      <arrows>0</arrows>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color name="off" red="192" green="192" blue="192" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <fill_arrow>true</fill_arrow>
+      <fill_level>0.0</fill_level>
+      <font>
+        <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="black" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>1</height>
+      <horizontal_fill>true</horizontal_fill>
+      <line_style>0</line_style>
+      <line_width>1</line_width>
+      <name>Polyline_2</name>
+      <points>
+        <point x="3" y="24" />
+        <point x="10" y="24" />
+        <point x="10" y="24" />
+        <point x="10" y="24" />
+        <point x="10" y="24" />
+      </points>
+      <pv_name></pv_name>
+      <pv_value />
+      <rotation_angle>0.0</rotation_angle>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <transparent>false</transparent>
+      <visible>true</visible>
+      <widget_type>Polyline</widget_type>
+      <width>8</width>
+      <wuid>-7ef48338:1677821675a:e2</wuid>
+      <x>3</x>
+      <y>24</y>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polygon" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>wedler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <WED>melba_160:bd_d</WED>
+        </macros>
+        <mode>8</mode>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="off" red="192" green="192" blue="192" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="white" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <height>25</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color name="black" red="0" green="0" blue="0" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Polygon melba_160:bd_d</name>
+    <points>
+      <point x="80" y="367" />
+      <point x="80" y="391" />
+      <point x="93" y="391" />
+      <point x="93" y="391" />
+      <point x="93" y="391" />
+      <point x="93" y="391" />
+    </points>
+    <pv_name>melba_160:bd_d:on_get</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules>
+      <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color name="off" red="192" green="192" blue="192" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0==1) &amp;&amp; (pv1==0) &amp;&amp; ((pv2&lt;pv3) &amp;&amp; (pv2&gt;pv4))">
+          <value>
+            <color name="on &amp; okay" red="0" green="255" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0==1) &amp;&amp; ((pv1!=0) || ((pv2&gt;=pv3) || (pv2&lt;=pv4)))">
+          <value>
+            <color name="on &amp; failure" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">melba_160:bd_d:on_get</pv>
+        <pv trig="true">melba_160:bd_d:stat_get</pv>
+        <pv trig="true">melba_160:bd_d:devi</pv>
+        <pv trig="true">melba_160:bd_d:devi.HIGH</pv>
+        <pv trig="true">melba_160:bd_d:devi.LOW</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Polygon</widget_type>
+    <width>14</width>
+    <wuid>-7ef48338:1677821675a:49</wuid>
+    <x>80</x>
+    <y>367</y>
   </widget>
 </display>
