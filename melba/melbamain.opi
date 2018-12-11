@@ -4653,28 +4653,28 @@ $(pv_value)</tooltip>
     <format_type>4</format_type>
     <height>15</height>
     <horizontal_alignment>0</horizontal_alignment>
-    <name>Text Update melba_020:pump:supplystatus_get</name>
+    <name>Text Update melba_020:pump:stat_get</name>
     <precision>0</precision>
     <precision_from_pv>false</precision_from_pv>
-    <pv_name>melba_020:pump:supplystatus_get</pv_name>
+    <pv_name>melba_020:pump:stat_get</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="(pv0==1) &amp;&amp; (pvStr1!=&quot;Running&quot;)">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pvStr1!=&quot;RUNNING 00&quot;)">
           <value>
             <color name="Major" red="255" green="0" blue="0" />
           </value>
         </exp>
         <pv trig="true">melba_020:pump:on_get</pv>
-        <pv trig="true">melba_020:pump:supplystatus_get</pv>
+        <pv trig="true">melba_020:pump:stat_get</pv>
       </rule>
       <rule name="Visible_Rule" prop_id="visible" out_exp="false">
-        <exp bool_exp="(pv0 == 1) &amp;&amp; (pvStr1!=&quot;Running&quot;)">
+        <exp bool_exp="(pv0 == 1) &amp;&amp; (pvStr1!=&quot;RUNNING 00&quot;)">
           <value>true</value>
         </exp>
         <pv trig="true">melba_020:pump:on_get</pv>
-        <pv trig="true">melba_020:pump:supplystatus_get</pv>
+        <pv trig="true">melba_020:pump:stat_get</pv>
       </rule>
     </rules>
     <scale_options>
@@ -4722,28 +4722,28 @@ $(pv_value)</tooltip>
     <format_type>4</format_type>
     <height>15</height>
     <horizontal_alignment>0</horizontal_alignment>
-    <name>Text Update melba_030:pump:supplystatus_get_1</name>
+    <name>Text Update melba_030:pump:stat_get</name>
     <precision>0</precision>
     <precision_from_pv>false</precision_from_pv>
-    <pv_name>melba_030:pump:supplystatus_get</pv_name>
+    <pv_name>melba_030:pump:stat_get</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
       <rule name="Background_Color_Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="(pv0==1) &amp;&amp; (pvStr1!=&quot;Running&quot;)">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pvStr1!=&quot;RUNNING 00&quot;)">
           <value>
             <color name="Major" red="255" green="0" blue="0" />
           </value>
         </exp>
         <pv trig="true">melba_030:pump:on_get</pv>
-        <pv trig="true">melba_030:pump:supplystatus_get</pv>
+        <pv trig="true">melba_030:pump:stat_get</pv>
       </rule>
       <rule name="Visible_Rule" prop_id="visible" out_exp="false">
-        <exp bool_exp="(pv0==1) &amp;&amp; (pvStr1!=&quot;Running&quot;) ">
+        <exp bool_exp="(pv0==1) &amp;&amp; (pvStr1!=&quot;RUNNING 00&quot;) ">
           <value>true</value>
         </exp>
         <pv trig="true">melba_030:pump:on_get</pv>
-        <pv trig="true">melba_030:pump:supplystatus_get</pv>
+        <pv trig="true">melba_030:pump:stat_get</pv>
       </rule>
     </rules>
     <scale_options>
@@ -12264,7 +12264,7 @@ $(pv_value)</tooltip>
       <color name="white" red="255" green="255" blue="255" />
     </foreground_color>
     <height>27</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WEDH>melba_010:sh</WEDH>
