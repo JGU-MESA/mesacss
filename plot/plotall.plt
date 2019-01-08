@@ -8,7 +8,7 @@
     <scroll>true</scroll>
     <update_period>0.1</update_period>
     <scroll_step>1</scroll_step>
-    <start>-15 minutes 0.0 seconds</start>
+    <start>-20 minutes 0.0 seconds</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -349,6 +349,25 @@
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
                 <key>1</key>
             </archive>
+        </pv>
+        <pv>
+            <display_name>melba_090:scan_pmt:i_get</display_name>
+            <visible>true</visible>
+            <name>melba_090:scan_pmt:i_get</name>
+            <axis>4</axis>
+            <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <linewidth>2</linewidth>
+            <point_type>NONE</point_type>
+            <point_size>2</point_size>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
         </pv>
     </pvlist>
 </databrowser>

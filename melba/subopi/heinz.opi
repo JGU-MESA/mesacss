@@ -2581,7 +2581,7 @@ $(pv_value)</tooltip>
         <name>Meter_2</name>
         <precision>2</precision>
         <precision_from_pv>false</precision_from_pv>
-        <pv_name>melba_060:bd:i_get</pv_name>
+        <pv_name>melba_160:bd:i_get</pv_name>
         <pv_value />
         <rotation_angle>0.0</rotation_angle>
         <rules />
@@ -2702,7 +2702,7 @@ $(pv_value)</tooltip>
         <name>Meter_2</name>
         <origin>0.0</origin>
         <origin_ignored>true</origin_ignored>
-        <pv_name>melba_060:bd:trans_get</pv_name>
+        <pv_name>melba_160:bd:trans_get</pv_name>
         <pv_value />
         <rules />
         <scale_font>
