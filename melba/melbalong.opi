@@ -211,10 +211,10 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>120</width>
+    <width>246</width>
     <wrap_words>false</wrap_words>
     <wuid>1cf87b6f:1648dbe4ad0:2c2</wuid>
-    <x>585</x>
+    <x>492</x>
     <y>24</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -6146,7 +6146,17 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-    <actions hook="false" hook_all="false" />
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>subopi/chopper_colli.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>melba_070:c_colmotor</P>
+        </macros>
+        <mode>8</mode>
+        <description>Open subopi/chopper_colli</description>
+      </action>
+    </actions>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -6164,11 +6174,12 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>24</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
+      <P>melba_070:c_colmotor</P>
     </macros>
-    <name>Grouping melba_070_c:colx</name>
+    <name>Grouping melba_070:c_col</name>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -6183,8 +6194,8 @@ $(pv_value)</tooltip>
     <widget_type>Grouping Container</widget_type>
     <width>28</width>
     <wuid>1cf87b6f:1648dbe4ad0:506e</wuid>
-    <x>1016</x>
-    <y>340</y>
+    <x>1018</x>
+    <y>348</y>
     <widget typeId="org.csstudio.opibuilder.widgets.arc" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <alarm_pulsing>false</alarm_pulsing>
@@ -6213,7 +6224,7 @@ $(pv_value)</tooltip>
       <line_style>0</line_style>
       <line_width>1</line_width>
       <name>Arc_melba_070:c_coll</name>
-      <pv_name>melba_070:c_coll</pv_name>
+      <pv_name></pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -6261,7 +6272,7 @@ $(pv_value)</tooltip>
       <line_style>0</line_style>
       <line_width>1</line_width>
       <name>Arc_melba_070:c_colr</name>
-      <pv_name>melba_070:c_colr</pv_name>
+      <pv_name></pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -6320,7 +6331,7 @@ $(pv_value)</tooltip>
       <line_style>0</line_style>
       <line_width>1</line_width>
       <name>Rectangle_melba_070:c_colm</name>
-      <pv_name>melba_070:c_colm</pv_name>
+      <pv_name></pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -6585,7 +6596,7 @@ $(pv_value)</tooltip>
           <P>melba_070:</P>
           <R>c_cav2:</R>
         </macros>
-        <mode>1</mode>
+        <mode>8</mode>
         <description></description>
       </action>
     </actions>
@@ -6744,7 +6755,7 @@ $(pv_value)</tooltip>
           <P>melba_070:</P>
           <R>c_cav1:</R>
         </macros>
-        <mode>1</mode>
+        <mode>8</mode>
         <description></description>
       </action>
     </actions>
@@ -12356,8 +12367,8 @@ $(pv_value)</tooltip>
     <width>36</width>
     <wrap_words>false</wrap_words>
     <wuid>-539e2938:1677393b89b:-4a06</wuid>
-    <x>1000</x>
-    <y>291</y>
+    <x>1005</x>
+    <y>292</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="true" hook_all="false" />
@@ -12408,7 +12419,7 @@ $(pv_value)</tooltip>
     <width>36</width>
     <wrap_words>false</wrap_words>
     <wuid>-539e2938:1677393b89b:-490f</wuid>
-    <x>960</x>
+    <x>966</x>
     <y>316</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -12433,7 +12444,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <format_type>2</format_type>
+    <format_type>7</format_type>
     <height>18</height>
     <horizontal_alignment>2</horizontal_alignment>
     <name>Text Update melba_070:c_colr:i_get_1</name>
@@ -12460,7 +12471,7 @@ $(pv_value)</tooltip>
     <width>36</width>
     <wrap_words>false</wrap_words>
     <wuid>-539e2938:1677393b89b:-4906</wuid>
-    <x>1036</x>
+    <x>1043</x>
     <y>316</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -13822,7 +13833,7 @@ $(pv_value)</tooltip>
           <P>melba_100:</P>
           <R>bf1:</R>
         </macros>
-        <mode>1</mode>
+        <mode>8</mode>
         <description></description>
       </action>
     </actions>
@@ -13981,7 +13992,7 @@ $(pv_value)</tooltip>
           <P>melba_100:</P>
           <R>bf2:</R>
         </macros>
-        <mode>1</mode>
+        <mode>8</mode>
         <description></description>
       </action>
     </actions>
