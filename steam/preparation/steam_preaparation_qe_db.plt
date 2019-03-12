@@ -8,7 +8,7 @@
     <scroll>true</scroll>
     <update_period>1.0</update_period>
     <scroll_step>5</scroll_step>
-    <start>-10 minutes 0.0 seconds</start>
+    <start>-1 hours 0.0 seconds</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -33,7 +33,7 @@
                 <blue>0</blue>
             </color>
             <min>1.0E-9</min>
-            <max>0.01</max>
+            <max>1.0E-4</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
@@ -49,8 +49,8 @@
                 <green>0</green>
                 <blue>1</blue>
             </color>
-            <min>1.0E-11</min>
-            <max>1.0E-6</max>
+            <min>2.288099129519777E-13</min>
+            <max>2.34139580488128E-8</max>
             <grid>true</grid>
             <autoscale>false</autoscale>
             <log_scale>true</log_scale>
@@ -66,8 +66,8 @@
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>0.0</min>
-            <max>2.0</max>
+            <min>-0.96</min>
+            <max>1.36</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
@@ -83,8 +83,25 @@
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>0.0</min>
-            <max>10.0</max>
+            <min>-2.9000000000000004</min>
+            <max>18.8</max>
+            <grid>false</grid>
+            <autoscale>false</autoscale>
+            <log_scale>false</log_scale>
+        </axis>
+        <axis>
+            <visible>true</visible>
+            <name>PLD</name>
+            <use_axis_name>false</use_axis_name>
+            <use_trace_names>true</use_trace_names>
+            <right>false</right>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+            </color>
+            <min>0.4</min>
+            <max>6.4</max>
             <grid>false</grid>
             <autoscale>false</autoscale>
             <log_scale>false</log_scale>
@@ -159,6 +176,11 @@
             <period>0.0</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
         </pv>
         <pv>
             <display_name>Dispenser Current</display_name>
@@ -180,6 +202,30 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>Epics Archiver</name>
+                <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
+                <key>0</key>
+            </archive>
+        </pv>
+        <pv>
+            <display_name>steam_prep:abacus:pled_get</display_name>
+            <visible>true</visible>
+            <name>steam_prep:abacus:pled_get</name>
+            <axis>4</axis>
+            <color>
+                <red>128</red>
+                <green>128</green>
+                <blue>192</blue>
+            </color>
+            <trace_type>AREA</trace_type>
+            <linewidth>2</linewidth>
+            <point_type>NONE</point_type>
+            <point_size>2</point_size>
+            <waveform_index>0</waveform_index>
+            <period>0.0</period>
+            <ring_size>5000</ring_size>
+            <request>OPTIMIZED</request>
+            <archive>
+                <name>mesastorage1</name>
                 <url>pbraw://mesastorage1.mesa.kph:17668/retrieval</url>
                 <key>0</key>
             </archive>
