@@ -8,7 +8,7 @@
     <scroll>true</scroll>
     <update_period>1.0</update_period>
     <scroll_step>5</scroll_step>
-    <start>-1 hours 0.0 seconds</start>
+    <start>-30 minutes 0.0 seconds</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
