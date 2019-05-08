@@ -18046,13 +18046,13 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>74</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <WEDH>melba_160:sh</WEDH>
       <WEDV>melba_160:sv</WEDV>
     </macros>
-    <name>Grouping Container melba_150:sh+sv_1</name>
+    <name>Grouping Container melba_160:sh+sv</name>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
